@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="51278a87-c40e-4989-a65b-2061283de588"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectYesOverdraftsOption"
+	namespace="NewAccountOpening">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="36e425ca-a3e1-4b4d-b013-328549d81c90">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0841b2a2-9a13-4d72-94e3-fe355d1bd884"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="638,636,530,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						aco-info-text-nolineheight overdraft-button-selection
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Yes, I want Eastern Bank to pay ATM/Debit Card overdrafts
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						aco-info-text-nolineheight
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accountOpeningFundAcc']//button[@innertext='Yes, I want Eastern Bank to pay ATM/Debit Card overdrafts']
+				</path>
+			</info>
+			<arguments
+			id="805c7dea-8a5b-46e5-bcb4-40cc0122c32c">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="43f8899f-3396-4bcb-9252-5a0dc0f6235e"
+	name="NewAccountOpeningRepository"
+	relativepath="NewAccountOpeningRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="NewAccountOpeningRepository"
+		namespace="NewAccountOpening">
+		</codegen>
+		<rootfolder
+		id="1e4e825b-76fc-4ac2-b4f1-b5e5aaa2538c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectYesOverdraftsOption.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

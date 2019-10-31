@@ -1,0 +1,1526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4c25172c-d20e-439e-945c-4ee9c6463819"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AddPersonModalDataEntry"
+	namespace="BillPayTestSuite.BillPayTab.AddPayee">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="059e9588-24c5-4338-81f5-39ccf886d4fe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5dd12c75-3df4-4dc7-9b5f-c127f2b4b6df"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="inputtag"
+				rect="764,345,320,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control eb-input ng-pristine ng-valid ng-valid-maxlength ng-touched error-input-bottom
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						payee_name
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						32
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="allowed-special"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-blur"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'payee_name']
+				</path>
+			</info>
+			<AttributeValue>
+				Aaa Test Payee
+			</AttributeValue>
+		</setvaluerecorditem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b4e454ec-e0a7-4023-b61b-a684c37bf007">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="25b0041b-6895-4395-80db-8c4e26a887e5"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="inputtag"
+				rect="764,420,320,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control eb-input ng-pristine ng-untouched ng-valid ng-valid-maxlength error-input-bottom
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						addrline1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						32
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="add-special-char"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-blur"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'addrline1']
+				</path>
+			</info>
+			<AttributeValue>
+				195 Market Street
+			</AttributeValue>
+		</setvaluerecorditem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5233aa0a-05fd-43e6-89b2-a501ee99310d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ad0634ae-a9eb-4630-a069-5bb354a15bc6"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'second_work']
+				</path>
+			</info>
+			<AttributeValue>
+				Lynn
+			</AttributeValue>
+		</setvaluerecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0c04dfa9-62df-4baf-ad47-086d26bf585a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a55284a-cbb6-46e7-87a4-1310f7cc1d08"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="inputtag"
+				rect="910,570,72,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control eb-input ng-valid ng-valid-maxlength ng-touched ng-dirty ng-valid-parse error-input-bottom
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						second_extensionnew
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						2
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						-1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-blur"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-trim"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="no-special-char"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="preset"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="restrict-input"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'second_extensionnew']
+				</path>
+			</info>
+			<arguments
+			id="2d227c26-cff9-4f75-a74a-caa05083a9dd">
+			</arguments>
+		</invokeactionrecorditem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="96780dfd-5cb1-4dee-be96-850ff60fb5ee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7e09948f-2db7-4337-a49f-6ad5bf6049b5"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="inputtag"
+				rect="895,580,102,50"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-valid ng-valid-maxlength ng-touched ng-dirty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						txnSearchid
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						2
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="no-special-char"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'txnSearchid']
+				</path>
+			</info>
+			<AttributeValue>
+				MA
+			</AttributeValue>
+		</setvaluerecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2cacee9e-3125-44b6-bfe4-92d98cdb08c7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17f0ef39-0a28-47e3-abce-2af6d37f1cda"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="895,631,94,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						account
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'stateId']/div[2]/div/div/div[1]
+				</path>
+			</info>
+			<arguments
+			id="d4e20f42-989b-4b8e-b223-edc5b78e25f8">
+			</arguments>
+		</invokeactionrecorditem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="93c5b348-c407-4923-862f-ad0692be364f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e9b839b-f7bf-4d19-a535-6939a102adef"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="inputtag"
+				rect="1007,575,72,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control eb-input ng-pristine ng-untouched ng-valid ng-valid-maxlength error-input-bottom
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						second_extension
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						10
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-blur"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-trim"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="preset"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="restrict-input"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'second_extension']
+				</path>
+			</info>
+			<AttributeValue>
+				01901
+			</AttributeValue>
+		</setvaluerecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6498fce6-d570-4566-a47f-3ea204df7ebe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6fd033fb-53a8-4baf-aa2a-ea972cbecb9d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="991,886,93,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Add Payee
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="emulation-interceptor"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'addPayeeFormFooter']/button[@innertext='Add Payee']
+				</path>
+			</info>
+			<arguments
+			id="6b50291d-d187-4974-ac7d-69285b80ae52">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="4c94187b-1b9c-40e2-8c16-b0831dc9a18f"
+		waitaction="AttributeEqual"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="09deff67-b7a4-42e8-a522-481112334c0b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'successAddPayee']/div/div/div[1]/div[2]/span[@innertext='Success']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="False"
+		optional="False"
+		searchpropertyid="1e6c216f-b9d2-42ea-9db8-143b0d0c30cb"
+		waitaction="AttributeEqual"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="516d0cd7-2314-4f73-b28d-21fb217ab4c4"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='defAcctModal']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b9e7c9af-2b08-48e6-a29f-db94018f6d74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="05ea5e2f-f5a8-4fbc-a2b5-8aa98c189a31"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="3"
+				prefcap="spantag"
+				rect="804,419,179,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						successAddPayeeMsg
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						You have added this payee.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+						payeeMode == 'A'
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//span[#'successAddPayeeMsg']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1dc05c27-0853-4386-a72b-955eeff58d42">
+				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
+CiiigAooooAKKKKACiiigAooooAKKKKAP//Z
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2f2c8373-76a7-44a9-8a80-34fb130f20fe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b14d6e8c-9374-4078-8ddc-4906764a2657"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1034,510,66,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						done-btn-successAddPayee
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						DONE
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						closeModal('successAddPayee',$event)
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						background-color: #007BC8; margin-top: -4px;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//button[#'done-btn-successAddPayee']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="83cb3de9-1e0a-4618-82e4-dd7e2bf24e83">
+				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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="24cef6b3-647e-4dcd-99d3-8c9292ff7be5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b14d6e8c-9374-4078-8ddc-4906764a2657"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="buttontag"
+				rect="0,97,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						done-btn-successAddPayee
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						DONE
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//button[#'done-btn-successAddPayee']
+				</path>
+			</info>
+			<arguments
+			id="4dcb0c57-36f2-48fe-9703-40617092907c">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="b2351955-fecb-4843-8958-9d33b65b7aca"
+	name="BillPayTestSuiteRepository"
+	relativepath="..\..\BillPayTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayTestSuiteRepository"
+		namespace="BillPayTestSuite">
+		</codegen>
+		<rootfolder
+		id="c21a6d48-ccf5-4950-b4c7-859e7b370d14"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AddPersonModalDataEntry.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

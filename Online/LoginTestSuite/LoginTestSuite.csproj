@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{785800DB-6B94-4A14-9FFF-E9921B75469C}</ProjectGuid>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LoginTestSuite</RootNamespace>
+    <AssemblyName>LoginTestSuite</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlexaTest.cs">
+      <BoundTo>adb93397-9333-4063-9c48-cbf1ce834917</BoundTo>
+      <DependentUpon>AlexaTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19e5193a-170a-4c6f-80dc-b26bc6766ffe</id>
+    </Compile>
+    <Compile Include="AlexaTest.UserCode.cs">
+      <BoundTo>adb93397-9333-4063-9c48-cbf1ce834917</BoundTo>
+      <DependentUpon>AlexaTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85e3bf6f-78d6-4abd-a00f-bedd2cce069c</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>f9def5a9-3c91-4005-97ed-a9087d218afe</id>
+    </Compile>
+    <Compile Include="Click_Forgot_Username_Cancel.cs">
+      <BoundTo>e4f8e8b9-a3b9-4a27-b2d2-a120abe8a0e7</BoundTo>
+      <DependentUpon>Click_Forgot_Username_Cancel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3a7ed194-1e12-4856-9f59-b95c5426e278</id>
+    </Compile>
+    <Compile Include="Click_Forgot_Username_Cancel.UserCode.cs">
+      <BoundTo>e4f8e8b9-a3b9-4a27-b2d2-a120abe8a0e7</BoundTo>
+      <DependentUpon>Click_Forgot_Username_Cancel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3530bde-d0d2-4461-a1e6-96b2be726c41</id>
+    </Compile>
+    <Compile Include="OpenAlexaPAge.cs">
+      <BoundTo>24a6588f-3270-4456-a5f2-94892d2b34ae</BoundTo>
+      <DependentUpon>OpenAlexaPAge.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb3682dd-8ee4-4709-ba25-1952c6ce392f</id>
+    </Compile>
+    <Compile Include="OpenAlexaPAge.UserCode.cs">
+      <BoundTo>24a6588f-3270-4456-a5f2-94892d2b34ae</BoundTo>
+      <DependentUpon>OpenAlexaPAge.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>58a485fd-42d3-4fb7-8072-74427ee8ff10</id>
+    </Compile>
+    <Compile Include="SelectRefreshCaptchaButton.cs">
+      <BoundTo>e7b0c529-ae6d-405e-ad53-400602a805ed</BoundTo>
+      <DependentUpon>SelectRefreshCaptchaButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>494c4fd1-ba5f-4602-b6c3-64cadfc93bc0</id>
+    </Compile>
+    <Compile Include="SelectRefreshCaptchaButton.UserCode.cs">
+      <BoundTo>e7b0c529-ae6d-405e-ad53-400602a805ed</BoundTo>
+      <DependentUpon>SelectRefreshCaptchaButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>510e728c-985b-4593-854f-8788711f1634</id>
+    </Compile>
+    <Compile Include="CompareOldNewCaptchaSource.cs">
+      <BoundTo>24b584cd-2236-4d28-8126-5bb3467ae7d3</BoundTo>
+      <DependentUpon>CompareOldNewCaptchaSource.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5de855ea-801b-4cbd-913b-a3430d485cf2</id>
+    </Compile>
+    <Compile Include="CompareOldNewCaptchaSource.UserCode.cs">
+      <BoundTo>24b584cd-2236-4d28-8126-5bb3467ae7d3</BoundTo>
+      <DependentUpon>CompareOldNewCaptchaSource.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>92f76bfe-31bb-45d8-bdd2-359630eba455</id>
+    </Compile>
+    <Compile Include="EnterUsernamePasswordSaveUsername.cs">
+      <BoundTo>7e31caf1-96bc-430b-85c6-448a4a816c01</BoundTo>
+      <DependentUpon>EnterUsernamePasswordSaveUsername.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>853ef7a4-df33-4626-86d7-abd098cfd574</id>
+    </Compile>
+    <Compile Include="EnterUsernamePasswordSaveUsername.UserCode.cs">
+      <BoundTo>7e31caf1-96bc-430b-85c6-448a4a816c01</BoundTo>
+      <DependentUpon>EnterUsernamePasswordSaveUsername.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a81b46dd-d871-4900-9be2-92f48269ba8b</id>
+    </Compile>
+    <Compile Include="fftest.cs">
+      <BoundTo>fce47508-b1a6-433f-a204-3aa1d32ae106</BoundTo>
+      <DependentUpon>fftest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f47dd899-3b98-46a0-921f-8b23e7230b36</id>
+    </Compile>
+    <Compile Include="fftest.UserCode.cs">
+      <BoundTo>fce47508-b1a6-433f-a204-3aa1d32ae106</BoundTo>
+      <DependentUpon>fftest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4136d8d3-66f3-4a94-ad4d-320d81694709</id>
+    </Compile>
+    <Compile Include="SelectForgotPasswordCancelButton.cs">
+      <BoundTo>a5074a2d-3225-4047-9646-28ca12e8b6ad</BoundTo>
+      <DependentUpon>SelectForgotPasswordCancelButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e7ff70b1-d657-4228-9a02-fa60ec944c1e</id>
+    </Compile>
+    <Compile Include="SelectForgotPasswordCancelButton.UserCode.cs">
+      <BoundTo>a5074a2d-3225-4047-9646-28ca12e8b6ad</BoundTo>
+      <DependentUpon>SelectForgotPasswordCancelButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>525cd549-4979-4988-a7ea-310a3956c72b</id>
+    </Compile>
+    <Compile Include="SelectContactUs.cs">
+      <BoundTo>c1f1703d-d3d3-4133-bf67-9422742fb19b</BoundTo>
+      <DependentUpon>SelectContactUs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>734dd293-5c90-4ac3-9d51-179227220d50</id>
+    </Compile>
+    <Compile Include="SelectContactUs.UserCode.cs">
+      <BoundTo>c1f1703d-d3d3-4133-bf67-9422742fb19b</BoundTo>
+      <DependentUpon>SelectContactUs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>172b3b68-7863-433b-a04a-41484d0cce52</id>
+    </Compile>
+    <Compile Include="SelectForgotUsernameCancelButton.cs">
+      <BoundTo>00fed210-2ebd-48c8-8bd9-5ba196fe7b2e</BoundTo>
+      <DependentUpon>SelectForgotUsernameCancelButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>35197221-c0f1-41c8-bb0d-c3d34dbcc2e4</id>
+    </Compile>
+    <Compile Include="SelectForgotUsernameCancelButton.UserCode.cs">
+      <BoundTo>00fed210-2ebd-48c8-8bd9-5ba196fe7b2e</BoundTo>
+      <DependentUpon>SelectForgotUsernameCancelButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7323a6fd-15fc-4b47-9eed-b0b6e9abf5da</id>
+    </Compile>
+    <Compile Include="ForgotPasswordModalValidation.cs">
+      <BoundTo>8a8b091b-9bf1-4094-9275-2dc6275c6526</BoundTo>
+      <DependentUpon>ForgotPasswordModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d19c19b0-d907-449f-9a46-28d32ca9ce54</id>
+    </Compile>
+    <Compile Include="ForgotPasswordModalValidation.UserCode.cs">
+      <BoundTo>8a8b091b-9bf1-4094-9275-2dc6275c6526</BoundTo>
+      <DependentUpon>ForgotPasswordModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3905393e-32f6-4c01-870b-bc3aa02a3d1b</id>
+    </Compile>
+    <Compile Include="ForgotsernameModalValidation.cs">
+      <BoundTo>29971472-4cae-4d5b-afc3-4675aa10e9f2</BoundTo>
+      <DependentUpon>ForgotsernameModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a742a689-da7c-4a8e-9c4b-81ed29f07040</id>
+    </Compile>
+    <Compile Include="ForgotsernameModalValidation.UserCode.cs">
+      <BoundTo>29971472-4cae-4d5b-afc3-4675aa10e9f2</BoundTo>
+      <DependentUpon>ForgotsernameModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c73cdde8-b40a-4977-92ce-f445332c8b6b</id>
+    </Compile>
+    <Compile Include="GetCaptchaImageSource.cs">
+      <BoundTo>039c6311-6653-4473-b486-43464be52d23</BoundTo>
+      <DependentUpon>GetCaptchaImageSource.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c225d9be-b2f0-4872-bcf3-6ed7d615791c</id>
+    </Compile>
+    <Compile Include="GetCaptchaImageSource.UserCode.cs">
+      <BoundTo>039c6311-6653-4473-b486-43464be52d23</BoundTo>
+      <DependentUpon>GetCaptchaImageSource.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>beebba12-0e61-437d-a815-e5d95b96b24e</id>
+    </Compile>
+    <Compile Include="LoginTestSuiteRepository.cs">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <DependentUpon>LoginTestSuiteRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>25ed1b1b-b69a-42c5-bb68-5db47bbc023b</id>
+    </Compile>
+    <Compile Include="OpenFinacleUnsaveUsername.cs">
+      <BoundTo>a8986f07-1756-4e6a-93ca-6359ba32a4a5</BoundTo>
+      <DependentUpon>OpenFinacleUnsaveUsername.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2502f854-b5b1-41dc-96be-85f1c8bb2c32</id>
+    </Compile>
+    <Compile Include="OpenFinacleUnsaveUsername.UserCode.cs">
+      <BoundTo>a8986f07-1756-4e6a-93ca-6359ba32a4a5</BoundTo>
+      <DependentUpon>OpenFinacleUnsaveUsername.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35471eb5-be7d-4b90-9e93-83e1b37a81fa</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>ee9df02c-bc83-4677-9286-b634bcd1ca8d</id>
+    </Compile>
+    <Compile Include="SelectForgotPassword.cs">
+      <BoundTo>69b884f0-1652-4d7c-bb2c-96cae3d65e10</BoundTo>
+      <DependentUpon>SelectForgotPassword.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>70f586da-1d0e-4f18-aec0-116a430b533e</id>
+    </Compile>
+    <Compile Include="SelectForgotPassword.UserCode.cs">
+      <BoundTo>69b884f0-1652-4d7c-bb2c-96cae3d65e10</BoundTo>
+      <DependentUpon>SelectForgotPassword.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ab50f08a-44af-4ba2-94e3-557bcfbbfc96</id>
+    </Compile>
+    <Compile Include="SelectForgotUsername.cs">
+      <BoundTo>ea95a4cd-f3fb-4e5b-9689-b3355103193d</BoundTo>
+      <DependentUpon>SelectForgotUsername.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>975c0b13-7272-4ae0-a990-8e57218054e8</id>
+    </Compile>
+    <Compile Include="SelectForgotUsername.UserCode.cs">
+      <BoundTo>ea95a4cd-f3fb-4e5b-9689-b3355103193d</BoundTo>
+      <DependentUpon>SelectForgotUsername.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>168f600e-36a5-4798-a245-42f86c992f9d</id>
+    </Compile>
+    <Compile Include="SelectLocationsAndHours.cs">
+      <BoundTo>55dd55e7-a0b8-462c-8cfe-8f122ac4b577</BoundTo>
+      <DependentUpon>SelectLocationsAndHours.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37dfbe4e-6548-44bb-bd2b-c91f38db093e</id>
+    </Compile>
+    <Compile Include="SelectLocationsAndHours.UserCode.cs">
+      <BoundTo>55dd55e7-a0b8-462c-8cfe-8f122ac4b577</BoundTo>
+      <DependentUpon>SelectLocationsAndHours.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ca539cc1-e200-48c6-986b-c9ae7625bf3e</id>
+    </Compile>
+    <Compile Include="SetupAndTeardownRepository.cs">
+      <DependentUpon>SetupAndTeardownRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>df577f4c-7302-47d4-8f6b-96231858b0c2</id>
+      <BoundTo>7c0ad2e9-11e2-40a4-99cb-66bec224c092</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Shared\SetupAndTeardown\SetupAndTeardownRepository.rximg">
+      <DependentUpon>SetupAndTeardownRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f077de07-72d1-44f1-a6b9-81599811809a</id>
+      <Link>SetupAndTeardownRepository.rximg</Link>
+      <BoundTo>7c0ad2e9-11e2-40a4-99cb-66bec224c092</BoundTo>
+    </None>
+    <None Include="..\..\Shared\SetupAndTeardown\SetupAndTeardownRepository.rxrep">
+      <id>7c0ad2e9-11e2-40a4-99cb-66bec224c092</id>
+      <repoid>193e05d3-4da7-4bae-a93d-bc21bc09291f</repoid>
+      <reporootid>5bfca4d2-e75d-48d4-811e-7ec90b3e7c33</reporootid>
+      <Link>SetupAndTeardownRepository.rxrep</Link>
+    </None>
+    <None Include="AlexaTest.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>adb93397-9333-4063-9c48-cbf1ce834917</id>
+      <recordtableid>7a6826c8-87de-4ac9-b480-cc882bd30f40</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>cf8a8029-4bfa-4b3c-8fca-f8533e5b9cba</id>
+    </None>
+    <None Include="Click_Forgot_Username_Cancel.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>e4f8e8b9-a3b9-4a27-b2d2-a120abe8a0e7</id>
+      <recordtableid>c7d4cd4c-9c9b-445c-a356-08bfe856aa75</recordtableid>
+    </None>
+    <None Include="OpenAlexaPage.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>24a6588f-3270-4456-a5f2-94892d2b34ae</id>
+      <recordtableid>6f9cfedc-20eb-47a7-9e21-a112d173edac</recordtableid>
+    </None>
+    <None Include="SelectRefreshCaptchaButton.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>e7b0c529-ae6d-405e-ad53-400602a805ed</id>
+      <recordtableid>42e64a11-6cf8-44f4-a28b-76fe46c7e4dd</recordtableid>
+    </None>
+    <None Include="CompareOldNewCaptchaSource.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>24b584cd-2236-4d28-8126-5bb3467ae7d3</id>
+      <recordtableid>0c159241-3fc2-4eb9-843f-6984f4d604a4</recordtableid>
+    </None>
+    <None Include="EnterUsernamePasswordSaveUsername.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>7e31caf1-96bc-430b-85c6-448a4a816c01</id>
+      <recordtableid>9b21dc9f-9bf7-43c1-a134-915420585398</recordtableid>
+    </None>
+    <None Include="fftest.rxrec">
+      <id>fce47508-b1a6-433f-a204-3aa1d32ae106</id>
+      <recordtableid>ba2bdce7-ff73-42ad-8a14-5d0f684cd05d</recordtableid>
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+    </None>
+    <None Include="SelectForgotPasswordCancelButton.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>a5074a2d-3225-4047-9646-28ca12e8b6ad</id>
+      <recordtableid>3ddffb67-cfc0-4b71-9933-8ec8eb211155</recordtableid>
+    </None>
+    <None Include="SelectContactUs.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>c1f1703d-d3d3-4133-bf67-9422742fb19b</id>
+      <recordtableid>b00bc9d2-c625-4cd8-803d-7faa32b6c35e</recordtableid>
+    </None>
+    <None Include="SelectForgotUsernameCancelButton.rxrec">
+      <id>00fed210-2ebd-48c8-8bd9-5ba196fe7b2e</id>
+      <recordtableid>635eb493-3d85-4f8b-b34c-97bc28be795d</recordtableid>
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+    </None>
+    <None Include="ForgotPasswordModalValidation.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>8a8b091b-9bf1-4094-9275-2dc6275c6526</id>
+      <recordtableid>7fcb31b8-7181-455a-8e74-8b03d3883695</recordtableid>
+    </None>
+    <None Include="ForgotsernameModalValidation.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>29971472-4cae-4d5b-afc3-4675aa10e9f2</id>
+      <recordtableid>84358167-11fb-4803-8b1e-d0919520b530</recordtableid>
+    </None>
+    <None Include="GetCaptchaImageSource.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>039c6311-6653-4473-b486-43464be52d23</id>
+      <recordtableid>5e2c03e7-f9f6-4bcd-b698-96bf137e10fb</recordtableid>
+    </None>
+    <None Include="LoginTestSuiteRepository.rximg">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <DependentUpon>LoginTestSuiteRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>5b49f1fa-d638-47c6-ba12-7a8ddf45fa1e</id>
+    </None>
+    <None Include="LoginTestSuiteRepository.rxrep">
+      <id>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</id>
+      <repoid>4c58d9f3-f846-4884-8f02-cc70b369e71c</repoid>
+      <reporootid>6261947f-c71d-4dc0-a6ec-a5f79bed43e6</reporootid>
+    </None>
+    <None Include="OpenFinacleUnsaveUsername.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>a8986f07-1756-4e6a-93ca-6359ba32a4a5</id>
+      <recordtableid>01822c40-6475-492c-903b-b5be552733bd</recordtableid>
+    </None>
+    <None Include="SelectForgotPassword.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>69b884f0-1652-4d7c-bb2c-96cae3d65e10</id>
+      <recordtableid>258443cc-31d4-48cb-ba1c-778a1821701b</recordtableid>
+    </None>
+    <None Include="SelectForgotUsername.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>ea95a4cd-f3fb-4e5b-9689-b3355103193d</id>
+      <recordtableid>b35ba83f-42f8-4fea-bc52-dfa9f8570836</recordtableid>
+    </None>
+    <None Include="SelectLocationsAndHours.rxrec">
+      <BoundTo>5dd54a2e-5998-4dc3-b6cb-014fbc68fad7</BoundTo>
+      <id>55dd55e7-a0b8-462c-8cfe-8f122ac4b577</id>
+      <recordtableid>eaa4e35f-2b83-4db2-9311-51217ebe5ed8</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoginTestSuite.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0bb3f779-5cf3-4c62-9feb-34188e843fed</id>
+    </Content>
+    <Content Include="LoginTestSuite.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>79566c20-37de-42f8-bd16-bfbc9ff793a7</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
+  </Import>
+  <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
+  </Import>
+</Project>

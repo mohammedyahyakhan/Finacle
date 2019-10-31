@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="895b78d2-acac-4855-beec-a7e32791ae37"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectCheckNumberDropdown"
+	namespace="AdvancedSearch.ActivityTab.AdvancedSearchDropdown">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fbaf6021-d5cd-4ff7-a0af-0d4b66f32c5a"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7d9c6c16-b8bf-4e84-b1a7-7531736b7d8d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'srchFilterTxn']/form[@method='get']/div[1]/div[@title='Check #']/?
+				</path>
+			</info>
+			<arguments
+			id="490b6a7e-1b98-40a6-9db5-bf4481711321">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="2fe6f269-de13-4d58-8b34-fbf102865dae"
+	name="AdvancedSearchRepository"
+	relativepath="..\..\AdvancedSearchRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AdvancedSearchRepository"
+		namespace="AdvancedSearch">
+		</codegen>
+		<rootfolder
+		id="27c83439-1c8e-48c5-8013-af635165958c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectCheckNumberDropdown.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

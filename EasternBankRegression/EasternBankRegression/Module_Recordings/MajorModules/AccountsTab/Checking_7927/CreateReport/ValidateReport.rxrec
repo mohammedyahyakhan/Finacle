@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e9858f49-908b-4c68-88c6-b40485c74c89"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateReport"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab.Checking_7927.CreateReport">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c4f7b852-5ad5-40d8-b7c0-05ad9d9b0d34">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17aadd90-a32d-44f5-99f6-2217d55df836"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//span[#'reportCreateFinalHeading']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateReport.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

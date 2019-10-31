@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7e4fc123-41e4-4555-9872-15e4a2e2814b"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectTransactionTypeDropdown"
+	namespace="AdvancedSearch.ActivityTab.AdvancedSearchDropdown">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="446f37a5-f4f8-487c-9fbf-38fc2eee72e6"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="828c17d7-c124-4214-a881-dbd8091b7db5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'select-txn-trantype']/span[1]/span[2]/span[@innertext='All Transactions']
+				</path>
+			</info>
+			<arguments
+			id="989e985d-8458-441c-8a2e-bdb9f8a6db85">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="2fe6f269-de13-4d58-8b34-fbf102865dae"
+	name="AdvancedSearchRepository"
+	relativepath="..\..\AdvancedSearchRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AdvancedSearchRepository"
+		namespace="AdvancedSearch">
+		</codegen>
+		<rootfolder
+		id="27c83439-1c8e-48c5-8013-af635165958c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectTransactionTypeDropdown.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

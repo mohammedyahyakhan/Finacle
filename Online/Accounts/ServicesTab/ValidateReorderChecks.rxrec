@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a955b327-112e-4bbe-9f7a-f1000a22b1c7"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateReorderChecks"
+	namespace="AccountsTestSuite.ServicesTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="69666b1b-e1bf-4f9b-a97b-aea35b18e72b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f9ce10a6-1cd9-438c-9d36-751c387e496f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="651,613,114,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Reorder Checks
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'accounts-view']/div[2]/div/div[2]/div/div[3]/div/div[1]/div/div[2]/div[2]/div[2]//span[@innertext='Reorder Checks']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="d58e77bb-0898-4840-8b86-1f90fdf37031"
+	name="AccountsTestSuiteRepository"
+	relativepath="..\AccountsTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AccountsTestSuiteRepository"
+		namespace="AccountsTestSuite">
+		</codegen>
+		<rootfolder
+		id="01ffe724-4110-4f19-9ab4-a5dc39922701"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateReorderChecks.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

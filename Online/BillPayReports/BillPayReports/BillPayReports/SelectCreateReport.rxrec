@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f2f374c9-f952-4cfb-8c32-df8d97a6eb87"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectCreateReport"
+	namespace="BillPayReports">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7683541e-511b-4f00-8c52-8663236faa09">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fb386542-7d15-4897-87a4-81ac33f10156"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'createReportButtonBillPay']
+				</path>
+			</info>
+			<arguments
+			id="63558c38-c783-4bba-be2e-976d34612078">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="f3886a30-aaf1-4c38-9b50-b1b769f44447"
+	name="BillPayReportsRepository"
+	relativepath="BillPayReportsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayReportsRepository"
+		namespace="BillPayReports">
+		</codegen>
+		<rootfolder
+		id="2b6f57e4-d99d-4c73-8ebe-cc2c7c744fcd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectCreateReport.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

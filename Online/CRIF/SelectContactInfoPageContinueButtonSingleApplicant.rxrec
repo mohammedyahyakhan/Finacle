@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6b1fccbc-87e3-4435-9efc-d683fdf3d5ad"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectContactInfoPageContinueButtonSingleApplicant"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="bbe30bc9-20f8-4a17-83b6-be45f3444f43">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="73e59098-18a7-4d9f-b50d-2d96389935d0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'app-content-ang']//h1[@innertext=' How can we reach you? ']/../../../../../../../../..//input[@id='CAPTURE_CRIF_FIRST_TAB_SINGLE_CONTINUE']
+				</path>
+			</info>
+			<arguments
+			id="7ac745a3-05df-462a-bab3-5c47d7beaa96">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="6f7aaef6-648a-4324-9675-111c3c2a8858"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ced22f61-1eb7-40d7-924a-e3d2be2a0491"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'app-content-ang']//h1[@innertext=' Where do you currently live? ']/../../../../../../../../..
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectContactInfoPageContinueButtonSingleApplicant.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

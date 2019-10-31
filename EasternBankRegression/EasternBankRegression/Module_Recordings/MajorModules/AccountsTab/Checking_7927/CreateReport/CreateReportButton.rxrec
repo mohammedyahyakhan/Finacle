@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f582c277-46ff-40c2-8f96-7eab6057d3c9"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CreateReportButton"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab.Checking_7927.CreateReport">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d2f2a21c-cc84-42f9-86a2-e5aba088f216">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cd85fe52-3c3e-4f77-8af9-988a7d50d0a8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[#'crtRpt']
+				</path>
+			</info>
+			<arguments
+			id="d30470f2-22ae-42d5-b31c-635f889bbaaf">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CreateReportButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

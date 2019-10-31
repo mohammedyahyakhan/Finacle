@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8749646b-5864-4bc0-9427-17b4a09bdd7e"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickCreatePaymentReminder"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.BillPayTab.NotificationsTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5c9abf6c-a3d1-4e95-9a53-beb933bec8d6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="60c9f885-857e-4b5a-99d1-a66ac36eb068"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//table[#'print-table']//div[@innertext~'Payment Due']/../following-sibling::td//div[#'alrtRem2']
+				</path>
+			</info>
+			<arguments
+			id="541adf3a-d5cc-4356-a965-d4d1cbcf557e">
+			</arguments>
+		</invokeactionrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="be5def1f-d1b8-4079-ac59-f499a006dd5d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6983f28e-9cc5-4259-a6ed-8e57c66f7cda"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//a[#'createPaymentReminder']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickCreatePaymentReminder.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

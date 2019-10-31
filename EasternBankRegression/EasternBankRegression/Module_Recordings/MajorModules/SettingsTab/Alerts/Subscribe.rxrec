@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6f6c3877-c895-4dcd-b585-fca02d448609"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Subscribe"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.SettingsTab.Alerts">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="590492d8-b85f-4756-9bac-be647d33843b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3189bc45-bbc3-4f57-9b37-139fa61035a4"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//button[@innertext='Subscribe']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Subscribe.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="226f0ad8-396a-47dc-84e0-76968ba598dd"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectIAgreeCheckbox"
+	namespace="NewAccountOpening">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="015fd9b7-a357-488a-ab58-0b3f5915c3dd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4f32d0da-cd6c-455f-a483-8ad2d5de0fe5"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="709,760,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Terms Unselected
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Disabled.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'showfundAccountCheckBox']/img[@alt='Terms Unselected']
+				</path>
+			</info>
+			<arguments
+			id="ac7ace56-049b-49da-a80c-177543dbde27">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="56542ca5-587b-4227-8afc-be9ee66d817e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="31a9dff8-8b55-475e-865b-02e921598b21"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="imgtag"
+				rect="709,760,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						showFundAccoSelected
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Terms Selected
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Selected.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+						true
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						agreeTermsAcco('N',$event,'funds')
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+						vm.showFundAccFlag &amp;&amp; !vm.linkNotSelectedFund
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+						$event.keyCode == 32 ? agreeTermsAcco('N',$event,'funds'):null
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						checkbox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//img[#'showFundAccoSelected']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="d797f8d9-e861-4451-9bb2-d78e4d64220d">
+				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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="43f8899f-3396-4bcb-9252-5a0dc0f6235e"
+	name="NewAccountOpeningRepository"
+	relativepath="NewAccountOpeningRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="NewAccountOpeningRepository"
+		namespace="NewAccountOpening">
+		</codegen>
+		<rootfolder
+		id="1e4e825b-76fc-4ac2-b4f1-b5e5aaa2538c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectIAgreeCheckbox.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

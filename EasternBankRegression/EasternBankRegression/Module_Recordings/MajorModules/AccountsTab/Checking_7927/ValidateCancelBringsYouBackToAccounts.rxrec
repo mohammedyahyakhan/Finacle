@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2ac02f65-a4ec-453b-ac6f-33663cf4a5c7"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateCancelBringsYouBackToAccounts"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab.Checking_7927">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a1a03de9-8596-426b-80d0-b093356b9e79">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="49fcb904-3ace-4388-adcb-1920d02390c0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'app-content-ang']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateCancelBringsYouBackToAccounts.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

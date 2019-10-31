@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ad4590f3-a161-4413-8184-c4d5ad96bc31"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectTimeFrameDropdown"
+	namespace="AdvancedSearch.ActivityTab.AdvancedSearchDropdown">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b09f90b3-9607-43c7-b6d1-66fba010ed99"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8686acce-8182-417a-8c7f-13f2515bff2c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'srchFilterTxn']/form[@method='get']/div[1]/div[@title='Time Frame']/div
+				</path>
+			</info>
+			<arguments
+			id="6ddd3fd5-fc88-4b7b-a8bc-94b331e3c18d">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="2fe6f269-de13-4d58-8b34-fbf102865dae"
+	name="AdvancedSearchRepository"
+	relativepath="..\..\AdvancedSearchRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AdvancedSearchRepository"
+		namespace="AdvancedSearch">
+		</codegen>
+		<rootfolder
+		id="27c83439-1c8e-48c5-8013-af635165958c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectTimeframeDropdown.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

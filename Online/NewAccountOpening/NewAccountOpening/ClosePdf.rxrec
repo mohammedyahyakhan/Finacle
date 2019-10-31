@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e6d2d1ce-c623-4068-9124-4d5e0de95d07"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClosePdf"
+	namespace="NewAccountOpening">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		autogenmethod="True"
+		classname="CloseApplications"
+		enabled="True"
+		hasreturntype="False"
+		isexternaltestmethod="False"
+		methodname="closefreecheckingdisclosure"
+		namespace="Login"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6053678a-f4b1-4a49-8606-110f5440573f">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="43f8899f-3396-4bcb-9252-5a0dc0f6235e"
+	name="NewAccountOpeningRepository"
+	relativepath="NewAccountOpeningRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="NewAccountOpeningRepository"
+		namespace="NewAccountOpening">
+		</codegen>
+		<rootfolder
+		id="1e4e825b-76fc-4ac2-b4f1-b5e5aaa2538c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClosePDF.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

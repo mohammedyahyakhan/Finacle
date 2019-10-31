@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="494d9e82-688d-4db1-b399-336876563e0a"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="_VerifyZelleDashboardForEnrolledUsersInQAStaging"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.TransfersTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4acb7866-ef95-4948-b33a-7a3725447081">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9b03952d-f72e-49b4-9c92-05e36d070433"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//a[#'Transfers']
+				</path>
+			</info>
+			<arguments
+			id="1b7bdf56-77ae-41bd-85af-94811f3a3dd4">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8ba55d2c-fa84-4156-83bd-f68a69ec34ac">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0b52dfe-e4f6-4f90-82b2-c9d8634887ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[#'makeTransferZelleInstitution']
+				</path>
+			</info>
+			<arguments
+			id="a46b7da0-6e19-45a4-8e55-1d24de21e3d6">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4a71cbae-7fa1-4337-9a3b-9b5c2a80405e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0b52dfe-e4f6-4f90-82b2-c9d8634887ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[#'makeTransferZelleInstitution']
+				</path>
+			</info>
+			<arguments
+			id="2cc6aa07-03cc-4a19-abe1-bb61ce777b2d">
+			</arguments>
+		</invokeactionrecorditem>
+		<explicitdelayitem
+		duration="15000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<WaitForRecordItem
+		enabled="False"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="74a91c67-a9d8-472e-b4c2-9a92a328db3d"
+		waitaction="AttributeEqual"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e9ccee51-cf57-40d0-aa20-fecd53b57a40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']/element
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		duration="100ms"
+		enabled="False"
+		matchname="Visible"
+		matchvalue="False"
+		optional="False"
+		searchpropertyid="52101d93-e1ba-4191-b837-1bb5bf0eb004"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e9ccee51-cf57-40d0-aa20-fecd53b57a40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']/element
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="bd86319e-3ed2-46bd-bfd3-a198c6b8506e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b17e049a-9c62-4902-aee9-f1d564e9bd07"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'app-content-ang']/?/?/iframe[@name='zelleTarget']/body/div[1]/div[2]
+				</path>
+			</info>
+			<arguments
+			id="6ca5375b-597b-4282-b834-d0b25086aaeb">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a7f6ff64-483e-4ce5-9716-9852a6a6c288">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b17e049a-9c62-4902-aee9-f1d564e9bd07"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="web"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="-1013,-1023,1920,550"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						region bodyRegion&#32;
+					</attribute>
+					<attribute
+					name="contenteditable"
+					type="System.String">
+						inherit
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="accesskey"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-activedescendant"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-atomic"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-autocomplete"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-busy"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-controls"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-dropeffect"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-flowto"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-grabbed"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-hidden"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-labelledby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-level"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-live"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-multiline"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-multiselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-orientation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-owns"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-posinset"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-pressed"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-relevant"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-required"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-secret"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-selected"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-setsize"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-sort"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-valuemax"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-valuemin"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-valuenow"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-valuetext"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="dir"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="disabled"
+					readonly="False"
+					type="System.String">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="hidefocus"
+					readonly="False"
+					type="System.String">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="implementation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="lang"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="language"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="nofocusrect"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="nowrap"
+					readonly="False"
+					type="System.String">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="spellcheck"
+					readonly="False"
+					type="System.String">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="x-ms-acceleratorkey"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="x-ms-aria-flowfrom"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'app-content-ang']/?/?/iframe[@name='zelleTarget']/body/div[1]/div[2]
+				</path>
+			</info>
+			<helperscreenshot
+			guid="4c8ab350-5d37-4912-b31f-7104c48410f3">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAH0AfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+AMrXP+WH/Av6VlVq65/yw/4F/Ssquyl8COGt8bCiiitDIKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKWP/WL9R3xSUUDRoR3VorRvJE6y
+RE4MWMN9aVNSR1dZhKgL7wYmwfpVHzpf+ejdu/p0o82TGN7YxjrWfIae0LZvkK3Q2uPNChMndjHq
+Sakl1GKRS/78SlcbA5CA+vBqh50v/PRu/f160edL/wA9G7d/TpRyBzlv7VayxRC5ikZ4l2gKeGHb
+Pemm5hew8h1dWViyben45+tVvNkxje2MY60edL/z0bv39etPlFzksFwkdnPCQ26TGCOnFTfblaCI
+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
+0Ehs7hAvzO7FRnqCalniaSeM4+UK4Y+mcVPRQBSMdw1qLUxgDAUybhjA9utPxPHcTssO9XI2ncB2
+q1RQBVit3je37hA+4j1NRLauscDNEshRSrIcfp2q/RQBVBa3hllFvGmMYRcAke5qzIu+NkzjcCKU
+gEYIBHvRQBRjgdUSM2kO4YBkIBBHr65qURPi6+X/AFhO3nrxVmigCsYnxa/L/qyN3PTiq8ltM8Tq
+0JeU5+dn4/AVo0UAU5YJW87C/eiCjkdatoMIAewpaKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAu0h60tIetAEMwJxgE1Hsb+6fyqzRQBW2N/
+dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrNFAFbY390/lRsb+6fyqzRQBW2N/dP5UbG/un8qs0UAVtj
+f3T+VGxv7p/KrNFAFbY390/lRsb+6fyqzRQBW2N/dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrNFAFb
+Y390/lRsb+6fyqzRQBW2N/dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrNFAFbY390/lRsb+6fyqzRQB
+W2N/dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrNFAFbY390/lRsb+6fyqzRQBW2N/dP5UbG/un8qs0U
+AVtjf3T+VGxv7p/KrNFAFbY390/lRsb+6fyqzRQBW2N/dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrN
+FAFbY390/lRsb+6fyqzRQBW2N/dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrNFAFbY390/lRsb+6fyq
+zRQBW2N/dP5UbG/un8qs0UAVtjf3T+VGxv7p/KrNFAFbY390/lRsb+6fyqzRQBW2N/dP5UbG/un8
+qs0UAVtjf3T+VGxv7p/KrNFAFbY390/lRVmigB1IetLSHrQAlFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADqQ9aWkPWgBKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKAHUh60tIetACUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAOpD1paQ9aAEooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAdSHrS0h60AJRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQA6kPWlpD1oASiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigB1IetLSHrQAlFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADqQ9aWkPWgBKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+HUh60tIetACUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAOpD1paQ9aAEooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAdSHrS0h60AJRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA6kPW
+lpD1oASiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigB1IetLSHrQAlFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADqQ9aWkPWgBKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAHUh60tIet
+ACUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAOpD1paQ9aAEooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAdSHrS0h60AJRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA6kPWlpD1oASii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigB1IetLSHrQAlFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADqQ9aWkPWgBKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAHUh60tIetACUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAOpD1paQ9aAEooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAdSHrS0h60AJRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA6kPWlpD1oASiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gB1IetLSHrQAlFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFADqQ9aWkPWgBKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAHUh60UUAJRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		_VerifyZelleDashboardForEnrolledUsersInQAStaging.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

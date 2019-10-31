@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="76faa579-913c-4efd-991c-aa950a426ad4"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SearchResultsValidation"
+	namespace="AdvancedSearch.ActivityTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="d6d03cca-8d2b-4d10-a230-b4843747e0de"
+		waitaction="AttributeEqual"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0aef2039-b793-4097-918b-2ba3a3c3eac0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='transaction-accounts']//td[@innertext='Showing results for ']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a4218a31-2309-44bf-9541-ee0c62e29f57">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6ef6e85d-fe63-49eb-bbdd-e85bf4822ea1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='transaction-accounts']//a[@innertext='Clear Search']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="2fe6f269-de13-4d58-8b34-fbf102865dae"
+	name="AdvancedSearchRepository"
+	relativepath="..\AdvancedSearchRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AdvancedSearchRepository"
+		namespace="AdvancedSearch">
+		</codegen>
+		<rootfolder
+		id="27c83439-1c8e-48c5-8013-af635165958c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SearchResultsValidation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

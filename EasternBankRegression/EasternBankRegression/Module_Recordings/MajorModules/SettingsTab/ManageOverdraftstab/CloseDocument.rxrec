@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8f681ae0-732c-49fc-a9e8-dcde04700890"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseDocument"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.SettingsTab.ManageOverdraftstab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b7eefbc8-18c7-4c18-bca8-77b64cf22f3c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2a3e6737-f4c0-48ab-9d96-c6fdd1b88fc5"
+			sourcename="RepositoryEditor">
+				<path>
+					//tabpage[@accessiblename~'^Microsoft\ Word\ -\ Overdraf' or @accessiblename~'^easternbank\.com\ Tab\ Group']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{LControlKey down}{Wkey}{LControlKey up}"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="f7e4ebb7-cfec-483f-b9d5-606fc79efcee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2a3e6737-f4c0-48ab-9d96-c6fdd1b88fc5"
+			sourcename="RepositoryEditor">
+				<path>
+					//tabpage[@accessiblename~'^Microsoft\ Word\ -\ Overdraf' or @accessiblename~'^easternbank\.com\ Tab\ Group']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="W, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="f5cdb365-70dd-4e3f-946b-f3d5258648a0"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2a3e6737-f4c0-48ab-9d96-c6fdd1b88fc5"
+			sourcename="RepositoryEditor">
+				<path>
+					//tabpage[@accessiblename~'^Microsoft\ Word\ -\ Overdraf' or @accessiblename~'^easternbank\.com\ Tab\ Group']
+				</path>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseDocument.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

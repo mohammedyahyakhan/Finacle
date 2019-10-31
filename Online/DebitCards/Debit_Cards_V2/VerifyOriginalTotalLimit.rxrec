@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8f993c0b-650c-40ad-aa03-ab4516375c29"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyOriginalTotalLimit"
+	namespace="Debit_Cards_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="77d9e849-3416-4df3-901e-174ee3e3e5e1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc383244-2a94-4b3c-90cd-6b365393013f"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="770,598,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cancel-trigger amt-style atm-txt-style ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                $0
+           &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="bs-modal"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-backdrop"
+					readonly="False"
+					type="System.String">
+						static
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-html"
+					readonly="False"
+					type="System.String">
+						true
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-placement"
+					readonly="False"
+					type="System.String">
+						center
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-template-url"
+					readonly="False"
+					type="System.String">
+						components/partials/card-details/templates/modal.lost-card.tpl.html
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-show"
+					readonly="False"
+					type="System.String">
+						!DCDetails.getCurrentDebitCard().cancelled
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						color:black !important
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'single-inside-debit']/?/?/span[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$0\ \ \ \ \ ']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="86f5b9ae-e49a-446d-8dbc-8c7321207567">
+				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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="9b55bd05-b068-459d-8c16-2c6d2844c24c"
+	name="DebitCardsRepository"
+	relativepath="DebitCardsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="DebitCardsRepository"
+		namespace="Debit_Cards_V2">
+		</codegen>
+		<rootfolder
+		id="193247be-98ed-44ae-8ef7-b0f5c715eb32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyOriginalTotalLimit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

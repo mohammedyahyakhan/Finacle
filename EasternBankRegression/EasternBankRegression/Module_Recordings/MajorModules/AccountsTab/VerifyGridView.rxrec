@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5db89ab3-d37a-4664-918a-22c67ec07132"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyGridView"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="82e6eb5e-8475-499a-8ca7-e888f3a2260f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f214187e-e07d-4a0b-81de-c8c012594cb0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Grid']
+				</path>
+			</info>
+			<arguments
+			id="0fd435fc-297c-4e52-a62b-6f9c303b7f11">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b948787b-9c9c-4a36-b6de-da5dc30ab456">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f214187e-e07d-4a0b-81de-c8c012594cb0"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="atag"
+				rect="1670,348,85,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-default selected
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						Grid
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController;jsessionid=19ut7fzejcsKBHa9MxPo4DIC?bwayparam=WF2vWEryl1KokUvJsx55a%2BAL22vr3hhC%2F7fV%2FmMGbkE%3D#
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="disabled"
+					readonly="False"
+					type="System.String">
+						disabled
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+						{&quot;selected&quot;: view == &quot;Grid&quot;}
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+						changeView('Grid')
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Grid']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1f8ffa2a-4c0d-4a0b-b6bf-53227237fe61">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAB1AVwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAoopR1oAXLeg/OjLeg/OlooATLeg/OjLeg/OlooATLeg/OjLeg/OlooATLeg/OjLeg
+/OlooAZRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFKOtJSjrQA6iiigAooooAKKKKACiiigBlFFFABRRRQAUUd6dQA2inUU
+ANop1FADaKdRQA2inUUANop1NoAyvt19JcTR28MbiNyvv1OO/tTvtGrf8+kf+fxpdK/5CN9/vn+Z
+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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="82e6eb5e-8475-499a-8ca7-e888f3a2260f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f214187e-e07d-4a0b-81de-c8c012594cb0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Grid']
+				</path>
+			</info>
+			<arguments
+			id="0fd435fc-297c-4e52-a62b-6f9c303b7f11">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyGridView.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

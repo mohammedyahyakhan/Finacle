@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a70bdb3d-63ba-48c1-b504-2a5add007ca7"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EnterCategoryNameAndType"
+	namespace="Settings">
+	</codegen>
+	<variables>
+		<var
+		id="c72ceda7-0459-457b-8e23-236142b28b9e"
+		name="varCategoryName">
+		</var>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="598c791f-16d1-402e-be64-c34b7d5ccf01">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="71494647-878c-46e7-95bd-8c2697bb5dbe"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'categoryCreateTxnSetting']/div/div/div[@innertext='                Create New Category            ']/..//input[@id='categoryNameTxn']
+				</path>
+			</info>
+			<arguments
+			id="06f0894f-0348-4a2c-88d6-26abbb0e4f97">
+			</arguments>
+		</invokeactionrecorditem>
+		<keysequenceitem
+		KeySequence="Test Category 1"
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="10ms"
+		searchpropertyid="e955601d-44b7-45a7-a7b3-842e5ce71fef">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="varCategoryName">
+				</binding>
+			</bindings>
+			<info
+			id="71494647-878c-46e7-95bd-8c2697bb5dbe"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="810,317,300,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-pristine ng-valid ng-valid-maxlength ng-touched
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						categoryNameTxn
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						25
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-blur"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="no-special-char"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//input[#'categoryNameTxn']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="eb89ad10-cf4a-466b-b18b-b2b76f12661f">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABaAV4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBGYKMngUzzo/736UT/AOpaoU3yA+UIgEwD
+uXO44z+FYylNz5Y22K0Suybzo/736UedH/e/SmeZEpVXTaxxkbcgE+pHFIk0LKxMZGGK48skn9Kf
+LW8vxFeJJ50f979KPOj/AL36Ux5bdACQMYzkITge+BxS+ZBv24GemdnGfTPSjlreX3MLwHedH/e/
+Sjzo/wC9+lNSSCRgFAOQSPl4P402Zgtv5kMaMSRtBGM5NFq3l+IXiSedH/e/Sjzo/wC9+lQieIsp
+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
+KKKACiiigAooooA//9k=
+			</helperscreenshot>
+		</keysequenceitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b171c5fa-f4c0-418d-988c-3a12260485b5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4b738b98-c051-4e8b-b63d-8bff16b5dba3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'categTypeDropDown']
+				</path>
+			</info>
+			<arguments
+			id="5cb10b7c-6ae0-4fd2-b8d6-ced8c4c0ff79">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="e516058e-b422-4991-9062-4b474e5d308c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a0765b92-72ec-4a73-856d-77ff9af0d32d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="divtag"
+				rect="810,402,320,123"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-select open
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						categoryTypeDropTxnSetting
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='categoryCreateTxnSetting']//div[@id='categoryTypeDropTxnSetting']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cc8bb266-6da9-4de0-b91b-589619f5ef4c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8e591e78-16e1-4ead-a7c1-54727703e03d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//?/div[@innertext=$Category_Type]
+				</path>
+			</info>
+			<arguments
+			id="1be42cb7-af0a-4fc1-a602-fe00a5f5fd83">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="df674551-36ae-415a-916b-ae466c7f38e8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fb6123e8-0448-4dbd-8dca-00a9d2bf4d75"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'categoryCreateTxnSetting']/div/div/div[3]/button[@innertext='Create New Category']
+				</path>
+			</info>
+			<arguments
+			id="862b2b0b-121a-4a09-8f85-c5c7ad8feaa1">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="df048fd8-8e92-4b8b-a61f-3a290afea1e0"
+	name="SettingsRepository"
+	relativepath="SettingsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SettingsRepository"
+		namespace="Settings">
+		</codegen>
+		<rootfolder
+		id="33c0cfa5-9691-4af8-86c1-d9dd49f92140"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EnterCategoryNameAndType.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c53f3d57-f874-4f62-b7b8-672354dfb008"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectCertificateOfDeposit"
+	namespace="FirstTimeEnrollment">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da640528-1ca0-425d-99b6-4d8de72aba40">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d58cf463-b089-4985-a854-741449eb7156"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'LoginHDisplay.Rowset1']/div[2]/div/div//div//a[@id='LoginAltFlowSelection3']//p[@innertext='Certificate of Deposit']
+				</path>
+			</info>
+			<arguments
+			id="a42359ba-4a9a-46c6-8a6a-1c20d75e09e0">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="4c5fa514-4fe5-4928-8e85-96f757ba2b16"
+		waitaction="AttributeEqual"
+		waittimeout="15000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1fb3d7ec-57e7-489e-b077-ee98c990f951"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="9cf12f67-7f5b-48fa-b807-4a8fb0c4c554"
+	name="FirstTimeEnrollmentRepository"
+	relativepath="FirstTimeEnrollmentRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="FirstTimeEnrollmentRepository"
+		namespace="FirstTimeEnrollment">
+		</codegen>
+		<rootfolder
+		id="dda86d0c-6bf4-4f03-b4b6-203d7bd49bb7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectCertificateOfDeposit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{87A4EB11-753D-47E7-9307-B697F35C8D66}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Messages_V2</RootNamespace>
+    <AssemblyName>Messages</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>429e6645-d099-46db-9d27-a43e8189c616</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>6d437b54-043f-4667-acb4-4400085fcdd4</id>
+    </Compile>
+    <Compile Include="ComposeTestMessage.cs">
+      <BoundTo>f502b68d-0ce0-4775-98a1-c990f66e3f2b</BoundTo>
+      <DependentUpon>ComposeTestMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4a7b6ddd-f6e0-4474-b50a-aee877953ae0</id>
+    </Compile>
+    <Compile Include="ComposeTestMessage.UserCode.cs">
+      <BoundTo>f502b68d-0ce0-4775-98a1-c990f66e3f2b</BoundTo>
+      <DependentUpon>ComposeTestMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c9aef6b8-5ab8-4add-85be-f89e3eebc8d8</id>
+    </Compile>
+    <Compile Include="SelectAccount.cs">
+      <BoundTo>a8dbebc0-97fb-47d7-aadd-1be435862827</BoundTo>
+      <DependentUpon>SelectAccount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a1626201-3323-4371-a4fe-1eb4f9335159</id>
+    </Compile>
+    <Compile Include="SelectAccount.UserCode.cs">
+      <BoundTo>a8dbebc0-97fb-47d7-aadd-1be435862827</BoundTo>
+      <DependentUpon>SelectAccount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>22e864e2-e85b-48cd-94f0-dd24c1a7f70f</id>
+    </Compile>
+    <Compile Include="SelectComposeSendMessageButton.cs">
+      <BoundTo>f46dd4e3-8fa9-406d-be35-8e6a0ece2277</BoundTo>
+      <DependentUpon>SelectComposeSendMessageButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61191f63-a84b-42ac-9329-a3b320dee369</id>
+    </Compile>
+    <Compile Include="SelectComposeSendMessageButton.UserCode.cs">
+      <BoundTo>f46dd4e3-8fa9-406d-be35-8e6a0ece2277</BoundTo>
+      <DependentUpon>SelectComposeSendMessageButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a4b017c9-9391-4918-a704-104c9bd6e591</id>
+    </Compile>
+    <Compile Include="SelectSubject.cs">
+      <BoundTo>e5ef1d99-5507-4079-9a51-f6a494aef8c6</BoundTo>
+      <DependentUpon>SelectSubject.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d8651fe-b888-4ad0-b459-88c55ac77215</id>
+    </Compile>
+    <Compile Include="SelectSubject.UserCode.cs">
+      <BoundTo>e5ef1d99-5507-4079-9a51-f6a494aef8c6</BoundTo>
+      <DependentUpon>SelectSubject.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>890d6285-ce86-4769-80e7-af38a8e56a93</id>
+    </Compile>
+    <Compile Include="ComposeNewMessageModalValidation.cs">
+      <BoundTo>351b8dce-9a6d-48d1-ae54-a78c4f22c2ba</BoundTo>
+      <DependentUpon>ComposeNewMessageModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>00096461-c069-4ea6-9c39-ca9fdd62cc01</id>
+    </Compile>
+    <Compile Include="ComposeNewMessageModalValidation.UserCode.cs">
+      <BoundTo>351b8dce-9a6d-48d1-ae54-a78c4f22c2ba</BoundTo>
+      <DependentUpon>ComposeNewMessageModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f49a690-71a9-4d68-aacb-7d78f11795db</id>
+    </Compile>
+    <Compile Include="MessagesRepository.cs">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <DependentUpon>MessagesRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>7503f534-038d-46ca-a692-7fbab5344ba6</id>
+    </Compile>
+    <Compile Include="MessageViewValidation.cs">
+      <BoundTo>ecabdc00-f5f8-4cb0-b217-b24c11e94696</BoundTo>
+      <DependentUpon>MessageViewValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6652c634-a8c7-43eb-9946-f0bcf47c5eb9</id>
+    </Compile>
+    <Compile Include="MessageViewValidation.UserCode.cs">
+      <BoundTo>ecabdc00-f5f8-4cb0-b217-b24c11e94696</BoundTo>
+      <DependentUpon>MessageViewValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d388db16-437e-4e5c-9d58-2ae64e4732eb</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>0c4e6233-b745-4269-b4fb-2890ef85a40a</id>
+    </Compile>
+    <Compile Include="InboxTabValidation.cs">
+      <BoundTo>ed98a461-1402-449e-b0e1-a753efe131c6</BoundTo>
+      <DependentUpon>InboxTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99614630-5010-4fcc-8973-cbaf1ed9468f</id>
+    </Compile>
+    <Compile Include="InboxTabValidation.UserCode.cs">
+      <BoundTo>ed98a461-1402-449e-b0e1-a753efe131c6</BoundTo>
+      <DependentUpon>InboxTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6a8226a1-acf6-4aca-8185-e257dae220f5</id>
+    </Compile>
+    <Compile Include="ReplyNewMessageModalValidation.cs">
+      <BoundTo>8d671e3a-2b13-401c-9928-123e9584c7fe</BoundTo>
+      <DependentUpon>ReplyNewMessageModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0d7a2d4-1668-4ee4-8244-86a3ff133d4a</id>
+    </Compile>
+    <Compile Include="ReplyNewMessageModalValidation.UserCode.cs">
+      <BoundTo>8d671e3a-2b13-401c-9928-123e9584c7fe</BoundTo>
+      <DependentUpon>ReplyNewMessageModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f8c2ea6f-1dcb-4168-9b30-f2e6e21ab4a8</id>
+    </Compile>
+    <Compile Include="SelectBackButton.cs">
+      <BoundTo>b00f5311-f8e0-462d-9e55-2d3ac466729d</BoundTo>
+      <DependentUpon>SelectBackButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2bd672b2-baed-4184-baf5-1e117f434b55</id>
+    </Compile>
+    <Compile Include="SelectBackButton.UserCode.cs">
+      <BoundTo>b00f5311-f8e0-462d-9e55-2d3ac466729d</BoundTo>
+      <DependentUpon>SelectBackButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d8aaa05a-41aa-4097-8143-f4afa1223171</id>
+    </Compile>
+    <Compile Include="SelectCancelReplyButton.cs">
+      <BoundTo>a497c309-cea4-4c6c-8615-7439fecc543e</BoundTo>
+      <DependentUpon>SelectCancelReplyButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f7d4b86c-f84f-40e5-8e96-3a59b12b8354</id>
+    </Compile>
+    <Compile Include="SelectCancelReplyButton.UserCode.cs">
+      <BoundTo>a497c309-cea4-4c6c-8615-7439fecc543e</BoundTo>
+      <DependentUpon>SelectCancelReplyButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>badadaa4-27d5-45c3-a40d-8bbc407dbf80</id>
+    </Compile>
+    <Compile Include="SelectComposeNewMessage.cs">
+      <BoundTo>d0daeb2e-fa45-4b8f-b39b-c1198ec38658</BoundTo>
+      <DependentUpon>SelectComposeNewMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e7e394e4-9f5c-4bae-938f-fab830c2358a</id>
+    </Compile>
+    <Compile Include="SelectComposeNewMessage.UserCode.cs">
+      <BoundTo>d0daeb2e-fa45-4b8f-b39b-c1198ec38658</BoundTo>
+      <DependentUpon>SelectComposeNewMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>057739b2-247a-4a1e-97b2-2e5a7de7cb9b</id>
+    </Compile>
+    <Compile Include="SelectFirstInboxMessage.cs">
+      <BoundTo>83b1534f-c1e1-4227-9c01-6efdb9244755</BoundTo>
+      <DependentUpon>SelectFirstInboxMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2a4d4d2a-fe05-4b95-bdd6-3cbfbaaaac9d</id>
+    </Compile>
+    <Compile Include="SelectFirstInboxMessage.UserCode.cs">
+      <BoundTo>83b1534f-c1e1-4227-9c01-6efdb9244755</BoundTo>
+      <DependentUpon>SelectFirstInboxMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ce4d232-a1f5-4add-94f1-53fa649e15d3</id>
+    </Compile>
+    <Compile Include="SelectFirstTrashMessage.cs">
+      <BoundTo>97fec872-e0aa-47c3-a03f-c6fed7983331</BoundTo>
+      <DependentUpon>SelectFirstTrashMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>40a9bc1c-8dcc-44e5-b386-0bc77ed85f44</id>
+    </Compile>
+    <Compile Include="SelectFirstTrashMessage.UserCode.cs">
+      <BoundTo>97fec872-e0aa-47c3-a03f-c6fed7983331</BoundTo>
+      <DependentUpon>SelectFirstTrashMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>348f3bfe-3d81-4f19-80e5-1faeb524e2ff</id>
+    </Compile>
+    <Compile Include="SelectMoveToTrash.cs">
+      <BoundTo>cbfbfc01-1dba-4639-9adf-479a92d4ad8b</BoundTo>
+      <DependentUpon>SelectMoveToTrash.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1109a14d-25cf-4d76-abb0-680d8a6e1647</id>
+    </Compile>
+    <Compile Include="SelectMoveToTrash.UserCode.cs">
+      <BoundTo>cbfbfc01-1dba-4639-9adf-479a92d4ad8b</BoundTo>
+      <DependentUpon>SelectMoveToTrash.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db0cec9a-e031-4568-b84b-bbe92f46fd5d</id>
+    </Compile>
+    <Compile Include="SelectReplyButton.cs">
+      <BoundTo>f72c7b61-08b3-4445-85c1-129e79918499</BoundTo>
+      <DependentUpon>SelectReplyButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c06a9383-a5aa-4f63-a7de-942c5a1ef419</id>
+    </Compile>
+    <Compile Include="SelectReplyButton.UserCode.cs">
+      <BoundTo>f72c7b61-08b3-4445-85c1-129e79918499</BoundTo>
+      <DependentUpon>SelectReplyButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6bd39064-c934-4394-a317-ea94ef332ff5</id>
+    </Compile>
+    <Compile Include="SelectRestoreMessage.cs">
+      <BoundTo>343926fd-269e-4c0d-8044-b6e94537e663</BoundTo>
+      <DependentUpon>SelectRestoreMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>25dae5ed-c9b3-433d-a665-748ca4662fa9</id>
+    </Compile>
+    <Compile Include="SelectRestoreMessage.UserCode.cs">
+      <BoundTo>343926fd-269e-4c0d-8044-b6e94537e663</BoundTo>
+      <DependentUpon>SelectRestoreMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f25a4232-f74c-46b4-b2a8-c1435a7f4022</id>
+    </Compile>
+    <Compile Include="SelectSendMessageButton.cs">
+      <BoundTo>14d06425-a92a-4e80-a2be-9caee3169db9</BoundTo>
+      <DependentUpon>SelectSendMessageButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b5a03c1-0f51-48a9-85aa-54c80e9b7173</id>
+    </Compile>
+    <Compile Include="SelectSendMessageButton.UserCode.cs">
+      <BoundTo>14d06425-a92a-4e80-a2be-9caee3169db9</BoundTo>
+      <DependentUpon>SelectSendMessageButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>93a66a42-121c-4387-9c25-f621eea689a4</id>
+    </Compile>
+    <Compile Include="SelectSentTab.cs">
+      <BoundTo>84b599b6-d291-41bd-b415-d04ab01d5f49</BoundTo>
+      <DependentUpon>SelectSentTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b67e81b8-9607-4261-80c1-8b8aaed0fd75</id>
+    </Compile>
+    <Compile Include="SelectSentTab.UserCode.cs">
+      <BoundTo>84b599b6-d291-41bd-b415-d04ab01d5f49</BoundTo>
+      <DependentUpon>SelectSentTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>44e5a7ca-ca8f-4fd9-ac96-0de25cbd67ca</id>
+    </Compile>
+    <Compile Include="SelectMessagesTab.cs">
+      <BoundTo>6989e57c-7068-48f6-8a0e-9fea6de2e1fe</BoundTo>
+      <DependentUpon>SelectMessagesTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a4582e41-a348-4679-8c4d-a5515d5196b2</id>
+    </Compile>
+    <Compile Include="SelectMessagesTab.UserCode.cs">
+      <BoundTo>6989e57c-7068-48f6-8a0e-9fea6de2e1fe</BoundTo>
+      <DependentUpon>SelectMessagesTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7513a40-d9f7-4793-bf72-9023e6ef3012</id>
+    </Compile>
+    <Compile Include="SelectTrashTab.cs">
+      <BoundTo>1e0c924f-3ac1-4846-a36a-4b7885431c9a</BoundTo>
+      <DependentUpon>SelectTrashTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3eba1273-4fa8-4b2f-84da-9cfd7c4bbb82</id>
+    </Compile>
+    <Compile Include="SelectTrashTab.UserCode.cs">
+      <BoundTo>1e0c924f-3ac1-4846-a36a-4b7885431c9a</BoundTo>
+      <DependentUpon>SelectTrashTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f1b2ce2-46b2-4a2f-9a4f-85978ff6f4a3</id>
+    </Compile>
+    <Compile Include="SentTabValidation.cs">
+      <BoundTo>f24a4b14-47c0-4d1a-85de-8ad135ab23fe</BoundTo>
+      <DependentUpon>SentTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1780e70-eab7-48af-b8ba-8fb46d57be11</id>
+    </Compile>
+    <Compile Include="SentTabValidation.UserCode.cs">
+      <BoundTo>f24a4b14-47c0-4d1a-85de-8ad135ab23fe</BoundTo>
+      <DependentUpon>SentTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65265d56-0730-4a8b-a34e-69eb12158130</id>
+    </Compile>
+    <Compile Include="TrashTabValidation.cs">
+      <BoundTo>94b55d58-f978-4101-8f8a-915383d62437</BoundTo>
+      <DependentUpon>TrashTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ab03065b-86cc-45cb-b4cc-287cb6bdd25f</id>
+    </Compile>
+    <Compile Include="TrashTabValidation.UserCode.cs">
+      <BoundTo>94b55d58-f978-4101-8f8a-915383d62437</BoundTo>
+      <DependentUpon>TrashTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>617df12c-bcd2-4e7e-98d4-83d40612a704</id>
+    </Compile>
+    <Compile Include="TrashMessageValidation.cs">
+      <BoundTo>36d64393-7a0f-4476-bcf2-b293426e9a15</BoundTo>
+      <DependentUpon>TrashMessageValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f6f5dbfc-b35c-4314-8433-5ef1014dc7e9</id>
+    </Compile>
+    <Compile Include="TrashMessageValidation.UserCode.cs">
+      <BoundTo>36d64393-7a0f-4476-bcf2-b293426e9a15</BoundTo>
+      <DependentUpon>TrashMessageValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32e48cad-7d12-41f0-9c35-d0766f891669</id>
+    </Compile>
+    <Compile Include="WriteReplyMessage.cs">
+      <BoundTo>1c35568b-9a5e-43e8-92e1-b9a76d85b4ec</BoundTo>
+      <DependentUpon>WriteReplyMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c179ba8-dfc6-4638-83ba-d93e7902cdb3</id>
+    </Compile>
+    <Compile Include="WriteReplyMessage.UserCode.cs">
+      <BoundTo>1c35568b-9a5e-43e8-92e1-b9a76d85b4ec</BoundTo>
+      <DependentUpon>WriteReplyMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>90b9f748-afa1-4ff6-a760-6454f526b5d5</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>04295ec5-c40a-41b0-a531-b2ac5fc3a457</id>
+    </None>
+    <None Include="ComposeTestMessage.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>f502b68d-0ce0-4775-98a1-c990f66e3f2b</id>
+      <recordtableid>62a53c19-7e3f-42ac-a716-e04704c1929b</recordtableid>
+    </None>
+    <None Include="SelectAccount.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>a8dbebc0-97fb-47d7-aadd-1be435862827</id>
+      <recordtableid>fa23aca8-689f-4809-9019-b9ad2dee52f3</recordtableid>
+    </None>
+    <None Include="SelectComposeSendMessageButton.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>f46dd4e3-8fa9-406d-be35-8e6a0ece2277</id>
+      <recordtableid>72b23622-f9dc-45d1-b9d8-d7c941350514</recordtableid>
+    </None>
+    <None Include="SelectSubject.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>e5ef1d99-5507-4079-9a51-f6a494aef8c6</id>
+      <recordtableid>8e0f5f15-573a-4be7-9ddd-170e408c1586</recordtableid>
+    </None>
+    <None Include="ComposeNewMessageModalValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>351b8dce-9a6d-48d1-ae54-a78c4f22c2ba</id>
+      <recordtableid>8ba88b49-9445-4304-9694-38181483ca9c</recordtableid>
+    </None>
+    <None Include="MessagesRepository.rximg">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <DependentUpon>MessagesRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e111c303-37c9-4032-b685-9503839c951f</id>
+    </None>
+    <None Include="MessagesRepository.rxrep">
+      <id>429e6645-d099-46db-9d27-a43e8189c616</id>
+      <repoid>dd901a56-1ce2-4387-a837-191d053f9b6a</repoid>
+      <reporootid>482c6468-9265-46f2-b021-81da69b24502</reporootid>
+    </None>
+    <None Include="InboxTabValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>ed98a461-1402-449e-b0e1-a753efe131c6</id>
+      <recordtableid>065bcd6f-80f1-4346-8697-c8117dd4fdc6</recordtableid>
+    </None>
+    <None Include="MessageViewValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>ecabdc00-f5f8-4cb0-b217-b24c11e94696</id>
+      <recordtableid>cfa8b5f1-a776-4017-9c75-51785f4607d2</recordtableid>
+    </None>
+    <None Include="ReplyNewMessageModalValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>8d671e3a-2b13-401c-9928-123e9584c7fe</id>
+      <recordtableid>13349cb5-436a-4709-ae11-996a2117801f</recordtableid>
+    </None>
+    <None Include="SelectBackButton.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>b00f5311-f8e0-462d-9e55-2d3ac466729d</id>
+      <recordtableid>7dd86a51-3168-48c9-ab75-54a2afa1e33a</recordtableid>
+    </None>
+    <None Include="SelectCancelReplyButton.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>a497c309-cea4-4c6c-8615-7439fecc543e</id>
+      <recordtableid>d7281d49-8794-45d6-89f8-a6f855fb8b96</recordtableid>
+    </None>
+    <None Include="SelectComposeNewMessage.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>d0daeb2e-fa45-4b8f-b39b-c1198ec38658</id>
+      <recordtableid>64ef70e0-f5d4-4cf5-94c3-fbe75791edf8</recordtableid>
+    </None>
+    <None Include="SelectFirstInboxMessage.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>83b1534f-c1e1-4227-9c01-6efdb9244755</id>
+      <recordtableid>22b56e6b-f8c3-4912-be21-267f907ee11f</recordtableid>
+    </None>
+    <None Include="SelectFirstTrashMessage.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>97fec872-e0aa-47c3-a03f-c6fed7983331</id>
+      <recordtableid>7e479797-e1e7-49dd-9e69-a25b0d365f8f</recordtableid>
+    </None>
+    <None Include="SelectMoveToTrash.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>cbfbfc01-1dba-4639-9adf-479a92d4ad8b</id>
+      <recordtableid>d1b6d0f3-fe6d-4a45-bd6a-e680624f81a3</recordtableid>
+    </None>
+    <None Include="SelectReplyButton.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>f72c7b61-08b3-4445-85c1-129e79918499</id>
+      <recordtableid>70578d52-e6b3-44e3-8ff5-c056422f4d89</recordtableid>
+    </None>
+    <None Include="SelectRestoreMessage.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>343926fd-269e-4c0d-8044-b6e94537e663</id>
+      <recordtableid>6405adcd-4609-44f3-96db-b2d602a2c00a</recordtableid>
+    </None>
+    <None Include="SelectSendMessageButton.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>14d06425-a92a-4e80-a2be-9caee3169db9</id>
+      <recordtableid>3c48847d-f0dd-4e1c-9d7a-2701de9dacb9</recordtableid>
+    </None>
+    <None Include="SelectSentTab.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>84b599b6-d291-41bd-b415-d04ab01d5f49</id>
+      <recordtableid>bcaac6ec-8b41-49c1-bd8d-20caa93a6331</recordtableid>
+    </None>
+    <None Include="SelectMessagesTab.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>6989e57c-7068-48f6-8a0e-9fea6de2e1fe</id>
+      <recordtableid>d3086322-013c-4ccc-a2ce-ac0b95b1617d</recordtableid>
+    </None>
+    <None Include="SelectTrashTab.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>1e0c924f-3ac1-4846-a36a-4b7885431c9a</id>
+      <recordtableid>147d8bdb-f9dd-4eca-96a2-b2774b7b2be1</recordtableid>
+    </None>
+    <None Include="SentTabValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>f24a4b14-47c0-4d1a-85de-8ad135ab23fe</id>
+      <recordtableid>1d6acbe4-1e31-49f9-bcea-b38571438015</recordtableid>
+    </None>
+    <None Include="TrashTabValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>94b55d58-f978-4101-8f8a-915383d62437</id>
+      <recordtableid>ad39f359-1182-4fcc-bb5f-0787f4465f0a</recordtableid>
+    </None>
+    <None Include="TrashMessageValidation.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>36d64393-7a0f-4476-bcf2-b293426e9a15</id>
+      <recordtableid>8ec39860-48e2-45f0-aa36-50d3363c1d8b</recordtableid>
+    </None>
+    <None Include="WriteReplyMessage.rxrec">
+      <BoundTo>429e6645-d099-46db-9d27-a43e8189c616</BoundTo>
+      <id>1c35568b-9a5e-43e8-92e1-b9a76d85b4ec</id>
+      <recordtableid>4c1cfd28-7db5-48ac-b5c8-f336a8239d91</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Messages.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>298385b1-8e29-47ff-89fb-5be2ea9ed0df</id>
+    </Content>
+    <Content Include="Messages.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>833c8336-5f29-4520-9d80-1117af7d7e5b</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

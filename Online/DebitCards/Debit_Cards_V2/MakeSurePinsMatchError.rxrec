@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="17ca3724-6f8e-43fd-9110-e6a736d28ee3"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MakeSurePinsMatchError"
+	namespace="Debit_Cards_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="96c88528-86a2-45d8-8cf0-837b32fa61b9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0da24ea7-8281-4b25-937c-bdfaa0629110"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="spantag"
+				rect="793,577,242,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						error-transfer
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Error: Please make sure your PINs match.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'changePinWithoutRsaModal']//span[@innertext='Error: Please make sure your PINs match.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="9b55bd05-b068-459d-8c16-2c6d2844c24c"
+	name="DebitCardsRepository"
+	relativepath="DebitCardsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="DebitCardsRepository"
+		namespace="Debit_Cards_V2">
+		</codegen>
+		<rootfolder
+		id="193247be-98ed-44ae-8ef7-b0f5c715eb32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MakeSurePinsMatchError.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

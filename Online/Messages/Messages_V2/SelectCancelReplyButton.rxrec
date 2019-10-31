@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d7281d49-8794-45d6-89f8-a6f855fb8b96"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectCancelReplyButton"
+	namespace="Messages_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7736e398-b781-4d6a-809c-34e1c68e2b87">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1efaba3d-e22f-49ec-8555-57782ae9c901"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'replyCompose']//div[@id='mailComposeFooter']/button[@innertext='Cancel']
+				</path>
+			</info>
+			<arguments
+			id="002087b8-8e37-454b-8400-0b97d473a0c5">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="dd901a56-1ce2-4387-a837-191d053f9b6a"
+	name="MessagesRepository"
+	relativepath="MessagesRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="MessagesRepository"
+		namespace="Messages_V2">
+		</codegen>
+		<rootfolder
+		id="482c6468-9265-46f2-b021-81da69b24502"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectCancelReplyButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

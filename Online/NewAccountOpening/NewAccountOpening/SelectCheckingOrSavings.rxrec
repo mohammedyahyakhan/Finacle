@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="97228b04-05f4-496d-8edb-3ad0885d4cef"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectCheckingOrSavings"
+	namespace="NewAccountOpening">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="aaf55062-be3a-4c9e-87aa-aacf217cff84">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a8dcd71b-473b-4f50-afcb-6f7fae5dd802"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='compare-checking-saving-modal-aco']//div[@id=$CheckingOrSavings]
+				</path>
+			</info>
+			<arguments
+			id="b54cbc06-5722-4d55-aad2-302fc6ce2178">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="43f8899f-3396-4bcb-9252-5a0dc0f6235e"
+	name="NewAccountOpeningRepository"
+	relativepath="NewAccountOpeningRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="NewAccountOpeningRepository"
+		namespace="NewAccountOpening">
+		</codegen>
+		<rootfolder
+		id="1e4e825b-76fc-4ac2-b4f1-b5e5aaa2538c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectCheckingOrSavings.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

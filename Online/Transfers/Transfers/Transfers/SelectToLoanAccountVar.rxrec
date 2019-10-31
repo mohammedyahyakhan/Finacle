@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="de844fe6-52b0-49b5-8408-ab697f6fb0fb"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectToLoanAccountVar"
+	namespace="Transfersv2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1c6bb553-377b-45f8-b0df-705f51083818">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dfc08762-eeca-466e-b20c-38e7022f0475"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="divtag"
+				rect="798,391,280,50"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fixed-select
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						toAccTabS
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'transfersmodal1']//div[@class='modal-content']//div[@id='toAccTabS']
+				</path>
+			</info>
+			<arguments
+			id="7ba0e364-f7b5-4184-a391-63405f95bc9a">
+			</arguments>
+		</invokeactionrecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1c6bb553-377b-45f8-b0df-705f51083818">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fa2092f5-0c4d-4a0c-927a-c4c2c0580f48"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'transfersmodal1']//div[@class='modal-content']//div[@id='toAccTxn']//span[@innertext='*0992-00001' and @visible='true']/../..
+				</path>
+			</info>
+			<arguments
+			id="7ba0e364-f7b5-4184-a391-63405f95bc9a">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="7dc0dba0-52e4-4bc4-bc85-323893000aaf"
+	name="TransfersRepository"
+	relativepath="TransfersRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="TransfersRepository"
+		namespace="Transfersv2">
+		</codegen>
+		<rootfolder
+		id="9b277dff-e3ee-462f-9f9f-8036eaf5ede0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectToLoanAccountVar.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

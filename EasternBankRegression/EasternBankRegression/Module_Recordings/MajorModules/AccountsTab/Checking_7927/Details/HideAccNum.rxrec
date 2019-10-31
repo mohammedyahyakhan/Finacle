@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="77fc4312-703e-467e-8ce7-1dd61114fe2e"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="HideAccNum"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab.Checking_7927.Details">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Performclick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7359e9b5-034d-4e66-a427-2835ec65c2b4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a06e403-0fa4-4107-98f1-c3e6a761fc47"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//a[#'hideTxt']
+				</path>
+			</info>
+			<arguments
+			id="647876c7-51a0-4b4e-9a7b-1d9999ca83dd">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		HideAccNum.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

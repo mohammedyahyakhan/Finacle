@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="22b56e6b-f8c3-4912-be21-267f907ee11f"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectFirstInboxMessage"
+	namespace="Messages_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="523273f3-ad6c-4aaf-ae4e-df555cade446">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="abab1372-62db-412a-8ff9-24e22d8e2817"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='txnTabbb-msgs']//table[@class='table purchase-table']/tbody/tr[1]
+				</path>
+			</info>
+			<arguments
+			id="7bc37ba5-b8da-4766-9d83-5b2c6f56fd75">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="3ea292bc-9079-4c13-a2b0-f03855774394"
+		waitaction="AttributeEqual"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b717b59-1972-4479-984e-4b8091a5fdca"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='txnTabbb-msgs']//div[@id='msgFrom']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="dd901a56-1ce2-4387-a837-191d053f9b6a"
+	name="MessagesRepository"
+	relativepath="MessagesRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="MessagesRepository"
+		namespace="Messages_V2">
+		</codegen>
+		<rootfolder
+		id="482c6468-9265-46f2-b021-81da69b24502"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectFirstInboxMessage.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

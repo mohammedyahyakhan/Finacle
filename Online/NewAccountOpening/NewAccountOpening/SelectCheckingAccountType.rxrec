@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a0daa547-2d19-4ab1-8749-191638536999"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectCheckingAccountType"
+	namespace="NewAccountOpening">
+	</codegen>
+	<variables>
+		<var
+		id="4e1183da-5db6-410d-856a-bcc6ac8b0952"
+		name="Title">
+		</var>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c1d383bd-8366-4c77-9955-046d4cdf23d2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5bbc575d-ccbf-40cb-a7f9-dcba20612a19"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='compare-checking-saving-modal-aco']//div[@class='modal-body eb-modal-body']//h1[@innertext=$CheckingAccountType]/../../..//buttontag
+				</path>
+			</info>
+			<arguments
+			id="dab91817-84e9-4e9a-9d5c-609a65e9dbec">
+			</arguments>
+		</invokeactionrecorditem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d8f3f3f7-fea4-4150-9782-f3b693368920"
+		sx="1027"
+		sy="492"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="296c2889-d42c-4590-b76c-ab09d82b3c10"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="buttontag"
+				rect="991,472,112,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						yes-premierChecking-modal
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Yes, Continue
+                       &#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//button[#'yes-premierChecking-modal']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6d6a801f-b608-481a-a0d6-87acc129f65a">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="661fd7fb-2337-43ed-ab85-14381066604c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="464fa8cd-a848-4113-bf69-3806f1a3583e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accountOpeningFundAcc']//h1[@innertext='Open My Premier Checking Account']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="43f8899f-3396-4bcb-9252-5a0dc0f6235e"
+	name="NewAccountOpeningRepository"
+	relativepath="NewAccountOpeningRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="NewAccountOpeningRepository"
+		namespace="NewAccountOpening">
+		</codegen>
+		<rootfolder
+		id="1e4e825b-76fc-4ac2-b4f1-b5e5aaa2538c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectCheckingAccountType.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

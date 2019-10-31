@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a37f0404-cfc6-4691-9880-41ca8afea23f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSavingsAccountType"
+	namespace="NewAccountOpening">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e494cfa2-2843-4f04-9402-3c58c77e3f44">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3b1bcd9c-0b7d-4c9c-b2c1-90d36c72be59"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='compare-checking-saving-modal-aco']//div[@class='modal-body eb-modal-body']//div[@id='saving-statement-div']//buttontag[@id=$SavingsAccountType]
+				</path>
+			</info>
+			<arguments
+			id="c21cafbf-13c0-4a97-8cc9-7eb9bb43a703">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="43f8899f-3396-4bcb-9252-5a0dc0f6235e"
+	name="NewAccountOpeningRepository"
+	relativepath="NewAccountOpeningRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="NewAccountOpeningRepository"
+		namespace="NewAccountOpening">
+		</codegen>
+		<rootfolder
+		id="1e4e825b-76fc-4ac2-b4f1-b5e5aaa2538c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSavingsAccountType.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c8b671c8-9954-4b66-b4cd-15c2ac8f87e9"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="TransferNowMakeTransfer"
+	namespace="Transfersv2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9dbaee47-739d-40c2-b967-fbfadb744855">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b6d8d9fe-12e7-40ea-bf87-169037555724"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//button[#'makeTransferInstitute']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="7dc0dba0-52e4-4bc4-bc85-323893000aaf"
+	name="TransfersRepository"
+	relativepath="TransfersRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="TransfersRepository"
+		namespace="Transfersv2">
+		</codegen>
+		<rootfolder
+		id="9b277dff-e3ee-462f-9f9f-8036eaf5ede0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		TransferNowMakeTransfer.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

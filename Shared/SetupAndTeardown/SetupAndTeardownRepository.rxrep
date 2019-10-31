@@ -1,0 +1,523 @@
+﻿<repository
+id="193e05d3-4da7-4bae-a93d-bc21bc09291f"
+name="SetupAndTeardownRepository"
+rxversion="9.0">
+	<codegen
+	classname="SetupAndTeardownRepository"
+	namespace="Login">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="5bfca4d2-e75d-48d4-811e-7ec90b3e7c33"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="webdocument"
+		id="53dac7b1-0df7-4c8a-bc5b-6e2657c82d8b"
+		isrooted="True"
+		name="Finacle"
+		refimgid="87aae72c-0dbc-4dab-9d76-eac93bb0bedf"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="6321f47b-c2d4-43fb-88db-ed6d535b17c2"
+			name="InvalidUNorPWError"
+			refimgid="e7c65be0-a47c-435e-9bc9-21e648245294"
+			searchtimeout="30000ms">
+				/dom[@domain~'fnclmob.']//div[#'MessageDisplay_TABLE']/div[@innertext='You have entered an invalid username or password. Please try again or call us at 1-800-457-2043 if you need assistance.']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="dfbdcf83-1e6d-4071-b4a5-fea766c3a670"
+			name="DropdownMenu"
+			refimgid="711e86f0-9227-4dbb-9b61-a18b3f125bf1"
+			searchtimeout="30000ms">
+				/dom[@domain~'fnclmob.']//img[@id='eyeDark']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="19fc628a-cad5-447a-a658-df6d99b5d1f1"
+			name="SignOut"
+			refimgid="21a103cd-2576-455f-814a-9e905da2099b"
+			searchtimeout="30000ms">
+				/dom[@domain~'fnclmob.']//a[@id='HREF_Logout1']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="fd068e39-bc54-40c3-8859-1aaf8434c394"
+			isrooted="True"
+			name="SupportPageColMd24"
+			refpath="/dom[@domain='fnclmobqa.easternbank.com:8543' and @caption='https://fnclmobqa.easternbank.com:8543/angular/Contact_Us.html']/body/div[2]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="8fdba62a-3fa3-4b00-b343-d18d2d292ae3"
+				name="CallUs"
+				refimgid="39d7f840-160e-428a-9a85-41740e2f15bf"
+				refpath="/dom[@domain='fnclmobqa.easternbank.com:8543' and @caption='https://fnclmobqa.easternbank.com:8543/angular/Contact_Us.html']/body/div[2]/div/div/div/div[@innertext='Call Us']"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@innertext='Call Us']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a369418b-2a4c-4365-9686-ba474ff7e785"
+				name="AutomatedAccountInfo"
+				refimgid="5e3de1c7-7a4e-4efc-a5ef-c2418c330952"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//div[@innertext='Eastern Bank''s automated account information line is open 24 hours a day, 7 days a week.']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="e4d4335b-8935-46ff-873b-6ec293d4281f"
+				name="AutomatedAccountNumber"
+				refimgid="2156bb97-a9a4-4c4d-a0fe-3ca62465f232"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//div[@innertext='   1-800-EASTERN (327-8376)  ']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="3ad16830-f2fa-4c6d-a539-056beaf3d5f7"
+				name="SupportNumber"
+				refimgid="b88d7f1b-e836-4c71-bacb-da7ffeccf4d7"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//a[@innertext='1-800-457-2043']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="19c9e5ec-b218-455f-b3e6-dcb9beb92a0f"
+				name="OnlineBankingSupportHeader"
+				refimgid="91cca887-94af-4fb3-99af-083f4ab1175c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//p[@innertext=' Online Banking Support ']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="0e2d760a-92ab-49aa-b05c-e09b6207c7e8"
+				name="BusinessInquiriesNumber"
+				refimgid="6d5339ec-0ea6-437b-9155-5eb969152bf2"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//a[@innertext='1-800-333-8000']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="e11f07bc-3da5-4a4a-bfd3-3a5d22f1f422"
+				name="BusinessInquiriesHeader"
+				refimgid="a6bfbcc0-d104-440f-b995-2fb56395849c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//p[@innertext=' Business Account Inquiries ']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="11cdc4a3-6408-43d5-83ef-63638f065c77"
+				name="DaysAvailable"
+				refimgid="b2bee69e-ac24-4499-97bf-652eb01ac53a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//p[@innertext='Mon - Fri ']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="4043f01e-3b05-43c8-ba2b-040e07084d63"
+				name="HoursAvailable"
+				refimgid="d6536ad3-3d01-454f-a54b-0c1d8b1064d3"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']/body/div[2]//div[@class='call-us-panel']//p/span[@innertext='8:00 AM - 6:00 PM']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']/body/div[2]
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="a53edab7-3f18-4f98-ae54-c3d32fe46d6b"
+			name="Locn"
+			refimgid="ebda6e7b-8888-41a1-8dcb-f270636d5902"
+			searchtimeout="30000ms">
+				/dom[@domain~'fnclmob.']//div[@id='wrapper1']//a[@innertext='Locations and Hours']
+			</item>
+			<folder
+			capname="divtag"
+			id="54d0fb94-968e-4252-82b7-b9255e39fcc7"
+			isrooted="True"
+			name="LoginModal"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="00e07eac-876a-4aac-a437-3f438449cc18"
+				name="EasternBankLogo"
+				refimgid="5c5a3691-d307-44af-ab93-84865bfab694"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//img[@src~'eastern-bank-consumer-logo.png$']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="fa490286-e6d9-4eee-8f2f-66d3ff9cdf54"
+				name="UsernameField"
+				refimgid="a674ae71-2e62-4cd4-93f0-d48e90debfd2"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[#'AuthenticationFG.USER_PRINCIPAL']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="b2f0435a-d283-4011-90b0-3919c04d8565"
+				name="PasswordField"
+				refimgid="c0ebb35a-9842-4c07-a9df-fb702e9b28f0"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[#'AuthenticationFG.ACCESS_CODE_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f8b47813-b0bb-458f-b567-814fe17e64de"
+				name="SignInButton"
+				refimgid="a9a25f7c-7186-4d6a-b0f9-c8d0e4e37434"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[#'VALIDATE_CREDENTIALS1']
+				</item>
+				<item
+				capname="unknown"
+				id="114068d0-2eb6-4505-99ab-20c75bb31324"
+				name="kjghugytyuyioyuyouiyyuio"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']/element
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="a3e42873-21e3-4bf3-b0e0-13721bbaef5a"
+			isrooted="True"
+			name="Footer"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="atag"
+				id="4f319697-479f-4173-85a9-38dfd904a93c"
+				name="ContactUsButton"
+				refimgid="da3773f5-e101-484f-94f8-957d21fb167a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@class='footer']//a[@id='PrivacyPolicyfooter3']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//div[@class='footer']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="3de573a1-2a80-4770-956f-f153642de045"
+			isrooted="True"
+			name="WelcomeArea"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="58bec783-fd89-494b-b66b-91d37288742b"
+				name="WelcomeMessage"
+				refimgid="dd1d9325-9fb1-4b29-aa24-334f984d4d0e"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@class='account-bg']//div[@innertext='Welcome!']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="8b77d9cc-fcf2-4f1b-a836-3ad1d5ca8fcc"
+				name="LastLogin"
+				refimgid="850a39c9-52e9-4dfb-a1c6-43e01a98d69a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@class='account-bg']//div[@innertext~'Last Login.']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="540f9028-ff26-485d-86f4-944bba41692a"
+				name="SearchBox"
+				refimgid="15b63e4f-8f76-407d-9add-81b335f927d6"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@class='account-bg']//div[#'accounts-landing-view']//input[@type='text']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//div[@class='account-bg']
+				</basepath>
+			</folder>
+			<folder
+			capname="webdocument"
+			id="a86f5879-ca92-4284-a700-9f705f563189"
+			isrooted="True"
+			name="AccountsDashboard"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f43ef598-208d-4b92-88ac-a9b29c589733"
+				name="SearchAccountsInputBox"
+				refimgid="66f10983-b262-41fa-a7e8-6b703aa952d4"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='accounts-landing-view']//input[@id='searchInput']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']
+				</basepath>
+			</folder>
+			<item
+			capname="buttontag"
+			id="f52ad2a3-4ac6-43db-b0c7-24ac3b613075"
+			name="CheckingAccountVariable"
+			searchtimeout="30000ms">
+				/dom[@domain~'fnclmob.']//div[@id='compare-checking-saving-modal-aco']//div[@class='modal-body eb-modal-body']//buttontag[@id=$CheckingAccountType]
+			</item>
+			<item
+			capname="h1tag"
+			id="e31c909f-499e-42f6-803f-d84f695edf29"
+			name="OpenAccountHeaderVariable"
+			searchtimeout="30000ms">
+				/dom[@domain~'fnclmob.']//div[@id='accountOpeningFundAcc']//h1[@innertext=$Title]
+			</item>
+			<basepath>
+				/dom[@domain~'fnclmob.']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="webdocument"
+		id="7f5a8a12-532e-484a-b43d-f70638e0f8c8"
+		isrooted="True"
+		name="HomepageEasternBank"
+		refimgid="4f46923a-d106-4403-b422-cfb59b36efbb"
+		refpath="/dom[@domain='www.easternbank.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="45c73691-978f-4e59-a05f-60dc4916267f"
+			name="FindABranchOrATMNearYou"
+			refimgid="312515ac-04dd-411b-a641-14cd1ff6fe08"
+			searchtimeout="30000ms">
+				/dom[@domain='www.easternbank.com']//div[@id='block-nodetitlebackground']//h1[@innertext='Find a Branch or ATM near you']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="9448b7be-77d9-479d-85c7-b82bba1c8c51"
+			name="ATMBranchLocator"
+			refimgid="df276371-1d75-43ad-9bbb-d3bac6c012d6"
+			searchtimeout="30000ms">
+				/dom[@domain='www.easternbank.com']//nav[@id='block-header']/ul//a[@innertext='ATM &amp; Branch Locator']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="1b4e7e0a-7e24-47ab-9c53-48a4a8ae3e51"
+			name="EasternBankLogo"
+			refimgid="076c640f-ef2f-4513-8bfb-1f2b762f8657"
+			searchtimeout="30000ms">
+				/dom[@domain='www.easternbank.com']//header[@id='header']//a[@title='Home']/img[@src~'logo.svg$']
+			</item>
+			<basepath>
+				/dom[@domain='www.easternbank.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="webdocument"
+		id="dd7b5f94-36b4-488e-b4d9-c58143ce7b11"
+		isrooted="True"
+		name="EasternOnlineBankingForgotUserName"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="a4359e37-1db8-4ed7-bf9e-af17d3514f38"
+			name="ForgotUsernameCancelButton"
+			refimgid="f15cfc92-f5b4-4b9d-ae54-4c2731ca54a1"
+			searchtimeout="30000ms">
+				/dom[@caption~'Eastern Online Banking.']//a[#'label_forgot_access_code']
+			</item>
+			<basepath>
+				/dom[@caption~'Eastern Online Banking.']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="f42310c0-0ad1-4206-8690-ec2dc5b493da"
+		isrooted="True"
+		name="Firefox"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="2ce0a239-1261-4f56-baec-345ecdf64016"
+			name="EasternBankTab"
+			refimgid="7bc2c96e-3603-42f6-aa67-502f8cbba8b3"
+			searchtimeout="30000ms">
+				/form[@processname='firefox']/toolbar[@accessiblename='Browser tabs']//tabpage[@accessiblename~'Eastern Online Banking.']
+			</item>
+			<basepath>
+				/form[@processname='firefox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAM0SURBVDhPjZJtTJVlHMbvEDwaEIrycjhGBxBk
+CEGcmLoOKocQRHGKmbN5ghRfllqipqzEQ41qWEprOv1gOadz4pwTphsm4kxhprE0hYkv4DLgnCmC
+Ok14eO5f93k4ffJL13btv3u7r2v/l0v8X8ia9HbpTpzqe76MtmDnOG/NSPw+Icl2aLfF0XA3uPCG
+JordWtGPe930TUf2ztRlvTlHVo0LNkT/ofnVNendUbNOZk2oKLcl7RlKyaxh0ZJdBBXdRnz2jLPn
+s+BxvuI85CMHemNInU86jN9Di/b2WB20p9hpyp2Be000X32yDrG6F1E+SNPlKdDngP4CVQtUJ1nI
+1sDFhviccPm3hhfeHoxPh3cmwtJw2GqivKSM10tbERUam05sg4cx8GgO9KpOHsxm8H6abhg0+G9e
+1WXOR09IBYf6VBIKlQGwIpy+nRb8vtQQVR462y3gTgRPrqo50J2N/DOsUpwbuaHZbclFTnoTZllh
+9VjY7sfBtQsYv/w6YvM/iMohRlXexNOizDsj4X4m3LOjX415KBoDNnT0+Ay07FhuzYvn5w/zSJt7
+hMD32hAlD5TJc8RGD+9+ux8aBVwPgXYb8o9Jujgzoszzt3mOMcK9jFTuzJhM2cwVxE87TmTurwQt
+bMXP2YVw3iLyozq4pAy8vGyG3+IQp4Sr/m7YQgYmvs3T9GTItqJvDOJ0aSpXd8Zw81A0eSt/IjCn
+npyVLmhR4gYvRyN/idDESbHNdS2kmCdWOyRPRuZZ6V9mpvvzUFoqrKz/4GNsWfswv1VN0+E4OKvE
+dYq1Acha0xFRK76IOT9yvdYVNZuhhDTjlC/et7Bjejb5CaXYYl3MzyymufoNOK2ExxRrBPKgn5QH
+hJFe1YXrmxtjnDy2qu0mpqgx1DmdKg+bAo2LsEeJ9ise8HGfQP/O9MQQe3FULBpxxn9LbUd4Ic9j
+VerUKIbJkghYqzZePgqqlNEPSlz9CnK7v65tDZ7rkw/Dm8gLpk+/7owo0A0Tbyd2lcyCCcPpXDWW
+Z8vCeFocdUWWvhbqk72Mi6Z1cR1hC3b0R9vbtPi0AVKSGJgaq/VMs/51LSN5i++bD0L8CxPl/oex
+UVo7AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="825e415e-ae25-4ba0-8cca-5568664c8bd5"
+		isrooted="True"
+		name="Chrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="tabpage"
+			id="1b581c2c-a94b-4f0e-9373-22d5b6dbded9"
+			name="EasternBankTab"
+			searchtimeout="30000ms">
+				/form[@processname='chrome']//tabpagelist[@accessiblerole='PageTabList']//tabpage[@accessiblename~'Eastern.']
+			</item>
+			<basepath>
+				/form[@processname='chrome']
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="fe6f8fa0-931f-4592-97b9-91536e9916a7"
+		isrooted="True"
+		name="IE"
+		refimgid="855e9552-9cce-44e6-bad6-ecaf1b98d343"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="4e16227f-e7ba-4f3a-bcad-8095e0923124"
+			name="IETab"
+			refimgid="4c67a7cf-a9cb-42fe-bb00-6ebf35f14e21"
+			searchtimeout="30000ms">
+				/form[@processname='iexplore']//container[@class='TabBandClass']//tabpagelist[@accessiblename='Tab Row']//tabpage[@accessiblename~'Eastern.']
+			</item>
+			<basepath>
+				/form[@processname='iexplore']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="f5f0bd62-b91a-4f91-ad4c-7ca1a739eb88"
+		name="Title">
+		</var>
+		<var
+		id="5e718e21-dabe-4c31-90f4-9c409a87ec39"
+		name="CheckingAccountType">
+			Premier Checking
+		</var>
+	</variables>
+</repository>

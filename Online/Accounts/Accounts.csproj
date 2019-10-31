@@ -1,0 +1,1154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{585EB9F0-1C1B-4664-A56B-C57E2CF49598}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AccountsTestSuite</RootNamespace>
+    <AssemblyName>Accounts</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>6f024dd6-153b-4957-8c75-e523d489552e</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityTab\ActivityTabValidation.cs">
+      <DependentUpon>ActivityTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a7fb16e-bd26-40b4-ae9f-f5a9c5332309</id>
+      <BoundTo>d22ccb46-4d95-494a-ab84-c5f815cede96</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ActivityTabValidation.UserCode.cs">
+      <DependentUpon>ActivityTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83f677c4-0eec-413f-81cd-956eac0269e3</id>
+      <BoundTo>d22ccb46-4d95-494a-ab84-c5f815cede96</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CashReserveFeeValidation.cs">
+      <BoundTo>65dfd50e-f119-4037-a76c-a5ce67d0a30f</BoundTo>
+      <DependentUpon>CashReserveFeeValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d95cdc1-7173-4eeb-92d4-6be597a10536</id>
+    </Compile>
+    <Compile Include="ActivityTab\CashReserveFeeValidation.UserCode.cs">
+      <BoundTo>65dfd50e-f119-4037-a76c-a5ce67d0a30f</BoundTo>
+      <DependentUpon>CashReserveFeeValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01f6d2f8-aa4d-45b9-9733-1c48ca208a54</id>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModalValidation.cs">
+      <DependentUpon>CreateBankingReportModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a30dd060-5c4d-4558-9b4c-f03f8973293f</id>
+      <BoundTo>796790bf-1e80-4c5d-9a6d-868e9ed26cd5</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModalValidation.UserCode.cs">
+      <DependentUpon>CreateBankingReportModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c80f4b43-a042-4f22-8473-f94ea261905a</id>
+      <BoundTo>796790bf-1e80-4c5d-9a6d-868e9ed26cd5</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\BankingReportDateErrorValidation.cs">
+      <DependentUpon>BankingReportDateErrorValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e584ea1-e1f0-4da9-bdd9-d38b1054fe17</id>
+      <BoundTo>65c40dd3-9a80-44f4-877e-40baba939b0b</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\BankingReportDateErrorValidation.UserCode.cs">
+      <DependentUpon>BankingReportDateErrorValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f569727b-ad39-4b3d-9370-99f24e14ca6e</id>
+      <BoundTo>65c40dd3-9a80-44f4-877e-40baba939b0b</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\CreateReportDataEntry.cs">
+      <DependentUpon>CreateReportDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>623de884-fe31-4974-a160-14f643ccd977</id>
+      <BoundTo>e429b763-e3fe-4deb-843c-1715e1e428ee</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\CreateReportDataEntry.UserCode.cs">
+      <DependentUpon>CreateReportDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6914a93d-7b33-4b5c-b21b-9bc7b9bfcddc</id>
+      <BoundTo>e429b763-e3fe-4deb-843c-1715e1e428ee</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\SelectCancelButton.cs">
+      <DependentUpon>SelectCancelButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a35df42f-510d-4c72-ab1e-f27f2593ff30</id>
+      <BoundTo>6f676c8f-d0e5-4bc8-a086-87192097f66b</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\SelectCancelButton.UserCode.cs">
+      <DependentUpon>SelectCancelButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a456eb09-26bd-485f-bd1f-1a159553531f</id>
+      <BoundTo>6f676c8f-d0e5-4bc8-a086-87192097f66b</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\SelectCreateReportButton.cs">
+      <DependentUpon>SelectCreateReportButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b6b7a01a-59bf-40fe-aa88-15300afa3701</id>
+      <BoundTo>db5d4219-4458-4970-bb05-7afaac56a1d1</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateBankingReportModal\SelectCreateReportButton.UserCode.cs">
+      <DependentUpon>SelectCreateReportButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fd97657-7c60-4341-a538-2fa19ece290a</id>
+      <BoundTo>db5d4219-4458-4970-bb05-7afaac56a1d1</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateNewCategoryModalValidation.cs">
+      <DependentUpon>CreateNewCategoryModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e09eec4-a96c-4065-bd1b-2dfeb8a4d855</id>
+      <BoundTo>6ef0f7a3-9c77-422d-87ec-277e3e9940a2</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\CreateNewCategoryModalValidation.UserCode.cs">
+      <DependentUpon>CreateNewCategoryModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>972ee4f5-5d11-44e2-ab3a-ba02a08c930f</id>
+      <BoundTo>6ef0f7a3-9c77-422d-87ec-277e3e9940a2</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\DateFilterSetup.cs">
+      <DependentUpon>DateFilterSetup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a6ad4663-6f5c-4872-8733-6b4f7aad304b</id>
+      <BoundTo>fb747db3-6a4b-4dbd-b04c-819618346afa</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\DateFilterSetup.UserCode.cs">
+      <DependentUpon>DateFilterSetup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe7b4fd9-ade8-467b-aaf8-bdef22ae49a6</id>
+      <BoundTo>fb747db3-6a4b-4dbd-b04c-819618346afa</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ListViewExpandDropdownArrow.cs">
+      <DependentUpon>ListViewExpandDropdownArrow.rxrec</DependentUpon>
+      <id>cef0f4be-6241-4598-87b2-5970b8a8bcaa</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>c62231c4-1359-4993-96ae-6be93fad7b6d</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ListViewExpandDropdownArrow.UserCode.cs">
+      <DependentUpon>ListViewExpandDropdownArrow.rxrec</DependentUpon>
+      <id>62820466-3405-41e5-9a3b-9bd99f067ff4</id>
+      <UserCode>true</UserCode>
+      <BoundTo>c62231c4-1359-4993-96ae-6be93fad7b6d</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ListViewValidation.cs">
+      <DependentUpon>ListViewValidation.rxrec</DependentUpon>
+      <id>48df3718-df7e-47b6-8178-0506df1d0b21</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>27e12b67-ac5a-4c9d-9190-4047716816a1</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ListViewValidation.UserCode.cs">
+      <DependentUpon>ListViewValidation.rxrec</DependentUpon>
+      <id>8ff23f70-3625-4264-933c-8581cb7326c8</id>
+      <UserCode>true</UserCode>
+      <BoundTo>27e12b67-ac5a-4c9d-9190-4047716816a1</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\PaginationTest.cs">
+      <DependentUpon>PaginationTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d66cfddd-e198-4aec-9b46-e17d4462bcc2</id>
+      <BoundTo>1219c9aa-25a2-482d-a205-c959d0213529</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\PaginationTest.UserCode.cs">
+      <DependentUpon>PaginationTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52a6715b-efe8-4f3d-a792-01eb16c8af07</id>
+      <BoundTo>1219c9aa-25a2-482d-a205-c959d0213529</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ReportModal\BankingReportModalValidation.cs">
+      <DependentUpon>BankingReportModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a479de03-b32c-48b0-8ed8-9937ac7ec077</id>
+      <BoundTo>6ff34773-52d5-42cc-864f-319fadc5abaf</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\ReportModal\BankingReportModalValidation.UserCode.cs">
+      <DependentUpon>BankingReportModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1310c4e4-b1b3-4413-89a6-5aa271fe986f</id>
+      <BoundTo>6ff34773-52d5-42cc-864f-319fadc5abaf</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SearchResultsResetTest.cs">
+      <DependentUpon>SearchResultsResetTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>070f32fb-0210-440f-968f-269956ab0ea1</id>
+      <BoundTo>5423c5ac-c5ed-4651-b16a-b7144b634881</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SearchResultsResetTest.UserCode.cs">
+      <DependentUpon>SearchResultsResetTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c9a30ba1-5157-4ec5-9998-2672d354ce95</id>
+      <BoundTo>5423c5ac-c5ed-4651-b16a-b7144b634881</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectCreateANewCategoryButton.cs">
+      <BoundTo>71263720-250a-4c5c-b0f4-84d5dd31d49e</BoundTo>
+      <DependentUpon>SelectCreateANewCategoryButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48103075-5871-450b-8ebe-87428d8f6fb9</id>
+    </Compile>
+    <Compile Include="ActivityTab\SelectCreateANewCategoryButton.UserCode.cs">
+      <BoundTo>71263720-250a-4c5c-b0f4-84d5dd31d49e</BoundTo>
+      <DependentUpon>SelectCreateANewCategoryButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e052c31a-dac8-4db1-af8f-02f678e635d4</id>
+    </Compile>
+    <Compile Include="ActivityTab\SelectCreateReportButton.cs">
+      <DependentUpon>SelectCreateReportButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08a3ec25-42db-4abc-94f9-e47a06f83f23</id>
+      <BoundTo>1cd1088b-99a5-4a7e-aa5d-b63d5020abb1</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectCreateReportButton.UserCode.cs">
+      <DependentUpon>SelectCreateReportButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1bac929-c7ce-46c9-8f77-64ef840a7c21</id>
+      <BoundTo>1cd1088b-99a5-4a7e-aa5d-b63d5020abb1</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectSelectCategoryDropdown.cs">
+      <BoundTo>2f1babd7-1f3e-436b-b3ef-65bc8fb06140</BoundTo>
+      <DependentUpon>SelectSelectCategoryDropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>912110f7-e1f4-4660-8646-ec6b97bde126</id>
+    </Compile>
+    <Compile Include="ActivityTab\SelectSelectCategoryDropdown.UserCode.cs">
+      <BoundTo>2f1babd7-1f3e-436b-b3ef-65bc8fb06140</BoundTo>
+      <DependentUpon>SelectSelectCategoryDropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>758ec342-5644-4bf6-9830-1f42827d6b25</id>
+    </Compile>
+    <Compile Include="ActivityTab\SelectShowTransactionCategories.cs">
+      <DependentUpon>SelectShowTransactionCategories.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8d09239-7eab-467e-b0df-2681a88d5db8</id>
+      <BoundTo>76d8f00b-5726-43c8-bddc-3f2b8f9e42d5</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectShowTransactionCategories.UserCode.cs">
+      <DependentUpon>SelectShowTransactionCategories.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>969b8a9a-76af-40b8-9d25-d130a4b63699</id>
+      <BoundTo>76d8f00b-5726-43c8-bddc-3f2b8f9e42d5</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectAlertsTab.cs">
+      <DependentUpon>SelectAlertsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>890f5951-0e3a-4fbf-9430-f13f43104491</id>
+      <BoundTo>43912060-4be1-46da-be10-f6a057fae653</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectAlertsTab.UserCode.cs">
+      <DependentUpon>SelectAlertsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26a9a158-5a69-48d0-b3a6-0d10be2efc60</id>
+      <BoundTo>43912060-4be1-46da-be10-f6a057fae653</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectDetailsTab.cs">
+      <DependentUpon>SelectDetailsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>07752139-4e6d-4509-8f11-044df26e9d0e</id>
+      <BoundTo>8f88e7d2-5021-4808-8f75-ce9abacfefa2</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectDetailsTab.UserCode.cs">
+      <DependentUpon>SelectDetailsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6329160-9c72-40ba-80d4-209a6cfe89df</id>
+      <BoundTo>8f88e7d2-5021-4808-8f75-ce9abacfefa2</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectServicesTab.cs">
+      <DependentUpon>SelectServicesTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e9646d7-8554-46f4-a4f1-437aa99df96b</id>
+      <BoundTo>29d7a19c-a57d-4665-89fa-4219b106d57b</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectServicesTab.UserCode.cs">
+      <DependentUpon>SelectServicesTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fbaea20-e3f5-417e-9cab-e20a33de2cc2</id>
+      <BoundTo>29d7a19c-a57d-4665-89fa-4219b106d57b</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectStatementsTab.cs">
+      <DependentUpon>SelectStatementsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d200c4f7-be4b-4851-813e-0bdde562e120</id>
+      <BoundTo>f29d8be9-b31e-4e17-b38c-bf1fbcc11421</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\Tabs\SelectStatementsTab.UserCode.cs">
+      <DependentUpon>SelectStatementsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a654dffc-cbd6-458b-ac3d-551821971935</id>
+      <BoundTo>f29d8be9-b31e-4e17-b38c-bf1fbcc11421</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertsTabValidation.cs">
+      <DependentUpon>AlertsTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>22a30baa-b48d-4e15-bc43-82a4868bf8f3</id>
+      <BoundTo>cc8372a6-57cd-47f9-ae79-2b45a8a83f2b</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertsTabValidation.UserCode.cs">
+      <DependentUpon>AlertsTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b5a3259-46ac-4e8f-b6a2-a8c6e28d51bd</id>
+      <BoundTo>cc8372a6-57cd-47f9-ae79-2b45a8a83f2b</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\AmountInput.cs">
+      <DependentUpon>AmountInput.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3afaa1c0-93e8-4900-8641-319b3049612e</id>
+      <BoundTo>5c56cfea-958d-43aa-a883-004e96229194</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\AmountInput.UserCode.cs">
+      <DependentUpon>AmountInput.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fd38285b-9103-44df-b5bc-161d0cd659ff</id>
+      <BoundTo>5c56cfea-958d-43aa-a883-004e96229194</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\CheckNumberInput.cs">
+      <DependentUpon>CheckNumberInput.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b045db1-b776-4302-a8b2-d1be7320d835</id>
+      <BoundTo>f4665314-7b62-4246-88d4-0bcf98c09a9d</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\CheckNumberInput.UserCode.cs">
+      <DependentUpon>CheckNumberInput.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>209a1d9c-1f92-41b8-aeeb-693184ca0e19</id>
+      <BoundTo>f4665314-7b62-4246-88d4-0bcf98c09a9d</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\SelectEmailAndTextCheckbox.cs">
+      <DependentUpon>SelectEmailAndTextCheckbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2994471b-9e18-4a22-8c54-9f6a98f5c35a</id>
+      <BoundTo>baa6bef5-969f-45d7-a8c7-15d602aea4d6</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\SelectEmailAndTextCheckbox.UserCode.cs">
+      <DependentUpon>SelectEmailAndTextCheckbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d0325df7-c2be-4196-afd9-5ca67fa4f2c2</id>
+      <BoundTo>baa6bef5-969f-45d7-a8c7-15d602aea4d6</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\SelectSubscribeButton.cs">
+      <BoundTo>057d0e7b-e720-4ab1-8906-88741080f531</BoundTo>
+      <DependentUpon>SelectSubscribeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ac9f12d1-9a88-4fbb-bd2d-457d1ed1c08c</id>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeModal\SelectSubscribeButton.UserCode.cs">
+      <BoundTo>057d0e7b-e720-4ab1-8906-88741080f531</BoundTo>
+      <DependentUpon>SelectSubscribeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6e37a7ff-8d22-45cb-a56b-c2d60c36f539</id>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeSuccessfulModal\SelectDoneButton.cs">
+      <DependentUpon>SelectDoneButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08b85763-a2b0-4e97-a686-df9114ba1973</id>
+      <BoundTo>8cda1cb2-fd29-4358-a166-857fa3c8ee39</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\AlertSubscribeSuccessfulModal\SelectDoneButton.UserCode.cs">
+      <DependentUpon>SelectDoneButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fcb4959e-cbe6-46b5-83c4-61697723eac3</id>
+      <BoundTo>8cda1cb2-fd29-4358-a166-857fa3c8ee39</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\SelectSubscribeButton.cs">
+      <DependentUpon>SelectSubscribeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5e67b19-f428-44fe-a5d3-a6369eac42e2</id>
+      <BoundTo>95f3230e-3359-4f2c-9867-731ddc24709e</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\SelectSubscribeButton.UserCode.cs">
+      <DependentUpon>SelectSubscribeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afe0d344-0ff3-4283-9241-579ea9d9736b</id>
+      <BoundTo>95f3230e-3359-4f2c-9867-731ddc24709e</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\Unsubscribe.cs">
+      <DependentUpon>Unsubscribe.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b08a7369-3a71-4257-a6da-a92118ff6d9f</id>
+      <BoundTo>b2832a4d-a71b-44e8-8b45-20a689a69f13</BoundTo>
+    </Compile>
+    <Compile Include="AlertsTab\Unsubscribe.UserCode.cs">
+      <DependentUpon>Unsubscribe.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>244217ff-f3cd-4084-af23-2aa8fafe4157</id>
+      <BoundTo>b2832a4d-a71b-44e8-8b45-20a689a69f13</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\AccountScreenVerification.cs">
+      <DependentUpon>AccountScreenVerification.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2fda1485-adb9-43fc-812c-72050462db49</id>
+      <BoundTo>1473ec13-351b-4e04-b710-1ce7de97bb99</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\AccountScreenVerification.UserCode.cs">
+      <DependentUpon>AccountScreenVerification.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0440226b-03de-490a-bd9f-cf443e53ee37</id>
+      <BoundTo>1473ec13-351b-4e04-b710-1ce7de97bb99</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\AddFavoriteRemoveFavorite.cs">
+      <DependentUpon>AddFavoriteRemoveFavorite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b504627b-871b-4e8c-8e77-5bf7e92c2b5f</id>
+      <BoundTo>cc237f1b-56b7-44cc-aa29-4e0b7d804347</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\AddFavoriteRemoveFavorite.UserCode.cs">
+      <DependentUpon>AddFavoriteRemoveFavorite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e832c075-6d39-463e-8bee-955752325254</id>
+      <BoundTo>cc237f1b-56b7-44cc-aa29-4e0b7d804347</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\EnrolledPinkalooCardAndListViewValidation.cs">
+      <DependentUpon>EnrolledPinkalooCardAndListViewValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b0da790-afb2-4a5f-9912-a8c8c3b3e6ab</id>
+      <BoundTo>62e040cb-feb0-4570-bc72-23bdb23a9ffb</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\EnrolledPinkalooCardAndListViewValidation.UserCode.cs">
+      <DependentUpon>EnrolledPinkalooCardAndListViewValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b509e1da-dee7-4fe3-94de-197730adfdb5</id>
+      <BoundTo>62e040cb-feb0-4570-bc72-23bdb23a9ffb</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\Pinkaloo.cs">
+      <BoundTo>2ba60c67-e6d9-46c4-87ba-11417f04a5c6</BoundTo>
+      <DependentUpon>Pinkaloo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>263a7d9b-89cf-4e7b-a3d2-7d7a153f8046</id>
+    </Compile>
+    <Compile Include="Dashboard\Pinkaloo.UserCode.cs">
+      <BoundTo>2ba60c67-e6d9-46c4-87ba-11417f04a5c6</BoundTo>
+      <DependentUpon>Pinkaloo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed63e09f-344b-4c2e-ade1-a2f5ef3a06cc</id>
+    </Compile>
+    <Compile Include="Dashboard\PinkalooBannerNotExists.cs">
+      <DependentUpon>PinkalooBannerNotExists.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>68bb2da9-13fd-4244-922e-775892c169f5</id>
+      <BoundTo>b7666fb8-9ad8-451a-a25d-491990766359</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\PinkalooBannerNotExists.UserCode.cs">
+      <DependentUpon>PinkalooBannerNotExists.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1bbf36bf-c449-4130-979b-db08d1f7d2eb</id>
+      <BoundTo>b7666fb8-9ad8-451a-a25d-491990766359</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectLoanAccount.cs">
+      <BoundTo>48a523cd-0315-4a27-b7b1-b0ef37cc7348</BoundTo>
+      <DependentUpon>SelectLoanAccount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f977fef7-02d2-44fb-8201-bb7cea67f294</id>
+    </Compile>
+    <Compile Include="Dashboard\SelectLoanAccount.UserCode.cs">
+      <BoundTo>48a523cd-0315-4a27-b7b1-b0ef37cc7348</BoundTo>
+      <DependentUpon>SelectLoanAccount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f755e0b-ff74-464b-8158-4cc033f477f2</id>
+    </Compile>
+    <Compile Include="Dashboard\SelectPinkalooCard.cs">
+      <BoundTo>ac33760c-530e-4b4b-9317-83d375c64762</BoundTo>
+      <DependentUpon>SelectPinkalooCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73bb041f-c0c3-4bda-805a-f72d15bb47e8</id>
+    </Compile>
+    <Compile Include="Dashboard\SelectPinkalooCard.UserCode.cs">
+      <BoundTo>ac33760c-530e-4b4b-9317-83d375c64762</BoundTo>
+      <DependentUpon>SelectPinkalooCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc923257-3880-4e24-84f3-6c82a86ab40f</id>
+    </Compile>
+    <Compile Include="Dashboard\SelectvarAccount.cs">
+      <DependentUpon>SelectvarAccount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86369dd0-1e8e-4597-b15e-6d6b3b561a91</id>
+      <BoundTo>dae93a57-cf4c-4691-a974-6922bb919cfa</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectvarAccount.UserCode.cs">
+      <DependentUpon>SelectvarAccount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b1d3a12e-dc72-4133-89f9-fe3669b1f8e7</id>
+      <BoundTo>dae93a57-cf4c-4691-a974-6922bb919cfa</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectGridView.cs">
+      <DependentUpon>SelectGridView.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>abea704a-b7fb-4aed-ad08-9281652c5e35</id>
+      <BoundTo>be179e79-263f-43f9-bb29-c280b67964a2</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectGridView.UserCode.cs">
+      <DependentUpon>SelectGridView.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bc4ab65-5786-495d-8e33-a787f5a1388d</id>
+      <BoundTo>be179e79-263f-43f9-bb29-c280b67964a2</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\GridViewValidation.cs">
+      <DependentUpon>GridViewValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1fb50aa-9d0a-40c2-9410-fc82c2b54c60</id>
+      <BoundTo>73a717f0-c6b1-451e-ade2-cbebaed2ab99</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\GridViewValidation.UserCode.cs">
+      <DependentUpon>GridViewValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b983f405-9ddf-49aa-b8e3-09e5d1888d9c</id>
+      <BoundTo>73a717f0-c6b1-451e-ade2-cbebaed2ab99</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\LastLoginDateandTime.cs">
+      <DependentUpon>LastLoginDateandTime.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8db79273-003e-4ec4-8667-18faeed24b7b</id>
+      <BoundTo>3f59c936-05d5-4e7c-bce3-afe9e0d6c5aa</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\LastLoginDateandTime.UserCode.cs">
+      <DependentUpon>LastLoginDateandTime.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2c0de96b-f988-4067-ab76-f159262a888f</id>
+      <BoundTo>3f59c936-05d5-4e7c-bce3-afe9e0d6c5aa</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectListView.cs">
+      <DependentUpon>SelectListView.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>87716e59-f781-4203-bbd9-68d87649ad99</id>
+      <BoundTo>bc593b43-c9c2-456c-8fd5-bd0007932579</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectListView.UserCode.cs">
+      <DependentUpon>SelectListView.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>773ae2cc-5392-4bc3-a5e5-b9cd0c5563c7</id>
+      <BoundTo>bc593b43-c9c2-456c-8fd5-bd0007932579</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectSearch.cs">
+      <DependentUpon>SelectSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b18903d3-f141-4ef9-91ef-ce7e3043033e</id>
+      <BoundTo>f7806994-5230-4873-800b-33454f3ebb32</BoundTo>
+    </Compile>
+    <Compile Include="Dashboard\SelectSearch.UserCode.cs">
+      <DependentUpon>SelectSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>541e8d6a-21aa-4a7c-88b9-352cf7f63bc2</id>
+      <BoundTo>f7806994-5230-4873-800b-33454f3ebb32</BoundTo>
+    </Compile>
+    <Compile Include="AccountsTestSuiteRepository.cs">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <DependentUpon>AccountsTestSuiteRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>e7cf5ea6-e35e-4154-ac2e-3063ed0331f7</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>dbe392a1-7129-4cb6-b348-a44391483f5a</id>
+    </Compile>
+    <Compile Include="DetailsTab\DetailsTabValidation.cs">
+      <DependentUpon>DetailsTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6616369c-62b7-4f64-ad06-275346f98859</id>
+      <BoundTo>fb3542e6-dd8a-4c8a-b106-36af026ba332</BoundTo>
+    </Compile>
+    <Compile Include="DetailsTab\DetailsTabValidation.UserCode.cs">
+      <DependentUpon>DetailsTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea9d49ea-2739-42de-8902-9ef8f09c9196</id>
+      <BoundTo>fb3542e6-dd8a-4c8a-b106-36af026ba332</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\AtmDebitCardOverdraftModalValidation.cs">
+      <DependentUpon>AtmDebitCardOverdraftModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>798b6b7e-830c-4343-a56b-823e81ba0114</id>
+      <BoundTo>4d8c30fc-deaf-43f5-92a6-c6b31cae4609</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\AtmDebitCardOverdraftModalValidation.UserCode.cs">
+      <DependentUpon>AtmDebitCardOverdraftModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7ce9f02-359a-478f-a463-f9aef9885cd9</id>
+      <BoundTo>4d8c30fc-deaf-43f5-92a6-c6b31cae4609</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\CheckServicesValidation.cs">
+      <DependentUpon>CheckServicesValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0be559e0-7729-493c-8911-8794f65049f6</id>
+      <BoundTo>dd2cd45d-c6ec-4dd3-a1a1-7b1df1632307</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\CheckServicesValidation.UserCode.cs">
+      <DependentUpon>CheckServicesValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>debc87d0-6dc3-406c-88b2-f9e7f43585de</id>
+      <BoundTo>dd2cd45d-c6ec-4dd3-a1a1-7b1df1632307</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\SelectStopCheckButon.cs">
+      <DependentUpon>SelectStopCheckButon.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>742b498f-f405-4a3f-a24d-32e882f9601d</id>
+      <BoundTo>ec3a0a94-2504-4353-bcce-aa8b5c7e9863</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\SelectStopCheckButon.UserCode.cs">
+      <DependentUpon>SelectStopCheckButon.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>53a05368-a5c0-4b4e-9ae9-e45c0e081cd4</id>
+      <BoundTo>ec3a0a94-2504-4353-bcce-aa8b5c7e9863</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\SelectViewCancelStoppedChecks.cs">
+      <DependentUpon>SelectViewCancelStoppedChecks.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d88cf453-2ad7-400d-aec0-781945d7a1aa</id>
+      <BoundTo>f9426dc4-35e4-4db1-b7b1-3a0b5f42b10a</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\SelectViewCancelStoppedChecks.UserCode.cs">
+      <DependentUpon>SelectViewCancelStoppedChecks.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f1bbb56-d090-48e9-9c69-083a16c93ab8</id>
+      <BoundTo>f9426dc4-35e4-4db1-b7b1-3a0b5f42b10a</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckHistoryModal\CancelStoppedCheck.cs">
+      <DependentUpon>CancelStoppedCheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7136e170-07d6-45a3-93b5-892b62ea0590</id>
+      <BoundTo>305df7f8-c966-40ad-b7c3-0936c78ab10a</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckHistoryModal\CancelStoppedCheck.UserCode.cs">
+      <DependentUpon>CancelStoppedCheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fab42c09-0ef9-4536-bf34-152af271b4c3</id>
+      <BoundTo>305df7f8-c966-40ad-b7c3-0936c78ab10a</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckHistoryModal\StopCheckHistoryModalValidation.cs">
+      <DependentUpon>StopCheckHistoryModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>91ff7028-0455-45ef-9d29-b475ce393023</id>
+      <BoundTo>2411b5b2-937e-4579-88ea-e062c16a7537</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckHistoryModal\StopCheckHistoryModalValidation.UserCode.cs">
+      <DependentUpon>StopCheckHistoryModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>06805337-8397-4021-b91a-973b380ff179</id>
+      <BoundTo>2411b5b2-937e-4579-88ea-e062c16a7537</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckModal\StopCheckModalValidation.cs">
+      <DependentUpon>StopCheckModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>32bd2d4b-a2fe-47bf-995b-6e878cb23776</id>
+      <BoundTo>294b997e-f798-43b4-bcda-d3b1d1183b9c</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckModal\StopCheckModalValidation.UserCode.cs">
+      <DependentUpon>StopCheckModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>113ff695-29bf-46e9-9bdc-f30b56409e5b</id>
+      <BoundTo>294b997e-f798-43b4-bcda-d3b1d1183b9c</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckSuccessfulModal\StopCheckSuccessfulModalValidation.cs">
+      <DependentUpon>StopCheckSuccessfulModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2e6826f-bb85-491f-b530-840b408ea369</id>
+      <BoundTo>b52b7b4c-a122-4347-874a-db2cbdd55904</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\StopCheckSuccessfulModal\StopCheckSuccessfulModalValidation.UserCode.cs">
+      <DependentUpon>StopCheckSuccessfulModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b7958b4e-254c-410e-91f4-612b4a6ee3e9</id>
+      <BoundTo>b52b7b4c-a122-4347-874a-db2cbdd55904</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\ValidateReorderChecks.cs">
+      <DependentUpon>ValidateReorderChecks.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e75edc3e-dff9-4d25-8109-f14935f41dd5</id>
+      <BoundTo>5a30abcc-caa9-4fe7-a596-492d45071a3c</BoundTo>
+    </Compile>
+    <Compile Include="ServicesTab\ValidateReorderChecks.UserCode.cs">
+      <DependentUpon>ValidateReorderChecks.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>094a3d1e-da9e-4862-8403-f94565f81ff3</id>
+      <BoundTo>5a30abcc-caa9-4fe7-a596-492d45071a3c</BoundTo>
+    </Compile>
+    <Compile Include="StatementsTab\StatementsTabValidation.cs">
+      <DependentUpon>StatementsTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee487704-6935-4f02-a192-e22c64b7c4e0</id>
+      <BoundTo>080e088d-15ac-4886-9688-1a77244056e1</BoundTo>
+    </Compile>
+    <Compile Include="StatementsTab\StatementsTabValidation.UserCode.cs">
+      <DependentUpon>StatementsTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aec68f98-570e-44c7-b745-0de0f9974290</id>
+      <BoundTo>080e088d-15ac-4886-9688-1a77244056e1</BoundTo>
+    </Compile>
+    <Compile Include="TopBar\SelectAccountsTab.cs">
+      <DependentUpon>SelectAccountsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b138b7c9-30d9-4f3f-b116-33a5fdc12911</id>
+      <BoundTo>5b829587-0944-4c3e-a753-d1bc48a1ce0e</BoundTo>
+    </Compile>
+    <Compile Include="TopBar\SelectAccountsTab.UserCode.cs">
+      <DependentUpon>SelectAccountsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16a21958-7d71-42ff-b398-eaeaca950f02</id>
+      <BoundTo>5b829587-0944-4c3e-a753-d1bc48a1ce0e</BoundTo>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>f23c7b17-ce57-444c-a6ca-72a07be3ed08</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActivityTab\ActivityTabValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>d22ccb46-4d95-494a-ab84-c5f815cede96</id>
+      <recordtableid>1443af40-c12e-4724-a0f4-ea167336e603</recordtableid>
+    </None>
+    <None Include="ActivityTab\CashReserveFeeValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>65dfd50e-f119-4037-a76c-a5ce67d0a30f</id>
+      <recordtableid>81b36430-ac60-4eec-98b3-4e27b8c65808</recordtableid>
+    </None>
+    <None Include="ActivityTab\CreateBankingReportModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>796790bf-1e80-4c5d-9a6d-868e9ed26cd5</id>
+      <recordtableid>94da8c45-c1fb-460a-882e-c12d3773af0d</recordtableid>
+    </None>
+    <None Include="ActivityTab\CreateBankingReportModal\BankingReportDateErrorValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>65c40dd3-9a80-44f4-877e-40baba939b0b</id>
+      <recordtableid>017aad9c-1d35-4e79-a504-2060bc091b7b</recordtableid>
+    </None>
+    <None Include="ActivityTab\CreateBankingReportModal\CreateReportDataEntry.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>e429b763-e3fe-4deb-843c-1715e1e428ee</id>
+      <recordtableid>f8f4ee31-1b63-4694-8ad5-d02fd37b1cb8</recordtableid>
+    </None>
+    <None Include="ActivityTab\CreateBankingReportModal\SelectCancelButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>6f676c8f-d0e5-4bc8-a086-87192097f66b</id>
+      <recordtableid>286990ed-d604-4af1-8aa2-dcdcf3d02ce4</recordtableid>
+    </None>
+    <None Include="ActivityTab\CreateBankingReportModal\SelectCreateReportButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>db5d4219-4458-4970-bb05-7afaac56a1d1</id>
+      <recordtableid>eec564e3-1a24-4c23-9871-5d5a13e4c097</recordtableid>
+    </None>
+    <None Include="ActivityTab\CreateNewCategoryModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>6ef0f7a3-9c77-422d-87ec-277e3e9940a2</id>
+      <recordtableid>f9452875-2854-4624-a5b5-939718a5e3c1</recordtableid>
+    </None>
+    <None Include="ActivityTab\DateFilterSetup.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>fb747db3-6a4b-4dbd-b04c-819618346afa</id>
+      <recordtableid>3a67701a-f27c-4585-9446-54238e6a2721</recordtableid>
+    </None>
+    <None Include="ActivityTab\ListViewExpandDropdownArrow.rxrec">
+      <id>c62231c4-1359-4993-96ae-6be93fad7b6d</id>
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <recordtableid>e9c51911-a28b-42b6-91ab-63efe8a521d8</recordtableid>
+    </None>
+    <None Include="ActivityTab\ListViewValidation.rxrec">
+      <id>27e12b67-ac5a-4c9d-9190-4047716816a1</id>
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <recordtableid>60daec49-7564-45fd-bf6a-aac6bcceaa20</recordtableid>
+    </None>
+    <None Include="ActivityTab\PaginationTest.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>1219c9aa-25a2-482d-a205-c959d0213529</id>
+      <recordtableid>fd455e72-9cfa-4625-9e09-e252a67f7bfd</recordtableid>
+    </None>
+    <None Include="ActivityTab\ReportModal\BankingReportModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>6ff34773-52d5-42cc-864f-319fadc5abaf</id>
+      <recordtableid>22d4e6a3-e3ec-41f3-9287-c378f6162b5b</recordtableid>
+    </None>
+    <None Include="ActivityTab\SearchResultsResetTest.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>5423c5ac-c5ed-4651-b16a-b7144b634881</id>
+      <recordtableid>66401595-7e23-4109-ab70-3df33e08a0c3</recordtableid>
+    </None>
+    <None Include="ActivityTab\SelectCreateANewCategoryButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>71263720-250a-4c5c-b0f4-84d5dd31d49e</id>
+      <recordtableid>fe8985c1-f393-4279-94d9-fa24dbcccaa3</recordtableid>
+    </None>
+    <None Include="ActivityTab\SelectCreateReportButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>1cd1088b-99a5-4a7e-aa5d-b63d5020abb1</id>
+      <recordtableid>ed676e9e-b830-4f89-bbd8-6ee0004f0d89</recordtableid>
+    </None>
+    <None Include="ActivityTab\SelectSelectCategoryDropdown.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>2f1babd7-1f3e-436b-b3ef-65bc8fb06140</id>
+      <recordtableid>82faa035-0b0a-4d88-9549-0f0aa8d04377</recordtableid>
+    </None>
+    <None Include="ActivityTab\SelectShowTransactionCategories.rxrec">
+      <id>76d8f00b-5726-43c8-bddc-3f2b8f9e42d5</id>
+      <recordtableid>d655b1cd-d2d7-458d-a42c-9b56c5449a43</recordtableid>
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+    </None>
+    <None Include="ActivityTab\Tabs\SelectAlertsTab.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>43912060-4be1-46da-be10-f6a057fae653</id>
+      <recordtableid>d78d1583-38fa-4e97-b216-3aed786ae188</recordtableid>
+    </None>
+    <None Include="ActivityTab\Tabs\SelectDetailsTab.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>8f88e7d2-5021-4808-8f75-ce9abacfefa2</id>
+      <recordtableid>debb0032-c62f-4d07-ad15-1e8d7251bb1f</recordtableid>
+    </None>
+    <None Include="ActivityTab\Tabs\SelectServicesTab.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>29d7a19c-a57d-4665-89fa-4219b106d57b</id>
+      <recordtableid>1c0ebe88-873d-4b7d-a1e8-0c07c43bddfe</recordtableid>
+    </None>
+    <None Include="ActivityTab\Tabs\SelectStatementsTab.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>f29d8be9-b31e-4e17-b38c-bf1fbcc11421</id>
+      <recordtableid>42d13cbf-7b2f-4b5c-9166-8c6adeb24c58</recordtableid>
+    </None>
+    <None Include="AlertsTab\AlertsTabValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>cc8372a6-57cd-47f9-ae79-2b45a8a83f2b</id>
+      <recordtableid>d77c509b-fb1f-40c9-9f5b-d326c9c5b275</recordtableid>
+    </None>
+    <None Include="AlertsTab\AlertSubscribeModal\AmountInput.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>5c56cfea-958d-43aa-a883-004e96229194</id>
+      <recordtableid>8a5cb073-18ad-40a9-848f-bf8dc3b23683</recordtableid>
+    </None>
+    <None Include="AlertsTab\AlertSubscribeModal\CheckNumberInput.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>f4665314-7b62-4246-88d4-0bcf98c09a9d</id>
+      <recordtableid>e4871161-71c2-4dad-9c08-d7022f067cbc</recordtableid>
+    </None>
+    <None Include="AlertsTab\AlertSubscribeModal\SelectEmailAndTextCheckbox.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>baa6bef5-969f-45d7-a8c7-15d602aea4d6</id>
+      <recordtableid>0d5104a7-ea57-47e5-beed-67f60dcbea66</recordtableid>
+    </None>
+    <None Include="AlertsTab\AlertSubscribeModal\SelectSubscribeButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>057d0e7b-e720-4ab1-8906-88741080f531</id>
+      <recordtableid>3cfb0e5c-31a5-4d24-b12f-bac0786b60f7</recordtableid>
+    </None>
+    <None Include="AlertsTab\AlertSubscribeSuccessfulModal\SelectDoneButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>8cda1cb2-fd29-4358-a166-857fa3c8ee39</id>
+      <recordtableid>a903d32b-74fc-4580-8df6-5943a6375471</recordtableid>
+    </None>
+    <None Include="AlertsTab\SelectSubscribeButton.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>95f3230e-3359-4f2c-9867-731ddc24709e</id>
+      <recordtableid>5b15e66a-6f99-4876-97f4-1e4037829322</recordtableid>
+    </None>
+    <None Include="AlertsTab\Unsubscribe.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>b2832a4d-a71b-44e8-8b45-20a689a69f13</id>
+      <recordtableid>6c1f8be6-2f95-4148-ba8d-83d94f16db77</recordtableid>
+    </None>
+    <None Include="Dashboard\AccountScreenVerification.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>1473ec13-351b-4e04-b710-1ce7de97bb99</id>
+      <recordtableid>467a04db-cc4b-4a10-ba4b-38a69164e396</recordtableid>
+    </None>
+    <None Include="Dashboard\AddFavoriteRemoveFavorite.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>cc237f1b-56b7-44cc-aa29-4e0b7d804347</id>
+      <recordtableid>b5031961-4fef-4660-b049-55d0459423f8</recordtableid>
+    </None>
+    <None Include="Dashboard\EnrolledPinkalooCardAndListViewValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>62e040cb-feb0-4570-bc72-23bdb23a9ffb</id>
+      <recordtableid>7fef18e1-eed5-40bf-8fa8-395b43129ec1</recordtableid>
+    </None>
+    <None Include="Dashboard\Pinkaloo.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>2ba60c67-e6d9-46c4-87ba-11417f04a5c6</id>
+      <recordtableid>6adb7519-2d34-4cfe-821b-63d0b115815b</recordtableid>
+    </None>
+    <None Include="Dashboard\PinkalooBannerNotExists.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>b7666fb8-9ad8-451a-a25d-491990766359</id>
+      <recordtableid>d64189ff-ab52-40d1-b8df-c9a16812c0e2</recordtableid>
+    </None>
+    <None Include="Dashboard\SelectLoanAccount.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>48a523cd-0315-4a27-b7b1-b0ef37cc7348</id>
+      <recordtableid>6154b9bc-a1b0-489e-9756-29b61297994c</recordtableid>
+    </None>
+    <None Include="Dashboard\SelectPinkalooCard.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>ac33760c-530e-4b4b-9317-83d375c64762</id>
+      <recordtableid>38b62b67-b57c-4066-9adf-26e9cfd429e5</recordtableid>
+    </None>
+    <None Include="Dashboard\SelectvarAccount.rxrec">
+      <id>dae93a57-cf4c-4691-a974-6922bb919cfa</id>
+      <recordtableid>466920b6-7070-4402-ac8e-249a9d509743</recordtableid>
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+    </None>
+    <None Include="Dashboard\SelectGridView.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>be179e79-263f-43f9-bb29-c280b67964a2</id>
+      <recordtableid>1162e0f1-ea7f-43de-8819-7155876fb578</recordtableid>
+    </None>
+    <None Include="Dashboard\GridViewValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>73a717f0-c6b1-451e-ade2-cbebaed2ab99</id>
+      <recordtableid>cd3bdc86-bb60-4a5e-a346-1dbcf5ef3ed1</recordtableid>
+    </None>
+    <None Include="Dashboard\LastLoginDateandTime.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>3f59c936-05d5-4e7c-bce3-afe9e0d6c5aa</id>
+      <recordtableid>83fcca19-aefe-4490-b624-e2c1251bf9fa</recordtableid>
+    </None>
+    <None Include="Dashboard\SelectListView.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>bc593b43-c9c2-456c-8fd5-bd0007932579</id>
+      <recordtableid>7eae308f-55c3-4d4e-a413-60e0cb6d80b2</recordtableid>
+    </None>
+    <None Include="Dashboard\SelectSearch.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>f7806994-5230-4873-800b-33454f3ebb32</id>
+      <recordtableid>0af9efcc-b330-4404-9de3-ed20dc50d8d1</recordtableid>
+    </None>
+    <None Include="AccountsTestSuiteRepository.rximg">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <DependentUpon>AccountsTestSuiteRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>67686a9a-2d87-418b-8dbb-7ccc6fcf0a5b</id>
+    </None>
+    <None Include="AccountsTestSuiteRepository.rxrep">
+      <id>6f024dd6-153b-4957-8c75-e523d489552e</id>
+      <repoid>d58e77bb-0898-4840-8b86-1f90fdf37031</repoid>
+      <reporootid>01ffe724-4110-4f19-9ab4-a5dc39922701</reporootid>
+    </None>
+    <None Include="app.config">
+      <id>1f129ab9-1fe8-4523-b50f-fdeea8784dfc</id>
+    </None>
+    <None Include="DetailsTab\DetailsTabValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>fb3542e6-dd8a-4c8a-b106-36af026ba332</id>
+      <recordtableid>ca0d4fb9-e2e0-4ba1-a220-171fb5499fe8</recordtableid>
+    </None>
+    <None Include="ServicesTab\AtmDebitCardOverdraftModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>4d8c30fc-deaf-43f5-92a6-c6b31cae4609</id>
+      <recordtableid>6a71bc0b-339d-4022-a4b0-7c5651a01e64</recordtableid>
+    </None>
+    <None Include="ServicesTab\CheckServicesValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>dd2cd45d-c6ec-4dd3-a1a1-7b1df1632307</id>
+      <recordtableid>5a2352fb-ac32-4416-b2be-4fcf2d470380</recordtableid>
+    </None>
+    <None Include="ServicesTab\SelectStopCheckButon.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>ec3a0a94-2504-4353-bcce-aa8b5c7e9863</id>
+      <recordtableid>0b102f98-6be6-4963-a7c4-d820b2b052d5</recordtableid>
+    </None>
+    <None Include="ServicesTab\SelectViewCancelStoppedChecks.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>f9426dc4-35e4-4db1-b7b1-3a0b5f42b10a</id>
+      <recordtableid>1b194128-4c06-4f64-b8e7-a15f3802a3d7</recordtableid>
+    </None>
+    <None Include="ServicesTab\StopCheckHistoryModal\CancelStoppedCheck.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>305df7f8-c966-40ad-b7c3-0936c78ab10a</id>
+      <recordtableid>9821b664-9da4-4993-a057-d8105845aa29</recordtableid>
+    </None>
+    <None Include="ServicesTab\StopCheckHistoryModal\StopCheckHistoryModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>2411b5b2-937e-4579-88ea-e062c16a7537</id>
+      <recordtableid>4de655cc-fd03-4ba7-aad1-1962fb4bb9be</recordtableid>
+    </None>
+    <None Include="ServicesTab\StopCheckModal\StopCheckModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>294b997e-f798-43b4-bcda-d3b1d1183b9c</id>
+      <recordtableid>242a3ad2-1689-4cbf-9a3f-d09209d52eb9</recordtableid>
+    </None>
+    <None Include="ServicesTab\StopCheckSuccessfulModal\StopCheckSuccessfulModalValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>b52b7b4c-a122-4347-874a-db2cbdd55904</id>
+      <recordtableid>f9844e66-c7b8-4b5a-95c5-f411204e6515</recordtableid>
+    </None>
+    <None Include="ServicesTab\ValidateReorderChecks.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>5a30abcc-caa9-4fe7-a596-492d45071a3c</id>
+      <recordtableid>a955b327-112e-4bbe-9f7a-f1000a22b1c7</recordtableid>
+    </None>
+    <None Include="StatementsTab\StatementsTabValidation.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>080e088d-15ac-4886-9688-1a77244056e1</id>
+      <recordtableid>0e36c954-43ba-406b-b79e-5545c3c2f9d9</recordtableid>
+    </None>
+    <None Include="TopBar\SelectAccountsTab.rxrec">
+      <BoundTo>6f024dd6-153b-4957-8c75-e523d489552e</BoundTo>
+      <id>5b829587-0944-4c3e-a753-d1bc48a1ce0e</id>
+      <recordtableid>60c41351-d4a0-4681-a65f-2328c7cdab5f</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountsTestSuite.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>124bda78-05fb-41ad-bce9-a83b78a9e431</id>
+    </Content>
+    <Content Include="AccountsTestSuite.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8d47dcc7-7010-4490-b458-942d29f31bfe</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActivityTab\CreateBankingReportModal">
+      <id>e155c224-3181-44bb-aaa5-0bcd62db84f6</id>
+    </Folder>
+    <Folder Include="ActivityTab\Tabs">
+      <id>4c554e73-8d41-4282-8b8a-6722ba2b1289</id>
+    </Folder>
+    <Folder Include="ActivityTab\ReportModal">
+      <id>57258865-9e18-49b2-ac4e-ddf981877795</id>
+    </Folder>
+    <Folder Include="AlertsTab\AlertSubscribeModal">
+      <id>e6d5030b-89e5-4f5c-8ff2-b8f4626d0171</id>
+    </Folder>
+    <Folder Include="AlertsTab\AlertSubscribeSuccessfulModal">
+      <id>bbe99a03-1622-413d-8e6b-f15a2173a452</id>
+    </Folder>
+    <Folder Include="Dashboard">
+      <id>458e7c16-0b4e-4f47-b457-90fb8c69fec9</id>
+    </Folder>
+    <Folder Include="ActivityTab">
+      <id>a84a5acb-f269-48ed-a51e-d704be79881c</id>
+    </Folder>
+    <Folder Include="AlertsTab">
+      <id>f4fa7b78-4e84-4c06-b361-a8703b39bcbd</id>
+    </Folder>
+    <Folder Include="DetailsTab">
+      <id>a1a98ef2-0d90-4295-b348-6939a5812cb0</id>
+    </Folder>
+    <Folder Include="ServicesTab">
+      <id>7636a8c6-686a-4868-8bea-c3ab4f40f42a</id>
+    </Folder>
+    <Folder Include="ServicesTab\StopCheckHistoryModal">
+      <id>7dd6db97-9489-4e3a-8421-1a3031fb7db9</id>
+    </Folder>
+    <Folder Include="ServicesTab\StopCheckSuccessfulModal">
+      <id>fbcaf832-ea06-455d-a397-34580d3756aa</id>
+    </Folder>
+    <Folder Include="ServicesTab\StopCheckModal">
+      <id>f457b318-0ba9-4ab2-846e-a894478b152f</id>
+    </Folder>
+    <Folder Include="StatementsTab">
+      <id>1b3760f6-c76b-45df-a8f7-66f2e9a26f90</id>
+    </Folder>
+    <Folder Include="TopBar">
+      <id>d9eaec05-fae2-4594-a696-18df3e4f7500</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

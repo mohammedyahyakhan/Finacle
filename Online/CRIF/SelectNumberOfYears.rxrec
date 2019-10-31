@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a55ced7c-4224-45ea-a24f-5c8a2d9875e3"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectNumberOfYears"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3c2be9dd-889c-4df7-bc4c-bc277ee6bdce">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f663889-56ba-405e-9c5b-699db9671668"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#$Num_Years]
+				</path>
+			</info>
+			<arguments
+			id="24cdb529-3c36-46d1-992a-df65232fb2d9">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectNumberOfYears.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

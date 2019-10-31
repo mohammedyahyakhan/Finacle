@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3B940677-C5A9-4D6A-BF97-FA91D1378D92}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BillPayTestSuite</RootNamespace>
+    <AssemblyName>BillPayTestSuite</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>4929e2f7-b6e2-4266-a922-151cb21c418e</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddaCompanyPayeeModalValidation.cs">
+      <BoundTo>ae1d2601-9828-4f84-903a-67425ff9c5e8</BoundTo>
+      <DependentUpon>AddACompanyPayeeModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6eb4ba9b-9b67-460a-873c-4046375ca364</id>
+    </Compile>
+    <Compile Include="AddaCompanyPayeeModalValidation.UserCode.cs">
+      <BoundTo>ae1d2601-9828-4f84-903a-67425ff9c5e8</BoundTo>
+      <DependentUpon>AddACompanyPayeeModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a3571e7-8a12-4274-bcb2-46a1d6c0805b</id>
+    </Compile>
+    <Compile Include="AutopaySuccessfullyUpdatedModal.cs">
+      <BoundTo>a9455969-d952-49b6-bde5-26fae8da228e</BoundTo>
+      <DependentUpon>AutopaySuccessfullyUpdatedModal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>554cb8d3-22b7-4e32-8b10-c83b81731dad</id>
+    </Compile>
+    <Compile Include="AutopaySuccessfullyUpdatedModal.UserCode.cs">
+      <BoundTo>a9455969-d952-49b6-bde5-26fae8da228e</BoundTo>
+      <DependentUpon>AutopaySuccessfullyUpdatedModal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>da22373e-419b-4cb7-9718-bd8ba291291b</id>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\AddPayeeValidation.cs">
+      <DependentUpon>AddPayeeValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9f13999-66df-4bc6-85ca-eabb57152022</id>
+      <BoundTo>a4d30a4c-a5d1-4943-8c87-94aa14570cd7</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\AddPayeeValidation.UserCode.cs">
+      <DependentUpon>AddPayeeValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0759a599-6ba7-4b18-a4b7-d327e8078f8d</id>
+      <BoundTo>a4d30a4c-a5d1-4943-8c87-94aa14570cd7</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\AddPersonModalDataEntry.cs">
+      <DependentUpon>AddPersonModalDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1fca4f4a-5ff1-45f5-b55c-0fd274e345ba</id>
+      <BoundTo>68690439-cbc7-410b-9925-7622146e5993</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\AddPersonModalDataEntry.UserCode.cs">
+      <DependentUpon>AddPersonModalDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d97f47c-b72b-42fe-b3fc-ce4c88093bf9</id>
+      <BoundTo>68690439-cbc7-410b-9925-7622146e5993</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\AddPersonModalValidation.cs">
+      <DependentUpon>AddPersonModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d41e034-a9c5-4177-8ed1-5002d1e7c11e</id>
+      <BoundTo>f264171b-25b0-4dbc-9777-dbab297b4431</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\AddPersonModalValidation.UserCode.cs">
+      <DependentUpon>AddPersonModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a74b296d-1cb9-403d-86a7-51513bac6df0</id>
+      <BoundTo>f264171b-25b0-4dbc-9777-dbab297b4431</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\SelectAddPayeeButton.cs">
+      <DependentUpon>SelectAddPayeeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77fd315b-510b-41ba-a913-169bc538c9a4</id>
+      <BoundTo>09c48d95-0070-4a9f-8241-aa1bcff5d6f7</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\SelectAddPayeeButton.UserCode.cs">
+      <DependentUpon>SelectAddPayeeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eefa670c-6d5e-4d97-9f61-7d4f1216f07e</id>
+      <BoundTo>09c48d95-0070-4a9f-8241-aa1bcff5d6f7</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\SelectAddPersonButton.cs">
+      <DependentUpon>SelectAddPersonButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d29f775b-399a-473b-9efc-ba5bceba4df7</id>
+      <BoundTo>5617be64-7517-45ca-8145-796c3b3cebb3</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\AddPayee\SelectAddPersonButton.UserCode.cs">
+      <DependentUpon>SelectAddPersonButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80be54ed-c9e9-45bf-934b-1da20e1abbc4</id>
+      <BoundTo>5617be64-7517-45ca-8145-796c3b3cebb3</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\ConfirmAutopayModal.cs">
+      <DependentUpon>ConfirmAutopayModal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>125b11bd-6562-418e-8629-79a775129524</id>
+      <BoundTo>c2b36815-ae59-4822-9af5-e9ca9b2f32bf</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\ConfirmAutopayModal.UserCode.cs">
+      <DependentUpon>ConfirmAutopayModal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91a419b0-713c-4214-bab2-b802e77f0713</id>
+      <BoundTo>c2b36815-ae59-4822-9af5-e9ca9b2f32bf</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\SelectSetUpAutopay.cs">
+      <DependentUpon>SelectSetUpAutopay.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f44466ca-b96d-4033-bff8-688bea349c9b</id>
+      <BoundTo>e331f096-024f-49f1-8931-65447fecc96b</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\SelectSetUpAutopay.UserCode.cs">
+      <DependentUpon>SelectSetUpAutopay.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef300045-4b1c-4989-83e8-505edb6d9f8c</id>
+      <BoundTo>e331f096-024f-49f1-8931-65447fecc96b</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\SuccessAutopayModal.cs">
+      <DependentUpon>SuccessAutopayModal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96249e55-8c92-4c85-aa49-b10acf1380fb</id>
+      <BoundTo>f643f28c-eb4d-4bd6-a244-de6f8eadc4ce</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\SuccessAutopayModal.UserCode.cs">
+      <DependentUpon>SuccessAutopayModal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>04622404-c6e5-4fb0-b765-642c98b83c20</id>
+      <BoundTo>f643f28c-eb4d-4bd6-a244-de6f8eadc4ce</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\BillPayTabValidation.cs">
+      <DependentUpon>BillPayTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a436a5a3-372c-417d-8871-9e5908f6573a</id>
+      <BoundTo>d9413b82-8ae4-45a7-a001-d34d5200af47</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\BillPayTabValidation.UserCode.cs">
+      <DependentUpon>BillPayTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b36a448d-066d-48f3-8f7b-227ad76bc429</id>
+      <BoundTo>d9413b82-8ae4-45a7-a001-d34d5200af47</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\DeactivateAaaTestPayee.cs">
+      <DependentUpon>DeactivateAaaTestPayee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1216feb-25c1-408e-b01b-7fb7e1eac6dc</id>
+      <BoundTo>046af330-9be2-4711-ac63-30f3ee4574cb</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\DeactivateAaaTestPayee.UserCode.cs">
+      <DependentUpon>DeactivateAaaTestPayee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7436406a-cc2e-4f38-b73d-8c75fbded79d</id>
+      <BoundTo>046af330-9be2-4711-ac63-30f3ee4574cb</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\MakeScheduledPayment.cs">
+      <DependentUpon>MakeScheduledPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99631330-ad49-4e3b-9d2e-f17a7dd07c43</id>
+      <BoundTo>27e90836-dee6-4549-b129-f143c4a9d747</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\MakeScheduledPayment.UserCode.cs">
+      <DependentUpon>MakeScheduledPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>90e17925-2518-409d-a21d-2d77c0ddaca8</id>
+      <BoundTo>27e90836-dee6-4549-b129-f143c4a9d747</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\ReactivateAaaTestPayee.cs">
+      <DependentUpon>ReactivateAaaTestPayee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>029640d4-f6d7-468a-997e-2f310fd16126</id>
+      <BoundTo>cad6cc81-4d75-4075-8ff4-08637590c895</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\ReactivateAaaTestPayee.UserCode.cs">
+      <DependentUpon>ReactivateAaaTestPayee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e303c6e8-ace4-42b5-8690-a5dad887c88f</id>
+      <BoundTo>cad6cc81-4d75-4075-8ff4-08637590c895</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\SelectBillPayTab.cs">
+      <DependentUpon>SelectBillPayTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2c4fb1b-7730-4971-a195-b4f8f8ae05c4</id>
+      <BoundTo>9bbe29c4-dda6-4d7c-bc3d-88867e25f86d</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\SelectBillPayTab.UserCode.cs">
+      <DependentUpon>SelectBillPayTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fead547a-5944-4a16-bf99-1818fee25ceb</id>
+      <BoundTo>9bbe29c4-dda6-4d7c-bc3d-88867e25f86d</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\SelectScheduledTab.cs">
+      <DependentUpon>SelectScheduledTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aa1ea584-ee04-4424-95f3-baf6477942a0</id>
+      <BoundTo>64e106eb-aa2f-4997-a6d2-11190de6655e</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\SelectScheduledTab.UserCode.cs">
+      <DependentUpon>SelectScheduledTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69aa4df5-1be9-4130-a2c7-59d372a2cc18</id>
+      <BoundTo>64e106eb-aa2f-4997-a6d2-11190de6655e</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\AutopayDataEntry.cs">
+      <DependentUpon>AutopayDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>856abb9a-2ff8-40a2-a5ca-0308659b25d4</id>
+      <BoundTo>50f118a1-55b0-4ad4-9052-2bef42753e37</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\AutopayDataEntry.UserCode.cs">
+      <DependentUpon>AutopayDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2dac705a-f3ce-43c5-b241-41798b5e24f8</id>
+      <BoundTo>50f118a1-55b0-4ad4-9052-2bef42753e37</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\AutopayModalValidation.cs">
+      <DependentUpon>AutopayModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cbd2a59-3412-42d6-8f65-3f0be8b3ddea</id>
+      <BoundTo>003cab19-1df8-44c2-a0fc-79ff641c151d</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\Autopay\AutopayModalValidation.UserCode.cs">
+      <DependentUpon>AutopayModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>021e8104-763f-42f1-a618-6c38ee899e31</id>
+      <BoundTo>003cab19-1df8-44c2-a0fc-79ff641c151d</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\ShowInactivePayees.cs">
+      <DependentUpon>ShowInactivePayees.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5625add1-c4df-4344-8ed0-0405ed45f12f</id>
+      <BoundTo>505a3551-5d2e-48c6-bfdc-3740d8ccc64e</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\ShowInactivePayees.UserCode.cs">
+      <DependentUpon>ShowInactivePayees.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf5237ee-49b7-4035-be37-a139b718b18a</id>
+      <BoundTo>505a3551-5d2e-48c6-bfdc-3740d8ccc64e</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\ValidateReactivation.cs">
+      <DependentUpon>ValidateReactivation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7057c697-3444-444f-adaf-53c6323305ef</id>
+      <BoundTo>c66d7594-4511-4e2f-a413-a1e48231143e</BoundTo>
+    </Compile>
+    <Compile Include="BillPayTab\ValidateReactivation.UserCode.cs">
+      <DependentUpon>ValidateReactivation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2659b8a2-d355-4f42-ad0e-b7f42bd7e4a3</id>
+      <BoundTo>c66d7594-4511-4e2f-a413-a1e48231143e</BoundTo>
+    </Compile>
+    <Compile Include="EditConfirmAutopayModal.cs">
+      <BoundTo>1b1ee4ff-84c9-4394-8fd2-29eeb05ae89e</BoundTo>
+      <DependentUpon>EditConfirmAutopayModal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0a6ac98-03e4-45c3-a80e-6e3cce70059a</id>
+    </Compile>
+    <Compile Include="EditConfirmAutopayModal.UserCode.cs">
+      <BoundTo>1b1ee4ff-84c9-4394-8fd2-29eeb05ae89e</BoundTo>
+      <DependentUpon>EditConfirmAutopayModal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b0fd85dd-2839-47e9-8ec2-99adf1773ba1</id>
+    </Compile>
+    <Compile Include="EditOnlyThisPaymentModalValidation.cs">
+      <BoundTo>652f8737-6642-431d-a829-296cce28f923</BoundTo>
+      <DependentUpon>EditOnlyThisPaymentModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3f3047f-5313-433e-9ff1-5adacf68459b</id>
+    </Compile>
+    <Compile Include="EditOnlyThisPaymentModalValidation.UserCode.cs">
+      <BoundTo>652f8737-6642-431d-a829-296cce28f923</BoundTo>
+      <DependentUpon>EditOnlyThisPaymentModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>77255af9-abb6-44cc-b671-601367166335</id>
+    </Compile>
+    <Compile Include="EditSinglePaymentSuccessModalValidationDoneButton.cs">
+      <BoundTo>f613f78b-450f-4647-aa03-3d19721f8b10</BoundTo>
+      <DependentUpon>EditSinglePaymentSuccessModalValidationDoneButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>caf4db4e-3e7a-4c6d-bb7b-095ee1cb777b</id>
+    </Compile>
+    <Compile Include="EditSinglePaymentSuccessModalValidationDoneButton.UserCode.cs">
+      <BoundTo>f613f78b-450f-4647-aa03-3d19721f8b10</BoundTo>
+      <DependentUpon>EditSinglePaymentSuccessModalValidationDoneButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12a163c7-e41f-4895-8c30-60bdda1b60d5</id>
+    </Compile>
+    <Compile Include="EditThisAndAllFuturePaymentsModalValidation.cs">
+      <BoundTo>699de0a2-c096-485d-8b9b-0ebad2802da1</BoundTo>
+      <DependentUpon>EditThisAndAllFuturePaymentsModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a274b884-51f2-4226-8111-9ef6aa24a117</id>
+    </Compile>
+    <Compile Include="EditThisAndAllFuturePaymentsModalValidation.UserCode.cs">
+      <BoundTo>699de0a2-c096-485d-8b9b-0ebad2802da1</BoundTo>
+      <DependentUpon>EditThisAndAllFuturePaymentsModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1de986e-667e-4b4d-8d79-35e732cfa09d</id>
+    </Compile>
+    <Compile Include="MakeExpeditedPayment.cs">
+      <BoundTo>6a6831ad-3cc0-4119-8422-0697b8849cac</BoundTo>
+      <DependentUpon>MakeExpeditedPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fe4dddc4-9aa8-4327-bf17-607859af4b7a</id>
+    </Compile>
+    <Compile Include="MakeExpeditedPayment.UserCode.cs">
+      <BoundTo>6a6831ad-3cc0-4119-8422-0697b8849cac</BoundTo>
+      <DependentUpon>MakeExpeditedPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>adc6e272-5789-4123-b6f2-43f8ad610400</id>
+    </Compile>
+    <Compile Include="MoreInfoValidation.cs">
+      <BoundTo>e21a12db-104c-4035-a2dd-adfcff74ff37</BoundTo>
+      <DependentUpon>MoreInfoValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a3c3868c-fb2e-4a74-a0b0-d1305a9b73a8</id>
+    </Compile>
+    <Compile Include="MoreInfoValidation.UserCode.cs">
+      <BoundTo>e21a12db-104c-4035-a2dd-adfcff74ff37</BoundTo>
+      <DependentUpon>MoreInfoValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f01f8905-1add-4b3e-9cc4-efe6ba406abc</id>
+    </Compile>
+    <Compile Include="ScheduledTab\DeleteScheduledPayment.cs">
+      <DependentUpon>DeleteScheduledPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99b9a6fa-f310-4f5d-8b9a-2d61ca733d25</id>
+      <BoundTo>4566c044-600a-4aa0-997e-1db76775c6d7</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\DeleteScheduledPayment.UserCode.cs">
+      <DependentUpon>DeleteScheduledPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64c0f8dd-e943-45c5-8ea7-86d23fda32d8</id>
+      <BoundTo>4566c044-600a-4aa0-997e-1db76775c6d7</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\EditOnlyThisPaymentDataEntry.cs">
+      <DependentUpon>EditOnlyThisPaymentDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b7ec862-7896-453d-a3a6-944cdfdee3b1</id>
+      <BoundTo>52e863b9-1218-4fbb-9d6c-0bcc77031595</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\EditOnlyThisPaymentDataEntry.UserCode.cs">
+      <DependentUpon>EditOnlyThisPaymentDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fc84180-d2ea-4152-a9cd-59e593277553</id>
+      <BoundTo>52e863b9-1218-4fbb-9d6c-0bcc77031595</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditRecurringPaymentModalValidation.cs">
+      <DependentUpon>EditRecurringPaymentModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2008d17a-1f60-4aea-a26f-0ef583b4b34f</id>
+      <BoundTo>d11bb248-22aa-4681-8b25-e506d7b9aad9</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditRecurringPaymentModalValidation.UserCode.cs">
+      <DependentUpon>EditRecurringPaymentModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>87e24d09-3845-4adb-b7a7-6345ffa5248e</id>
+      <BoundTo>d11bb248-22aa-4681-8b25-e506d7b9aad9</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditScheduledPayment.cs">
+      <DependentUpon>EditScheduledPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>41fd59d2-cb2d-493a-a762-c7f88304ef9e</id>
+      <BoundTo>f23fd9c4-5cfb-45fc-8c07-e34130ecd853</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditScheduledPayment.UserCode.cs">
+      <DependentUpon>EditScheduledPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f9624be6-dbb7-4dcd-9323-aaa89ef8ab04</id>
+      <BoundTo>f23fd9c4-5cfb-45fc-8c07-e34130ecd853</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\EditThisPaymentValidation.cs">
+      <DependentUpon>EditThisPaymentValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f4023bd5-b1b0-481b-a8df-5f7d5d72aad5</id>
+      <BoundTo>666aec79-7e7a-4622-b623-2ee691ce3457</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\EditThisPaymentValidation.UserCode.cs">
+      <DependentUpon>EditThisPaymentValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>37839f80-059a-4ab0-bf66-c8cda950412e</id>
+      <BoundTo>666aec79-7e7a-4622-b623-2ee691ce3457</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\SelectEditOnlyThisPayment.cs">
+      <DependentUpon>SelectEditOnlyThisPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>723e290f-d553-4a38-9a20-9a566e5af7f4</id>
+      <BoundTo>a392c1a8-a250-4606-af3b-08c0d5cb7c8e</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\SelectEditOnlyThisPayment.UserCode.cs">
+      <DependentUpon>SelectEditOnlyThisPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3bb1ada1-3e90-4311-b9dd-b6bec8016f3d</id>
+      <BoundTo>a392c1a8-a250-4606-af3b-08c0d5cb7c8e</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\SelectEditThisAndAllFuturePayments.cs">
+      <DependentUpon>SelectEditThisAndAllFuturePayments.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>395dfca9-9e22-4393-b44e-fc84272953aa</id>
+      <BoundTo>36c156dd-ad3e-45d9-adb6-933b004fce15</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\EditPayment\SelectEditThisAndAllFuturePayments.UserCode.cs">
+      <DependentUpon>SelectEditThisAndAllFuturePayments.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e580322f-9219-460f-b876-e6d0c4696ba9</id>
+      <BoundTo>36c156dd-ad3e-45d9-adb6-933b004fce15</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\ScheduledPaymentValidation.cs">
+      <DependentUpon>ScheduledPaymentValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3fd2d118-0661-44f4-9539-efa5ab8238c3</id>
+      <BoundTo>cfc8f79d-3606-4069-bea0-2f8111c40bbe</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\ScheduledPaymentValidation.UserCode.cs">
+      <DependentUpon>ScheduledPaymentValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16f76689-1e40-41b5-adc3-0ce48e1a6c1f</id>
+      <BoundTo>cfc8f79d-3606-4069-bea0-2f8111c40bbe</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\SelectEditPayment.cs">
+      <DependentUpon>SelectEditPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2ffef96-0b53-4bf7-9024-8c434bb19bb6</id>
+      <BoundTo>638d96c8-d418-4260-adda-9a5e81d2dc0c</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\SelectEditPayment.UserCode.cs">
+      <DependentUpon>SelectEditPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>29c67210-93d4-4ee0-a96d-8f22fda0a976</id>
+      <BoundTo>638d96c8-d418-4260-adda-9a5e81d2dc0c</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\SelectEditScheduledPayment.cs">
+      <DependentUpon>SelectEditScheduledPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9888c15-3779-4602-b5bb-0c3a95458680</id>
+      <BoundTo>edf1ffba-2c42-4365-9862-c7c6ccac6441</BoundTo>
+    </Compile>
+    <Compile Include="ScheduledTab\SelectEditScheduledPayment.UserCode.cs">
+      <DependentUpon>SelectEditScheduledPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99acf76d-b752-4e72-a366-17d86374b5a2</id>
+      <BoundTo>edf1ffba-2c42-4365-9862-c7c6ccac6441</BoundTo>
+    </Compile>
+    <Compile Include="SelectedEditedPaymentDelete.cs">
+      <BoundTo>8816ea76-6529-4590-80c6-bad7a0cf1ac4</BoundTo>
+      <DependentUpon>SelectedEditedPaymentDelete.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>862dfdee-c2d1-44fc-9d62-e93d0dc053d8</id>
+    </Compile>
+    <Compile Include="SelectedEditedPaymentDelete.UserCode.cs">
+      <BoundTo>8816ea76-6529-4590-80c6-bad7a0cf1ac4</BoundTo>
+      <DependentUpon>SelectedEditedPaymentDelete.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2062bdb5-195a-44a7-85eb-bf6b968d987e</id>
+    </Compile>
+    <Compile Include="SelectCancelEditScheduledPayment.cs">
+      <BoundTo>a8802fb8-76b1-47be-a097-8580303cfff9</BoundTo>
+      <DependentUpon>SelectCancelEditScheduledPayment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4974d46-b463-4701-8f64-f0b6407e9800</id>
+    </Compile>
+    <Compile Include="SelectCancelEditScheduledPayment.UserCode.cs">
+      <BoundTo>a8802fb8-76b1-47be-a097-8580303cfff9</BoundTo>
+      <DependentUpon>SelectCancelEditScheduledPayment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f108c5a-cec9-4d44-9e0e-555b6cb60b4a</id>
+    </Compile>
+    <Compile Include="SelectDeleteButton.cs">
+      <BoundTo>ce5892c5-76f6-4d0c-8179-a27494ba0dff</BoundTo>
+      <DependentUpon>SelectDeleteButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9611ff09-2631-4acc-a61d-e4b0472ab2bd</id>
+    </Compile>
+    <Compile Include="SelectDeleteButton.UserCode.cs">
+      <BoundTo>ce5892c5-76f6-4d0c-8179-a27494ba0dff</BoundTo>
+      <DependentUpon>SelectDeleteButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9def4a15-658d-4db5-b3b9-a7634a934f6d</id>
+    </Compile>
+    <Compile Include="HistoryTabAdvancedSearchValidation.cs">
+      <BoundTo>72017faa-b082-4ca0-b3b6-bf229aed5802</BoundTo>
+      <DependentUpon>HistoryTabAdvancedSearchValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a474abd-94c1-43d4-b961-ff183b0d1b09</id>
+    </Compile>
+    <Compile Include="HistoryTabAdvancedSearchValidation.UserCode.cs">
+      <BoundTo>72017faa-b082-4ca0-b3b6-bf229aed5802</BoundTo>
+      <DependentUpon>HistoryTabAdvancedSearchValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>293b8509-45d0-4a9b-9eb7-cf127d6ca632</id>
+    </Compile>
+    <Compile Include="AddCompanyPayeeButton.cs">
+      <BoundTo>33dcfe60-e9bc-44a4-a999-d8107754fbf1</BoundTo>
+      <DependentUpon>AddCompanyPayeeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>29fadabd-59d0-4b43-b105-0f566881f2f3</id>
+    </Compile>
+    <Compile Include="AddCompanyPayeeButton.UserCode.cs">
+      <BoundTo>33dcfe60-e9bc-44a4-a999-d8107754fbf1</BoundTo>
+      <DependentUpon>AddCompanyPayeeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9a2446f-7956-4adb-8642-4b1863fcedcf</id>
+    </Compile>
+    <Compile Include="AddPersonPayeeErrorValidation.cs">
+      <BoundTo>ca630d92-134f-406e-a1b2-4e74e969ef3e</BoundTo>
+      <DependentUpon>AddPersonPayeeErrorValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>51965336-ad6f-4742-a7e9-ebdc414b7ea8</id>
+    </Compile>
+    <Compile Include="AddPersonPayeeErrorValidation.UserCode.cs">
+      <BoundTo>ca630d92-134f-406e-a1b2-4e74e969ef3e</BoundTo>
+      <DependentUpon>AddPersonPayeeErrorValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>448aded7-e6d0-40f5-b562-6f8f5e08c7d9</id>
+    </Compile>
+    <Compile Include="AddAPersonModalBackButton.cs">
+      <BoundTo>ed0407cd-a1b3-4f35-9b6f-e63b2558fbd7</BoundTo>
+      <DependentUpon>AddAPersonModalBackButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>917d8354-20a7-43f3-a0a5-54d50e5927f2</id>
+    </Compile>
+    <Compile Include="AddAPersonModalBackButton.UserCode.cs">
+      <BoundTo>ed0407cd-a1b3-4f35-9b6f-e63b2558fbd7</BoundTo>
+      <DependentUpon>AddAPersonModalBackButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>183865c4-3389-4333-946a-24852622c792</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>2a96745a-2b84-4543-992e-59b16c4bafa4</id>
+    </Compile>
+    <Compile Include="BillPayTestSuiteRepository.cs">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <DependentUpon>BillPayTestSuiteRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>4d5e8cdd-6299-4adf-b3c6-5901ef0be87b</id>
+    </Compile>
+    <Compile Include="SelectAddaCompanyPayeeButton.cs">
+      <BoundTo>8a24bb56-3cd1-449e-a133-5b62867b14c1</BoundTo>
+      <DependentUpon>SelectAddACompanyPayeeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a06f0940-ff8c-449d-b4e3-07d62063380f</id>
+    </Compile>
+    <Compile Include="SelectAddaCompanyPayeeButton.UserCode.cs">
+      <BoundTo>8a24bb56-3cd1-449e-a133-5b62867b14c1</BoundTo>
+      <DependentUpon>SelectAddACompanyPayeeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>825c5329-101e-4236-ade2-1d26e59e49cf</id>
+    </Compile>
+    <Compile Include="ClickAddPersonPayeeBackButton.cs">
+      <BoundTo>ff792d1d-6b97-4e69-8fc8-a07439388670</BoundTo>
+      <DependentUpon>ClickAddPersonPayeeBackButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4ce67436-980e-43b6-b066-60ac904467a8</id>
+    </Compile>
+    <Compile Include="ClickAddPersonPayeeBackButton.UserCode.cs">
+      <BoundTo>ff792d1d-6b97-4e69-8fc8-a07439388670</BoundTo>
+      <DependentUpon>ClickAddPersonPayeeBackButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e405a99a-f30a-4b92-a3e3-885ab25ae1ce</id>
+    </Compile>
+    <Compile Include="ClickAddPersonAddPayeeButton.cs">
+      <BoundTo>656082c4-73fa-4028-8eb7-5059a28f1bf9</BoundTo>
+      <DependentUpon>ClickAddPersonAddPAyeeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e01f18f-ad51-4f8b-a6cb-097348eb5638</id>
+    </Compile>
+    <Compile Include="ClickAddPersonAddPayeeButton.UserCode.cs">
+      <BoundTo>656082c4-73fa-4028-8eb7-5059a28f1bf9</BoundTo>
+      <DependentUpon>ClickAddPersonAddPAyeeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>78db72dd-8122-4fe9-a991-8f933d107b4f</id>
+    </Compile>
+    <Compile Include="ClickEnterInfoAddPayeeButton.cs">
+      <BoundTo>ac63e2cb-0c40-4a5a-a50f-cdb348acf302</BoundTo>
+      <DependentUpon>ClickEnterInfoAddPayeeButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a7985d43-9801-4562-9738-3b2d67a2b753</id>
+    </Compile>
+    <Compile Include="ClickEnterInfoAddPayeeButton.UserCode.cs">
+      <BoundTo>ac63e2cb-0c40-4a5a-a50f-cdb348acf302</BoundTo>
+      <DependentUpon>ClickEnterInfoAddPayeeButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2e23e8f6-b5b0-4a0f-a97c-bd4d2e8a8fdc</id>
+    </Compile>
+    <Compile Include="SelectSearchPayeesInputBox.cs">
+      <BoundTo>74245af5-d925-4c86-a01a-63f78331b9c9</BoundTo>
+      <DependentUpon>SelectSearchPayeesInputBox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>09bfac89-8779-4b23-93b1-c8de93395910</id>
+    </Compile>
+    <Compile Include="SelectSearchPayeesInputBox.UserCode.cs">
+      <BoundTo>74245af5-d925-4c86-a01a-63f78331b9c9</BoundTo>
+      <DependentUpon>SelectSearchPayeesInputBox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9e073fb-98ae-42fb-86f1-42e0b4885863</id>
+    </Compile>
+    <Compile Include="ClickBillPay.cs">
+      <BoundTo>f38096da-29af-4640-9263-0d7f07c455cf</BoundTo>
+      <DependentUpon>ClickBillPay.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>369eee4d-01a5-4406-bd2f-e113dc9b5d21</id>
+    </Compile>
+    <Compile Include="ClickBillPay.UserCode.cs">
+      <BoundTo>f38096da-29af-4640-9263-0d7f07c455cf</BoundTo>
+      <DependentUpon>ClickBillPay.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>087a875c-72cd-44ef-be7f-b1d80ae76084</id>
+    </Compile>
+    <Compile Include="ConfirmAddCompanyPayee.cs">
+      <BoundTo>7e4a8f3f-7888-40b4-bbbe-c2b97cb62ded</BoundTo>
+      <DependentUpon>ConfirmAddCompanyPayee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61e51cfc-c5a0-48a0-8d2f-406ea4bad193</id>
+    </Compile>
+    <Compile Include="ConfirmAddCompanyPayee.UserCode.cs">
+      <BoundTo>7e4a8f3f-7888-40b4-bbbe-c2b97cb62ded</BoundTo>
+      <DependentUpon>ConfirmAddCompanyPayee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>15292049-e873-4c87-98f0-f5ac58fff6af</id>
+    </Compile>
+    <Compile Include="CreatePaymentReminderModalVerification.cs">
+      <BoundTo>3129e477-9908-44b1-8354-a96baf0ae731</BoundTo>
+      <DependentUpon>CreatePaymentReminderModalVerification.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3db9c5eb-03e7-4f22-8501-4977111fae90</id>
+    </Compile>
+    <Compile Include="CreatePaymentReminderModalVerification.UserCode.cs">
+      <BoundTo>3129e477-9908-44b1-8354-a96baf0ae731</BoundTo>
+      <DependentUpon>CreatePaymentReminderModalVerification.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba73fa04-c0ba-4c5b-be44-9bea01b3c0f0</id>
+    </Compile>
+    <Compile Include="DeleteTestCompanyPayee.cs">
+      <BoundTo>eddd1597-cdac-44d3-8471-a2b75e2774c6</BoundTo>
+      <DependentUpon>DeleteTestCompanyPayee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e063a912-3d6d-4be0-9846-4cce0619c558</id>
+    </Compile>
+    <Compile Include="DeleteTestCompanyPayee.UserCode.cs">
+      <BoundTo>eddd1597-cdac-44d3-8471-a2b75e2774c6</BoundTo>
+      <DependentUpon>DeleteTestCompanyPayee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65bc3cf5-91c3-475e-aa2d-03bafd97728e</id>
+    </Compile>
+    <Compile Include="DeleteAutopay.cs">
+      <BoundTo>371bbd35-556e-48ae-a258-0318fb432db2</BoundTo>
+      <DependentUpon>DeleteAutopay.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4791e054-028c-4929-b66e-2cd8efddb96c</id>
+    </Compile>
+    <Compile Include="DeleteAutopay.UserCode.cs">
+      <BoundTo>371bbd35-556e-48ae-a258-0318fb432db2</BoundTo>
+      <DependentUpon>DeleteAutopay.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c6948e5-d7b4-4a7c-99c0-ebdeb6c624ba</id>
+    </Compile>
+    <Compile Include="DiscoverCompanyPayeeDataEntry.cs">
+      <BoundTo>df80f8ae-aef2-4029-bc6e-82e5b2ea9f4f</BoundTo>
+      <DependentUpon>DiscoverCompanyPayeeDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b513bc49-a206-474b-b633-4ea6c313f0e9</id>
+    </Compile>
+    <Compile Include="DiscoverCompanyPayeeDataEntry.UserCode.cs">
+      <BoundTo>df80f8ae-aef2-4029-bc6e-82e5b2ea9f4f</BoundTo>
+      <DependentUpon>DiscoverCompanyPayeeDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b54a939-2c7d-4f33-9ffd-1a4b6951cbfb</id>
+    </Compile>
+    <Compile Include="EditEmailModalVerification.cs">
+      <BoundTo>b3c0ada1-a363-4eac-b8c4-647e6cd40be5</BoundTo>
+      <DependentUpon>EditEmailModalVerification.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>888c7e8f-7f65-42bf-bd0e-357f67a12920</id>
+    </Compile>
+    <Compile Include="EditEmailModalVerification.UserCode.cs">
+      <BoundTo>b3c0ada1-a363-4eac-b8c4-647e6cd40be5</BoundTo>
+      <DependentUpon>EditEmailModalVerification.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>797efdb0-6473-4e23-b809-a6c12b657539</id>
+    </Compile>
+    <Compile Include="EditAutopayDataEntry.cs">
+      <BoundTo>2745f9c0-3f93-41f1-8b18-6f885caddd8e</BoundTo>
+      <DependentUpon>EditAutopayDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e2146df0-62cc-48ae-9e31-9785a85286e4</id>
+    </Compile>
+    <Compile Include="EditAutopayDataEntry.UserCode.cs">
+      <BoundTo>2745f9c0-3f93-41f1-8b18-6f885caddd8e</BoundTo>
+      <DependentUpon>EditAutopayDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8317cdc0-95b4-451c-be49-0a81a361b340</id>
+    </Compile>
+    <Compile Include="HistoryTabVerification.cs">
+      <BoundTo>9b2cb50b-8899-4053-b271-4c30b2114453</BoundTo>
+      <DependentUpon>HistoryTabVerification.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a76e9684-f72b-49ac-895c-ab78744ec6a1</id>
+    </Compile>
+    <Compile Include="HistoryTabVerification.UserCode.cs">
+      <BoundTo>9b2cb50b-8899-4053-b271-4c30b2114453</BoundTo>
+      <DependentUpon>HistoryTabVerification.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a6362b59-466a-4e78-8b7f-c4b8320239f0</id>
+    </Compile>
+    <Compile Include="PayeesSearch.cs">
+      <BoundTo>20ee1161-e925-488c-a4bd-74548480c395</BoundTo>
+      <DependentUpon>PayeesSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0251c62-02ce-4d9b-bdac-b6df067b53b9</id>
+    </Compile>
+    <Compile Include="PayeesSearch.UserCode.cs">
+      <BoundTo>20ee1161-e925-488c-a4bd-74548480c395</BoundTo>
+      <DependentUpon>PayeesSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81c229ed-25c3-44c0-82b2-b5d198fca7fb</id>
+    </Compile>
+    <Compile Include="NotificationTabVerification.cs">
+      <BoundTo>f9ff9735-5e85-4aa4-82cf-aafe17cf8670</BoundTo>
+      <DependentUpon>NotificationTabVerification.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dcc82b3f-02d2-410c-815f-c12282cc77b4</id>
+    </Compile>
+    <Compile Include="NotificationTabVerification.UserCode.cs">
+      <BoundTo>f9ff9735-5e85-4aa4-82cf-aafe17cf8670</BoundTo>
+      <DependentUpon>NotificationTabVerification.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aaaadb05-88a4-41d9-b8bc-0ad892be8cf8</id>
+    </Compile>
+    <Compile Include="NoElligibleBillPayAccounts.cs">
+      <BoundTo>e7644439-357a-4d42-941d-a4fd92ed1cb8</BoundTo>
+      <DependentUpon>NoElligibleBillPayAccounts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b557e9e-133f-4a8b-a33b-c8d9e3b5dbdd</id>
+    </Compile>
+    <Compile Include="NoElligibleBillPayAccounts.UserCode.cs">
+      <BoundTo>e7644439-357a-4d42-941d-a4fd92ed1cb8</BoundTo>
+      <DependentUpon>NoElligibleBillPayAccounts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>24070725-a815-4a75-969b-04625f61a856</id>
+    </Compile>
+    <Compile Include="DiscoverPayeeSearch.cs">
+      <BoundTo>ce0b051c-d14d-46dd-b532-860338a8588b</BoundTo>
+      <DependentUpon>DiscoverPayeeSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04b965da-658a-4b44-a97a-e88236cc447b</id>
+    </Compile>
+    <Compile Include="DiscoverPayeeSearch.UserCode.cs">
+      <BoundTo>ce0b051c-d14d-46dd-b532-860338a8588b</BoundTo>
+      <DependentUpon>DiscoverPayeeSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bf2ab1f0-febe-4e8e-aa07-3948f5aef32f</id>
+    </Compile>
+    <Compile Include="TopBar\BillPayHeaderTabSelection.cs">
+      <DependentUpon>BillPayHeaderTabSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a9187056-a9be-41ce-a06a-9b0d49227739</id>
+      <BoundTo>75d11cf0-a5d7-4308-b11c-db273b0e6d56</BoundTo>
+    </Compile>
+    <Compile Include="TopBar\BillPayHeaderTabSelection.UserCode.cs">
+      <DependentUpon>BillPayHeaderTabSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b54b3540-0631-4919-835c-fe6f89fae2f1</id>
+      <BoundTo>75d11cf0-a5d7-4308-b11c-db273b0e6d56</BoundTo>
+    </Compile>
+    <Compile Include="ReportsTabValidation.cs">
+      <BoundTo>34e8e4c6-907a-466b-a41e-d8d56bf2d4cb</BoundTo>
+      <DependentUpon>ReportsTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6ad8a39c-0e41-421b-a9ee-3a8d82790f08</id>
+    </Compile>
+    <Compile Include="ReportsTabValidation.UserCode.cs">
+      <BoundTo>34e8e4c6-907a-466b-a41e-d8d56bf2d4cb</BoundTo>
+      <DependentUpon>ReportsTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>61aa6632-00b6-4162-84a9-5ff9a74e6c5a</id>
+    </Compile>
+    <Compile Include="SelectHistoryTab.cs">
+      <BoundTo>247f2377-644a-4a93-b6ef-004eb1970a58</BoundTo>
+      <DependentUpon>SelectHistoryTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12d34b5f-b4f1-43a8-9faf-38dcad149409</id>
+    </Compile>
+    <Compile Include="SelectHistoryTab.UserCode.cs">
+      <BoundTo>247f2377-644a-4a93-b6ef-004eb1970a58</BoundTo>
+      <DependentUpon>SelectHistoryTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f53383c-2414-4764-bcde-1dcead10a58c</id>
+    </Compile>
+    <Compile Include="SelectNotificationsTab.cs">
+      <BoundTo>8c4b4c65-ffb2-45d6-9319-2e73f34a7db5</BoundTo>
+      <DependentUpon>SelectNotificationsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45c904d0-d60b-4da5-aebd-96ceb47cba34</id>
+    </Compile>
+    <Compile Include="SelectNotificationsTab.UserCode.cs">
+      <BoundTo>8c4b4c65-ffb2-45d6-9319-2e73f34a7db5</BoundTo>
+      <DependentUpon>SelectNotificationsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>263f3629-975b-4611-be3f-1ba565bf2525</id>
+    </Compile>
+    <Compile Include="SelectReportsTab.cs">
+      <BoundTo>cd270e13-9140-49c8-bde9-0631ed5e60dd</BoundTo>
+      <DependentUpon>SelectReportsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eed2baba-81af-42a8-84cb-bf042022e5a7</id>
+    </Compile>
+    <Compile Include="SelectReportsTab.UserCode.cs">
+      <BoundTo>cd270e13-9140-49c8-bde9-0631ed5e60dd</BoundTo>
+      <DependentUpon>SelectReportsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0851190-53ef-4bc1-b300-13129ba88d25</id>
+    </Compile>
+    <Compile Include="DeleteAaaTestPayee.cs">
+      <BoundTo>df7468c9-fef6-491f-b036-328c29892094</BoundTo>
+      <DependentUpon>DeleteAaaTestPayee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>231a3ca1-f632-4af9-a2f5-14a8b351e8f6</id>
+    </Compile>
+    <Compile Include="DeleteAaaTestPayee.UserCode.cs">
+      <BoundTo>df7468c9-fef6-491f-b036-328c29892094</BoundTo>
+      <DependentUpon>DeleteAaaTestPayee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>53e303c2-2350-497e-970d-41153dea4b6f</id>
+    </Compile>
+    <Compile Include="NoPayeeScreenValidation.cs">
+      <BoundTo>61c9c0f4-b725-40ed-b768-36a95e55a496</BoundTo>
+      <DependentUpon>NoPayeeScreenValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9c60760-e7f9-487d-a879-765c45eef360</id>
+    </Compile>
+    <Compile Include="NoPayeeScreenValidation.UserCode.cs">
+      <BoundTo>61c9c0f4-b725-40ed-b768-36a95e55a496</BoundTo>
+      <DependentUpon>NoPayeeScreenValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ebcadcf-4b45-4d7d-bf20-ebb9491da287</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>0b379141-6793-4dd0-a5f1-7b8de520a017</id>
+    </Compile>
+    <Compile Include="ScheduledTabVerification.cs">
+      <BoundTo>d64f7e58-bbe4-42f3-b15c-7d10975bbb46</BoundTo>
+      <DependentUpon>ScheduledTabVerification.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e637fc0-db4d-40a3-986b-b2406ce63464</id>
+    </Compile>
+    <Compile Include="ScheduledTabVerification.UserCode.cs">
+      <BoundTo>d64f7e58-bbe4-42f3-b15c-7d10975bbb46</BoundTo>
+      <DependentUpon>ScheduledTabVerification.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>573ff7cf-97a2-455c-8e89-d8b214b00128</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddACompanyPayeeModalValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>ae1d2601-9828-4f84-903a-67425ff9c5e8</id>
+      <recordtableid>c88b1cc4-bff6-4a2a-bca7-f44886a39f7c</recordtableid>
+    </None>
+    <None Include="AutopaySuccessfullyUpdatedModal.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>a9455969-d952-49b6-bde5-26fae8da228e</id>
+      <recordtableid>47e1968e-21df-446d-91bf-fbcc22cc7f14</recordtableid>
+    </None>
+    <None Include="BillPayTab\AddPayee\AddPayeeValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>a4d30a4c-a5d1-4943-8c87-94aa14570cd7</id>
+      <recordtableid>3378ee92-af12-4b04-b4bd-bd86523f4f19</recordtableid>
+    </None>
+    <None Include="BillPayTab\AddPayee\AddPersonModalDataEntry.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>68690439-cbc7-410b-9925-7622146e5993</id>
+      <recordtableid>4c25172c-d20e-439e-945c-4ee9c6463819</recordtableid>
+    </None>
+    <None Include="BillPayTab\AddPayee\AddPersonModalValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>f264171b-25b0-4dbc-9777-dbab297b4431</id>
+      <recordtableid>6adb64ff-25c4-4cb4-9d2b-4ee73d5786f7</recordtableid>
+    </None>
+    <None Include="BillPayTab\AddPayee\SelectAddPayeeButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>09c48d95-0070-4a9f-8241-aa1bcff5d6f7</id>
+      <recordtableid>3fefd867-26ad-44b3-b69a-cf083ba74ebb</recordtableid>
+    </None>
+    <None Include="BillPayTab\AddPayee\SelectAddPersonButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>5617be64-7517-45ca-8145-796c3b3cebb3</id>
+      <recordtableid>89bf0574-21ec-4d6f-a104-9683daf9362d</recordtableid>
+    </None>
+    <None Include="BillPayTab\Autopay\ConfirmAutopayModal.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>c2b36815-ae59-4822-9af5-e9ca9b2f32bf</id>
+      <recordtableid>88cbee24-0f0e-4f70-8471-9b43b37f7a94</recordtableid>
+    </None>
+    <None Include="BillPayTab\Autopay\SelectSetUpAutopay.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>e331f096-024f-49f1-8931-65447fecc96b</id>
+      <recordtableid>a8c10631-bf47-471d-9812-9688c1ae4289</recordtableid>
+    </None>
+    <None Include="BillPayTab\Autopay\SuccessAutopayModal.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>f643f28c-eb4d-4bd6-a244-de6f8eadc4ce</id>
+      <recordtableid>92d535ac-8f02-4cab-83b7-fd936dae7d2c</recordtableid>
+    </None>
+    <None Include="BillPayTab\BillPayTabValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>d9413b82-8ae4-45a7-a001-d34d5200af47</id>
+      <recordtableid>15e2b2c6-7935-4566-bfda-19a73e933d54</recordtableid>
+    </None>
+    <None Include="BillPayTab\DeactivateAaaTestPayee.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>046af330-9be2-4711-ac63-30f3ee4574cb</id>
+      <recordtableid>23702fdb-0d8e-4dc8-8fec-cd696e70143d</recordtableid>
+    </None>
+    <None Include="BillPayTab\MakeScheduledPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>27e90836-dee6-4549-b129-f143c4a9d747</id>
+      <recordtableid>8bd1b883-86f4-446d-8fc5-becd61dd7d2e</recordtableid>
+    </None>
+    <None Include="BillPayTab\ReactivateAaaTestPayee.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>cad6cc81-4d75-4075-8ff4-08637590c895</id>
+      <recordtableid>feb31a96-1c44-4d2d-8f6f-2d372e04f0aa</recordtableid>
+    </None>
+    <None Include="BillPayTab\SelectBillPayTab.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>9bbe29c4-dda6-4d7c-bc3d-88867e25f86d</id>
+      <recordtableid>33cc76d4-787f-43f2-833f-956a35bf8ea4</recordtableid>
+    </None>
+    <None Include="BillPayTab\SelectScheduledTab.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>64e106eb-aa2f-4997-a6d2-11190de6655e</id>
+      <recordtableid>54aca89d-8f1d-414a-8b36-be489389a3a2</recordtableid>
+    </None>
+    <None Include="BillPayTab\Autopay\AutopayDataEntry.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>50f118a1-55b0-4ad4-9052-2bef42753e37</id>
+      <recordtableid>0412bce4-9c95-4406-84d4-b91a8ab346d0</recordtableid>
+    </None>
+    <None Include="BillPayTab\Autopay\AutopayModalValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>003cab19-1df8-44c2-a0fc-79ff641c151d</id>
+      <recordtableid>a1d80485-10cd-43bf-a6ce-640cb3e4df72</recordtableid>
+    </None>
+    <None Include="BillPayTab\ShowInactivePayees.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>505a3551-5d2e-48c6-bfdc-3740d8ccc64e</id>
+      <recordtableid>e3c84a17-47e6-4a3b-9ecd-dd7fc68401b5</recordtableid>
+    </None>
+    <None Include="BillPayTab\ValidateReactivation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>c66d7594-4511-4e2f-a413-a1e48231143e</id>
+      <recordtableid>ee3ed241-43b1-4058-a116-34bd0417f7ec</recordtableid>
+    </None>
+    <None Include="EditConfirmAutopayModal.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>1b1ee4ff-84c9-4394-8fd2-29eeb05ae89e</id>
+      <recordtableid>6260fe69-a9cd-460c-8de8-02c52041da84</recordtableid>
+    </None>
+    <None Include="EditOnlyThisPaymentModalValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>652f8737-6642-431d-a829-296cce28f923</id>
+      <recordtableid>2288bc2b-39cb-4c4b-8493-c7d1495c80da</recordtableid>
+    </None>
+    <None Include="EditSinglePaymentSuccessModalValidationDoneButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>f613f78b-450f-4647-aa03-3d19721f8b10</id>
+      <recordtableid>f6947ad3-17fb-4df1-8d22-88c5d28569c8</recordtableid>
+    </None>
+    <None Include="EditThisAndAllFuturePaymentsModalValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>699de0a2-c096-485d-8b9b-0ebad2802da1</id>
+      <recordtableid>8a4f3229-3d68-48e4-b519-b8b25d72df6e</recordtableid>
+    </None>
+    <None Include="MakeExpeditedPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>6a6831ad-3cc0-4119-8422-0697b8849cac</id>
+      <recordtableid>2d83221d-d945-4a5e-960f-091d65d9173b</recordtableid>
+    </None>
+    <None Include="MoreInfoValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>e21a12db-104c-4035-a2dd-adfcff74ff37</id>
+      <recordtableid>fe2efdc0-5774-42c6-ad7d-b12c742babb2</recordtableid>
+    </None>
+    <None Include="ScheduledTab\DeleteScheduledPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>4566c044-600a-4aa0-997e-1db76775c6d7</id>
+      <recordtableid>2bf16e03-44bb-408f-9654-74d42cedc876</recordtableid>
+    </None>
+    <None Include="ScheduledTab\EditPayment\EditOnlyThisPaymentDataEntry.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>52e863b9-1218-4fbb-9d6c-0bcc77031595</id>
+      <recordtableid>339a5c8e-f816-45e1-b818-bc7d1b508436</recordtableid>
+    </None>
+    <None Include="ScheduledTab\EditRecurringPaymentModalValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>d11bb248-22aa-4681-8b25-e506d7b9aad9</id>
+      <recordtableid>7f1cd5f4-8eb5-4d69-879b-b445d1f3c94a</recordtableid>
+    </None>
+    <None Include="ScheduledTab\EditScheduledPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>f23fd9c4-5cfb-45fc-8c07-e34130ecd853</id>
+      <recordtableid>435925cd-2813-402a-9a99-06ee998267eb</recordtableid>
+    </None>
+    <None Include="ScheduledTab\EditPayment\EditThisPaymentValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>666aec79-7e7a-4622-b623-2ee691ce3457</id>
+      <recordtableid>bffeadc2-1139-438f-83ab-13bce47ca6ac</recordtableid>
+    </None>
+    <None Include="ScheduledTab\EditPayment\SelectEditOnlyThisPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>a392c1a8-a250-4606-af3b-08c0d5cb7c8e</id>
+      <recordtableid>e64543dc-2745-43e8-9c01-61df4e4bfc8e</recordtableid>
+    </None>
+    <None Include="ScheduledTab\EditPayment\SelectEditThisAndAllFuturePayments.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>36c156dd-ad3e-45d9-adb6-933b004fce15</id>
+      <recordtableid>31406ed2-b3e9-4254-95c2-845cb1c1ed82</recordtableid>
+    </None>
+    <None Include="ScheduledTab\ScheduledPaymentValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>cfc8f79d-3606-4069-bea0-2f8111c40bbe</id>
+      <recordtableid>c5e90c81-2b57-49eb-916e-e26a9ec04c45</recordtableid>
+    </None>
+    <None Include="ScheduledTab\SelectEditPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>638d96c8-d418-4260-adda-9a5e81d2dc0c</id>
+      <recordtableid>4c946765-f797-4015-8b08-a310fbe19bf6</recordtableid>
+    </None>
+    <None Include="ScheduledTab\SelectEditScheduledPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>edf1ffba-2c42-4365-9862-c7c6ccac6441</id>
+      <recordtableid>718cc4f5-b6bf-4fab-a53e-431cae0c0fb7</recordtableid>
+    </None>
+    <None Include="SelectedEditedPaymentDelete.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>8816ea76-6529-4590-80c6-bad7a0cf1ac4</id>
+      <recordtableid>20e8db9a-4e25-45a9-b0cb-f80b7c940d1f</recordtableid>
+    </None>
+    <None Include="SelectCancelEditScheduledPayment.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>a8802fb8-76b1-47be-a097-8580303cfff9</id>
+      <recordtableid>5fdbf8b8-b88b-44f8-b6e7-86a33cc5d567</recordtableid>
+    </None>
+    <None Include="SelectDeleteButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>ce5892c5-76f6-4d0c-8179-a27494ba0dff</id>
+      <recordtableid>c49a6ee8-dc56-42d7-ad9d-1a397616ddfc</recordtableid>
+    </None>
+    <None Include="HistoryTabAdvancedSearchValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>72017faa-b082-4ca0-b3b6-bf229aed5802</id>
+      <recordtableid>dbb6010a-75ac-4d71-9dc2-2ecd7a12aa17</recordtableid>
+    </None>
+    <None Include="AddCompanyPayeeButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>33dcfe60-e9bc-44a4-a999-d8107754fbf1</id>
+      <recordtableid>b9dc1108-53a1-4cdc-b5cf-cbb7e9ef62b5</recordtableid>
+    </None>
+    <None Include="AddPersonPayeeErrorValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>ca630d92-134f-406e-a1b2-4e74e969ef3e</id>
+      <recordtableid>0fb8f0b6-b8e5-4fb8-8594-dfb33e5bc47b</recordtableid>
+    </None>
+    <None Include="AddAPersonModalBackButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>ed0407cd-a1b3-4f35-9b6f-e63b2558fbd7</id>
+      <recordtableid>06b89785-a84c-498c-93e2-d292336c7cc7</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>d34756d6-0ad2-43bf-af87-21dc34a060fd</id>
+    </None>
+    <None Include="BillPayTestSuiteRepository.rximg">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <DependentUpon>BillPayTestSuiteRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1b2f86cf-1de6-4ae3-a3e7-e3f3bc000f9d</id>
+    </None>
+    <None Include="BillPayTestSuiteRepository.rxrep">
+      <id>4929e2f7-b6e2-4266-a922-151cb21c418e</id>
+      <repoid>b2351955-fecb-4843-8958-9d33b65b7aca</repoid>
+      <reporootid>c21a6d48-ccf5-4950-b4c7-859e7b370d14</reporootid>
+    </None>
+    <None Include="SelectAddACompanyPayeeButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>8a24bb56-3cd1-449e-a133-5b62867b14c1</id>
+      <recordtableid>0dd184b0-a8b7-4eee-bb95-221759867601</recordtableid>
+    </None>
+    <None Include="ClickAddPersonPayeeBackButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>ff792d1d-6b97-4e69-8fc8-a07439388670</id>
+      <recordtableid>d7f03ce9-ea9a-46b1-952d-f51ff8745ef2</recordtableid>
+    </None>
+    <None Include="ClickAddPersonAddPayeeButton.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>656082c4-73fa-4028-8eb7-5059a28f1bf9</id>
+      <recordtableid>493d91e9-74c2-4e84-be53-eb4f4cd89e3b</recordtableid>
+    </None>
+    <None Include="ClickEnterInfoAddPayeeButton.rxrec">
+      <id>ac63e2cb-0c40-4a5a-a50f-cdb348acf302</id>
+      <recordtableid>9b4def15-49d5-4779-b9f9-2c97fa69366c</recordtableid>
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+    </None>
+    <None Include="SelectSearchPayeesInputBox.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>74245af5-d925-4c86-a01a-63f78331b9c9</id>
+      <recordtableid>74032bc4-f146-4f5f-8e25-cbebd86318c0</recordtableid>
+    </None>
+    <None Include="ClickBillPay.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>f38096da-29af-4640-9263-0d7f07c455cf</id>
+      <recordtableid>6cdb8b19-4197-45f7-9fc5-c75d08bdf259</recordtableid>
+    </None>
+    <None Include="ConfirmAddCompanyPayee.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>7e4a8f3f-7888-40b4-bbbe-c2b97cb62ded</id>
+      <recordtableid>2f147e4a-b335-4330-84f6-38df75c04515</recordtableid>
+    </None>
+    <None Include="CreatePaymentReminderModalVerification.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>3129e477-9908-44b1-8354-a96baf0ae731</id>
+      <recordtableid>1c4013c6-392f-4477-a1ee-72bf102d0062</recordtableid>
+    </None>
+    <None Include="DeleteTestCompanyPayee.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>eddd1597-cdac-44d3-8471-a2b75e2774c6</id>
+      <recordtableid>1efc9131-3fc1-496c-8546-8662a86b2b6b</recordtableid>
+    </None>
+    <None Include="DeleteAutopay.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>371bbd35-556e-48ae-a258-0318fb432db2</id>
+      <recordtableid>424c5d51-7648-4ccd-925a-77d667669d73</recordtableid>
+    </None>
+    <None Include="DiscoverCompanyPayeeDataEntry.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>df80f8ae-aef2-4029-bc6e-82e5b2ea9f4f</id>
+      <recordtableid>1decb871-3340-4f38-bd14-7f1851a7d309</recordtableid>
+    </None>
+    <None Include="EditEmailModalVerification.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>b3c0ada1-a363-4eac-b8c4-647e6cd40be5</id>
+      <recordtableid>8a3b6043-daea-47cc-b5ea-39e6a01fcb75</recordtableid>
+    </None>
+    <None Include="EditAutopayDataEntry.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>2745f9c0-3f93-41f1-8b18-6f885caddd8e</id>
+      <recordtableid>64c9d720-e6cf-4e8c-b549-015fd123f504</recordtableid>
+    </None>
+    <None Include="HistoryTabVerification.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>9b2cb50b-8899-4053-b271-4c30b2114453</id>
+      <recordtableid>63f787d2-230b-44dc-bd51-4c42fa50b1db</recordtableid>
+    </None>
+    <None Include="PayeesSearch.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>20ee1161-e925-488c-a4bd-74548480c395</id>
+      <recordtableid>566da24b-6148-409a-9c2d-b02069d4c321</recordtableid>
+    </None>
+    <None Include="NotificationTabVerification.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>f9ff9735-5e85-4aa4-82cf-aafe17cf8670</id>
+      <recordtableid>25abad66-5c15-467b-98af-3fc743ae08dd</recordtableid>
+    </None>
+    <None Include="NoElligibleBillPayAccounts.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>e7644439-357a-4d42-941d-a4fd92ed1cb8</id>
+      <recordtableid>39023bc6-2278-428e-b1ee-e3e02494a1b7</recordtableid>
+    </None>
+    <None Include="DiscoverPayeeSearch.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>ce0b051c-d14d-46dd-b532-860338a8588b</id>
+      <recordtableid>45ab8e28-dd1c-46c5-a72f-e6debb67a4bf</recordtableid>
+    </None>
+    <None Include="TopBar\BillPayHeaderTabSelection.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>75d11cf0-a5d7-4308-b11c-db273b0e6d56</id>
+      <recordtableid>e292cbce-6ea5-4c47-a1d5-ee39e7e52ec2</recordtableid>
+    </None>
+    <None Include="ReportsTabValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>34e8e4c6-907a-466b-a41e-d8d56bf2d4cb</id>
+      <recordtableid>c393d202-3e29-489b-8f3f-676b31eb4159</recordtableid>
+    </None>
+    <None Include="SelectHistoryTab.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>247f2377-644a-4a93-b6ef-004eb1970a58</id>
+      <recordtableid>a23db9fe-12af-4094-a54d-a0a82c91e89f</recordtableid>
+    </None>
+    <None Include="SelectNotificationsTab.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>8c4b4c65-ffb2-45d6-9319-2e73f34a7db5</id>
+      <recordtableid>fcbe086c-d315-4f73-8f4b-f42cb04d9e46</recordtableid>
+    </None>
+    <None Include="SelectReportsTab.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>cd270e13-9140-49c8-bde9-0631ed5e60dd</id>
+      <recordtableid>0ba3d525-519a-441a-a7ca-53ec1398642e</recordtableid>
+    </None>
+    <None Include="DeleteAaaTestPayee.rxrec">
+      <id>df7468c9-fef6-491f-b036-328c29892094</id>
+      <recordtableid>9a0c6445-14d7-4474-8f9b-df2b7216a042</recordtableid>
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+    </None>
+    <None Include="NoPayeeScreenValidation.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>61c9c0f4-b725-40ed-b768-36a95e55a496</id>
+      <recordtableid>a84f411b-d069-4a4c-b55b-c1251a8c028c</recordtableid>
+    </None>
+    <None Include="ScheduledTabVerification.rxrec">
+      <BoundTo>4929e2f7-b6e2-4266-a922-151cb21c418e</BoundTo>
+      <id>d64f7e58-bbe4-42f3-b15c-7d10975bbb46</id>
+      <recordtableid>453c0ccf-aa25-4209-b16a-19e25efc702b</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BillPayTestSuite.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c02aa6ec-fa3b-4c99-9a77-884763acdaa9</id>
+    </Content>
+    <Content Include="BillPayTestSuite.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>62e8b52b-fee9-45b7-a443-d8b70d5dc136</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BillPayTab">
+      <id>ddf41b2b-e9bb-4367-831c-2a03be85181c</id>
+    </Folder>
+    <Folder Include="BillPayTab\AddPayee">
+      <id>1341c9a9-0dfc-4725-8f48-f14150e56dc4</id>
+    </Folder>
+    <Folder Include="BillPayTab\Autopay">
+      <id>91d35127-5dc4-4cfd-9871-3d8f5440688d</id>
+    </Folder>
+    <Folder Include="ScheduledTab">
+      <id>1dd1835d-4643-4be8-8cf0-d16a2832124a</id>
+    </Folder>
+    <Folder Include="ScheduledTab\EditPayment">
+      <id>7db04b64-6f6e-424a-95a4-8e50fd40f911</id>
+    </Folder>
+    <Folder Include="TopBar">
+      <id>38afd859-0813-45db-8624-5c03ecb59f4a</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

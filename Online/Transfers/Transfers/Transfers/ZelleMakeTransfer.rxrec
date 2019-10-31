@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="417ee8fc-a83c-4b28-a036-68e4334294e4"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ZelleMakeTransfer"
+	namespace="Transfersv2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7332809a-66a4-4fe2-b872-b20bde06bb9c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="92fa6f4e-5607-4e8a-b253-db55a118cb45"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//button[#'makeTransferZelleInstitution']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="7dc0dba0-52e4-4bc4-bc85-323893000aaf"
+	name="TransfersRepository"
+	relativepath="TransfersRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="TransfersRepository"
+		namespace="Transfersv2">
+		</codegen>
+		<rootfolder
+		id="9b277dff-e3ee-462f-9f9f-8036eaf5ede0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ZelleMakeTransfer.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

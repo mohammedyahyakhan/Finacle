@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6cdb8b19-4197-45f7-9fc5-c75d08bdf259"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickBillPay"
+	namespace="BillPayTestSuite">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a6dbd0ad-3e7c-4fc0-8913-9db5405a87b6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ca46d81-3096-49e7-be92-8cc86f3c3246"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Bill_Pay']
+				</path>
+			</info>
+			<arguments
+			id="1f53c056-5101-4e2e-abb6-b856b0b3ef36">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="b2351955-fecb-4843-8958-9d33b65b7aca"
+	name="BillPayTestSuiteRepository"
+	relativepath="BillPayTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayTestSuiteRepository"
+		namespace="BillPayTestSuite">
+		</codegen>
+		<rootfolder
+		id="c21a6d48-ccf5-4950-b4c7-859e7b370d14"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickBillPay.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

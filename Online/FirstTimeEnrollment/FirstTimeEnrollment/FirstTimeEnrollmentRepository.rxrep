@@ -1,0 +1,1134 @@
+﻿<repository
+id="9cf12f67-7f5b-48fa-b807-4a8fb0c4c554"
+name="FirstTimeEnrollmentRepository"
+rxversion="9.0">
+	<codegen
+	classname="FirstTimeEnrollmentRepository"
+	namespace="FirstTimeEnrollment">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="dda86d0c-6bf4-4f03-b4b6-203d7bd49bb7"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="3294cbdb-bf21-4435-8050-8527b4ec64e0"
+		isrooted="True"
+		name="EasternOnlineBankingOnlineBankingE"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="form"
+			id="6abcb4d6-ff2c-4220-adec-bfe35176ee4d"
+			isrooted="True"
+			name="EnrollmentStartPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="df8972f5-5365-4354-b1a7-4d8ad4e5df15"
+				name="EasternBankJoinUsForGood"
+				refimgid="8b96747a-4bf9-4ec4-be6a-1f1d97e8d215"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//img[@src~'eastern-bank-consumer-logo.png$']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="d4f4fdcb-c876-4d5c-9b9e-38af207f9a5b"
+				name="SelectEnrollmentOptionMessage"
+				refimgid="9e12118f-27f3-4ff4-9f1e-7f42cf1ae474"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//span[@innertext='Sign up for online and mobile banking in a few easy steps. Select an enrollment option.']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="89b7c20f-680f-456a-a8ff-11e51e927529"
+				name="EnrollMyPersonalAccounts"
+				refimgid="a7d45cfa-d53c-4f7b-8e4a-5d6d4388a875"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//p[@innertext='Enroll my Personal Accounts']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="630a6413-5c07-4089-88fa-36f53c60ec29"
+				name="IHaveASocialSecurityNumber"
+				refimgid="400559d3-56c6-46f4-bf31-5feba5dfd3e1"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//p[@innertext='I have a Social Security Number']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="98ed6c2a-a768-4134-8a43-7fc0e93b3da1"
+				name="EnrollMyBusinessAccounts"
+				refimgid="738c5ac3-810c-41d3-be5c-3bb4c2907491"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//p[@innertext='Enroll my Business Accounts']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="2bdd5b63-1844-429c-906c-199ec7763c16"
+				name="IHaveATaxIdentificationNumber"
+				refimgid="3434693d-6c4c-4850-9c0c-4a123e4e7584"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//p[@innertext='I have a Tax Identification Number']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="b564cac0-e515-4b98-8d1d-307a6252dd7f"
+				name="CancelButton"
+				refimgid="566cfa06-1c37-43d1-bc59-64620e1eb554"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//a[@id='label_back_toeastern']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="e8e89b15-317e-4671-8f28-9abe0105eb11"
+			isrooted="True"
+			name="PersonalAccountsFirstPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="c8253d2d-c1cd-4dba-88b8-da92fc8ab60a"
+				name="TellUsMoreAboutYou"
+				refimgid="85f37208-d664-4a64-b08d-3aae00c9ca84"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//span[@innertext='Tell us more about you']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="a8d40165-1a19-4104-ae47-8145a354d8af"
+				name="SetUpOnlineAccessMessage"
+				refimgid="beed6a18-c8ea-4106-9c5a-4fb72860a767"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//span[@innertext='To set up online access, we need to locate you in our system.']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f41eded7-c730-4fab-8897-7821250d69f0"
+				name="FirstNameInputBox"
+				refimgid="125a9aee-cd69-45f9-9501-94e94d986bc2"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[@id='LoginAltFlowFG.FIRST_NAME']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="8a2e29c8-84d9-4aeb-96b5-3e7866d5bc9f"
+				name="LastNameInputBox"
+				refimgid="9bb7061c-aa97-448a-9dd6-07d41c6c8032"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[@id='LoginAltFlowFG.LAST_NAME']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="35be9e8c-09f3-4bc7-8ec0-c356eed0873f"
+				name="SsnInputBox"
+				refimgid="e7f2096c-1372-4162-a02c-9aa6838b1b3a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[@id='LoginAltFlowFG.SSN_NUMBER_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="986141a5-ab54-4806-89bd-f5571ed027fa"
+				name="NextButton"
+				refimgid="36c99419-3496-4ba0-88b9-d9f94ba0c8f1"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//input[@name='Action.CONTINUE_ENROLL']
+				</item>
+				<folder
+				capname="unknown"
+				id="c8bc4a1d-887e-48c6-bf23-bacbec4f582d"
+				isrooted="False"
+				name="Errors"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="04f1174a-d19b-46c3-8d8b-eafe5abf88a0"
+					name="PleaseCorrectTheFollowingFieldsError"
+					refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//div[@id='mand_enroll_err']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="49aa51ab-c8d7-42b1-a47f-85c11539d73d"
+					name="InvalidFirstNameError"
+					refimgid="1ab5ced0-f024-4e79-b479-16aa6e8fdc68"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//p[@id='FirstNameError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="1d1649e5-ed07-44ac-bf50-a654bab05471"
+					name="InvalidLastNameError"
+					refimgid="11e036cd-5937-41ff-977a-68a2ebfcf03b"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//p[@id='LastNameError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="e0f79fec-e578-4d97-9c05-f923d2bc9dc3"
+					name="InvalidSsnError"
+					refimgid="14bca2e0-d4a7-408b-9ea9-28a70fac4429"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']//p[@id='SSNError']
+					</item>
+				</folder>
+				<basepath>
+					/dom[@domain~'fnclmob.']//div[@id='LoginHDisplay']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="d1ff091f-3511-481c-b6c0-17b044c1330a"
+			isrooted="True"
+			name="PersonalAccountsSecondPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="300b2de0-5ac4-43ed-a1cc-67711210b71a"
+				name="ConfirmIdentityHeader"
+				refimgid="31bb688d-dca4-4912-b37d-4966a0ac3798"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//span[@innertext='Confirm Identity']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="ee5b1792-95d1-4633-9853-6d6b982f4f99"
+				name="AtmImage"
+				refimgid="aa650fd8-922e-42a6-b6c5-4d65cbe4bb92"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//img[@src~'atmEnroll.PNG$']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="cba0be15-a788-4519-be91-45c8dfeaf15f"
+				name="AtmDebitCard"
+				refimgid="97361dda-2d17-4270-aee2-4f7e7cd67d3a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='ATM/Debit Card']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="6ee343bb-02fa-4d5f-8973-cc6cb62ec874"
+				name="AtmDebitCardNumberAndPin"
+				refimgid="4c785ead-d361-45eb-9549-96b3f3cdb013"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='ATM/Debit Card Number and Pin']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="c2d39137-229b-415e-9bb9-cb0873657c5c"
+				name="CheckingImage"
+				refimgid="fe9a8d6c-309c-4a50-9ebf-42ad300a3b61"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//img[@src~'checkingEnroll.PNG$']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="a9259b34-afae-423b-86b3-517dae6c0d82"
+				name="CheckingSavingsOrMoneyMarket"
+				refimgid="5b516a9a-d5e6-47fb-97ad-024f5482d1e1"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='Checking, Savings, or Money Market']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="b409fecc-b89a-495b-859e-f57573027e1f"
+				name="AccountNumberLastStatementBalanceLastDepositAmount"
+				refimgid="0c38f6e7-059e-4709-9c0c-877043aaf3a2"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='Account Number and Last Statement Balance or Last Deposit Amount']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="a1308181-e42c-458b-b9ef-7525c17dd5e3"
+				name="LoanImage"
+				refimgid="20be83ff-9e70-43b4-be76-d8a95f21ed05"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//img[@src~'loanEnroll.PNG$']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="2d1800a9-1db9-4a7d-94be-4641e770cdc7"
+				name="LoanOrLineOfCredit"
+				refimgid="88c5aae9-51fa-4bed-afcc-5217d950d863"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='Loan or Line of Credit']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="3ddf9bcd-dc26-4159-8af5-ad67bd931c13"
+				name="AccountNumberNoteNumberLastPaymentAmount"
+				refimgid="51b3aaa8-d22a-48ae-8470-b9117a4a6c0e"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='Account Number, Note Number, and Last Payment Amount']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="e4fa4038-e335-4808-b020-7f48e1097a89"
+				name="CdImage"
+				refimgid="234ca3a4-6fe4-4075-ab91-c0c474703909"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//img[@src~'certiDepositEnroll.PNG$']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="d58cf463-b089-4985-a854-741449eb7156"
+				name="CertificateOfDeposit"
+				refimgid="d399f415-41a2-4f71-b4bd-23597dcfd662"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='Certificate of Deposit']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="88cf7093-963d-4389-ae3e-f9688c44feae"
+				name="AccountNumberOriginalDepositAmount"
+				refimgid="6e7a43a8-70cd-47d2-bcfc-ed3e86ede44c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..//p[@innertext='Account Number and Original Deposit Amount']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="c29ce0b0-ed62-40b6-8655-76c25ee578f6"
+			isrooted="True"
+			name="AtmDebitCardPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="b2322877-5b73-400d-b0de-5e8193ee7fd5"
+				name="ATMDebitCardHeader"
+				refimgid="0ba46a7e-4a44-4e23-99c6-4ec8289d4804"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//span[@innertext='ATM/Debit Card']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="c8dfc45e-9f93-4d42-bb66-c84779adee9b"
+				name="PleaseValidateYourAtmDebitCardHeader"
+				refimgid="ac224f39-b10c-4eb9-8011-dd3a72224bac"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//span[@innertext='Please validate your ATM/Debit Card.']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="21f78bb9-a533-42e1-882f-3ca7e60ce8d4"
+				name="AccountNumberLast4DigitsInputBox"
+				refimgid="08a12610-7372-4f60-8886-92ca1d20e786"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//input[@id='LoginAltFlowFG.CARD_NUMBER']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="429507fe-1785-41c2-9158-f7d16d3e96ce"
+				name="PinInputBox"
+				refimgid="236c6565-c6e7-4962-b11c-930be30ceb5a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//input[@id='LoginAltFlowFG.ATM_PIN_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="4b226036-f233-43e8-bd50-9ebf37413f57"
+				name="CaptchaImage"
+				refimgid="c75b2fda-bf79-4b56-a0ec-feeb55ab01cb"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//img[@id='IMAGECAPTCHA']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="dde6b391-a9fa-4644-870a-80af2f6a9824"
+				name="RefreshIcon"
+				refimgid="5f7d151a-c78b-4a06-99d5-9bd8c12bb121"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//img[@id='TEXTIMAGE']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="27b8c908-82fc-4fa6-bd61-f87f87b6a801"
+				name="VerificationCodeInputBox"
+				refimgid="1fb6fa6e-f3ea-436a-9942-bde7b1e6ca3c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//input[@id='LoginAltFlowFG.VERIFICATION_CODE']
+				</item>
+				<folder
+				capname="unknown"
+				id="46411152-2b7e-44ee-8eb2-fbea3c92b909"
+				isrooted="False"
+				name="Errors"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="8ff63281-a4e3-4944-80bb-bf745088b8d9"
+					name="PleaseCorrectTheFollowingFieldsError"
+					refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//div[@id='mand_enroll_err']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="34bfd3e0-afb4-48a2-9437-b74c3308c75c"
+					name="InvalidCardNumberError"
+					refimgid="ec42be62-42a4-4374-bb55-6eab5006c248"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//p[@id='CardNumberError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="3c74d15b-7c66-4ff3-9c62-fbb613c9054e"
+					name="InvalidPinError"
+					refimgid="8810a105-bcea-4ae4-ae7a-8d502c25762c"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//p[@id='PinError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="9bf9e19a-6cb8-4429-9cd5-e05a72940744"
+					name="InvalidCaptchaError"
+					refimgid="babe4323-b1c4-4eab-8d26-145036a1afdf"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..//p[@id='VerificationError']
+					</item>
+				</folder>
+				<basepath>
+					/dom[@domain~'fnclmob.']//span[@innertext='ATM/Debit Card']/../../../..
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="8790d98c-1b02-4d51-91ab-6628318de1fa"
+			isrooted="True"
+			name="CheckingSavingsMoneyMarketPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="43247288-d5ad-4312-a5e2-3ddaaf942259"
+				name="ValidateCheckingSavingsMoneyMarketAccountHeader"
+				refimgid="decb7120-4721-4f91-9abf-f060cf9226e8"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//span[@innertext='Please validate your Checking, Savings, or Money Market Account.']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="b2903d87-dada-4c38-8591-fb86776e687b"
+				name="AccountNumberInputBox"
+				refimgid="802e15f8-d2de-4659-94ec-384d36e62252"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//input[@id='LoginAltFlowFG.ACCOUNT_NUMBER']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="04763197-750a-42f6-8084-1f629fd76b8f"
+				name="LastStatementBalance"
+				refimgid="71bbc999-786c-4cbc-90c8-d76851579f13"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//label[@id='statementText']
+				</item>
+				<item
+				capname="labeltag"
+				id="3a08c804-3141-434a-9ccf-bded5a7195c8"
+				name="LastDepositAmount"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//label[@id='depositText']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="7abf6b0e-593e-4d5c-b8f1-b9cbff91a22b"
+				name="StatementSelected"
+				refimgid="14ea0522-48fe-42d4-ada2-b3b72c769611"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//img[@id='statementSelected']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="8e5e6385-74c2-4134-8a48-305ed14d371f"
+				name="BalanceNotSelected"
+				refimgid="ca9e3848-eddb-41c2-b6b0-631fa63b5c39"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//img[@id='balanceNotSelected']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="4adad668-bbb6-4026-9332-0ea4f7c423e8"
+				name="StatementBalanceInputBox"
+				refimgid="ae241cc2-f159-4e3f-b387-cf13fac75404"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//input[@id='LoginAltFlowFG.LAST_STATEMENT_BALANCE_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="401278f7-2d82-48e6-af9b-44f54a14792d"
+				name="CaptchaImage"
+				refimgid="c75b2fda-bf79-4b56-a0ec-feeb55ab01cb"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//img[@id='IMAGECAPTCHA']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="d8990648-8adb-41f1-a7bf-6de0543c03bd"
+				name="RefreshIcon"
+				refimgid="5f7d151a-c78b-4a06-99d5-9bd8c12bb121"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//img[@id='TEXTIMAGE']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="c4068115-6755-4783-9c20-3ac440417fcf"
+				name="VerificationCodeInputBox"
+				refimgid="1fb6fa6e-f3ea-436a-9942-bde7b1e6ca3c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//input[@id='LoginAltFlowFG.VERIFICATION_CODE']
+				</item>
+				<folder
+				capname="unknown"
+				id="1079e74a-99bd-4612-8e07-ba7b261faebc"
+				isrooted="False"
+				name="Errors"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="cb890bfe-4fdb-42ba-8f9d-38e3e4b57a0c"
+					name="InvalidLastStatementAmountError"
+					refimgid="625976c1-f360-4dd9-8b9d-1c869f8155fa"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//p[@id='LastStatementError']
+					</item>
+					<item
+					capname="ptag"
+					id="db59a36b-a35b-494d-9dd4-a91ddc7f77a9"
+					name="InvalidLastDepositAmountError"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//p[@id='LastDepositError']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="2e43f532-7a8d-4953-a2bf-96df9221a7c8"
+					name="PleaseCorrectTheFollowingFieldsError"
+					refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//div[@id='mand_enroll_err']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="0d19acf0-15c0-4578-a66d-bb43acee3137"
+					name="InvalidAccountNumberError"
+					refimgid="2db0a7aa-cf5f-425f-a868-4cc26dea4f00"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//p[@id='AccountError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="0ba1b056-02f6-45ce-a1ef-416261a87faa"
+					name="InvalidCaptchaError"
+					refimgid="babe4323-b1c4-4eab-8d26-145036a1afdf"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..//p[@id='VerificationError']
+					</item>
+				</folder>
+				<basepath>
+					/dom[@domain~'fnclmob.']//span[@innertext='Checking, Savings, or Money Market Account']/../../../..
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="12a7e6e3-46c0-4eb1-8f30-406c45add524"
+			isrooted="True"
+			name="LoanOrLineOfCreditAccountPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="74312dab-da79-4732-af72-f6157a0d061a"
+				name="LoanOrLineOfCreditAccountHeader"
+				refimgid="a5aebe68-6d33-414b-a873-aeb0fd9e018d"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//span[@innertext='Loan, or Line of Credit Account']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="ece1d8c3-9818-4483-91de-9b15e0a09889"
+				name="PleasevalidateyourLoanorLineofCreditAccountHeader"
+				refimgid="106275ed-d329-4de9-9ca7-a55b87b288a2"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//span[@innertext='Please validate your Loan, or Line of Credit Account.']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="1f2d6a5f-ae86-48db-a25f-0191d8f7700c"
+				name="LoanNumberInputBox"
+				refimgid="d6fb44b7-bbc3-45ca-bfaa-6e298ec2b7a1"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//input[@id='LoginAltFlowFG.ACCOUNT_NUMBER']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="33d66c3f-f29d-49c5-ac5b-04083fc54ac0"
+				name="Dash"
+				refimgid="ba4d9126-5025-45eb-94fc-4c6a93d83d78"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//div[@id='four.fours']//span[@innertext='-']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e842b47d-0de8-4d09-b48f-a1180af47e4f"
+				name="NoteNumberInputBox"
+				refimgid="c218a466-07d9-457a-b8a2-52fcce5e9b40"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//input[@id='LoginAltFlowFG.NOTE_NUMBER_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="a5365af7-cf0b-49d1-95ef-38353e89de5c"
+				name="LastPaymentAmountInputBox"
+				refimgid="c030616f-d3b9-4662-b321-ec7f332e2609"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//input[@id='LoginAltFlowFG.LAST_PAYMENT_AMOUNT_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="9a6deaba-0ed0-4bb1-87f5-7223d7278e9a"
+				name="VerificationCodeInputBox"
+				refimgid="1fb6fa6e-f3ea-436a-9942-bde7b1e6ca3c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//input[@id='LoginAltFlowFG.VERIFICATION_CODE']
+				</item>
+				<folder
+				capname="unknown"
+				id="a854ca0e-747d-437d-a526-a1b76ddc263e"
+				isrooted="False"
+				name="Errors"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="25698a44-1dfa-4ba6-b1bf-baaaafa51b08"
+					name="PleaseCorrectTheFollowingFieldsError"
+					refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//div[@id='mand_enroll_err']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="1a64e127-7cb0-437e-88fd-f68ec80d7963"
+					name="InvalidAccountNumberError"
+					refimgid="2db0a7aa-cf5f-425f-a868-4cc26dea4f00"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//p[@id='AccountError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="446cf29f-1aab-4da1-8bec-e90e704d8b94"
+					name="NoteError"
+					refimgid="1d7addf2-52f6-4c56-9b85-936a2134cee1"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//p[@id='NoteError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="958d416b-0e2d-4361-ba7d-8452f2fa1ff7"
+					name="LastPaymentError"
+					refimgid="04192bd2-a486-4cbd-8548-1150e57cd922"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//p[@id='LastPaymentError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="0d054647-d52b-489f-948a-cff31ca0a959"
+					name="InvalidCaptchaError"
+					refimgid="babe4323-b1c4-4eab-8d26-145036a1afdf"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..//p[@id='VerificationError']
+					</item>
+				</folder>
+				<basepath>
+					/dom[@domain~'fnclmob.']//span[@innertext='Loan, or Line of Credit Account']/../../../..
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="97adb350-9b11-4ccc-aa11-f74db48262c2"
+			isrooted="True"
+			name="CertificateOfDepositPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="1fb3d7ec-57e7-489e-b077-ee98c990f951"
+				name="CertificateOfDepositHeader"
+				refimgid="3911c1e4-7fe7-4aa1-bc52-e563058fbe90"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//span[@innertext='Certificate of Deposit']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="806b8dc9-c4ab-49d3-887a-01b74afacfb7"
+				name="PleasevalidateyourCertificateofDepositAccountHeader"
+				refimgid="4dced043-24b3-49ee-937f-906be8c4ce9a"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//span[@innertext='Please validate your Certificate of Deposit Account.']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="59bda9b4-3500-420c-8f76-cd7e2681fa1a"
+				name="AccountNumberInputBox"
+				refimgid="802e15f8-d2de-4659-94ec-384d36e62252"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//input[@id='LoginAltFlowFG.ACCOUNT_NUMBER']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="52e90fb8-db75-4897-971e-55c7d96090e8"
+				name="OriginalDepositAmountInputBox"
+				refimgid="25ad5b84-aaa9-4cb7-9eb8-13a1f2ccf1c3"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//input[@id='LoginAltFlowFG.ORIGINAL_DEPOSIT_AMOUNT_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="cee4ae75-401f-4efa-89e2-8713bf9993db"
+				name="CaptchaImage"
+				refimgid="c75b2fda-bf79-4b56-a0ec-feeb55ab01cb"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//img[@id='IMAGECAPTCHA']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="9fdd794c-c8cb-4cd6-a58e-2c14e44653ce"
+				name="RefreshIcon"
+				refimgid="5f7d151a-c78b-4a06-99d5-9bd8c12bb121"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//img[@id='TEXTIMAGE']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="5683ef67-a6a4-4f2b-b72d-5fef28f57d40"
+				name="VerificationCodeInputBox"
+				refimgid="1fb6fa6e-f3ea-436a-9942-bde7b1e6ca3c"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//input[@id='LoginAltFlowFG.VERIFICATION_CODE']
+				</item>
+				<folder
+				capname="unknown"
+				id="4a09c8c6-e25a-4c96-80c7-845ad5ffa8ba"
+				isrooted="False"
+				name="Errors"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="3ebcfce3-8959-4806-b559-2cda7d5fd753"
+					name="PleaseCorrectTheFollowingFieldsError"
+					refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//div[@id='mand_enroll_err']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="0c835cff-f32b-4c30-8fc2-fd292e7ac601"
+					name="InvalidAccountNumberError"
+					refimgid="2db0a7aa-cf5f-425f-a868-4cc26dea4f00"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//p[@id='AccountError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="df6a8abf-511a-4567-9d2b-aa0799a9ccf6"
+					name="InvalidOriginalDepositError"
+					refimgid="9f1a026f-a0c5-44a9-8c99-d433837b9030"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//p[@id='OriginalDepositError']
+					</item>
+					<item
+					addcaps="unknown,webelement,ptag"
+					capname="ptag"
+					id="4faeb6a5-7e8b-4dbc-82c3-ae7bde21e783"
+					name="InvalidCaptchaError"
+					refimgid="babe4323-b1c4-4eab-8d26-145036a1afdf"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..//p[@id='VerificationError']
+					</item>
+				</folder>
+				<basepath>
+					/dom[@domain~'fnclmob.']//span[@innertext='Certificate of Deposit']/../../../..
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="131bd9a7-48cf-4d83-a8a9-e205c540608e"
+			isrooted="True"
+			name="TellUsMoreAboutYourBusinessPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="49b9881c-16e0-4c56-ab16-34c101f36bf5"
+				name="SomeBusinessCustomersNeedMoreAdvanc"
+				refimgid="ac4f54fd-9da7-4400-ad38-35a6b9c27e30"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//div[@innertext='Some business customers need more advanced online banking services such as:                                   ']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="d672a78b-3199-42bd-ac58-c89a5a9903be"
+				name="AccessAndControlsForMultipleUsers"
+				refimgid="9477b8ce-3c1d-436d-9f40-8ca88330c7a6"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//li[@innertext='Access and controls for multiple users']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="79ccfa36-2469-427f-8160-3a2b5afefe69"
+				name="ProcessingEmployeePayrollTransactions"
+				refimgid="dbe69a42-1939-4082-ae69-3d1637399722"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//li[@innertext='Processing employee payroll transactions']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="58d416cd-96b7-4259-8ffa-3ad92976781c"
+				name="InitiatingDomesticWireTransfers"
+				refimgid="e20791f1-90e1-4101-a3da-a8ad076746d1"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//li[@innertext='Initiating domestic wire transfers']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="444ce15d-d41e-4842-8bbd-508a65db19fa"
+				name="DoYouNeedAnyOfTheseFeatures"
+				refimgid="38aeb5a4-a3b9-42ab-8709-a2f108ccd182"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//div[@innertext='Do you need any of these features?                ']
+				</item>
+				<folder
+				capname="unknown"
+				id="002f53d8-defd-41aa-9958-138359ce1b89"
+				isrooted="True"
+				name="ToSetUpOnlineAccessWeNeedToLocateYouInOurSystemPage"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="8c068c21-588e-4b2d-b9f6-fb019137f3f2"
+					name="BusinessNameinputBox"
+					refimgid="f08691fe-63c3-4fd7-afb1-ebbdef35fa2f"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='To set up online access, we need to locate you in our system.']/../../../..//input[@id='LoginAltFlowFG.FIRST_NAME']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="3ce9e0e0-901a-4d0e-b38f-98aeffd0e9a1"
+					name="TinInputBox"
+					refimgid="46f56821-0277-42aa-8dfe-ae60e29eccf0"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='To set up online access, we need to locate you in our system.']/../../../..//input[@id='LoginAltFlowFG.SSN_NUMBER_1']
+					</item>
+					<folder
+					capname="unknown"
+					id="c0e6d6fb-f1c9-4d73-9f3e-5c7d4d952286"
+					isrooted="False"
+					name="Errors"
+					searchtimeout="0ms">
+						<item
+						addcaps="unknown,webelement,divtag"
+						capname="divtag"
+						id="00daef7e-5287-43cc-9076-b804c6836483"
+						name="PleaseCorrectTheFollowingFieldsError"
+						refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='To set up online access, we need to locate you in our system.']/../../../..//div[@id='mand_enroll_err']
+						</item>
+						<item
+						addcaps="unknown,webelement,ptag"
+						capname="ptag"
+						id="779e5313-7f7b-433b-8e19-c7a9dacbe560"
+						name="InvalidBusinessNameError"
+						refimgid="1ab5ced0-f024-4e79-b479-16aa6e8fdc68"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='To set up online access, we need to locate you in our system.']/../../../..//p[@id='FirstNameError']
+						</item>
+						<item
+						addcaps="unknown,webelement,ptag"
+						capname="ptag"
+						id="9a79ff35-ba35-4177-9058-8b0f243466b7"
+						name="InvalidTinError"
+						refimgid="14bca2e0-d4a7-408b-9ea9-28a70fac4429"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='To set up online access, we need to locate you in our system.']/../../../..//p[@id='SSNError']
+						</item>
+					</folder>
+					<basepath>
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='To set up online access, we need to locate you in our system.']/../../../..
+					</basepath>
+				</folder>
+				<folder
+				capname="unknown"
+				id="b277bfa9-e12e-42c6-9cb1-12d6e9ae551f"
+				isrooted="True"
+				name="WhoIsEnrollingOnBehalfOfThisBusinessPage"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="283ccd85-1b04-4ea5-8585-d49be961103b"
+					name="WhoIsEnrollingOnBehalfOfThisBusiness"
+					refimgid="4dced043-24b3-49ee-937f-906be8c4ce9a"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="647a3f9e-115a-4314-b0f7-7c3945e1baa8"
+					name="FirstNameInputBox"
+					refimgid="a97168f3-2cc3-4225-aab6-237c3d4efbb7"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//input[@id='LoginAltFlowFG.FIRST_NAME_AUTH']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="abbca95f-99f0-4c3a-b066-80611bf7b81e"
+					name="LastNameInputBox"
+					refimgid="e802b309-25f5-4457-a525-c6a10ee11e81"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//input[@id='LoginAltFlowFG.LAST_NAME_AUTH']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="f86bdc8c-9f02-490a-8734-5cae013c6932"
+					name="SocialSecurityNumberInputBox"
+					refimgid="6346c275-910d-44ec-83f7-caa1bf67a063"
+					searchtimeout="30000ms">
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//input[@id='LoginAltFlowFG.SSN_NUMBER_AUTH_1']
+					</item>
+					<folder
+					capname="unknown"
+					id="64dde8aa-1c3d-4aa3-b4d3-ea3adc7bdb7a"
+					isrooted="False"
+					name="Errors"
+					searchtimeout="0ms">
+						<item
+						addcaps="unknown,webelement,divtag"
+						capname="divtag"
+						id="c55f8e37-3fbd-46d4-83ae-b9b8bbdb6894"
+						name="PleaseCorrectTheFollowingFieldsError"
+						refimgid="40f1f060-7bc9-47c9-a493-8c3461efa849"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//div[@id='mand_enroll_err']
+						</item>
+						<item
+						addcaps="unknown,webelement,ptag"
+						capname="ptag"
+						id="7d986e83-a3de-4bc1-8fb2-8ba87d2bbede"
+						name="InvalidFirstNameError"
+						refimgid="1ab5ced0-f024-4e79-b479-16aa6e8fdc68"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//p[@id='FirstNameError']
+						</item>
+						<item
+						addcaps="unknown,webelement,ptag"
+						capname="ptag"
+						id="8137b563-d510-402f-bb67-fa485d68307f"
+						name="InvalidLastNameError"
+						refimgid="11e036cd-5937-41ff-977a-68a2ebfcf03b"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//p[@id='LastNameError']
+						</item>
+						<item
+						addcaps="unknown,webelement,ptag"
+						capname="ptag"
+						id="87e0513b-227c-4bc8-ac2e-edaa16757f90"
+						name="InvalidSsnError"
+						refimgid="14bca2e0-d4a7-408b-9ea9-28a70fac4429"
+						searchtimeout="30000ms">
+							/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..//p[@id='SSNError']
+						</item>
+					</folder>
+					<basepath>
+						/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..//span[@innertext='Who is enrolling on behalf of this business?']/../../../..
+					</basepath>
+				</folder>
+				<basepath>
+					/dom[@domain~'fnclmob.']//span[@innertext='Tell us more about your business']/../../../..
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="3009fe05-055a-489d-beb9-874e812fd9d9"
+			isrooted="True"
+			name="PleaseContactUsModal"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="0fe9bc51-eeab-4f58-948c-4e5ebb124b62"
+				name="PleaseReachOutToOurEasternBankBusinessTeam"
+				refimgid="c0847f24-d2e5-4943-aca0-c206759e700b"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='target-content.MainLoginSection1']//div[@innertext='Please reach out to our Eastern Bank Business team at  to find a solution that works for you. Representatives are available Mon-Fri from  8:00 a.m. to 6:00 p.m.']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="cfd4fa23-1547-4361-9e78-01079b73bf5a"
+				name="OkButton"
+				refimgid="28b70339-b2ba-4259-a72a-4c2903cbb83e"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//div[@id='target-content.MainLoginSection1']//a[@id='label_forgot_access_code_no']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//div[@id='target-content.MainLoginSection1']
+				</basepath>
+			</folder>
+			<folder
+			capname="form"
+			id="e3bcceaa-c30b-4168-8d3b-c00112a592f6"
+			isrooted="True"
+			name="FooterButtons"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="0bb61622-ff15-4ea9-a053-78804c935dd3"
+				name="BackButton"
+				refimgid="c961b995-b552-472e-99d0-4e8eb32c7eb7"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//a[@id='label_forgot_access_code']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="5c3dbb34-f893-45aa-9bba-c230ff797e54"
+				name="NextButton"
+				refimgid="4a4641e9-ad9f-4925-94ed-9477109c7fa9"
+				searchtimeout="30000ms">
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//input[@id='Button26229281']
+				</item>
+				<basepath>
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain~'fnclmob.']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

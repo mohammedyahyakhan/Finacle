@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b4195b16-6f7c-41a4-8422-ce7772625cff"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EnterLoanAmount"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+		<var
+		id="80f02be8-f1c2-4e86-96b7-16d15a412e95"
+		name="LoanAmount">
+		</var>
+	</variables>
+	<recorditems>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d5b14d53-8fbe-47fa-92b6-a15d7cf255cb">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="LoanAmount">
+				</binding>
+			</bindings>
+			<info
+			id="0cadcba9-0b99-4f2e-b563-6d3028eb1853"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'myRangeByInput']
+				</path>
+			</info>
+			<AttributeValue>
+				$Loan_Amount
+			</AttributeValue>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EnterLoanAmount.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

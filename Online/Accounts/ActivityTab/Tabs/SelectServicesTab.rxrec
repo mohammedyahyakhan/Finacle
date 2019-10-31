@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1c0ebe88-873d-4b7d-a1e8-0c07c43bddfe"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectServicesTab"
+	namespace="AccountsTestSuite.ActivityTab.Tabs">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21b20127-abe5-4f7f-a5f6-037ebcdf32f4"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c57c2918-341f-4b81-b52c-01b4cd45a500"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="atag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//ul[@class='eb-account-tabs']//a[@id='srvTab']
+				</path>
+			</info>
+			<arguments
+			id="55c642e6-d6f9-450a-9628-1762e3cd9a7b">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="79fe3c8e-c8a1-42e3-ab8a-db9408281014"
+		waitaction="AttributeEqual"
+		waittimeout="15000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fce0e2eb-08b4-438f-8f27-06b343b20a41"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="81,538,91,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						column-intro
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Check Services
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'accounts-view']//span[@innertext='Check Services']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="590b58e0-f10f-49ca-9123-91017a704bf5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="08831fef-3f04-4f23-944b-e4d78a666685"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, itag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="itag"
+				rect="244,433,12,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-question-circle
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						itag
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						i
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+						An overdraft occurs when you do not have enough money in your account to cover a transaction, but we pay it anyway. We do not authorize and pay for ATM transactions and everyday debit card transactions that may overdraw your account unless you ask us to. Based on the type of account you have, you may be charged a fee each time we pay an overdraft.
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+						displayToolTip()
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-mouseenter"
+					readonly="False"
+					type="System.String">
+						displayToolTip()
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-mouseleave"
+					readonly="False"
+					type="System.String">
+						hideToolTip()
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						pointer: default !important; margin-left: 0px;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//i[#'itag']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="b0226beb-b98f-4ee5-8817-61006f0b6e10">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABOAE4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKiuZ1toGmcEquMhevXFAEtFZn9u2v/ADzm/If40f27a/8A
+POb8h/jU88e5HPHuadFNikEsSSLkB1DDPvTqosKKKKAK39oWuwMJCQTgYUnP6dPemQalBIqb3Cu5
+O1QCcjcQD+lIbeaKSGWFUZki8plZsDtyDj2qOzsZoXLOY9xiKZHOCXJ/LkUATPqVsIpHRi2xS2Np
+G4e3HNZ93qIubGWJlw2xWyAcfe6cipFsLrB3BMmF4iTKW5I64xwOOgpNSt5YraR/lKGFEbnkENSl
+syZfCxYHadIIznaEUYBx2qO9kZLSeE52nGAe3IqxbQtElvKFZlMan5Rk9Ki1CFjaXEzAqOMAjnqK
+0bXJ8jBp2NKy/wCPG3/65r/Kpqp2VzH9igAEhwgHEbEZA+lT/aU/uy/9+m/wrNbHQtiWiovtKf3Z
+f+/Tf4UfaU/uy/8Afpv8KYyWiuU/ti//AOe//ji/4Uf2xf8A/Pf/AMcX/CgDq6iuYFuYGhckK2Ml
+evXNcz/bF/8A89//ABxf8KDrF+Rj7R1/2F/woC1yXU4LS1byoHkeUfeyRhf061Y0+xsb2LIklWQf
+eXcOP06VjxsTMpJySwzXYm3twCTDFgf7AqeSPYj2cewywjEVqI1yQjMoz7MasVBYlTbAoMKWYgYx
+gbjUSu51IrOzJgfuUB+Vx3Oe59u3v1qiy5RVOxd2klCM0lsD8kjHJz3APce/86uGgDhqKuWAV5J5
+HVWZImdQVG3P0q60UQtjdCKPzPs4bG0bc5xnHSgDGorSMipYi6W3g3vLtYFMrgDsD0/Cp4oYWkt/
+3MYDWzMRt70AZEX+tT/eFdlcq7wlI+rcEnsO9YNzLb29yI3gQIYhgpGuQSOvvVq61e4t7lYtkTBg
+CGwRwfbNAGnZgiDBwSHfOBgfeNSSJ5iFdzLnupwahsGL2is2MszE4/3jVigCEW2HZvOmOXDYLcD2
++nNTUUUAf//Z
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="d58e77bb-0898-4840-8b86-1f90fdf37031"
+	name="AccountsTestSuiteRepository"
+	relativepath="..\..\AccountsTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AccountsTestSuiteRepository"
+		namespace="AccountsTestSuite">
+		</codegen>
+		<rootfolder
+		id="01ffe724-4110-4f19-9ab4-a5dc39922701"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectServicesTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

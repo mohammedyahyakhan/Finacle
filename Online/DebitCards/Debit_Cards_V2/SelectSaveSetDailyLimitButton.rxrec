@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="23847a59-f2d9-4614-9d58-9cc08386a205"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSaveSetDailyLimitButton"
+	namespace="Debit_Cards_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="37eb3c6c-e6c9-420b-86a3-de10f404b805">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1dbebc8d-1cf0-4359-883c-8564263854a1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'setLimitModal']/div/div/div[3]/button[@innertext='Save']
+				</path>
+			</info>
+			<arguments
+			id="c40daaa2-de81-4ba5-af02-373ca05a9e49">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="9b55bd05-b068-459d-8c16-2c6d2844c24c"
+	name="DebitCardsRepository"
+	relativepath="DebitCardsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="DebitCardsRepository"
+		namespace="Debit_Cards_V2">
+		</codegen>
+		<rootfolder
+		id="193247be-98ed-44ae-8ef7-b0f5c715eb32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSaveSetDailyLimitButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

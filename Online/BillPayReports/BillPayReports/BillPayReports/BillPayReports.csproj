@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E5AA77E5-E3DC-4C97-82C7-C43B60D2542C}</ProjectGuid>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BillPayReports</RootNamespace>
+    <AssemblyName>BillPayReports</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>11033d35-3daa-4b6e-ac7f-dc159193fbe5</projectdefaultrepository>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Libs.Util">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Ranorex\Studio\Bin\Ranorex.Libs.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualReportPageValidation.cs">
+      <BoundTo>f4fc9bf9-a0a3-40b1-be93-c926ec2e2170</BoundTo>
+      <DependentUpon>ActualReportPageValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d72d43f-9f12-4bce-baab-5da8858bc10f</id>
+    </Compile>
+    <Compile Include="ActualReportPageValidation.UserCode.cs">
+      <BoundTo>f4fc9bf9-a0a3-40b1-be93-c926ec2e2170</BoundTo>
+      <DependentUpon>ActualReportPageValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72370a16-ecb8-4e5d-a570-509090225885</id>
+    </Compile>
+    <Compile Include="BillPayReportTabValidation.cs">
+      <BoundTo>2bd4d5f3-71f3-443b-a606-a8e6abdee27f</BoundTo>
+      <DependentUpon>BillPayReportTabValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fe04e023-77d7-4487-8a33-e72825db8f18</id>
+    </Compile>
+    <Compile Include="BillPayReportTabValidation.UserCode.cs">
+      <BoundTo>2bd4d5f3-71f3-443b-a606-a8e6abdee27f</BoundTo>
+      <DependentUpon>BillPayReportTabValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>922305f7-ab79-48ff-9137-b48795ee299a</id>
+    </Compile>
+    <Compile Include="SelectCreateBillPaymentReportCreateReportButton.cs">
+      <BoundTo>5ce16c8d-c446-4c9e-89bf-8c462fb2d44b</BoundTo>
+      <DependentUpon>SelectCreateBillPaymentReportCreateReportButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c370506e-46ba-4175-84f0-170c78ca8736</id>
+    </Compile>
+    <Compile Include="SelectCreateBillPaymentReportCreateReportButton.UserCode.cs">
+      <BoundTo>5ce16c8d-c446-4c9e-89bf-8c462fb2d44b</BoundTo>
+      <DependentUpon>SelectCreateBillPaymentReportCreateReportButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9508f813-3f71-4b25-b95b-6816ab6ae24c</id>
+    </Compile>
+    <Compile Include="SelectDeleteReportButton.cs">
+      <BoundTo>a6d72d61-3f0e-4cc0-b985-4c0b64042ed9</BoundTo>
+      <DependentUpon>SelectDeleteReportButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>44468c50-7313-460f-ae1d-639da6e9999e</id>
+    </Compile>
+    <Compile Include="SelectDeleteReportButton.UserCode.cs">
+      <BoundTo>a6d72d61-3f0e-4cc0-b985-4c0b64042ed9</BoundTo>
+      <DependentUpon>SelectDeleteReportButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc727aeb-e4df-47aa-97cf-683112700a58</id>
+    </Compile>
+    <Compile Include="SelectSaveReportButton.cs">
+      <BoundTo>e767a731-6111-4136-89ad-8d4abfb3f443</BoundTo>
+      <DependentUpon>SelectSaveReportButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d8325d4-c491-4a35-ae88-4e347b342d02</id>
+    </Compile>
+    <Compile Include="SelectSaveReportButton.UserCode.cs">
+      <BoundTo>e767a731-6111-4136-89ad-8d4abfb3f443</BoundTo>
+      <DependentUpon>SelectSaveReportButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b781655e-54ed-4b5c-8667-66c4b54fea6a</id>
+    </Compile>
+    <Compile Include="ConfirmationSortingAscendingDescending.cs">
+      <BoundTo>c66037d3-080b-4c30-a6ea-dcbf9d2bc954</BoundTo>
+      <DependentUpon>ConfirmationSortingAscendingDescending.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e076bd69-7bbc-4bc6-b64c-094c7bec4b2c</id>
+    </Compile>
+    <Compile Include="ConfirmationSortingAscendingDescending.UserCode.cs">
+      <BoundTo>c66037d3-080b-4c30-a6ea-dcbf9d2bc954</BoundTo>
+      <DependentUpon>ConfirmationSortingAscendingDescending.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f7bc933-0802-4cc0-95c8-bebd052c0c92</id>
+    </Compile>
+    <Compile Include="CreateNewReport.cs">
+      <BoundTo>2a9bc0b6-7bcc-4657-8a7c-ef1a902497f8</BoundTo>
+      <DependentUpon>CreateNewReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f4cd70e-ae99-4c2d-b25a-da7c4d49acd5</id>
+    </Compile>
+    <Compile Include="CreateNewReport.UserCode.cs">
+      <BoundTo>2a9bc0b6-7bcc-4657-8a7c-ef1a902497f8</BoundTo>
+      <DependentUpon>CreateNewReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>742f8c07-7df3-4931-a5d4-380be3459dcb</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>a4326699-5499-4fdf-bbaf-6d727a533797</id>
+    </Compile>
+    <Compile Include="BillPayReportsRepository.cs">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <DependentUpon>BillPayReportsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>46535393-6573-4730-ba12-8bb99ff68ff5</id>
+    </Compile>
+    <Compile Include="BPRv2Repository.cs">
+      <DependentUpon>BPRv2Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>30580601-6be9-49cf-8173-095e844570e6</id>
+      <BoundTo>e9a77faf-5acd-4436-b367-39da1fd6552e</BoundTo>
+    </Compile>
+    <Compile Include="CancelDeleteReport.cs">
+      <BoundTo>703b7fe1-4365-4cab-9fd7-4a6ef86431ca</BoundTo>
+      <DependentUpon>CancelDeleteReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8a30780-42f0-4364-adf3-0b5bfc14befb</id>
+    </Compile>
+    <Compile Include="CancelDeleteReport.UserCode.cs">
+      <BoundTo>703b7fe1-4365-4cab-9fd7-4a6ef86431ca</BoundTo>
+      <DependentUpon>CancelDeleteReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8a00f9b-00ce-47bc-8e86-5fff1d3106d7</id>
+    </Compile>
+    <Compile Include="CreateReportFAIL.cs">
+      <BoundTo>385196a1-1663-4f2d-a2a9-a2debd25f59c</BoundTo>
+      <DependentUpon>CreateReportFail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b95d5524-c7d8-49b7-b197-5f67169c79b6</id>
+    </Compile>
+    <Compile Include="CreateReportFAIL.UserCode.cs">
+      <BoundTo>385196a1-1663-4f2d-a2a9-a2debd25f59c</BoundTo>
+      <DependentUpon>CreateReportFail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>56f7f00a-6454-4d00-9b8c-2bc8fdbfd7f6</id>
+    </Compile>
+    <Compile Include="EditReportTitle.cs">
+      <BoundTo>66b74448-aa67-4593-a9f0-76a8cc3d04f2</BoundTo>
+      <DependentUpon>EditReportTitle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0cbae35-c662-4f0a-9bb1-36fb7d84bae3</id>
+    </Compile>
+    <Compile Include="EditReportTitle.UserCode.cs">
+      <BoundTo>66b74448-aa67-4593-a9f0-76a8cc3d04f2</BoundTo>
+      <DependentUpon>EditReportTitle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ac59cd4f-e4c2-4102-a437-6f995c5d26ee</id>
+    </Compile>
+    <Compile Include="EnterBillPayReportTitle.cs">
+      <BoundTo>7f085ba4-faeb-4c33-87c8-f33ee89d90ef</BoundTo>
+      <DependentUpon>EnterBillPayReportTitle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a990beda-e069-4d7d-a0b3-73cb547fb60c</id>
+    </Compile>
+    <Compile Include="EnterBillPayReportTitle.UserCode.cs">
+      <BoundTo>7f085ba4-faeb-4c33-87c8-f33ee89d90ef</BoundTo>
+      <DependentUpon>EnterBillPayReportTitle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec6b569f-8f07-4692-887d-8e128b51a70a</id>
+    </Compile>
+    <Compile Include="SelectAllFundingAccountsCheckBox.cs">
+      <BoundTo>a65362b5-fc4d-4d91-905c-e44ae942939f</BoundTo>
+      <DependentUpon>SelectAllFundingAccountsCheckBox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cdfa1c25-72db-41af-8934-82b2e7a8769f</id>
+    </Compile>
+    <Compile Include="SelectAllFundingAccountsCheckBox.UserCode.cs">
+      <BoundTo>a65362b5-fc4d-4d91-905c-e44ae942939f</BoundTo>
+      <DependentUpon>SelectAllFundingAccountsCheckBox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>627128ff-9def-4aa9-948f-e2803e743d61</id>
+    </Compile>
+    <Compile Include="SelectAllPayeesCheckbox.cs">
+      <BoundTo>b978f3dc-389f-47a6-a373-cf8b6243a277</BoundTo>
+      <DependentUpon>SelectAllPayeesCheckbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>42a1fedd-976c-4932-884a-18f28a3607c9</id>
+    </Compile>
+    <Compile Include="SelectAllPayeesCheckbox.UserCode.cs">
+      <BoundTo>b978f3dc-389f-47a6-a373-cf8b6243a277</BoundTo>
+      <DependentUpon>SelectAllPayeesCheckbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9905078-a3c5-4245-90fc-4c333abe3d08</id>
+    </Compile>
+    <Compile Include="SelectAllPaymentStatusesCheckbox.cs">
+      <BoundTo>3537b051-aede-4a6b-9def-3b9b7d550806</BoundTo>
+      <DependentUpon>SelectAllPaymentStatusesCheckbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d49ec712-ee95-48f0-ac30-ec93f6b06052</id>
+    </Compile>
+    <Compile Include="SelectAllPaymentStatusesCheckbox.UserCode.cs">
+      <BoundTo>3537b051-aede-4a6b-9def-3b9b7d550806</BoundTo>
+      <DependentUpon>SelectAllPaymentStatusesCheckbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e0d3c461-352b-4767-a1d3-28092935291b</id>
+    </Compile>
+    <Compile Include="SelectCreateReport.cs">
+      <BoundTo>11cfbe00-f3fe-4f6d-a38a-5d43ddb5b4e8</BoundTo>
+      <DependentUpon>SelectCreateReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8b09800-a6d7-4bf3-8c6a-d43a52263cc8</id>
+    </Compile>
+    <Compile Include="SelectCreateReport.UserCode.cs">
+      <BoundTo>11cfbe00-f3fe-4f6d-a38a-5d43ddb5b4e8</BoundTo>
+      <DependentUpon>SelectCreateReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ff9c06c-8f2c-4ab1-a5fb-02c15cdbbfd3</id>
+    </Compile>
+    <Compile Include="SelectDefaultReportCheckbox.cs">
+      <BoundTo>047bdfe9-6263-4e7d-89bd-1e83e1e1edda</BoundTo>
+      <DependentUpon>SelectDefaultReportCheckbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aca6bb02-e294-4f15-98a9-103b65ee27ad</id>
+    </Compile>
+    <Compile Include="SelectDefaultReportCheckbox.UserCode.cs">
+      <BoundTo>047bdfe9-6263-4e7d-89bd-1e83e1e1edda</BoundTo>
+      <DependentUpon>SelectDefaultReportCheckbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>078cf0f5-8be1-4d8c-adb6-7d237dcf66d1</id>
+    </Compile>
+    <Compile Include="SelectEditReport.cs">
+      <BoundTo>1bd105c3-1976-4cca-94ec-5afac2944e45</BoundTo>
+      <DependentUpon>SelectEditReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>312117ce-e3db-457d-a01b-99b98028b505</id>
+    </Compile>
+    <Compile Include="SelectEditReport.UserCode.cs">
+      <BoundTo>1bd105c3-1976-4cca-94ec-5afac2944e45</BoundTo>
+      <DependentUpon>SelectEditReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f9b36b62-ada3-409d-b9f9-042db8f0101c</id>
+    </Compile>
+    <Compile Include="SelectFromDateToDate.cs">
+      <BoundTo>e0d1e314-d36b-485f-96ab-939b28c9cb90</BoundTo>
+      <DependentUpon>SelectFromDateToDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>81c60e8f-4f51-45ec-82b7-33e49a7820d3</id>
+    </Compile>
+    <Compile Include="SelectFromDateToDate.UserCode.cs">
+      <BoundTo>e0d1e314-d36b-485f-96ab-939b28c9cb90</BoundTo>
+      <DependentUpon>SelectFromDateToDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a15aabf7-9c5c-4f2d-a68d-e7daefa2e557</id>
+    </Compile>
+    <Compile Include="SelectFundingAccountsVar.cs">
+      <BoundTo>9eacdfc8-3189-4735-9f81-77d591dfa398</BoundTo>
+      <DependentUpon>SelectFundingAccountsVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0404dd3e-27e2-43d7-8f8f-0bc5c852596b</id>
+    </Compile>
+    <Compile Include="SelectFundingAccountsVar.UserCode.cs">
+      <BoundTo>9eacdfc8-3189-4735-9f81-77d591dfa398</BoundTo>
+      <DependentUpon>SelectFundingAccountsVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c17c7437-294b-46d6-a375-54d03a3bc0fa</id>
+    </Compile>
+    <Compile Include="DeleteBillPayReport.cs">
+      <BoundTo>90849bbb-cae6-438e-bad0-87a7a6baef6a</BoundTo>
+      <DependentUpon>DeleteBillPayReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12b8dde2-d5cc-4446-8f82-390f2e61fc91</id>
+    </Compile>
+    <Compile Include="DeleteBillPayReport.UserCode.cs">
+      <BoundTo>90849bbb-cae6-438e-bad0-87a7a6baef6a</BoundTo>
+      <DependentUpon>DeleteBillPayReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f759c1a7-c1c1-4ff8-9847-2e43596d6cc1</id>
+    </Compile>
+    <Compile Include="PaidFromSortingAscendingDescending.cs">
+      <BoundTo>74218ffb-3857-4b60-9b7f-adfa25541ba2</BoundTo>
+      <DependentUpon>PaidFromSortingAscendingDescending.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6128ffc0-3cba-4240-b3d3-beedc13ae5c7</id>
+    </Compile>
+    <Compile Include="PaidFromSortingAscendingDescending.UserCode.cs">
+      <BoundTo>74218ffb-3857-4b60-9b7f-adfa25541ba2</BoundTo>
+      <DependentUpon>PaidFromSortingAscendingDescending.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>21cf7488-af5a-4c28-8d8f-78911f8ca18f</id>
+    </Compile>
+    <Compile Include="PaidToSortingAscendingDescending.cs">
+      <BoundTo>7b23b9a5-26bb-4aa9-8374-9ae2e1d1fa97</BoundTo>
+      <DependentUpon>PaidToSortingAscendingDescending.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e62bb2ad-d034-4efc-847e-4aaa2b4ca3f9</id>
+    </Compile>
+    <Compile Include="PaidToSortingAscendingDescending.UserCode.cs">
+      <BoundTo>7b23b9a5-26bb-4aa9-8374-9ae2e1d1fa97</BoundTo>
+      <DependentUpon>PaidToSortingAscendingDescending.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2be2b5ef-5525-464f-8767-ad9184f6c1b3</id>
+    </Compile>
+    <Compile Include="PaidToSortAscending.cs">
+      <BoundTo>cadf9825-edf3-407e-aff8-2fbb28022098</BoundTo>
+      <DependentUpon>PaidToSortAscending.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0fe51cc-8693-4b93-8e6f-838374bb9238</id>
+    </Compile>
+    <Compile Include="PaidToSortAscending.UserCode.cs">
+      <BoundTo>cadf9825-edf3-407e-aff8-2fbb28022098</BoundTo>
+      <DependentUpon>PaidToSortAscending.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4249b456-9806-41ef-bef4-c328c0a65aa4</id>
+    </Compile>
+    <Compile Include="SelectBillPayReportTab.cs">
+      <BoundTo>5ad83508-a58a-4c1c-b535-b8eeecc793b0</BoundTo>
+      <DependentUpon>SelectBillPayReportTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e7f243a-83fb-4326-a3f2-fc9fa73ec757</id>
+    </Compile>
+    <Compile Include="SelectBillPayReportTab.UserCode.cs">
+      <BoundTo>5ad83508-a58a-4c1c-b535-b8eeecc793b0</BoundTo>
+      <DependentUpon>SelectBillPayReportTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>07d3500c-5590-4e20-9b41-b29faa6f86bf</id>
+    </Compile>
+    <Compile Include="SelectPayeesVar.cs">
+      <BoundTo>106641fd-141b-4c25-8e45-23183893438e</BoundTo>
+      <DependentUpon>SelectPayeesVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>55fa0c40-2846-48b4-8d5b-cf68470755ee</id>
+    </Compile>
+    <Compile Include="SelectPayeesVar.UserCode.cs">
+      <BoundTo>106641fd-141b-4c25-8e45-23183893438e</BoundTo>
+      <DependentUpon>SelectPayeesVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>77f9d002-cdff-46ff-8647-c602ff92f2af</id>
+    </Compile>
+    <Compile Include="SelectPaymentStatusVar.cs">
+      <BoundTo>7670d02f-6b34-45ea-b0cb-f9f63cadca09</BoundTo>
+      <DependentUpon>SelectPaymentStatusVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>264a1f52-5e22-45fd-be9d-4875df31fe93</id>
+    </Compile>
+    <Compile Include="SelectPaymentStatusVar.UserCode.cs">
+      <BoundTo>7670d02f-6b34-45ea-b0cb-f9f63cadca09</BoundTo>
+      <DependentUpon>SelectPaymentStatusVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>08192e19-20ab-4071-85f5-279880980d47</id>
+    </Compile>
+    <Compile Include="SelectReportInReportDropdown.cs">
+      <BoundTo>7154173b-7166-4d60-b882-7d0d69fdfa4a</BoundTo>
+      <DependentUpon>SelectReportInReportDropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63df2349-749b-4983-a444-9a04a465c958</id>
+    </Compile>
+    <Compile Include="SelectReportInReportDropdown.UserCode.cs">
+      <BoundTo>7154173b-7166-4d60-b882-7d0d69fdfa4a</BoundTo>
+      <DependentUpon>SelectReportInReportDropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ba51c4c-5524-4cd4-bfac-41ecfb83a63c</id>
+    </Compile>
+    <Compile Include="SelectSaveAsDefaultReport.cs">
+      <BoundTo>fbab6630-bf04-4972-95af-5a94d0f5afa3</BoundTo>
+      <DependentUpon>SelectSaveAsDefaultReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7ff31fec-0e52-4f9f-beef-7fd4586a0f0b</id>
+    </Compile>
+    <Compile Include="SelectSaveAsDefaultReport.UserCode.cs">
+      <BoundTo>fbab6630-bf04-4972-95af-5a94d0f5afa3</BoundTo>
+      <DependentUpon>SelectSaveAsDefaultReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4a64f07-8e21-4920-a634-fe3e89ba89fa</id>
+    </Compile>
+    <Compile Include="SelectSubtotalVar.cs">
+      <BoundTo>7fd1ac9d-f7c3-4d3c-88d3-7c6922901c94</BoundTo>
+      <DependentUpon>SelectSubtotalVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9df13dc1-19ee-48ef-a401-70872b2d2992</id>
+    </Compile>
+    <Compile Include="SelectSubtotalVar.UserCode.cs">
+      <BoundTo>7fd1ac9d-f7c3-4d3c-88d3-7c6922901c94</BoundTo>
+      <DependentUpon>SelectSubtotalVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b534904e-320b-41bf-9649-db4b1cc02d7a</id>
+    </Compile>
+    <Compile Include="SelectTimeFrameVar.cs">
+      <BoundTo>9af517d9-de66-495e-b706-74b8c76d5019</BoundTo>
+      <DependentUpon>SelectTimeFrameVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0e3cee0-8894-4ed6-8583-098b03ddff52</id>
+    </Compile>
+    <Compile Include="SelectTimeFrameVar.UserCode.cs">
+      <BoundTo>9af517d9-de66-495e-b706-74b8c76d5019</BoundTo>
+      <DependentUpon>SelectTimeFrameVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6cea5d85-fed6-4548-a532-1871a74393f0</id>
+    </Compile>
+    <Compile Include="DeleteNonDefaultReports.cs">
+      <id>ec51977c-1c17-4c2b-a632-14121108398f</id>
+    </Compile>
+    <Compile Include="ValidateDuplicateReportTitleError.cs">
+      <BoundTo>c4961c62-8810-40a5-938a-84c65d75f79e</BoundTo>
+      <DependentUpon>ValidateDuplicateReportTitleError.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d23f95b-05c9-41c9-9cb1-e440871b05b5</id>
+    </Compile>
+    <Compile Include="ValidateDuplicateReportTitleError.UserCode.cs">
+      <BoundTo>c4961c62-8810-40a5-938a-84c65d75f79e</BoundTo>
+      <DependentUpon>ValidateDuplicateReportTitleError.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cba83830-43f8-42b6-bc15-be963609b72e</id>
+    </Compile>
+    <Compile Include="ValidateHeaderSorting.cs">
+      <BoundTo>06e3250d-ed3e-4454-9a7a-a4b42933e925</BoundTo>
+      <DependentUpon>ValidateHeaderSorting.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f23a175-57cc-4580-8f64-67ff5176f63c</id>
+    </Compile>
+    <Compile Include="ValidateHeaderSorting.UserCode.cs">
+      <BoundTo>06e3250d-ed3e-4454-9a7a-a4b42933e925</BoundTo>
+      <DependentUpon>ValidateHeaderSorting.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e6f75778-555d-4e9f-b6e8-de78276e2fce</id>
+    </Compile>
+    <Compile Include="StatusSortingAscendingDesending.cs">
+      <BoundTo>e7665da0-49a6-43f1-89a7-028fb2ef6932</BoundTo>
+      <DependentUpon>StatusSortingAscendingDesending.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>22035345-1632-448c-a434-3521143c3af8</id>
+    </Compile>
+    <Compile Include="StatusSortingAscendingDesending.UserCode.cs">
+      <BoundTo>e7665da0-49a6-43f1-89a7-028fb2ef6932</BoundTo>
+      <DependentUpon>StatusSortingAscendingDesending.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6f1add9-9af4-4b21-9b5a-bfaa4d932f33</id>
+    </Compile>
+    <Compile Include="ValidateDropDown.cs">
+      <BoundTo>e78246fc-4ae8-49d8-8b01-e19009d370a0</BoundTo>
+      <DependentUpon>ValidateDropDown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dae55a6-9594-4f88-9273-2ad12bcc40ee</id>
+    </Compile>
+    <Compile Include="ValidateDropDown.UserCode.cs">
+      <BoundTo>e78246fc-4ae8-49d8-8b01-e19009d370a0</BoundTo>
+      <DependentUpon>ValidateDropDown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c4c34ff-98ee-4ba0-8336-dd55b46b7231</id>
+    </Compile>
+    <Compile Include="CreateBillPaymentReportPageValidation.cs">
+      <BoundTo>35244951-2692-4d19-bfdd-5ab07b765696</BoundTo>
+      <DependentUpon>CreateBillPaymentReportPageValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f059049d-543f-4c0b-b91f-410f9fcbeba6</id>
+    </Compile>
+    <Compile Include="CreateBillPaymentReportPageValidation.UserCode.cs">
+      <BoundTo>35244951-2692-4d19-bfdd-5ab07b765696</BoundTo>
+      <DependentUpon>CreateBillPaymentReportPageValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e44cf1d6-972e-44d7-9694-6ba35487d193</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6887654f-6c7e-41af-bf19-821c85c5d0ed</id>
+    </Compile>
+    <Compile Include="VerifyGrandTotal.cs">
+      <BoundTo>16bfb768-c26f-485e-adeb-38429fdf100a</BoundTo>
+      <DependentUpon>VerifyGrandTotal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7904dc16-8251-4cec-9e79-4ca205aa8323</id>
+    </Compile>
+    <Compile Include="VerifyGrandTotal.UserCode.cs">
+      <BoundTo>16bfb768-c26f-485e-adeb-38429fdf100a</BoundTo>
+      <DependentUpon>VerifyGrandTotal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d7b337a-3b10-45f8-b531-4acfd45e990b</id>
+    </Compile>
+    <Compile Include="VerifyPayeeSubtotal.cs">
+      <BoundTo>a6412e9c-be7e-4556-aa41-d112dba55ebe</BoundTo>
+      <DependentUpon>VerifyPayeeSubtotal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8895f3be-66b6-489e-a335-036e5c6f3eb0</id>
+    </Compile>
+    <Compile Include="VerifyPayeeSubtotal.UserCode.cs">
+      <BoundTo>a6412e9c-be7e-4556-aa41-d112dba55ebe</BoundTo>
+      <DependentUpon>VerifyPayeeSubtotal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ea57437-fc3d-448c-ad0a-0e60d8c96941</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActualReportPageValidation.rxrec">
+      <id>f4fc9bf9-a0a3-40b1-be93-c926ec2e2170</id>
+      <BoundTo>e9a77faf-5acd-4436-b367-39da1fd6552e</BoundTo>
+      <recordtableid>63c54a4e-a842-4325-b085-03b7387ed59e</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>b369e97a-2b0f-4312-96a6-66b254fb0bb8</id>
+    </None>
+    <None Include="BillPayReportTabValidation.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>2bd4d5f3-71f3-443b-a606-a8e6abdee27f</id>
+      <recordtableid>3c0effc0-d2c1-4b2e-b0f8-fb6e901be9df</recordtableid>
+    </None>
+    <None Include="SelectCreateBillPaymentReportCreateReportButton.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>5ce16c8d-c446-4c9e-89bf-8c462fb2d44b</id>
+      <recordtableid>b5bf0954-2d1b-4f91-acdb-f1ba80925526</recordtableid>
+    </None>
+    <None Include="SelectDeleteReportButton.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>a6d72d61-3f0e-4cc0-b985-4c0b64042ed9</id>
+      <recordtableid>41c682e1-1373-41d2-8b2d-00323e677bf4</recordtableid>
+    </None>
+    <None Include="SelectSaveReportButton.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>e767a731-6111-4136-89ad-8d4abfb3f443</id>
+      <recordtableid>835039cb-91c8-4575-8cc9-fe4ac0a3643e</recordtableid>
+    </None>
+    <None Include="ConfirmationSortingAscendingDescending.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>c66037d3-080b-4c30-a6ea-dcbf9d2bc954</id>
+      <recordtableid>50ae0742-98e9-41d1-9477-e207a2af419c</recordtableid>
+    </None>
+    <None Include="CreateNewReport.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>2a9bc0b6-7bcc-4657-8a7c-ef1a902497f8</id>
+      <recordtableid>13ed2785-9469-4231-9f62-cf17d8a46886</recordtableid>
+    </None>
+    <None Include="BillPayReportsRepository.rximg">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <DependentUpon>BillPayReportsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a59b3772-7d02-4b4e-b9a8-70f311b60233</id>
+    </None>
+    <None Include="BillPayReportsRepository.rxrep">
+      <id>11033d35-3daa-4b6e-ac7f-dc159193fbe5</id>
+      <repoid>f3886a30-aaf1-4c38-9b50-b1b769f44447</repoid>
+      <reporootid>2b6f57e4-d99d-4c73-8ebe-cc2c7c744fcd</reporootid>
+    </None>
+    <None Include="BPRv2Repository.rximg">
+      <DependentUpon>BPRv2Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>82a85426-6ffb-4f06-a089-f78c6a191a52</id>
+      <BoundTo>e9a77faf-5acd-4436-b367-39da1fd6552e</BoundTo>
+    </None>
+    <None Include="BPRv2Repository.rxrep">
+      <id>e9a77faf-5acd-4436-b367-39da1fd6552e</id>
+      <repoid>c0e6f34a-15df-421e-8482-c07aafaf0a96</repoid>
+      <reporootid>66d7b8d3-6eea-4f81-9309-eabba04e8726</reporootid>
+    </None>
+    <None Include="CancelDeleteReport.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>703b7fe1-4365-4cab-9fd7-4a6ef86431ca</id>
+      <recordtableid>e050f476-03ff-41e9-a6ca-21b768031821</recordtableid>
+    </None>
+    <None Include="CreateReportFail.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>385196a1-1663-4f2d-a2a9-a2debd25f59c</id>
+      <recordtableid>854fff49-8a4f-44b0-afbf-849696aa0ae7</recordtableid>
+    </None>
+    <None Include="EditReportTitle.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>66b74448-aa67-4593-a9f0-76a8cc3d04f2</id>
+      <recordtableid>02ac005c-85c3-4c22-b8bf-e4f262ae2d9d</recordtableid>
+    </None>
+    <None Include="EnterBillPayReportTitle.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>7f085ba4-faeb-4c33-87c8-f33ee89d90ef</id>
+      <recordtableid>af0b58b5-92d6-4d60-b638-f155742d6141</recordtableid>
+    </None>
+    <None Include="SelectAllFundingAccountsCheckbox.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>a65362b5-fc4d-4d91-905c-e44ae942939f</id>
+      <recordtableid>df51e090-aea8-4b81-a852-72f1767b8a6b</recordtableid>
+    </None>
+    <None Include="SelectAllPayeesCheckbox.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>b978f3dc-389f-47a6-a373-cf8b6243a277</id>
+      <recordtableid>5fd70cc0-9955-4be6-b602-57282204ba60</recordtableid>
+    </None>
+    <None Include="SelectAllPaymentStatusesCheckbox.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>3537b051-aede-4a6b-9def-3b9b7d550806</id>
+      <recordtableid>c5994b36-4fd1-4839-ac8b-9db77d5aa0da</recordtableid>
+    </None>
+    <None Include="SelectCreateReport.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>11cfbe00-f3fe-4f6d-a38a-5d43ddb5b4e8</id>
+      <recordtableid>f2f374c9-f952-4cfb-8c32-df8d97a6eb87</recordtableid>
+    </None>
+    <None Include="SelectDefaultReportCheckbox.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>047bdfe9-6263-4e7d-89bd-1e83e1e1edda</id>
+      <recordtableid>3ba3f5c8-91d0-455f-8146-f0014f84f2d3</recordtableid>
+    </None>
+    <None Include="SelectEditReport.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>1bd105c3-1976-4cca-94ec-5afac2944e45</id>
+      <recordtableid>585a3305-6a92-4f95-9d36-31ae96367b2f</recordtableid>
+    </None>
+    <None Include="SelectFromDateToDate.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>e0d1e314-d36b-485f-96ab-939b28c9cb90</id>
+      <recordtableid>736e8a38-8113-4f69-9198-3a99bb2139fd</recordtableid>
+    </None>
+    <None Include="SelectFundingAccountsVar.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>9eacdfc8-3189-4735-9f81-77d591dfa398</id>
+      <recordtableid>4aab8878-b2cf-4af1-827f-db6dbae05bd7</recordtableid>
+    </None>
+    <None Include="DeleteBillPayReport.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>90849bbb-cae6-438e-bad0-87a7a6baef6a</id>
+      <recordtableid>07f5e576-2a0b-4d39-8182-460b7fea7c84</recordtableid>
+    </None>
+    <None Include="PaidFromSortingAscendingDescending.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>74218ffb-3857-4b60-9b7f-adfa25541ba2</id>
+      <recordtableid>3b7e2684-87fd-4e9f-b077-907bdf1e2ed7</recordtableid>
+    </None>
+    <None Include="PaidToSortingAscendingDescending.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>7b23b9a5-26bb-4aa9-8374-9ae2e1d1fa97</id>
+      <recordtableid>8f147bc9-8498-4676-ad47-e94a40dbac55</recordtableid>
+    </None>
+    <None Include="PaidToSortAscending.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>cadf9825-edf3-407e-aff8-2fbb28022098</id>
+      <recordtableid>85fd11d0-2377-47e9-8166-46b87c6406e5</recordtableid>
+    </None>
+    <None Include="SelectBillPayReportTab.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>5ad83508-a58a-4c1c-b535-b8eeecc793b0</id>
+      <recordtableid>596e8875-73aa-4713-b2af-110fa99525d0</recordtableid>
+    </None>
+    <None Include="SelectPayeesVar.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>106641fd-141b-4c25-8e45-23183893438e</id>
+      <recordtableid>99f47e60-e568-4d46-89a0-66011a4628fa</recordtableid>
+    </None>
+    <None Include="SelectPaymentStatusVar.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>7670d02f-6b34-45ea-b0cb-f9f63cadca09</id>
+      <recordtableid>808a9a99-5abe-4d4f-8395-0a264030967b</recordtableid>
+    </None>
+    <None Include="SelectReportInReportDropdown.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>7154173b-7166-4d60-b882-7d0d69fdfa4a</id>
+      <recordtableid>071201f5-dfd3-4462-9866-783e8c148e0b</recordtableid>
+    </None>
+    <None Include="SelectSaveAsDefaultReport.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>fbab6630-bf04-4972-95af-5a94d0f5afa3</id>
+      <recordtableid>9e1e473f-8fe0-456d-a7d5-7aac7e6e62ab</recordtableid>
+    </None>
+    <None Include="SelectSubtotalVar.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>7fd1ac9d-f7c3-4d3c-88d3-7c6922901c94</id>
+      <recordtableid>41e8e4dc-fcb1-43f3-b2e6-0e0715ef8a19</recordtableid>
+    </None>
+    <None Include="SelectTimeFrameVar.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>9af517d9-de66-495e-b706-74b8c76d5019</id>
+      <recordtableid>3741af2c-f0f3-4720-b60f-4cd541f45b10</recordtableid>
+    </None>
+    <None Include="ValidateDuplicateReportTitleError.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>c4961c62-8810-40a5-938a-84c65d75f79e</id>
+      <recordtableid>258de9b4-ffbd-4643-8519-12c7018c4d3a</recordtableid>
+    </None>
+    <None Include="ValidateHeaderSorting.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>06e3250d-ed3e-4454-9a7a-a4b42933e925</id>
+      <recordtableid>5fd922f8-85db-4e31-93c8-dae801a9aa7e</recordtableid>
+    </None>
+    <None Include="StatusSortingAscendingDesending.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>e7665da0-49a6-43f1-89a7-028fb2ef6932</id>
+      <recordtableid>a08a49d2-7bca-46b8-ad66-b10427728090</recordtableid>
+    </None>
+    <None Include="ValidateDropDown.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>e78246fc-4ae8-49d8-8b01-e19009d370a0</id>
+      <recordtableid>41bc1e74-a9a9-4289-a20c-643197f998ca</recordtableid>
+    </None>
+    <None Include="CreateBillPaymentReportPageValidation.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>35244951-2692-4d19-bfdd-5ab07b765696</id>
+      <recordtableid>320f7f9b-8a10-4d84-97cd-4868a10351d4</recordtableid>
+    </None>
+    <None Include="VerifyGrandTotal.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>16bfb768-c26f-485e-adeb-38429fdf100a</id>
+      <recordtableid>aeddbe28-84d0-4aa3-80b2-7da4a665c9cd</recordtableid>
+    </None>
+    <None Include="VerifyPayeeSubtotal.rxrec">
+      <BoundTo>11033d35-3daa-4b6e-ac7f-dc159193fbe5</BoundTo>
+      <id>a6412e9c-be7e-4556-aa41-d112dba55ebe</id>
+      <recordtableid>e712b23f-e2bd-4602-b911-9169ebec0daa</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BillPayReports.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>bd0083ad-9b9e-4610-94ee-255a13efef7b</id>
+    </Content>
+    <Content Include="BillPayReports.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f97c1d28-f92b-4ed0-b043-22a407e64a81</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BillPay\BillPayTestSuite.csproj">
+      <Project>{3B940677-C5A9-4D6A-BF97-FA91D1378D92}</Project>
+      <Name>BillPayTestSuite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
+  </Import>
+  <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
+  </Import>
+</Project>

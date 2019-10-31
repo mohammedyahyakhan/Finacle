@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="70c74ddf-125f-4d98-9a9b-5e64b6fdeab6"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectChangeLimitButton"
+	namespace="Debit_Cards_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf061f3b-f805-4860-b9bc-d333b741a339">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="386b56db-efcd-4fc0-be9a-f6f1c4298b0c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'change-limitt']
+				</path>
+			</info>
+			<arguments
+			id="becd1c2c-da2a-4746-9253-c51e788c0b31">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Valid"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="d7701c2a-86b6-4a11-b816-91b24a36bbea"
+		waitaction="AttributeEqual"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="974a5fa7-a1a4-4024-b8e4-55f8776fef3c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'setLimitModal']/div/?/?/div[@innertext~'Set Daily Limit']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="9b55bd05-b068-459d-8c16-2c6d2844c24c"
+	name="DebitCardsRepository"
+	relativepath="DebitCardsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="DebitCardsRepository"
+		namespace="Debit_Cards_V2">
+		</codegen>
+		<rootfolder
+		id="193247be-98ed-44ae-8ef7-b0f5c715eb32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectChangeLimitButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

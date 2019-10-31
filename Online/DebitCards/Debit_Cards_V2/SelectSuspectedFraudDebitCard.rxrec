@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d5138eb2-c6d3-4561-9fad-cec7958cc01c"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSuspectedFraudDebitCard"
+	namespace="Debit_Cards_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0e88227b-8739-4ed4-9bb9-25fe9f8a02a1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="025451dd-7f7c-427b-b603-c8f4d2d42e2d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'app-content-ang']/div//span[@innertext='Suspected Fraud']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="356a45f5-781f-4ca6-8fc6-896c8d4eb239">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="025451dd-7f7c-427b-b603-c8f4d2d42e2d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'app-content-ang']/div//span[@innertext='Suspected Fraud']
+				</path>
+			</info>
+			<arguments
+			id="4040fe46-d064-467a-9062-037272178eea">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="9b55bd05-b068-459d-8c16-2c6d2844c24c"
+	name="DebitCardsRepository"
+	relativepath="DebitCardsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="DebitCardsRepository"
+		namespace="Debit_Cards_V2">
+		</codegen>
+		<rootfolder
+		id="193247be-98ed-44ae-8ef7-b0f5c715eb32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSuspectedFraudDebitCard.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

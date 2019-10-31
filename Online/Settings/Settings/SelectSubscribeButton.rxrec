@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2efd7646-a44e-4811-a13e-76ff775cf9a5"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSubscribeButton"
+	namespace="Settings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="464352da-03f4-4a8a-a104-fa79ca759754">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b79a6756-b8dd-4d90-9466-801116ab065a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id=$SubscribeVar]
+				</path>
+			</info>
+			<arguments
+			id="e0684c63-0e15-4b6b-ae03-be2024e81cb8">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="df048fd8-8e92-4b8b-a61f-3a290afea1e0"
+	name="SettingsRepository"
+	relativepath="SettingsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SettingsRepository"
+		namespace="Settings">
+		</codegen>
+		<rootfolder
+		id="33c0cfa5-9691-4af8-86c1-d9dd49f92140"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSubscribeButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

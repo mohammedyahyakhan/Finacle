@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="74032bc4-f146-4f5f-8e25-cbebd86318c0"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSearchPayeesInputBox"
+	namespace="BillPayTestSuite">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0f250f8e-a631-44f2-a78e-13d16d3f76e8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc5a2cf4-5403-4a47-bd75-6d79dfb62edb"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'srchBill']
+				</path>
+			</info>
+			<arguments
+			id="c38b7d43-fed6-4496-b47c-cba98ceaed03">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="b2351955-fecb-4843-8958-9d33b65b7aca"
+	name="BillPayTestSuiteRepository"
+	relativepath="BillPayTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayTestSuiteRepository"
+		namespace="BillPayTestSuite">
+		</codegen>
+		<rootfolder
+		id="c21a6d48-ccf5-4950-b4c7-859e7b370d14"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSearchPayeesInputBox.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5a92f1cc-c494-42b2-b87b-e1309b07d454"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Done_Finish"
+	namespace="EasternBankRegression.Module_Recordings.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Enabled"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="36e71c96-8de3-4038-9a31-21f9e678e1d9"
+		waitaction="AttributeContains"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65f4e344-6cd9-4749-924e-413167d9c7b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[@innertext~'Done' or @innertext~'DONE' or @innertext='Finish' or @innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Done' and @visible='true']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1c59c159-b2fd-43f9-92dc-7a4cdb649136">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65f4e344-6cd9-4749-924e-413167d9c7b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[@innertext~'Done' or @innertext~'DONE' or @innertext='Finish' or @innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Done' and @visible='true']
+				</path>
+			</info>
+			<arguments
+			id="a8ee02fa-526f-4deb-a687-c849ffb7efa9">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0cf0a490-7238-41a2-8458-5508bd0bb24f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65f4e344-6cd9-4749-924e-413167d9c7b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[@innertext~'Done' or @innertext~'DONE' or @innertext='Finish' or @innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Done' and @visible='true']
+				</path>
+			</info>
+			<arguments
+			id="e5f00856-dc04-4a57-8a48-d802a0275672">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Done_FInish.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

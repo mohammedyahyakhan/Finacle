@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e712b23f-e2bd-4602-b911-9169ebec0daa"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyPayeeSubtotal"
+	namespace="BillPayReports">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="082440b7-adac-4789-9c53-9c8d3d9c8cee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="50d587ae-8662-48f0-8164-5a9c1623e46b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="183,607,52,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Subtotal&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'settings-view']/div[2]/div/div[2]/div/div[5]/div/div[1]/div[2]//span[@innertext='Subtotal ']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="f3886a30-aaf1-4c38-9b50-b1b769f44447"
+	name="BillPayReportsRepository"
+	relativepath="BillPayReportsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayReportsRepository"
+		namespace="BillPayReports">
+		</codegen>
+		<rootfolder
+		id="2b6f57e4-d99d-4c73-8ebe-cc2c7c744fcd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyPayeeSubtotal.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

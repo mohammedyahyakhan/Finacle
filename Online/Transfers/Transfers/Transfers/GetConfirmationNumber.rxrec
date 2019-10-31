@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fb8ea47c-ac7e-4488-ac70-c99a7ebef796"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="GetConfirmationNumber"
+	namespace="Transfersv2">
+	</codegen>
+	<variables>
+		<var
+		id="b2f5439a-cd91-40aa-bc08-1eb39230e06a"
+		name="ConfirmationVar">
+		</var>
+	</variables>
+	<recorditems>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="True"
+		optional="False"
+		searchpropertyid="67f2cfa9-a68f-48c8-b920-4740926a06ad"
+		varname="ConfirmationVar">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7013ea3a-9879-4e03-a7b7-9667b2968a38"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//span[#'confVal']
+				</path>
+			</info>
+		</getvaluerecorditem>
+	</recorditems>
+	<repository
+	id="7dc0dba0-52e4-4bc4-bc85-323893000aaf"
+	name="TransfersRepository"
+	relativepath="TransfersRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="TransfersRepository"
+		namespace="Transfersv2">
+		</codegen>
+		<rootfolder
+		id="9b277dff-e3ee-462f-9f9f-8036eaf5ede0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		GetConfirmationNumber.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

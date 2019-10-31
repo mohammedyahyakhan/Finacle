@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="73c10528-74b3-4f73-a14b-230f0b70d7e7"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateFeedback"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.FeedbackTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0071a529-9272-46f9-b554-ec1f8264ed61">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c1d4316e-9874-4dd8-90d4-00f797faf9f0"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, strongtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="strongtag"
+				rect="568,558,762,60"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Thank you for providing your valuable feedback.We&#160;plan to use it to improve your online banking experience with us.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						strong
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//strongtag[@innertext='Thank you for providing your valuable feedback.We&#160;plan to use it to improve your online banking experience with us.']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Thank you for providing your valuable feedback.We&#160;plan to use it to improve your online banking experience with us.
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateFeedback.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

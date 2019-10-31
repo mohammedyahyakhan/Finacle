@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="49f8b785-0ae6-46e9-ab2a-ea34be5b954d"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="LocationsAndHoursLoggedOut"
+	namespace="Login">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="6e307fff-0534-44c9-8156-266e0e026f12"
+		waitaction="AttributeEqual"
+		waittimeout="15000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9448b7be-77d9-479d-85c7-b82bba1c8c51"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='www.easternbank.com']//nav[#'block-header']//a[@innertext='ATM &amp; Branch Locator']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="8a245e53-1206-4e52-b064-720ecc476f8f"
+		waitaction="AttributeEqual"
+		waittimeout="15000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b4e7e0a-7e24-47ab-9c53-48a4a8ae3e51"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.easternbank.com']//header[#'header']//a[@title='Home']/img[@alt='Eastern Bank logo']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="193e05d3-4da7-4bae-a93d-bc21bc09291f"
+	name="SetupAndTeardownRepository"
+	relativepath="SetupAndTeardownRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SetupAndTeardownRepository"
+		namespace="Login">
+		</codegen>
+		<rootfolder
+		id="5bfca4d2-e75d-48d4-811e-7ec90b3e7c33"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		LocationsAndHoursLoggedOut.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

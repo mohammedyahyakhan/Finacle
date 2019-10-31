@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d655b1cd-d2d7-458d-a42c-9b56c5449a43"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectShowTransactionCategories"
+	namespace="AccountsTestSuite.ActivityTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="SelectShowTransactionCategories"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="MergedUserCodeMethod"
+		namespace="AccountsTestSuite.ActivityTab"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="965e5307-7f58-44fc-b58e-3f42c7b21a97">
+				<argument
+				argname="imgtagInfo"
+				id="5a35b1f4-3c32-4791-9707-a5dc9098ca43">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="6d9be019-916e-42fe-9f84-37f560097086"
+					sourcename="RepositoryEditor">
+						<path>
+							/dom[@domain~'fnclmob.']//div[#'showEnableDisableCategory']/img[@id='selectTransactionCategory']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="d58e77bb-0898-4840-8b86-1f90fdf37031"
+	name="AccountsTestSuiteRepository"
+	relativepath="..\AccountsTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AccountsTestSuiteRepository"
+		namespace="AccountsTestSuite">
+		</codegen>
+		<rootfolder
+		id="01ffe724-4110-4f19-9ab4-a5dc39922701"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectShowTransactionCategories.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

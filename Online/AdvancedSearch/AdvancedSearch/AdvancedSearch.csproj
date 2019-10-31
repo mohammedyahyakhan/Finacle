@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{25B17731-DDAE-43A7-B75C-F35E8B1C060D}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AdvancedSearch</RootNamespace>
+    <AssemblyName>AdvancedSearch</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>13162720-946b-46da-a782-efbaa9df66e1</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\AdvancedFilterDropdownValidation.cs">
+      <DependentUpon>AdvancedFilterDropdownValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d8777dc-7e07-4f15-abd8-e73586c9c70f</id>
+      <BoundTo>fe7a3337-c610-4600-9cd9-0890fa7bce34</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\AdvancedFilterDropdownValidation.UserCode.cs">
+      <DependentUpon>AdvancedFilterDropdownValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e372ac92-6e84-41b3-95cd-4ea4a2a685b0</id>
+      <BoundTo>fe7a3337-c610-4600-9cd9-0890fa7bce34</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown\AmountDropdownValidation.cs">
+      <DependentUpon>AmountDropdownValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9cc9ba5d-4dd9-41ec-880f-195a5b9f0ec2</id>
+      <BoundTo>89195b00-9ff4-464f-bf55-91d459ca0608</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown\AmountDropdownValidation.UserCode.cs">
+      <DependentUpon>AmountDropdownValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>015a2f4a-e1d4-46ac-92d4-aba69ff01db3</id>
+      <BoundTo>89195b00-9ff4-464f-bf55-91d459ca0608</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown\SelectAMount.cs">
+      <DependentUpon>SelectAmount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>44bc84de-f968-4fd6-ba6c-73f8fa8e5c00</id>
+      <BoundTo>f72366ba-27d3-4694-9fb6-4ef8d5057873</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown\SelectAMount.UserCode.cs">
+      <DependentUpon>SelectAmount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e3eb21e4-4143-4563-9212-51ee8767e2a2</id>
+      <BoundTo>f72366ba-27d3-4694-9fb6-4ef8d5057873</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown\CheckNumberDropdownValidation.cs">
+      <DependentUpon>CheckNumberDropdownValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>038b74ee-b957-4568-9259-3e5178fc8846</id>
+      <BoundTo>0d96c312-05ea-4687-8717-cf3c099e3632</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown\CheckNumberDropdownValidation.UserCode.cs">
+      <DependentUpon>CheckNumberDropdownValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f744d1f-0273-48b2-9d1b-ba6118db4a22</id>
+      <BoundTo>0d96c312-05ea-4687-8717-cf3c099e3632</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown\SelectCheckNumber.cs">
+      <DependentUpon>SelectCheckNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2f341391-499b-4daf-84a4-1a1c58a933e1</id>
+      <BoundTo>1d2ed934-9bce-4568-b48a-952f46810106</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown\SelectCheckNumber.UserCode.cs">
+      <DependentUpon>SelectCheckNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b4be553-bb97-4cb0-861c-36b5b59b0de5</id>
+      <BoundTo>1d2ed934-9bce-4568-b48a-952f46810106</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectAmountDropdown.cs">
+      <DependentUpon>SelectAmountDropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6826ed6b-4d4f-445f-9b11-7c0cb06c227e</id>
+      <BoundTo>947d9f8a-82c8-41fe-a6be-33b6216924e0</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectAmountDropdown.UserCode.cs">
+      <DependentUpon>SelectAmountDropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>404e114f-ec20-4ee8-8871-0be3f1e220fc</id>
+      <BoundTo>947d9f8a-82c8-41fe-a6be-33b6216924e0</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectApplyButton.cs">
+      <DependentUpon>SelectApplyButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cee56fcc-20fe-4b2e-ad68-e34cbd99ef50</id>
+      <BoundTo>85d7104c-4129-4575-871b-441022314cbc</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectApplyButton.UserCode.cs">
+      <DependentUpon>SelectApplyButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6b749b7-f97d-4766-a276-7ebba97b7b6c</id>
+      <BoundTo>85d7104c-4129-4575-871b-441022314cbc</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectCheckNumberDropdown.cs">
+      <DependentUpon>SelectCheckNumberDropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6fd445ab-c13f-4ec9-9c0e-d567d8a25b7a</id>
+      <BoundTo>ccf81c03-a731-46cc-87c5-c70de4339550</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectCheckNumberDropdown.UserCode.cs">
+      <DependentUpon>SelectCheckNumberDropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7e7116c5-1afb-46d8-92c6-2bec5ca6af06</id>
+      <BoundTo>ccf81c03-a731-46cc-87c5-c70de4339550</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectOneDay.cs">
+      <DependentUpon>SelectOneDay.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2bf980a5-3508-47ba-8119-b2c1c8c643a7</id>
+      <BoundTo>0e13ea38-f395-438e-b883-778bfa31d169</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectOneDay.UserCode.cs">
+      <DependentUpon>SelectOneDay.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13442ae5-81bd-4dba-a9e4-acc214d6da78</id>
+      <BoundTo>0e13ea38-f395-438e-b883-778bfa31d169</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectTimeframeDropdown.cs">
+      <DependentUpon>SelectTimeFrameDropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ac78f2b6-a97d-4f02-9678-c91113a955bb</id>
+      <BoundTo>94b18bc1-7f96-460f-a531-172fb9d0175a</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectTimeframeDropdown.UserCode.cs">
+      <DependentUpon>SelectTimeFrameDropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddc978a0-2502-4d77-b2cc-1ec645940932</id>
+      <BoundTo>94b18bc1-7f96-460f-a531-172fb9d0175a</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectTransactionTypeDropdown.cs">
+      <DependentUpon>SelectTransactionTypeDropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a4f5c68-24d1-4cdf-8b36-3e62cf355bc4</id>
+      <BoundTo>2f7dd9f6-6945-4d36-999b-bcc181ad1c4f</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\SelectTransactionTypeDropdown.UserCode.cs">
+      <DependentUpon>SelectTransactionTypeDropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>183bc990-8456-4d7d-8169-2c13344a582d</id>
+      <BoundTo>2f7dd9f6-6945-4d36-999b-bcc181ad1c4f</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown\SelectTimeFrame.cs">
+      <DependentUpon>SelectTimeFrame.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dceb987e-a2c7-4838-8d6e-b45d426f5f72</id>
+      <BoundTo>67b786f2-9f84-43a2-a70f-95c7b2c14534</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown\SelectTimeFrame.UserCode.cs">
+      <DependentUpon>SelectTimeFrame.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dfdda994-bffb-4583-8066-60de429af409</id>
+      <BoundTo>67b786f2-9f84-43a2-a70f-95c7b2c14534</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown\TimeFrameDropdownValidation.cs">
+      <DependentUpon>TimeFrameDropdownValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f7a88be-87a6-4837-8515-4f54c59d343b</id>
+      <BoundTo>efd0c0d6-c27d-4fe6-bdbf-b3d307966d0e</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown\TimeFrameDropdownValidation.UserCode.cs">
+      <DependentUpon>TimeFrameDropdownValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0cfaacf9-6c0d-4736-a4df-02eeec811e39</id>
+      <BoundTo>efd0c0d6-c27d-4fe6-bdbf-b3d307966d0e</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown\SelectTransactionType.cs">
+      <DependentUpon>SelectTransactionType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c72da0a-3ba9-4d8b-818d-089add1dfe33</id>
+      <BoundTo>9090b5b0-a8df-40ca-9553-e8fbd61a132d</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown\SelectTransactionType.UserCode.cs">
+      <DependentUpon>SelectTransactionType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ecb30c3-df0d-4937-97c2-f15f6a5fb2d2</id>
+      <BoundTo>9090b5b0-a8df-40ca-9553-e8fbd61a132d</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown\TransactionTypeValidation.cs">
+      <DependentUpon>TransactionTypeValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb3016ca-0156-4e60-a987-a1ed051b9d44</id>
+      <BoundTo>8114be87-3884-42c4-9b08-715a8f07842a</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown\TransactionTypeValidation.UserCode.cs">
+      <DependentUpon>TransactionTypeValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d462dbf-c52f-4003-a75b-f1efae774a6e</id>
+      <BoundTo>8114be87-3884-42c4-9b08-715a8f07842a</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SearchResultsValidation.cs">
+      <DependentUpon>SearchResultsValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>202c92cc-6f9d-4699-abd1-4931a760c63d</id>
+      <BoundTo>692b5c3a-498d-4f04-8b86-09c0e2d6f240</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SearchResultsValidation.UserCode.cs">
+      <DependentUpon>SearchResultsValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ccf21ce8-1dec-4fdc-90d1-e0302d2015ac</id>
+      <BoundTo>692b5c3a-498d-4f04-8b86-09c0e2d6f240</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectClearSearch.cs">
+      <DependentUpon>SelectClearSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8594ab2-7896-4cb2-bc38-c621794c1051</id>
+      <BoundTo>d2b0ba3b-24b6-41fd-b4b7-67ec1852d045</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectClearSearch.UserCode.cs">
+      <DependentUpon>SelectClearSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64a01965-5a29-4213-a711-184b2e4e907b</id>
+      <BoundTo>d2b0ba3b-24b6-41fd-b4b7-67ec1852d045</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectFilterButton.cs">
+      <DependentUpon>SelectFilterButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>adf5aebb-147e-41bf-82f9-49df5f2ad454</id>
+      <BoundTo>444fa3d1-213f-4b00-a649-5c867786fb06</BoundTo>
+    </Compile>
+    <Compile Include="ActivityTab\SelectFilterButton.UserCode.cs">
+      <DependentUpon>SelectFilterButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>25a72e7e-a7f0-47bb-a837-5a4189d30a4b</id>
+      <BoundTo>444fa3d1-213f-4b00-a649-5c867786fb06</BoundTo>
+    </Compile>
+    <Compile Include="AdvancedSearchRepository.cs">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <DependentUpon>AdvancedSearchRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>90bdf56c-e124-4f8e-9f75-67d71b2a2591</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>7b93bfde-c8fa-4959-bc93-f38d51351e6e</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6b4997b9-eca5-41e8-8dc5-6e930e46cc5c</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActivityTab\AdvancedSearchDropdown\AdvancedFilterDropdownValidation.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>fe7a3337-c610-4600-9cd9-0890fa7bce34</id>
+      <recordtableid>f72ae545-065e-4494-ae10-c2ab7a2e17d3</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown\AmountDropdownValidation.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>89195b00-9ff4-464f-bf55-91d459ca0608</id>
+      <recordtableid>86fe2c73-c357-4856-9556-0bc4717ba229</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown\SelectAmount.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>f72366ba-27d3-4694-9fb6-4ef8d5057873</id>
+      <recordtableid>ad64fe44-9903-4758-91df-fb8be4186220</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown\CheckNumberDropdownValidation.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>0d96c312-05ea-4687-8717-cf3c099e3632</id>
+      <recordtableid>d678a00a-9db3-4e4a-a248-0b7aeb53cbbf</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown\SelectCheckNumber.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>1d2ed934-9bce-4568-b48a-952f46810106</id>
+      <recordtableid>3f6bda65-1a9d-4c44-aebd-c69309720345</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\SelectAmountDropdown.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>947d9f8a-82c8-41fe-a6be-33b6216924e0</id>
+      <recordtableid>1855c6e0-6df0-423a-9b64-ece99dc93e4e</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\SelectApplyButton.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>85d7104c-4129-4575-871b-441022314cbc</id>
+      <recordtableid>3117e324-33a0-41f7-b40f-fb0382740dac</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\SelectCheckNumberDropdown.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>ccf81c03-a731-46cc-87c5-c70de4339550</id>
+      <recordtableid>895b78d2-acac-4855-beec-a7e32791ae37</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\SelectOneDay.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>0e13ea38-f395-438e-b883-778bfa31d169</id>
+      <recordtableid>eb0a8612-cf2c-4900-8a8e-eb4a89cb3b75</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\SelectTimeFrameDropdown.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>94b18bc1-7f96-460f-a531-172fb9d0175a</id>
+      <recordtableid>ad4590f3-a161-4413-8184-c4d5ad96bc31</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\SelectTransactionTypeDropdown.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>2f7dd9f6-6945-4d36-999b-bcc181ad1c4f</id>
+      <recordtableid>7e4fc123-41e4-4555-9872-15e4a2e2814b</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown\SelectTimeFrame.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>67b786f2-9f84-43a2-a70f-95c7b2c14534</id>
+      <recordtableid>418c07a5-4bd8-4793-a430-e784fde088bd</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown\TimeFrameDropdownValidation.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>efd0c0d6-c27d-4fe6-bdbf-b3d307966d0e</id>
+      <recordtableid>b180e75f-72c5-4d94-bb6d-0c4ecc305116</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown\SelectTransactionType.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>9090b5b0-a8df-40ca-9553-e8fbd61a132d</id>
+      <recordtableid>e1a063c2-1eac-4427-bdd5-fb38ddd0abc6</recordtableid>
+    </None>
+    <None Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown\TransactionTypeValidation.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>8114be87-3884-42c4-9b08-715a8f07842a</id>
+      <recordtableid>5f89bc91-ef9e-4758-a248-76621279b633</recordtableid>
+    </None>
+    <None Include="ActivityTab\SearchResultsValidation.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>692b5c3a-498d-4f04-8b86-09c0e2d6f240</id>
+      <recordtableid>76faa579-913c-4efd-991c-aa950a426ad4</recordtableid>
+    </None>
+    <None Include="ActivityTab\SelectClearSearch.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>d2b0ba3b-24b6-41fd-b4b7-67ec1852d045</id>
+      <recordtableid>4f2cc578-789d-4499-ae74-77fbdbee6671</recordtableid>
+    </None>
+    <None Include="ActivityTab\SelectFilterButton.rxrec">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <id>444fa3d1-213f-4b00-a649-5c867786fb06</id>
+      <recordtableid>c394e2b4-f6df-4b61-b769-1fd630d21320</recordtableid>
+    </None>
+    <None Include="AdvancedSearchRepository.rximg">
+      <BoundTo>13162720-946b-46da-a782-efbaa9df66e1</BoundTo>
+      <DependentUpon>AdvancedSearchRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c207c0e1-5e48-46d3-8db9-0c366ab96314</id>
+    </None>
+    <None Include="AdvancedSearchRepository.rxrep">
+      <id>13162720-946b-46da-a782-efbaa9df66e1</id>
+      <repoid>2fe6f269-de13-4d58-8b34-fbf102865dae</repoid>
+      <reporootid>27c83439-1c8e-48c5-8013-af635165958c</reporootid>
+    </None>
+    <Content Include="AmountRange.csv">
+      <Link>AmountRange.csv</Link>
+      <BoundTo>dcdc35df-1782-4ff8-842d-26c5f1d1e0bc</BoundTo>
+      <DependentUpon>AdvancedSearch.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>a330d962-bea3-468f-8935-c5ba58ba7ff1</id>
+    </Content>
+    <None Include="app.config">
+      <id>41d85dd0-cbe4-4cc7-9d28-66c8730cd46e</id>
+    </None>
+    <Content Include="CheckRange.csv">
+      <BoundTo>dcdc35df-1782-4ff8-842d-26c5f1d1e0bc</BoundTo>
+      <DependentUpon>AdvancedSearch.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>238076ee-adb6-4ac1-9ad8-bbe1756e0b99</id>
+    </Content>
+    <Content Include="Timeframes.csv">
+      <BoundTo>dcdc35df-1782-4ff8-842d-26c5f1d1e0bc</BoundTo>
+      <DependentUpon>AdvancedSearch.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>5822c421-c463-4099-86a4-f7b6668f23d9</id>
+    </Content>
+    <Content Include="TransactionType.csv">
+      <BoundTo>dcdc35df-1782-4ff8-842d-26c5f1d1e0bc</BoundTo>
+      <DependentUpon>AdvancedSearch.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>59dbef3d-f603-4e30-9ffa-8d16b218ac41</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdvancedSearch.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>fd392385-b16f-4846-bb7c-e281ab57a5c6</id>
+    </Content>
+    <Content Include="AdvancedSearch.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>dcdc35df-1782-4ff8-842d-26c5f1d1e0bc</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Accounts\Accounts.csproj">
+      <Project>{585EB9F0-1C1B-4664-A56B-C57E2CF49598}</Project>
+      <Name>Accounts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActivityTab\AdvancedSearchDropdown">
+      <id>b0aafca4-9324-48ea-b668-19c11733c018</id>
+    </Folder>
+    <Folder Include="ActivityTab\AdvancedSearchDropdown\AmountDropdown">
+      <id>69ee2d91-8b47-4773-8c29-51b5112228ec</id>
+    </Folder>
+    <Folder Include="ActivityTab\AdvancedSearchDropdown\CheckNumberDropdown">
+      <id>6e9f3110-ce18-4fdf-8aaf-04c006208015</id>
+    </Folder>
+    <Folder Include="ActivityTab\AdvancedSearchDropdown\TimeFrameDropdown">
+      <id>d6a00b30-1e0c-4f30-addd-4786a02ec131</id>
+    </Folder>
+    <Folder Include="ActivityTab\AdvancedSearchDropdown\TransactionTypeDropdown">
+      <id>2f874075-d311-47e4-ac2e-07817819e9eb</id>
+    </Folder>
+    <Folder Include="ActivityTab">
+      <id>b2116ada-4982-4b77-8483-63eeb0fb65ac</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

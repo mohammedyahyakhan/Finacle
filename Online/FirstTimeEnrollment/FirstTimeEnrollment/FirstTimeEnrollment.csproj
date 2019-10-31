@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4C54952A-53B3-47D7-99AF-3099BF5432EB}</ProjectGuid>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FirstTimeEnrollment</RootNamespace>
+    <AssemblyName>FirstTimeEnrollment</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>a2d48ae8-88de-419a-863a-1fa58790fc17</projectdefaultrepository>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4c81fa21-f75e-4dc5-8aba-8f44dac90246</id>
+    </Compile>
+    <Compile Include="AtmDebitCardValidation.cs">
+      <BoundTo>fb2b8473-40e8-4f52-b893-a77f0906b198</BoundTo>
+      <DependentUpon>AtmDebitCardValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b6bd2e2-8a3d-4fa5-affe-6f2463749d04</id>
+    </Compile>
+    <Compile Include="AtmDebitCardValidation.UserCode.cs">
+      <BoundTo>fb2b8473-40e8-4f52-b893-a77f0906b198</BoundTo>
+      <DependentUpon>AtmDebitCardValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>936cca72-e38c-428c-b673-d5bfcbeb216b</id>
+    </Compile>
+    <Compile Include="AuthorizedSignerModalValidation.cs">
+      <BoundTo>7523fc09-ac1b-4a26-8d5c-d24961fe5122</BoundTo>
+      <DependentUpon>AuthorizedSignerModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7377a53c-2631-4414-a028-01a9fafddbf2</id>
+    </Compile>
+    <Compile Include="AuthorizedSignerModalValidation.UserCode.cs">
+      <BoundTo>7523fc09-ac1b-4a26-8d5c-d24961fe5122</BoundTo>
+      <DependentUpon>AuthorizedSignerModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f12ccbe6-2591-4e58-a70b-a1a8300459d3</id>
+    </Compile>
+    <Compile Include="AuthSignerDataEntry.cs">
+      <BoundTo>6a42471a-02fb-4ba8-be05-3364b45e183d</BoundTo>
+      <DependentUpon>AuthSignerDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ff07a6d-b492-4173-a865-b68081dbfc13</id>
+    </Compile>
+    <Compile Include="AuthSignerDataEntry.UserCode.cs">
+      <BoundTo>6a42471a-02fb-4ba8-be05-3364b45e183d</BoundTo>
+      <DependentUpon>AuthSignerDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4f31ea16-34f6-4057-8626-a16e09897260</id>
+    </Compile>
+    <Compile Include="TellUsMoreAboutYourBusinessPageValidation.cs">
+      <BoundTo>0e1f6971-470f-4438-90ea-bef973f6fd63</BoundTo>
+      <DependentUpon>TellUsMoreAboutYourBusinessPageValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>58daf9cf-7c4f-4e9a-bff9-e5da70200c13</id>
+    </Compile>
+    <Compile Include="TellUsMoreAboutYourBusinessPageValidation.UserCode.cs">
+      <BoundTo>0e1f6971-470f-4438-90ea-bef973f6fd63</BoundTo>
+      <DependentUpon>TellUsMoreAboutYourBusinessPageValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>67dafc10-db7a-44cb-a620-319eb84e29ae</id>
+    </Compile>
+    <Compile Include="BusinessNameTinDataEntry.cs">
+      <BoundTo>ad1df77e-1910-45af-88fc-8fbca5c289f4</BoundTo>
+      <DependentUpon>BusinessNameTinDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2123f235-ccaf-4686-99ef-d425818d5e34</id>
+    </Compile>
+    <Compile Include="BusinessNameTinDataEntry.UserCode.cs">
+      <BoundTo>ad1df77e-1910-45af-88fc-8fbca5c289f4</BoundTo>
+      <DependentUpon>BusinessNameTinDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aff64b18-1947-47ec-b4ff-3858e1c0515b</id>
+    </Compile>
+    <Compile Include="CertificateOfDepositValidation.cs">
+      <BoundTo>e0f305c1-1609-4202-90b3-989d4644d42f</BoundTo>
+      <DependentUpon>CertificateOfDepositValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5be9ce05-f290-49d6-8e8a-05b687cfcc4b</id>
+    </Compile>
+    <Compile Include="CertificateOfDepositValidation.UserCode.cs">
+      <BoundTo>e0f305c1-1609-4202-90b3-989d4644d42f</BoundTo>
+      <DependentUpon>CertificateOfDepositValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>957f35d3-cc8a-4bac-a537-058841dc4166</id>
+    </Compile>
+    <Compile Include="CheckingSavingsMoneyMarketValiation.cs">
+      <BoundTo>50734885-e017-4aba-96aa-b112533d0d72</BoundTo>
+      <DependentUpon>CheckingSavingsMoneyMarketValiation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>474e902e-c042-45cc-a53f-534bc01aea9e</id>
+    </Compile>
+    <Compile Include="CheckingSavingsMoneyMarketValiation.UserCode.cs">
+      <BoundTo>50734885-e017-4aba-96aa-b112533d0d72</BoundTo>
+      <DependentUpon>CheckingSavingsMoneyMarketValiation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4321350b-0d8d-4e12-8e96-3ded7fdc9dbf</id>
+    </Compile>
+    <Compile Include="ConfirmIdentityModalValidation.cs">
+      <BoundTo>de4700f3-9243-4d73-bec7-07946ce4c345</BoundTo>
+      <DependentUpon>ConfirmIdentityModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb81abdf-88c0-49be-aa92-9966d971271f</id>
+    </Compile>
+    <Compile Include="ConfirmIdentityModalValidation.UserCode.cs">
+      <BoundTo>de4700f3-9243-4d73-bec7-07946ce4c345</BoundTo>
+      <DependentUpon>ConfirmIdentityModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c120a04f-3dfa-4947-b153-3ed012298ea1</id>
+    </Compile>
+    <Compile Include="FirstTimeEnrollmentRepository.cs">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <DependentUpon>FirstTimeEnrollmentRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>a73271e2-fea3-4536-a39a-1ac26a82a6ee</id>
+    </Compile>
+    <Compile Include="FirstLastSsnDataEntry.cs">
+      <BoundTo>537c276a-06d5-43e4-8658-468686a123ca</BoundTo>
+      <DependentUpon>FirstLastSsnDataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14720fc9-3c0c-4655-b2b7-eb8d50a3ed6b</id>
+    </Compile>
+    <Compile Include="FirstLastSsnDataEntry.UserCode.cs">
+      <BoundTo>537c276a-06d5-43e4-8658-468686a123ca</BoundTo>
+      <DependentUpon>FirstLastSsnDataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5c378bed-9ca0-4d44-821e-9c39c6ee826f</id>
+    </Compile>
+    <Compile Include="FirstTimeEnrollmentValidation.cs">
+      <BoundTo>4d64c60f-4d33-4525-8962-a81b67ce806a</BoundTo>
+      <DependentUpon>FirstTimeEnrollmentValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d7b446b-e7a3-4770-825e-808dd1bf3167</id>
+    </Compile>
+    <Compile Include="FirstTimeEnrollmentValidation.UserCode.cs">
+      <BoundTo>4d64c60f-4d33-4525-8962-a81b67ce806a</BoundTo>
+      <DependentUpon>FirstTimeEnrollmentValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4e17b32c-51c7-422e-a6b8-4d8916ed7560</id>
+    </Compile>
+    <Compile Include="LoanOrLineOfCreditValidation.cs">
+      <BoundTo>29a41034-6b4e-457b-93ad-c1edd653105a</BoundTo>
+      <DependentUpon>LoanOrLineOfCreditValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>070fc4c0-1268-4b53-9821-4d6a648567d3</id>
+    </Compile>
+    <Compile Include="LoanOrLineOfCreditValidation.UserCode.cs">
+      <BoundTo>29a41034-6b4e-457b-93ad-c1edd653105a</BoundTo>
+      <DependentUpon>LoanOrLineOfCreditValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>96233b63-180d-44a5-859e-71c225b44d89</id>
+    </Compile>
+    <Compile Include="SelectCertificateOfDeposit.cs">
+      <BoundTo>402be997-c9b5-43e5-886e-f27d99ccb6ad</BoundTo>
+      <DependentUpon>SelectCertificateOfDeposit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12404107-5681-44aa-8ebb-3a07c758d403</id>
+    </Compile>
+    <Compile Include="SelectCertificateOfDeposit.UserCode.cs">
+      <BoundTo>402be997-c9b5-43e5-886e-f27d99ccb6ad</BoundTo>
+      <DependentUpon>SelectCertificateOfDeposit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9b10b9d-62ed-43e1-b75c-cfb488cfe0ee</id>
+    </Compile>
+    <Compile Include="SelectLoanOrLineOfCredit.cs">
+      <BoundTo>8c4e35cd-0cf4-4299-a0e5-c8dd6bd605ea</BoundTo>
+      <DependentUpon>SelectLoanOrLineOfCredit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>afb1ff6c-3b05-4bae-976a-30ac89f0ece8</id>
+    </Compile>
+    <Compile Include="SelectLoanOrLineOfCredit.UserCode.cs">
+      <BoundTo>8c4e35cd-0cf4-4299-a0e5-c8dd6bd605ea</BoundTo>
+      <DependentUpon>SelectLoanOrLineOfCredit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e68e2e5-033b-446c-b1d9-2e36fee11a9e</id>
+    </Compile>
+    <Compile Include="PersonalAccountsFirstPageValidation.cs">
+      <BoundTo>dce09727-724a-4e88-b585-5bcf6e833fc1</BoundTo>
+      <DependentUpon>PersonalAccountsFirstPageValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5d19761-4cbc-400c-82c8-e5fee6c1c847</id>
+    </Compile>
+    <Compile Include="PersonalAccountsFirstPageValidation.UserCode.cs">
+      <BoundTo>dce09727-724a-4e88-b585-5bcf6e833fc1</BoundTo>
+      <DependentUpon>PersonalAccountsFirstPageValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b94cd1e0-ca7e-4d6a-9785-5b2b4035a897</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>2038d3db-dac4-4b2a-9049-a157cf2f8d17</id>
+    </Compile>
+    <Compile Include="GoToFirstTimeEnrollment.cs">
+      <BoundTo>479ed725-f11f-4702-8c02-25ebca364eb4</BoundTo>
+      <DependentUpon>GoToFirstTimeEnrollment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cc8a4fcd-d082-4b3a-9ec8-3588977d580d</id>
+    </Compile>
+    <Compile Include="GoToFirstTimeEnrollment.UserCode.cs">
+      <BoundTo>479ed725-f11f-4702-8c02-25ebca364eb4</BoundTo>
+      <DependentUpon>GoToFirstTimeEnrollment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d2db831a-0c6a-42a4-a273-726995df1beb</id>
+    </Compile>
+    <Compile Include="SelectAtmDebitCard.cs">
+      <BoundTo>7c5f39fa-6ff4-4e55-a288-0f3636dc433d</BoundTo>
+      <DependentUpon>SelectAtmDebitCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a894c49e-778d-41ac-be79-c62ede503b7d</id>
+    </Compile>
+    <Compile Include="SelectAtmDebitCard.UserCode.cs">
+      <BoundTo>7c5f39fa-6ff4-4e55-a288-0f3636dc433d</BoundTo>
+      <DependentUpon>SelectAtmDebitCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c5d7cfd-92ea-4228-80e8-b9806ec288db</id>
+    </Compile>
+    <Compile Include="SelectBackButton.cs">
+      <BoundTo>31f451c7-10d8-48e7-b33d-f9bbdc0365c3</BoundTo>
+      <DependentUpon>SelectBackButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>548c77a5-0f8b-4b9c-8a1b-19eca11c2973</id>
+    </Compile>
+    <Compile Include="SelectBackButton.UserCode.cs">
+      <BoundTo>31f451c7-10d8-48e7-b33d-f9bbdc0365c3</BoundTo>
+      <DependentUpon>SelectBackButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ddd7502-5f54-4e46-a2b7-d8d30e9c1b02</id>
+    </Compile>
+    <Compile Include="SelectCheckingSavingsMoneyMarket.cs">
+      <BoundTo>5d495a77-1fad-4fd0-90c5-086d684636ec</BoundTo>
+      <DependentUpon>SelectCheckingSavingsMoneyMarket.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67680816-d7a7-4838-8dc4-9742a4cd88ef</id>
+    </Compile>
+    <Compile Include="SelectCheckingSavingsMoneyMarket.UserCode.cs">
+      <BoundTo>5d495a77-1fad-4fd0-90c5-086d684636ec</BoundTo>
+      <DependentUpon>SelectCheckingSavingsMoneyMarket.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>316d3b74-9134-45f2-a27e-5862e4d23c25</id>
+    </Compile>
+    <Compile Include="SelectEnrollBusinessAccounts.cs">
+      <BoundTo>49dd11e2-3a0d-40ab-ac74-2cbf04af9da7</BoundTo>
+      <DependentUpon>SelectEnrollBusinessAccounts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>015a2100-20d8-45ba-89cd-e4cc8f250289</id>
+    </Compile>
+    <Compile Include="SelectEnrollBusinessAccounts.UserCode.cs">
+      <BoundTo>49dd11e2-3a0d-40ab-ac74-2cbf04af9da7</BoundTo>
+      <DependentUpon>SelectEnrollBusinessAccounts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f3ee3efb-55c6-40e1-a161-dec2e7e04968</id>
+    </Compile>
+    <Compile Include="SelectEnrollPersonalAccounts.cs">
+      <BoundTo>c3b90782-383f-459f-8c68-7e5920df663a</BoundTo>
+      <DependentUpon>SelectEnrollPersonalAccounts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5826dd8-47ff-44a7-a8c2-48c38604cff3</id>
+    </Compile>
+    <Compile Include="SelectEnrollPersonalAccounts.UserCode.cs">
+      <BoundTo>c3b90782-383f-459f-8c68-7e5920df663a</BoundTo>
+      <DependentUpon>SelectEnrollPersonalAccounts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0cc3980-1e51-48e5-baa8-3fd28a18c742</id>
+    </Compile>
+    <Compile Include="SelectNextButton.cs">
+      <BoundTo>8ec7147f-30de-4410-a6d9-6f33b72957f0</BoundTo>
+      <DependentUpon>SelectNextButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>702f1a03-1b2c-4322-86b6-32764b10e845</id>
+    </Compile>
+    <Compile Include="SelectNextButton.UserCode.cs">
+      <BoundTo>8ec7147f-30de-4410-a6d9-6f33b72957f0</BoundTo>
+      <DependentUpon>SelectNextButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0a7f2f1-f6e5-476a-bbfe-2d1452c4bb04</id>
+    </Compile>
+    <Compile Include="SelectNoLetsContinue.cs">
+      <BoundTo>81006612-71ad-4a1d-91fa-7ff4909873a9</BoundTo>
+      <DependentUpon>SelectNoLetsContinue.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45c198c9-caef-4802-a39c-d40ca48cf31a</id>
+    </Compile>
+    <Compile Include="SelectNoLetsContinue.UserCode.cs">
+      <BoundTo>81006612-71ad-4a1d-91fa-7ff4909873a9</BoundTo>
+      <DependentUpon>SelectNoLetsContinue.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>48f35543-a7b3-49bc-94f3-d95bf1944a75</id>
+    </Compile>
+    <Compile Include="TellUsMoreAboutYourBusinessSetupModalValidation.cs">
+      <BoundTo>98d6a4ca-384e-40d9-b1aa-6986f8287205</BoundTo>
+      <DependentUpon>TellUsMoreAboutYourBusinessSetupModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65de4092-5373-47e2-9f6c-edc2c31f0370</id>
+    </Compile>
+    <Compile Include="TellUsMoreAboutYourBusinessSetupModalValidation.UserCode.cs">
+      <BoundTo>98d6a4ca-384e-40d9-b1aa-6986f8287205</BoundTo>
+      <DependentUpon>TellUsMoreAboutYourBusinessSetupModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d846ea4c-703a-44e9-a7f5-d38b07419ce9</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>5ebef143-1efb-46e6-b74a-8822325bc784</id>
+    </None>
+    <None Include="AtmDebitCardValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>fb2b8473-40e8-4f52-b893-a77f0906b198</id>
+      <recordtableid>21091c61-2800-4b49-8aa5-185c2e25045f</recordtableid>
+    </None>
+    <None Include="AuthorizedSignerModalValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>7523fc09-ac1b-4a26-8d5c-d24961fe5122</id>
+      <recordtableid>f2ff4471-feee-4cf3-8c3c-4bb3acbf9e1e</recordtableid>
+    </None>
+    <None Include="AuthSignerDataEntry.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>6a42471a-02fb-4ba8-be05-3364b45e183d</id>
+      <recordtableid>19b480f7-76c5-4daa-8cc0-0afdf1833821</recordtableid>
+    </None>
+    <None Include="TellUsMoreAboutYourBusinessPageValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>0e1f6971-470f-4438-90ea-bef973f6fd63</id>
+      <recordtableid>29f6f336-5af8-4bd2-bd42-68482865bc91</recordtableid>
+    </None>
+    <None Include="BusinessNameTinDataEntry.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>ad1df77e-1910-45af-88fc-8fbca5c289f4</id>
+      <recordtableid>1896bcc9-dd7d-4ba4-8b66-50434012fb2e</recordtableid>
+    </None>
+    <None Include="CertificateOfDepositValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>e0f305c1-1609-4202-90b3-989d4644d42f</id>
+      <recordtableid>75e2dee9-218f-41cb-873a-d68c0aec83b1</recordtableid>
+    </None>
+    <None Include="CheckingSavingsMoneyMarketValiation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>50734885-e017-4aba-96aa-b112533d0d72</id>
+      <recordtableid>bb2ba0af-5d7e-43d8-8714-07939afb1ed0</recordtableid>
+    </None>
+    <None Include="ConfirmIdentityModalValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>de4700f3-9243-4d73-bec7-07946ce4c345</id>
+      <recordtableid>ddf8a7a7-e9d9-4d65-b00a-9980c1ff8477</recordtableid>
+    </None>
+    <None Include="FirstTimeEnrollmentRepository.rximg">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <DependentUpon>FirstTimeEnrollmentRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1d88a390-d6d5-40b5-a5fe-76d495551954</id>
+    </None>
+    <None Include="FirstTimeEnrollmentRepository.rxrep">
+      <id>a2d48ae8-88de-419a-863a-1fa58790fc17</id>
+      <repoid>9cf12f67-7f5b-48fa-b807-4a8fb0c4c554</repoid>
+      <reporootid>dda86d0c-6bf4-4f03-b4b6-203d7bd49bb7</reporootid>
+    </None>
+    <None Include="FirstLastSsnDataEntry.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>537c276a-06d5-43e4-8658-468686a123ca</id>
+      <recordtableid>74c285e1-a2d0-4568-9681-77068a30331d</recordtableid>
+    </None>
+    <None Include="FirstTimeEnrollmentValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>4d64c60f-4d33-4525-8962-a81b67ce806a</id>
+      <recordtableid>0ee4a9be-6840-4ce3-adfc-0881be0e83fa</recordtableid>
+    </None>
+    <None Include="GoToFirstTimeEnrollment.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>479ed725-f11f-4702-8c02-25ebca364eb4</id>
+      <recordtableid>ebca7f2c-f604-4d21-b550-f9af5cac4e5e</recordtableid>
+    </None>
+    <None Include="LoanOrLineOfCreditValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>29a41034-6b4e-457b-93ad-c1edd653105a</id>
+      <recordtableid>f1befe02-1c0c-4495-be76-cb49a9c1e667</recordtableid>
+    </None>
+    <None Include="SelectCertificateOfDeposit.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>402be997-c9b5-43e5-886e-f27d99ccb6ad</id>
+      <recordtableid>c53f3d57-f874-4f62-b7b8-672354dfb008</recordtableid>
+    </None>
+    <None Include="SelectLoanOrLineOfCredit.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>8c4e35cd-0cf4-4299-a0e5-c8dd6bd605ea</id>
+      <recordtableid>cbba1ab9-9452-4298-bb73-95d2d9441705</recordtableid>
+    </None>
+    <None Include="PersonalAccountsFirstPageValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>dce09727-724a-4e88-b585-5bcf6e833fc1</id>
+      <recordtableid>c3dd500e-8f60-4fb2-99ec-84e146ec8100</recordtableid>
+    </None>
+    <None Include="SelectAtmDebitCard.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>7c5f39fa-6ff4-4e55-a288-0f3636dc433d</id>
+      <recordtableid>d00795b6-7197-434c-ae85-353cda9c7301</recordtableid>
+    </None>
+    <None Include="SelectBackButton.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>31f451c7-10d8-48e7-b33d-f9bbdc0365c3</id>
+      <recordtableid>e9382b3c-ea87-4a2a-bf1f-173da43b0ef7</recordtableid>
+    </None>
+    <None Include="SelectCheckingSavingsMoneyMarket.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>5d495a77-1fad-4fd0-90c5-086d684636ec</id>
+      <recordtableid>2f3e4a4c-13b4-4434-9ddb-e4c4c9571d1a</recordtableid>
+    </None>
+    <None Include="SelectEnrollBusinessAccounts.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>49dd11e2-3a0d-40ab-ac74-2cbf04af9da7</id>
+      <recordtableid>5701176d-929f-4fcd-9190-6415c60d80b7</recordtableid>
+    </None>
+    <None Include="SelectEnrollPersonalAccounts.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>c3b90782-383f-459f-8c68-7e5920df663a</id>
+      <recordtableid>6178869d-b5ac-4c4a-af07-c06b3b47c011</recordtableid>
+    </None>
+    <None Include="SelectNextButton.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>8ec7147f-30de-4410-a6d9-6f33b72957f0</id>
+      <recordtableid>27dc016c-a5aa-426f-a62a-ffb38811c08c</recordtableid>
+    </None>
+    <None Include="SelectNoLetsContinue.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>81006612-71ad-4a1d-91fa-7ff4909873a9</id>
+      <recordtableid>3b30ccd7-ad08-42a9-a653-339a39610d07</recordtableid>
+    </None>
+    <None Include="TellUsMoreAboutYourBusinessSetupModalValidation.rxrec">
+      <BoundTo>a2d48ae8-88de-419a-863a-1fa58790fc17</BoundTo>
+      <id>98d6a4ca-384e-40d9-b1aa-6986f8287205</id>
+      <recordtableid>e5694221-1580-4248-b660-5f0d505944ab</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FirstTimeEnrollment.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>432f5549-2a25-4b9e-9782-a60a84de3b3d</id>
+    </Content>
+    <Content Include="FirstTimeEnrollment.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a2013431-8f2e-43b1-9e4e-4f89e92aa897</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
+  </Import>
+  <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
+  </Import>
+</Project>

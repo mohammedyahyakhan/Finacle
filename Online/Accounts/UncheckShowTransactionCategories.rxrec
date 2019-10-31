@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="993e1265-5a74-467b-abef-6a9f41c50aa6"
+mode="Global"
+rxversion="8.3">
+	<name>
+		UncheckShowTransactionCategories
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="UncheckShowTransactionCategories"
+	namespace="AccountsTestSuite">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1e278dc0-b9ab-488c-a7a5-b3cd9fcf18dd"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d9be019-916e-42fe-9f84-37f560097086"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'selectTransactionCategory']
+				</path>
+			</info>
+			<arguments
+			id="e4fe0a15-85e3-4e4f-8752-e237a072a5bb">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="d58e77bb-0898-4840-8b86-1f90fdf37031"
+	name="AccountsTestSuiteRepository"
+	relativepath="AccountsTestSuiteRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="AccountsTestSuiteRepository"
+		namespace="AccountsTestSuite">
+		</codegen>
+		<rootfolder
+		id="01ffe724-4110-4f19-9ab4-a5dc39922701"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		UncheckShowTransactionCategories.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

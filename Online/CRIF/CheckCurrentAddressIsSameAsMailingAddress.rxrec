@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e85034bb-c81b-46af-a82c-6d706350089b"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckCurrentAddressIsSameAsMailingAddress"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="28720797-950a-480d-a5d7-4f3fd734cb13">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d29d0da-1dcb-41cc-8c8d-acc330c0982b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'contact_info_single_unchecked']
+				</path>
+			</info>
+			<arguments
+			id="3c659a4b-9583-41c9-8537-8d4d04140603">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="338189e5-ae59-433f-b6b6-8e4e1a65adc8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ec0fcef3-159b-4581-a3c4-0820a830f241"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="imgtag"
+				rect="394,311,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						contact_info_single_checked
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Selected.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+						true
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						contactInfoSingleCheckboxFn('unselect')
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-show"
+					readonly="False"
+					type="System.String">
+						!contactInfoSingleCheckbox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						checkbox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						margin-left: -53px;position:absolute;display:block; cursor: pointer;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'contact_info_single_checked']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="06de0f2a-13bb-415f-9907-00c80670c2e6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABgAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigApE+4v0FLSJ9xfoKAFqC9jaW1ZEXcSRx68j1qeigCmsIMqeVbfZwD85+UbhjpweafF50EQ
+h8kvtG1XBAGO2ec/pVmigCtHHLbqgAMq7cMowDuznIz/AI0trEYzI2wRq5BWPj5ePbirFFABRRRQ
+AUUUUAFJsA9fzNLRQAm0e/5mjaPf8zS0UAJtHv8AmaNo9/zNLRQAm0e/5mjaPf8AM0tFABRRRQAU
+UUUAQXl3HZxCSQMQW2/KP8+lU/7dtf8AnnN+Q/xo8Qf8eKf9dB/I1QYNjcwPzdz3ojFybSZlKTvZ
+F/8At21/55zfkP8AGrVlfRXu/wApXGzGdwHf/wDVWWYfKhEjsVc8ovfHrVrSv+P7UP8Arp/VqUk4
+tagnK6TNOiiimahRUEtz5d1FCU4cH5s9D2pGugt55BXChCzOTgD2oAsUUUUAFFFFAGZ4g/48U/66
+D+RqtDcGIFHQOoOQrdjWnqFn9tgWPzNmG3Zxnsf8aq/2Zdf9BKb9f8aSk4t6XMmnzXRRd3lkLMSz
+Mat6dMkd/fBt2WkyAqluhPp9af8A2Zdf9BKb9f8AGnWVibO+LNMZTIjEkjHce/vTlJya0BJ3Whc+
+0p/dl/79N/hR9pT+7L/36b/CpaKDUoXLCWUkLKP3ZAPlNw2QR29qbCx8yOSWKQM25pB5THBOMDpz
+wMVo0UAFFFFABRRRQAUUUUAFRN/x+R/9c3/mtS1E3/H5H/1zf+a0ARag8iQjYWWMn966csi+oH9e
+3pUVzOsUkBt5tznC7S+UK9ck9vr1PvV+q0kVx5rmNlCsc/eIPQD09qALCsrruVgwPcHNUVmuDIIo
+mTLNKd0gLYwwxxketW4EZIsPjdkk46ckmhYI1cOq4Ybucnucn+VAElFFFABRRRQAUUUUAFRN/wAf
+kf8A1zf+a1LUTf8AH5H/ANc3/mtAD3kSNd0jqg9WOKVWDKGUgg9CD1qK53ExbCA2/gkZHQ1AsuwK
+jTeSMtvbj72enPHfNK4F3IzjIyOcUVRMsgDScBjGmSeMDJ59qmtpGbG+ZH4ONp3Z6dwBRcD/2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegex"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e5859cf7-f1c7-43bd-9ca4-9c2bc9e039aa">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ec0fcef3-159b-4581-a3c4-0820a830f241"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="imgtag"
+				rect="394,311,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						contact_info_single_checked
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Selected.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+						true
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						contactInfoSingleCheckboxFn('unselect')
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-show"
+					readonly="False"
+					type="System.String">
+						!contactInfoSingleCheckbox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						checkbox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						margin-left: -53px;position:absolute;display:block; cursor: pointer;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'contact_info_single_checked']
+				</path>
+			</info>
+			<matchname>
+				Src
+			</matchname>
+			<matchvalue>
+				Checkbox-Selected.png$
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckCurrentAddressIsSameAsMailingAddress.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

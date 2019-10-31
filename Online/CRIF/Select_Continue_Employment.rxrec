@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="daf41909-21ef-4ba1-885d-eae310ba3597"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Continue_Employment"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="30e75aad-49c7-4e87-a994-c6c4f4e7ab01">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="91219a39-9dbd-4b4c-9e60-3e6469aa9e57"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'CAPTURE_CRIF_THIRD_TAB_SINGLE_CONTINUE']
+				</path>
+			</info>
+			<arguments
+			id="b03fb2a9-200d-486c-bd95-15058b6f81d5">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Continue_Employment.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

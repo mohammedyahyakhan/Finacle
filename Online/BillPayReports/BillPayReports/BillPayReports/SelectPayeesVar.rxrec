@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="99f47e60-e568-4d46-89a0-66011a4628fa"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectPayeesVar"
+	namespace="BillPayReports">
+	</codegen>
+	<variables>
+		<var
+		id="5289f9b0-52f4-431d-a39c-0067917b5661"
+		name="BillPayReportsPayee">
+			D-Card
+		</var>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a33dd43e-b6e4-4493-8668-60dcb1c44d5a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3370d9df-b1f6-47e5-8578-93dd93b58ffc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'createBillPayReport']/div[1]/table/tbody/tr/td[2]/div/div[2]/div/div//span[@title=$BillPayReportsPayee]/../img
+				</path>
+			</info>
+			<arguments
+			id="4e8f030e-e828-4190-a4b2-e23991552ec7">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="f3886a30-aaf1-4c38-9b50-b1b769f44447"
+	name="BillPayReportsRepository"
+	relativepath="BillPayReportsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayReportsRepository"
+		namespace="BillPayReports">
+		</codegen>
+		<rootfolder
+		id="2b6f57e4-d99d-4c73-8ebe-cc2c7c744fcd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectPayeesVar.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

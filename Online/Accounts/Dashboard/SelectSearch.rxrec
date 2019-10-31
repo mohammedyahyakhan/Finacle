@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0af9efcc-b330-4404-9de3-ed20dc50d8d1"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSearch"
+	namespace="AccountsTestSuite.Dashboard">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a126348e-f12d-4dd8-922c-76f8b32e40da"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f43ef598-208d-4b92-88ac-a9b29c589733"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']/descendant-or-self::*/div[#'accounts-landing-view']/descendant-or-self::*/input[@type='text']
+				</path>
+			</info>
+			<arguments
+			id="7e82ce7e-d3be-4d70-b6bc-f114b094477a">
+			</arguments>
+		</invokeactionrecorditem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="576315dd-629b-42e1-867b-19eb41b4160c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f43ef598-208d-4b92-88ac-a9b29c589733"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']/descendant-or-self::*/div[#'accounts-landing-view']/descendant-or-self::*/input[@type='text']
+				</path>
+			</info>
+			<AttributeValue>
+				?!?!?!??!
+			</AttributeValue>
+		</setvaluerecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4cd97232-efd4-46c5-a222-191651dd7975">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f214a7a0-49e0-420a-99e1-caf49cfc474e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'accounts-landing-view']//div[@innertext='No results found']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ddeede5c-8967-4560-87bd-c78286d6a854">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c19c24cf-0812-4263-af8d-b45b2bfb4ff5"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="900,536,120,120"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						120
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/no_results.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						120
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+						! hasResult
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-src"
+					readonly="False"
+					type="System.String">
+						L001/ang/images/no_results.png
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'accounts-landing-view']//img[@src='https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/no_results.png']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="49365f1a-72eb-457d-ad89-a251f9606f0f">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACbAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooqCe9t7Zwk0m1iM42k8U
+N2E2luT0VT/tWy/57f8Ajrf4Uf2rZf8APb/x1v8AClzLuLmj3LlFU/7Vsv8Ant/463+FH9q2X/Pb
+/wAdb/CjmXcOaPcuUVT/ALVsv+e3/jrf4Uf2rZf89v8Ax1v8KOZdw5o9y5RVP+1bL/nt/wCOt/hR
+/atl/wA9v/HW/wAKOZdw5o9y5RVP+1bL/nt/463+FH9q2X/Pb/x1v8KOZdw5o9y5RVP+1bL/AJ7f
++Ot/hR/atl/z2/8AHW/wo5l3Dmj3LlFU/wC1bL/nt/463+FH9q2X/Pb/AMdb/CjmXcOaPcuUVT/t
+Wy/57f8Ajrf4VZhlSeISRNuQ9DjFCaew1JPYfRRRTGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABWZdIsmu26uoZTHyCMj+KtOs2f/kP2/8A1zP/ALNUyIn0Ln2S2/594v8AvgUfZLb/AJ94
+v++BU1FOyKsiH7Jbf8+8X/fAo+yW3/PvF/3wKmoosgsiH7Jbf8+8X/fAo+yW3/PvF/3wKlJA6kUb
+h6j86LILIi+yW3/PvF/3wKPslt/z7xf98Cpdw9R+dG4eo/OiyCyIvslt/wA+8X/fAo+yW3/PvF/3
+wKl3D1H50bh6j86LILIi+yW3/PvF/wB8Cj7Jbf8APvF/3wKl3D1H50bh6j86LILIi+yW3/PvF/3w
+KPslt/z7xf8AfAqXcPUfnSg56UWQWRUu7W3W0mZYIgRGxBCDjik0j/kGxfj/ADNTXn/HlP8A9c2/
+lUOkf8g2L8f5ml9om3vlyiiiqLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArNn/AOQ/
+b/8AXM/+zVpVmz/8h+3/AOuZ/wDZqmXQifQ0qKKKosKazgZ55p1JFjYCcZPWgCNSmOcZpcx+35VN
+8vtR8vtQBDmP2/KjMft+VTfL7UfL7UAQ5j9vyozH7flU3y+1Hy+1AEOY/b8qMx+35VN8vtR8vtQB
+EAh6AUYCyDHGaWTGVIxnNIf9Yv40AMvP+PKf/rm38qh0j/kGxfj/ADNTXn/HlP8A9c2/lUOkf8g2
+L8f5mp+0R9suUUUVRYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFZs//ACH7f/rmf/Zq
+0qzZ/wDkP2//AFzP/s1TLoRPoaVFFFUWFRJs2jOM1LSRKDGMgflQAzEftRiP2qbav90flRtX+6Py
+oAhxH7UYj9qm2r/dH5UbV/uj8qAIcR+1GI/aptq/3R+VG1f7o/KgCHEftRiP2qbav90flRtX+6Py
+oAgO3K7cZzTj/rF/GnSADbgAc00/6xfxoAZef8eU/wD1zb+VQ6R/yDYvx/mamvP+PKf/AK5t/Kod
+I/5BsX4/zNT9oj7ZcoooqiwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKzZ/+Q/b/wDX
+M/8As1aVZs//ACH7f/rmf/ZqmXQifQ0qUDNAFNdyQQnQdTVFjjtHUgfWkVkAwGH50iRrgEjJPrSl
+U6bR+VAD6Ki27eYyR7Gno+8ccHuKAHUU3L5+6PzpTnHAyaAFopoL55UY+tJKSIzigBd6889OtOBB
+GRzTFxtAHT+dIgAcgH6j0NABL/D9aaf9Yv406X+H600/6xfxoAZef8eU/wD1zb+VQ6R/yDYvx/ma
+mvP+PKf/AK5t/KodI/5BsX4/zNT9oj7ZcoooqiwooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKzZ/+Q/b/wDXM/8As1aVZs3/ACMFt/1zP/s1TLoRPoaUhwmB1PAoZQsRA9KH++n1pZP9W30q
+ixV+4PpS0i/cH0oIz3oAWoZpEhkVndV3ccnGal2+9REYvI/+ub/zWgA+1W//AD8Rf99ij7Vb/wDP
+xF/32KmooAh+1W//AD8Rf99ij7Vbf894v++xU1FAFcT2w6XEY/4GKVbi2UYE8X/fYqeigCtLcwEL
+ieLr/fFILiDOWuIif98VaooApXdxA1nMBNGSY2AAYelQ6XPCmnxK8qKwzkFgD1NXb3/jxuP+ubfy
+qDR/+QXD/wAC/wDQjU/aI+2S/arf/nvF/wB9ij7Vb/8APeL/AL7FWKKosr/arf8A57xf99ij7Vb/
+APPeL/vsVYooAr/arf8A57xf99ij7Vb/APPeL/vsVYooAr/arf8A57xf99ij7Vb/APPeL/vsVYoo
+Ar/arf8A57xf99ij7Vb/APPeL/vsVYooAr/arf8A57xf99ij7Vb/APPeL/vsVYooAr/arf8A57xf
+99ij7Vb/APPeL/vsVYooAr/arf8A57xf99ij7Vb/APPeL/vsVYooAr/arf8A57xf99ij7Vb/APPe
+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
+UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fcf49154-eff4-4238-befb-8b5d1b493de3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7e917778-e072-45be-9515-dfa0ba789dea"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'accounts-landing-view']//p[@innertext='No Results Found']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="576315dd-629b-42e1-867b-19eb41b4160c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f43ef598-208d-4b92-88ac-a9b29c589733"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']/descendant-or-self::*/div[#'accounts-landing-view']/descendant-or-self::*/input[@type='text']
+				</path>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="d58e77bb-0898-4840-8b86-1f90fdf37031"
+	name="AccountsTestSuiteRepository"
+	relativepath="..\AccountsTestSuiteRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="AccountsTestSuiteRepository"
+		namespace="AccountsTestSuite">
+		</codegen>
+		<rootfolder
+		id="01ffe724-4110-4f19-9ab4-a5dc39922701"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSearch.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

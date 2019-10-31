@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fff28284-5452-495c-b35a-509922b60849"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CancelLostStolenCardModalValidation"
+	namespace="Debit_Cards_V2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f3277d46-9877-4786-81a8-25d191e95153">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2322ab56-2ac8-4b04-9aae-bf1e1fcb896a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="atag"
+				rect="646,473,160,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cancel-trigger cancel-lost-style ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						cancel-lost-stolen-card
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                Cancel Lost/Stolen Card
+           &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/Finacle;jsessionid=YZxzzuVMA9rXCqtDYSX1EXfo?bwayparam=GuV6VD56tjUpHmVsiuYyG%2Bix2DNmkqoNB8n0iYCTJENSGmzWTihTA9ZLL7yocFh7lPGv1HbG9CStBWJTVzkD1d%2BV7R85Iwd91P4SK3r82TcWUO3NPo%2FNNOyMcjrtBNhh%0D%0AiL7A4yW0OBsNw%2BSXZ%2FmucaS3wlOUJW1PnoL3848X1%2BJ%2F5cJDJAbQNhhkdnbQlzz3NH6QtpYuTJrFGyw4rH8UynMbg%2BEHvRs1eVVEcQxgOF0%3D
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="bs-modal"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-backdrop"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-html"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-placement"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-template-url"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'cancel-lost-stolen-card']
+				</path>
+			</info>
+			<arguments
+			id="d4903fc2-24f7-4858-9f77-e8689766cd1e">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="0edf321b-393e-4324-9803-35bcaed9b5c7"
+		waitaction="AttributeEqual"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c99b9fe3-6dba-4e05-a91b-ca278304bea4"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'cancelLostStolenModal']/div/?/?/div[@innertext~'Cancel']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a42579b9-13f1-4700-a6bd-973ec15ac0fd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="48704048-b0f6-4f4d-bcc1-96745d419692"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="808,312,288,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						modal-sub-header
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                Why are you cancelling your debit card?
+           &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'cancelLostStolenModal']/div/?/?/div[@innertext~'Why are you cancelling your debit card?']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4a061474-f55a-417f-9d7e-4cd346bcf5ae">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="828b59ba-f59a-4596-96b9-44fb766600d1"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="spantag"
+				rect="889,373,35,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						title-text ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						Lost-buttonn
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Lost
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						cancelCard('Lost')
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+						$event.keyCode == 13 ? cancelCard('Lost'):null
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						button
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						padding-left:10px;font-weight: bold;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//span[#'Lost-buttonn']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="814a4cc8-c6a6-47cb-9161-0e7a239c612d">
+				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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5028c256-1e98-46fc-8f99-3dcb4c630e02">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="33f12bb1-1e74-40fb-9d20-260128c0032a"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="887,434,49,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						title-text ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						Stolen-buttonn
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Stolen
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						cancelCard('Stolen')
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+						$event.keyCode == 13 ? cancelCard('Stolen'):null
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						button
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						padding-left:12px;font-weight: bold;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//span[#'Stolen-buttonn']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="4a585d69-3e86-45be-8b18-7cf3b3077cff">
+				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
+cFmIOB/D0/nQBqUVz/8AbF36p/3zRTsRzo//2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="539345d9-03e3-4646-8b3c-0131a13b6c6d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="53944f46-0ab2-495b-9ba7-194f68012557"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="3"
+				prefcap="divtag"
+				rect="801,495,275,45"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						message-stolen
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                Please review your account activity and call 1-800-457-2043 immediately to report any unauthorized activity.
+           &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'cancelLostStolenModal']/div/?/?/div[@innertext~'Please review your account activity and call 1-800-457-2043 immediately to report any unauthorized activity.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a725b658-beb1-4674-952f-1ce188ba411b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="012cb9d6-e439-46b9-a7ab-d80b63cfaf6b"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1008,584,63,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cancel
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						cancelModal($event,'cancelLostStolenModal')
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						font-weight:normal;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'modalFooterAcc']/button[@innertext='Close']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="bc3de62e-e1fa-4b9d-97ee-af76ba6e1c2d">
+				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
+FFABRRRQAUUUUAf/2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9503b243-df90-4b9a-9b3a-fea9c2eec0c3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="012cb9d6-e439-46b9-a7ab-d80b63cfaf6b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="0,93,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						cancel
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'modalFooterAcc']/button[@innertext='Close']
+				</path>
+			</info>
+			<arguments
+			id="4d51c4ae-3169-47a8-b258-f64a7e6cd5c9">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="9b55bd05-b068-459d-8c16-2c6d2844c24c"
+	name="DebitCardsRepository"
+	relativepath="DebitCardsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="DebitCardsRepository"
+		namespace="Debit_Cards_V2">
+		</codegen>
+		<rootfolder
+		id="193247be-98ed-44ae-8ef7-b0f5c715eb32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CancelLostStolenCardModalValidation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

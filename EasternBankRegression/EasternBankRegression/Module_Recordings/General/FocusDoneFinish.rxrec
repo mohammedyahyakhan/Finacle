@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b7ff35b6-9386-4eff-881d-1ad2f0550add"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FocusDoneFinish"
+	namespace="EasternBankRegression.Module_Recordings.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Focus"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8b1cc4a9-cc53-4e3c-99fc-35dcb4867a5f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65f4e344-6cd9-4749-924e-413167d9c7b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//buttontag[@innertext~'Done' or @innertext~'DONE' or @innertext='Finish' or @innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Done' and @visible='true']
+				</path>
+			</info>
+			<arguments
+			id="f05207bb-bcd3-4d5e-8321-f41c16e0a4e8">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FocusDoneFinish.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

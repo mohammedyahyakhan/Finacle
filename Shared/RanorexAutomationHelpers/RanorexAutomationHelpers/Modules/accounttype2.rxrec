@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="84720815-41f5-48e7-bd28-b67d98cbab70"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="accounttype2"
+	namespace="Login">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c1d383bd-8366-4c77-9955-046d4cdf23d2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f52ad2a3-4ac6-43db-b0c7-24ac3b613075"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='compare-checking-saving-modal-aco']//div[@class='modal-body eb-modal-body']//h1[@innertext=$CheckingAccountType]/../../..//buttontag
+				</path>
+			</info>
+			<arguments
+			id="dab91817-84e9-4e9a-9d5c-609a65e9dbec">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="661fd7fb-2337-43ed-ab85-14381066604c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e31c909f-499e-42f6-803f-d84f695edf29"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accountOpeningFundAcc']//h1[@innertext='Open My Premier Checking Account']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="193e05d3-4da7-4bae-a93d-bc21bc09291f"
+	name="SetupAndTeardownRepository"
+	relativepath="..\..\..\SetupAndTeardown\SetupAndTeardownRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SetupAndTeardownRepository"
+		namespace="Login">
+		</codegen>
+		<rootfolder
+		id="5bfca4d2-e75d-48d4-811e-7ec90b3e7c33"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		accounttype2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

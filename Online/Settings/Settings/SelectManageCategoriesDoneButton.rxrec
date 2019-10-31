@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1f2769b0-a0a9-41a2-b133-7ea0aabedcdf"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectManageCategoriesDoneButton"
+	namespace="Settings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b67bee27-6a8f-44c5-9aed-7373e1cdd67e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f6b52197-51c1-4e91-934e-f788be28673c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'catgSetting']/div/div/div[4]/button[@innertext='Done']
+				</path>
+			</info>
+			<arguments
+			id="c9d15738-efd1-4229-9a72-24149d0abfb0">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="df048fd8-8e92-4b8b-a61f-3a290afea1e0"
+	name="SettingsRepository"
+	relativepath="SettingsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SettingsRepository"
+		namespace="Settings">
+		</codegen>
+		<rootfolder
+		id="33c0cfa5-9691-4af8-86c1-d9dd49f92140"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectManageCategoriesDoneButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

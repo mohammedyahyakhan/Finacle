@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="53a95e47-ffd3-44d0-88b3-868e9750ac65"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClosePDF"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab.Checking_7927.Statement">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6faa4266-2316-4f3f-ab88-ef9048084146"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f5d0d557-14ba-4637-9e88-ec47e628abeb"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='gv-us.computershare.com']//span[#'DocumentDisplayHeadingDetail']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4203d266-4262-4508-92ba-cb3f1b685f0a"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a6c641f-55db-455c-aafa-8efd67f358d0"
+			sourcename="RepositoryEditor">
+				<path>
+					/*[@title~'^Eastern\ Bank\ Internet\ Ban' or @appframetitle~'^Eastern\ Bank\ Internet\ Ban']//*[@accessiblerole='PageTabList' or @automationid~'TabsList']//*[@accessiblename~'Eastern Bank Internet Banking' or (@caption~'Eastern Bank Internet Banking' and @controltype='Text')]
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{LControlKey down}{F4 down}{LControlKey up}{F4 up}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="6ec9b0cf-cf51-4adc-bf40-14a9d2eceb21">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a6c641f-55db-455c-aafa-8efd67f358d0"
+			sourcename="RepositoryEditor">
+				<path>
+					//tabpage[@accessiblename~'^Eastern Bank Internet Banking - Document View' or @automationid='TabEmblemImage']
+				</path>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClosePDF.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

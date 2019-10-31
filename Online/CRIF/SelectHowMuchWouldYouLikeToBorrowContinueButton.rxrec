@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="68b6e1fe-2a14-4b8f-be13-d9a8b7b13663"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectHowMuchWouldYouLikeToBorrowContinueButton"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="864fce61-e43b-4d8c-80d6-a4b6253d1f95">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="36e38774-cc50-4a5d-a8fc-94ed81fcbf06"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'CONTINUE_PATRIOT1']
+				</path>
+			</info>
+			<arguments
+			id="862f445e-2b03-4674-bade-507c38601a91">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="0068b255-d7cd-42b3-ab4b-caaa4100c86b"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="50833a85-1d58-4320-b816-67f065154f10"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'app-content-ang']//h1[@innertext=' How can we reach you? ']/../../../../../../../../../div/div/div/div/div/div/div/div/h1[@innertext=' How can we reach you? ']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectHowMuchWouldYouLikeToBorrowContinueButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

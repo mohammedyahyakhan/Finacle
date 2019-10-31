@@ -1,0 +1,1501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fc13ca7d-a5e1-412f-b56c-4b1784ef30b2"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SaveUnsaveUsername"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.Login">
+	</codegen>
+	<variables>
+		<var
+		id="c45a1579-83c2-4c8b-8b37-774478a09f2c"
+		name="varBrowser">
+			Chrome
+		</var>
+		<var
+		id="79a9a87a-ed05-4e9f-8c2f-389b99454533"
+		name="EnvURL">
+			https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=EBK&amp;LANGUAGE_ID=001&amp;ANGULAR_FLAG=Y
+		</var>
+		<var
+		id="07e75e0f-54f2-49c8-8d7f-3e3acd520a89"
+		name="varUrl">
+		</var>
+		<var
+		id="e808499c-bc2c-4ef9-bdff-b2187aef207e"
+		name="varPassword">
+		</var>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="IE"
+		clearcache="False"
+		clearcookies="False"
+		duration="100ms"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="BrowserName"
+				variable="varBrowser">
+				</binding>
+				<binding
+				target="Url"
+				variable="EnvURL">
+				</binding>
+			</bindings>
+			<url>
+				https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=EBK&amp;LANGUAGE_ID=001&amp;ANGULAR_FLAG=Y
+			</url>
+		</openwebsiterecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0b6f2e61-0cc8-4281-bd49-c589775f6aca">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7b2f46-a1f9-42d6-a14b-3807aeffb6a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+			<arguments
+			id="8d99dc37-86c9-4ae1-bb06-96992e8cd7fe">
+			</arguments>
+		</invokeactionrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="d2fa6789-1073-43e3-8a6b-146671c5ba96"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7b2f46-a1f9-42d6-a14b-3807aeffb6a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+		</touchrecorditem>
+		<keysequenceitem
+		KeySequence="qacon1"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="bb149e85-91b8-452a-b13d-e735ad70b6c6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7b2f46-a1f9-42d6-a14b-3807aeffb6a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//input[@name='AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+		</keysequenceitem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="UpperCenter"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="d2fa6789-1073-43e3-8a6b-146671c5ba96"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd8be9c7-9d40-4913-914a-bd2998fae53e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'LoginHDisplay']/?/?/img[@alt~'^Eastern\ Bank\ Join\ Us\ For\ ']
+				</path>
+			</info>
+		</touchrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0478e6d3-57a2-4c12-8d4d-cc6a67a4f76d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c58dd083-2144-4ead-aa0a-2d0159c06b5c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="imgtag"
+				rect="990,427,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						saveUserNameUncheck
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Save UserName
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Default.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onclick"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onkeypress"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'saveUserNameUncheck']
+				</path>
+			</info>
+			<arguments
+			id="c9bc4ff8-537a-47c9-aaf2-993696cd7a69">
+			</arguments>
+		</invokeactionrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="df46f8e9-5797-4ba5-b6f8-002dafcdbe01"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f196ee53-7422-48af-b248-4f2282ff14ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='AuthenticationFG.ACCESS_CODE_1']
+				</path>
+			</info>
+		</touchrecorditem>
+		<keysequenceitem
+		KeySequence="east@1234"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="4f0c2fc1-38df-4fab-b6d5-366ae08354bc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f196ee53-7422-48af-b248-4f2282ff14ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//input[@title='Password']
+				</path>
+			</info>
+		</keysequenceitem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="UpperCenter"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="338f119b-4c20-4f23-bd65-0e267cd3c283"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd8be9c7-9d40-4913-914a-bd2998fae53e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'LoginHDisplay']
+				</path>
+			</info>
+		</touchrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="UpperCenter"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="338f119b-4c20-4f23-bd65-0e267cd3c283"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd8be9c7-9d40-4913-914a-bd2998fae53e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'LoginHDisplay']
+				</path>
+			</info>
+		</touchrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="23c0496a-81d4-46a6-a416-2c97f541f877">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5a52d1a9-3228-4dec-bff7-e56494cee21e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='Action.VALIDATE_CREDENTIALS']
+				</path>
+			</info>
+			<arguments
+			id="8ac5b497-a87c-4998-8088-e8176b564418">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Enabled"
+		matchvalue="True"
+		optional="True"
+		searchpropertyid="4599342e-b845-4cd1-98f7-fca1db9e8e13"
+		waitaction="AttributeContains"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a4e20b28-b7c5-4385-a31d-b1c6a791ade8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[#'searchInput']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<keyitem
+		action="Press"
+		data="W, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="eedff0e6-794f-4c23-ba5c-759c8fd18d11"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a1b129da-4a62-4886-b01a-8b66a9315f3a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']
+				</path>
+			</info>
+		</keyitem>
+		<openwebsiterecorditem
+		args=""
+		browser="IE"
+		clearcache="False"
+		clearcookies="False"
+		duration="100ms"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="BrowserName"
+				variable="varBrowser">
+				</binding>
+				<binding
+				target="Url"
+				variable="EnvURL">
+				</binding>
+			</bindings>
+			<url>
+				https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=EBK&amp;LANGUAGE_ID=001&amp;ANGULAR_FLAG=Y
+			</url>
+		</openwebsiterecorditem>
+		<WaitForRecordItem
+		duration="100ms"
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="05741fe1-9aaa-4f51-88b9-2d00a0395a5e"
+		waitaction="AttributeEqual"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dc605033-3664-44d2-8c99-c659d7049304"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'LoginHDisplay']/?/?/img[@alt~'Eastern Bank Join Us For']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6878bab3-9a62-4e3b-93af-76e588f95ee0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="72f8c6eb-c2b9-4ac7-9bad-edbddc90c1a6"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="810,369,300,35"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						type_UserPrincipal non-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AuthenticationFG.USER_PRINCIPAL
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						chr************
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						new-password
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						65
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						AuthenticationFG.USER_PRINCIPAL
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						28
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						chr************
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+						UserPrincipalError
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-febatype"
+					readonly="False"
+					type="System.String">
+						UserPrincipal
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-validate"
+					readonly="False"
+					type="System.String">
+						emptyUser
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onchange"
+					readonly="False"
+					type="System.String">
+						checkTextLength('AuthenticationFG.USER_PRINCIPAL');
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						color: rgb(33, 33, 33) !important;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'Eastern Online Banking.']//input[#'AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a51b50f5-8b51-4a69-91ff-addaa659f98a">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAHdAXwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKTIp
+HOBTYwHQMf50AP3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3C
+jcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9a
+AF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8t
+fT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P
+1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKT
+y19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAF3CjcKTy19P1o8tfT9aAHZo
+qINiUqOgqWgBkv3TSW/+pH4/zpZfumkt/wDUj8f50ASUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAQf8ALw34fyqeoP8Al4b8P5VPQAyX7ppLf/Uj8f50sv3TSW/+pH4/zoAkooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAg/5eG/D+VT1B/y8N+H8qnoAZL900lv/AKkfj/Oll+6aS3/1
+I/H+dAElFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEH/Lw34fyqeoP+Xhvw/lU9ADJfum
+kt/9SPx/nSy/dNJb/wCpH4/zoAkooooAKKKKACikZlRSzsFUdST0rLn161jbbErzH/ZGBTSb2E2k
+atFUpr2eG0W4e0OOrKHyVH5Uy11mzuGC7jEx7Px+tFmF0aFFFFIYUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEH/Lw34fyq
+eoP+Xhvw/lU9ADJfumkt/wDUj8f50sv3TSW/+pH4/wA6AJKKKKACiiob1zHZTuvVY2I/KgDm9Z1F
+ru4MUbfuUOAB/EfWtDRdJ8oLc3K/vDyin+H3+tZuhRJLqabwCFBYA+tdFeXDoyQW4DTydM9FHqa1
+lp7qM466sbeXL7/stqA07Dknog9TWPqeim3h863YuFHzg9frW7a26WkR+bLH5pJG6sfU1Vw2pyZO
+Vs1PA/56n/CpTtsU1fcoaDqTeYLSZsqfuE9vatTUb8WCI7RF1Y44PSszWLKG1miuYGWNi4/d+vuK
+n8Sc2MR/2/6U7JtMV2kxY9d80Zjsp3A7rzV+xuxeQmQRtHhipVutZGg3ttbWrpPKEYvkAg+lbykM
+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
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAQf8ALw34fyqeoP8Al4b8P5VPQAyX7ppIM+SOB37+9LL900lv/qR+P86AH8+g/Ojn0H50tFAC
+c+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc
++g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+
+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g
+/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/Ojn0H50tFACc+g/
+Ojn0H50tFAEA/wCPhvw/lU9Qf8vDfh/Kp6AGS/dNJb/6kfj/ADpZfumkt/8AUj8f50ASUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AZ+rXctssYhIUvnJxnpj/Gs3+1Lz/nt/46P8Kt6//wAsP+Bf0rJrrpxTiro46spKbSZb/tS8/wCe
+3/jo/wAKP7UvP+e3/jo/wqqqlmCqCSegA604wyq4QxOGPRSpyavlj2M+afcsf2pef89v/HR/hR/a
+l5/z2/8AHR/hVSijkj2Dnl3Lf9qXn/Pb/wAdH+FH9qXn/Pb/AMdH+FVdrbN207c4zjjNJRyx7Bzy
+7lv+1Lz/AJ7f+Oj/AAq1p2oXE12sUrh1bPYDHGe1ZVW9J/5CMX4/yNTKMeV6FQnLmWp0VFFFcZ3E
+H/Lw34fyqeoP+Xhvw/lU9ADJfumkt/8AUj8f50sv3TSW/wDqR+P86AJKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMjX/APlh/wAC
+/pWTWtr/APyw/wCBf0rJrspfAjhrfGyxZM6zFkj8zCHcAcHHtVq2jV/IKPJ5W9hsY4IO3nBHas5W
+KsGUkEdCD0pxnlZw5lcsOjFjkVUo3JjJIu/Z4QrJ5WSLfzBJk9f5Ul1BCq3ISIKYtuCGJznrUQvN
+tuY0VxlNvMhK+5A9armSRt2XY7vvZPX61KTuU5RsXbJFktQjjKtOoI/CoriOL7KsqRhD5hXAJOR+
+NV1kdBhXZRnPBxz60hdiu0sSuc4zxmq5Xe5PMrWEq3pP/IRi/H+RqpVvSf8AkIxfj/I0T+FhD4kd
+FRRRXCegQf8ALw34fyqeoP8Al4b8P5VPQAyX7ppLf/Uj8f50sv3TSW/+pH4/zoAkooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAzda
+glmWJokL7c5CjJ5x/hWT9kuf+feX/vg11FFaxquKsYzoqTvc5f7Jc/8APvL/AN8Gj7Jc/wDPvL/3
+wa6iiq9u+xP1ddzl/slz/wA+8v8A3waPslz/AM+8v/fBrqKKPbvsH1ddzl/slz/z7y/98Gj7Jc/8
++8v/AHwa6iij277B9XXc5f7Jc/8APvL/AN8Grml2s63yO8Toq5yWGO2K3KKTrNq1hqgk73CiiisT
+cg/5eG/D+VT1B/y8N+H8qnoAbIMrVfzJYxtUKQPUVapCooAq/aJ/7qfkaPtE/wDdT8jVnYPSjYPS
+gCt9on/up+Ro+0T/AN1PyNWdg9KNg9KAK32if+6n5Gj7RP8A3U/I1Z2D0o2D0oArfaJ/7qfkaPtE
+/wDdT8jVnYPSjYPSgCt9on/up+Ro+0T/AN1PyNWdg9KNg9KAK32if+6n5Gj7RP8A3U/I1Z2D0o2D
+0oArfaJ/7qfkaPtE/wDdT8jVnYPSjYPSgCt9on/up+Ro+0T/AN1PyNWdg9KNg9KAK32if+6n5Gj7
+RP8A3U/I1Z2D0o2D0oArfaJ/7qfkaPtE/wDdT8jVnYPSjYPSgCt9on/up+Ro+0T/AN1PyNWdg9KN
+g9KAK32if+6n5Gj7RP8A3U/I1Z2D0o2D0oArfaJ/7qfkaPtE/wDdT8jVnYPSjYPSgCt9on/up+Ro
++0T/AN1PyNWdg9KNg9KAK32if+6n5Gj7RP8A3U/I1Z2D0o2D0oArfaJ/7qfkaPtE/wDdT8jVnYPS
+jYPSgCt9on/up+Ro+0T/AN1PyNWdg9KNg9KAK32if+6n5Gj7RP8A3U/I1Z2D0o2D0oArfaJ/7qfk
+aPtE/wDdT8jVnYPSjYPSgCt9on/up+Ro+0T/AN1PyNWdg9KNg9KAK32if+6n5Gj7RP8A3U/I1Z2D
+0o2D0oArfaJ/7qfkaPPn/up+RqzsHpRtHpQBFGGZyzAZPpU9IABS0Af/2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegex"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="31a7b41b-e993-465d-819c-9e24bfc3ccf5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="72f8c6eb-c2b9-4ac7-9bad-edbddc90c1a6"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="810,369,300,35"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						type_UserPrincipal non-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AuthenticationFG.USER_PRINCIPAL
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						chr************
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						new-password
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						65
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						AuthenticationFG.USER_PRINCIPAL
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						28
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						chr************
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+						UserPrincipalError
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-febatype"
+					readonly="False"
+					type="System.String">
+						UserPrincipal
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-validate"
+					readonly="False"
+					type="System.String">
+						emptyUser
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onchange"
+					readonly="False"
+					type="System.String">
+						checkTextLength('AuthenticationFG.USER_PRINCIPAL');
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						color: rgb(33, 33, 33) !important;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'Eastern Online Banking.']//input[#'AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+			<matchname>
+				TagValue
+			</matchname>
+			<matchvalue>
+				.*
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="90279939-67ba-4662-bf5e-34f4ce2cfdbc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d823da8d-e453-417e-a487-081a99bb072a"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, labeltag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="3"
+				prefcap="labeltag"
+				rect="1017,428,93,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						save
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Save Username &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						label
+					</attribute>
+					<attribute
+					name="for"
+					type="System.String">
+						AuthenticationFG.REMEMBER_USER_ID
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//label[#'save']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6448977b-4ee0-4a12-af1c-e40f87977f72">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAE2AUADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooqMSE3TRYG0IG9+p/wAKAJKKgS5G0mTrvZQFUk4B9BTmuIkC
+ktww3AgE8epx0FAEtFRNcwqXBY/J947TgfjQLmIqzbiNvUFSD7cdaAJaKh+1Q7d24/e242nOeuMY
+zSpcwuyqrHLdMqR+H19qAJaKjjnjkbajEnGehGR7etSUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFQyRyCcSxBGyu0qxx+uDU1Qy3Ij
+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
+R5TciKNkUbCxLKT3+opscEiPG52k5YsM9M+lOkt1luQ8iI6BCMMM85paD1sEdyPKBk+9uK/IpOcd
+wBTjcxAKSxww3ZCk4HqfT8abPC7bFiwEUEFQxX+X8qiNrKIo1XZuVNu8OVI/LqPanZMV2iwZ4xJs
+yc5x904z6Z6UCeI4+fqm/wDD1qIwSeeGUqo3AllYjI916H60z7G+CCy43Y/4B6UrId2T/aIt4Tcc
+njocZ9M+vtR9piwTuJAO37p6+g45qJreQuVBXy2kEhOeRjHGPwpRbyLGuCpdJGcAng5J/oaLIV5E
+lvN5yu3GA5A4xUtRW6Oiv5m3LMW+XoKlpPcpBRRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRSZPoaMn
+0NAC0UmT6GjJ9DQAtFJk+hoyfQ0ALRSZPoaMn0NAC0UmT6GjJ9DQAtFJk+hoyfQ0ALRSZPoaMn0N
+AC0UmT6GjJ9DQAtFJk+hoyfQ0ALRSZPoaMn0NAC0UmT6GjJ9DQAtFJk+hoyfQ0ALRSZPoaMn0NAC
+0UmT6GjJ9DQAtFJk+hoyfQ0ALRSZPoaMn0NAC0UmT6GjJ9DQAtFJk+hoyfQ0ALRSZPoaMn0NAC0U
+mT6GjJ9DQAtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFQ3c/2e2eXGdvQfpWT/bVz/ci/I/41cYOWqM5VIxdmblFYf8AbVz/AHIvyP8A
+jR/bVz/ci/I/41XsZE+2gblFYf8AbVz/AHIvyP8AjR/bVz/ci/I/40exkHtoG5RWH/bVz/ci/I/4
+0f21c/3IvyP+NHsZB7aBuUVh/wBtXP8Aci/I/wCNKmtT7hvjjK98A5/nR7GQe2gbdFFFZGwUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFTVv+Qd
+L+H8xXO10Wrf8g6X8P5iudrqo/Ccdf4gopU++uF3c/d9avyyGdZvLkJABJhkXGwDuvatW7GUY3M+
+itO4tozcbpmkcySBAQQMcDk8e9MFlBvjjJk3SM6g5GBgn2qedWK9mzPoq1p/+sl/65N/KnyWkIWQ
+KZN6RCTJIxzjjGKblZ2Eo3VylRRRVEHW0UUV556YUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFTVv8AkHS/h/MVztdHqas+nyhQSeDgfUVzldVH
+4Tjr/EAJByDgipXupnUhmHzfeIUAn6nqaioraxjdouwXuG3zO5beGICKQcD9D7ioGu5TKHDY2sxX
+gcZ61DRS5UPmY6OR4iShwSCp47GnG4lJYl/vLsPA6VHRTshXYUUUqKzsFUEseABQI6yiqv2tv+eX
+/j3/ANaj7W3/ADy/8e/+tXnnplqiqv2tv+eX/j3/ANaj7W3/ADy/8e/+tQBaoqr9rb/nl/49/wDW
+o+1t/wA8v/Hv/rUAWqKq/a2/55f+Pf8A1qPtbf8APL/x7/61AFqiqv2tv+eX/j3/ANaj7W3/ADy/
+8e/+tQBaoqr9rb/nl/49/wDWo+1t/wA8v/Hv/rUAWqKq/a2/55f+Pf8A1qPtbf8APL/x7/61AFqi
+qv2tv+eX/j3/ANaj7W3/ADy/8e/+tQBaoqr9rb/nl/49/wDWo+1t/wA8v/Hv/rUAWqKq/a2/55f+
+Pf8A1qPtbf8APL/x7/61AFqiqv2tv+eX/j3/ANaj7W3/ADy/8e/+tQBaoqr9rb/nl/49/wDWo+1t
+/wA8v/Hv/rUAWqKq/a2/55f+Pf8A1qPtbf8APL/x7/61AFqiqv2tv+eX/j3/ANaj7W3/ADy/8e/+
+tQBaoqr9rb/nl/49/wDWo+1t/wA8v/Hv/rUAWqKq/a2/55f+Pf8A1qPtbf8APL/x7/61AFqiqv2t
+v+eX/j3/ANaj7W3/ADy/8e/+tQBaoqr9rb/nl/49/wDWo+1t/wA8v/Hv/rUAWqKq/a2/55f+Pf8A
+1qPtbf8APL/x7/61AFqiqv2tv+eX/j3/ANaj7W3/ADy/8e/+tQBP5a+lHlr6UUUAHlr6UeWvpRRQ
+AeWvpR5a+lFFAB5a+lHlr6UUUAHlr6UeWvpRRQAeWvpR5a+lFFAB5a+lHlr6UUUAHlr6UeWvpRRQ
+AeWvpR5a+lFFAB5a+lHlr6UUUAHlr6UeWvpRRQAeWvpR5a+lFFAB5a+lHlr6UUUAHlr6UeWvpRRQ
+AeWvpR5a+lFFAB5a+lHlr6UUUAHlr6UeWvpRRQAeWvpR5a+lFFAB5a+lHlr6UUUAHlr6UeWvpRRQ
+B//Z
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="55973c01-38dd-42fb-83e0-a49dc8b660cd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d823da8d-e453-417e-a487-081a99bb072a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="imgtag"
+				rect="0,97,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						saveUserNameChecked
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Save UserName
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Selected.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onclick"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onkeypress"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'saveUserNameChecked']
+				</path>
+			</info>
+			<arguments
+			id="ff5bf3c7-5f5d-4604-87ac-6a0235d6ea80">
+			</arguments>
+		</invokeactionrecorditem>
+		<keysequenceitem
+		KeySequence="east@1234"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="4f0c2fc1-38df-4fab-b6d5-366ae08354bc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f196ee53-7422-48af-b248-4f2282ff14ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//input[@title='Password']
+				</path>
+			</info>
+		</keysequenceitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fd0b880b-fc81-4a1d-a320-219d55126992">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c9320e6f-6609-47d3-b319-05ec1030629d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onclick"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'VALIDATE_CREDENTIALS1']
+				</path>
+			</info>
+			<arguments
+			id="13fbb013-1463-431d-9d32-6e5c9b9c1dd2">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="bc88c858-8a14-4972-99a4-360bc0e8f620"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4577b424-4912-48fa-bff7-62499370c79a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'Eastern Online Banking.']//div[#'app-content-ang']//div[@innertext='Welcome!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SaveUnsaveUsername.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

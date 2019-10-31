@@ -1,0 +1,1115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F2FD3CDF-0A78-4CDE-AA82-E09752898078}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Debit_Cards_V2</RootNamespace>
+    <AssemblyName>DebitCards</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>b8aa70b0-6573-4f3b-a2a3-903419df717f</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SelectActivateCardButton.cs">
+      <BoundTo>43b5a42b-1ba6-4dec-9985-dc37d0332937</BoundTo>
+      <DependentUpon>SelectActivateCardButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66a3ac6e-1305-446d-833c-4ee015ee66d0</id>
+    </Compile>
+    <Compile Include="SelectActivateCardButton.UserCode.cs">
+      <BoundTo>43b5a42b-1ba6-4dec-9985-dc37d0332937</BoundTo>
+      <DependentUpon>SelectActivateCardButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>197e6631-1187-4e92-9176-1e8711d71379</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>cfed4dc1-86e6-41cf-8057-eb7b1c66f223</id>
+    </Compile>
+    <Compile Include="CancelLostStolenCardModalValidation.cs">
+      <BoundTo>e576526e-3ffd-4df5-8432-ac8fdb150e70</BoundTo>
+      <DependentUpon>CancelLostStolenCardModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69ba470b-8d78-4cdc-a796-78eca89a41d5</id>
+    </Compile>
+    <Compile Include="CancelLostStolenCardModalValidation.UserCode.cs">
+      <BoundTo>e576526e-3ffd-4df5-8432-ac8fdb150e70</BoundTo>
+      <DependentUpon>CancelLostStolenCardModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b5781287-aa94-4a2d-92dc-40c1ef013b78</id>
+    </Compile>
+    <Compile Include="ChangeLimitModalValidation.cs">
+      <BoundTo>65e76f2f-64a8-4f80-b3c3-b298809bb8f5</BoundTo>
+      <DependentUpon>ChangeLimitModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e552c78-e52c-4907-a763-1689bfecdf3f</id>
+    </Compile>
+    <Compile Include="ChangeLimitModalValidation.UserCode.cs">
+      <BoundTo>65e76f2f-64a8-4f80-b3c3-b298809bb8f5</BoundTo>
+      <DependentUpon>ChangeLimitModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f0b8907-6279-45ca-b0b1-bd2ee79a0c4e</id>
+    </Compile>
+    <Compile Include="ChangePinModalValidation.cs">
+      <BoundTo>c0d43a19-12fb-42d6-b68f-7a3b42980e7e</BoundTo>
+      <DependentUpon>ChangePinModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04b85c96-5b7f-4383-8e28-720db31d0dc6</id>
+    </Compile>
+    <Compile Include="ChangePinModalValidation.UserCode.cs">
+      <BoundTo>c0d43a19-12fb-42d6-b68f-7a3b42980e7e</BoundTo>
+      <DependentUpon>ChangePinModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1bd6def-1bc9-4530-b839-bd714fe0849a</id>
+    </Compile>
+    <Compile Include="SelectCancelActivateDebitCardButton.cs">
+      <BoundTo>f93f5fab-4f3e-4a0b-b7db-cd899182ae3a</BoundTo>
+      <DependentUpon>SelectCancelActivateDebitCardButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d1564a3d-0ce2-4453-ab54-032e2ab338a6</id>
+    </Compile>
+    <Compile Include="SelectCancelActivateDebitCardButton.UserCode.cs">
+      <BoundTo>f93f5fab-4f3e-4a0b-b7db-cd899182ae3a</BoundTo>
+      <DependentUpon>SelectCancelActivateDebitCardButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4c09d8fd-6ba1-4d09-94ea-2789799ec5c5</id>
+    </Compile>
+    <Compile Include="SelectCancelChangeLimitButton.cs">
+      <BoundTo>21717672-e640-4f7f-8796-86ef8f89ef37</BoundTo>
+      <DependentUpon>SelectCancelChangeLimitButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f67ad78-a852-4f1f-84e2-78280870c270</id>
+    </Compile>
+    <Compile Include="SelectCancelChangeLimitButton.UserCode.cs">
+      <BoundTo>21717672-e640-4f7f-8796-86ef8f89ef37</BoundTo>
+      <DependentUpon>SelectCancelChangeLimitButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a491261d-3f90-4909-8074-e601542a3048</id>
+    </Compile>
+    <Compile Include="SelectCancelForgotPin.cs">
+      <BoundTo>60563342-b716-4612-b371-7fb061dd945f</BoundTo>
+      <DependentUpon>SelectCancelForgotPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a954fc98-c6f1-4df8-a1c5-def718bcf4d7</id>
+    </Compile>
+    <Compile Include="SelectCancelForgotPin.UserCode.cs">
+      <BoundTo>60563342-b716-4612-b371-7fb061dd945f</BoundTo>
+      <DependentUpon>SelectCancelForgotPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>88456602-c3a4-494f-a801-5f5d19675425</id>
+    </Compile>
+    <Compile Include="SelectChangeLimitButton.cs">
+      <BoundTo>a68aa80e-953c-460e-86a3-ba7bc6d9196d</BoundTo>
+      <DependentUpon>SelectChangeLimitButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7917e1dd-20bd-41d8-8d4a-28966ea7ec38</id>
+    </Compile>
+    <Compile Include="SelectChangeLimitButton.UserCode.cs">
+      <BoundTo>a68aa80e-953c-460e-86a3-ba7bc6d9196d</BoundTo>
+      <DependentUpon>SelectChangeLimitButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1bc2e458-9259-4d56-a43f-66191153694e</id>
+    </Compile>
+    <Compile Include="SelectChangePinButton.cs">
+      <BoundTo>1faad46d-9ef2-4e57-9b46-eabeb01fb06b</BoundTo>
+      <DependentUpon>SelectChangePinButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fad0a911-ac5b-4d36-94f2-a398ec55ea35</id>
+    </Compile>
+    <Compile Include="SelectChangePinButton.UserCode.cs">
+      <BoundTo>1faad46d-9ef2-4e57-9b46-eabeb01fb06b</BoundTo>
+      <DependentUpon>SelectChangePinButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64b908e8-c515-4e23-aaf1-b313c135f6f4</id>
+    </Compile>
+    <Compile Include="SelectCloseLostStolenModalButton.cs">
+      <BoundTo>e105af6f-05dc-4792-97d6-a1942b8f6382</BoundTo>
+      <DependentUpon>SelectCloseLostStolenModalButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bfd55564-3cf8-4500-9b98-38c36cabd5cf</id>
+    </Compile>
+    <Compile Include="SelectCloseLostStolenModalButton.UserCode.cs">
+      <BoundTo>e105af6f-05dc-4792-97d6-a1942b8f6382</BoundTo>
+      <DependentUpon>SelectCloseLostStolenModalButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d0ad82d-a71c-4ddb-ac6a-ac5091209a2e</id>
+    </Compile>
+    <Compile Include="SelectConfirmNew4DigitPinInputBox.cs">
+      <BoundTo>8b4d63ee-3181-4a53-a844-50bd3a4a2e6a</BoundTo>
+      <DependentUpon>SelectConfirmNew4DigitPinInputBox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fbc4a575-adc0-4418-b619-ac13225da8de</id>
+    </Compile>
+    <Compile Include="SelectConfirmNew4DigitPinInputBox.UserCode.cs">
+      <BoundTo>8b4d63ee-3181-4a53-a844-50bd3a4a2e6a</BoundTo>
+      <DependentUpon>SelectConfirmNew4DigitPinInputBox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>442bcf10-c6c0-4eaf-94bc-d81d8f7563c7</id>
+    </Compile>
+    <Compile Include="SelectForgotPin.cs">
+      <BoundTo>cfac33a5-cca2-4a27-89a1-8862bb44a4ce</BoundTo>
+      <DependentUpon>SelectForgotPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63094471-0b50-4f4d-abab-3b5ddb02367e</id>
+    </Compile>
+    <Compile Include="SelectForgotPin.UserCode.cs">
+      <BoundTo>cfac33a5-cca2-4a27-89a1-8862bb44a4ce</BoundTo>
+      <DependentUpon>SelectForgotPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fae728ae-ad15-46a1-b2ab-03679e771091</id>
+    </Compile>
+    <Compile Include="SelectLost.cs">
+      <BoundTo>20c39b7d-1a63-4033-a93c-dc51b1866bb0</BoundTo>
+      <DependentUpon>SelectLost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e17a0099-0b2a-4412-b0b7-a8faf81e2c55</id>
+    </Compile>
+    <Compile Include="SelectLost.UserCode.cs">
+      <BoundTo>20c39b7d-1a63-4033-a93c-dc51b1866bb0</BoundTo>
+      <DependentUpon>SelectLost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f1e1126-e44f-42e4-93a4-cffc74f24789</id>
+    </Compile>
+    <Compile Include="ClickLostStolenDebitCard.cs">
+      <BoundTo>d540312f-bbc4-400b-bd1e-2fdb3b7a563a</BoundTo>
+      <DependentUpon>ClickLostStolenDebitCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>030ef0fa-4633-42b7-99db-4461213b76e6</id>
+    </Compile>
+    <Compile Include="ClickLostStolenDebitCard.UserCode.cs">
+      <BoundTo>d540312f-bbc4-400b-bd1e-2fdb3b7a563a</BoundTo>
+      <DependentUpon>ClickLostStolenDebitCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69e8d95b-c0f8-4ba3-bd3c-6bca24f3a9a8</id>
+    </Compile>
+    <Compile Include="SelectSaveSetDailyLimitButton.cs">
+      <BoundTo>3f26d7c1-9ee3-4107-a23a-b1f6c7365f06</BoundTo>
+      <DependentUpon>SelectSaveSetDailyLimitButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2105ae3-134d-41f2-9304-44676d211e40</id>
+    </Compile>
+    <Compile Include="SelectSaveSetDailyLimitButton.UserCode.cs">
+      <BoundTo>3f26d7c1-9ee3-4107-a23a-b1f6c7365f06</BoundTo>
+      <DependentUpon>SelectSaveSetDailyLimitButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91eea972-0dcb-498f-9cc4-5a48cebb200d</id>
+    </Compile>
+    <Compile Include="SelectStolen.cs">
+      <BoundTo>54994a57-ad31-4f89-bda7-46d9eb81eef9</BoundTo>
+      <DependentUpon>SelectStolen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ecfe6746-9ff5-49b4-aafb-04f7fc102364</id>
+    </Compile>
+    <Compile Include="SelectStolen.UserCode.cs">
+      <BoundTo>54994a57-ad31-4f89-bda7-46d9eb81eef9</BoundTo>
+      <DependentUpon>SelectStolen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff38aefa-b8f4-4cf2-89fa-0564bd0dbe19</id>
+    </Compile>
+    <Compile Include="SelectSubmitChangePinButton.cs">
+      <BoundTo>3a96c858-a657-45da-a91a-043907105824</BoundTo>
+      <DependentUpon>SelectSubmitChangePinButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4bafe75b-e2fc-4ad4-859f-760f287425ba</id>
+    </Compile>
+    <Compile Include="SelectSubmitChangePinButton.UserCode.cs">
+      <BoundTo>3a96c858-a657-45da-a91a-043907105824</BoundTo>
+      <DependentUpon>SelectSubmitChangePinButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>79031291-98e4-4144-b48b-43e209c37599</id>
+    </Compile>
+    <Compile Include="SelectCancelChangePin.cs">
+      <BoundTo>f4b113b8-2582-491b-aaed-62cd7128dd2c</BoundTo>
+      <DependentUpon>SelectCancelChangePin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>56bd7c91-ea0c-4f22-b221-a81d2a734da4</id>
+    </Compile>
+    <Compile Include="SelectCancelChangePin.UserCode.cs">
+      <BoundTo>f4b113b8-2582-491b-aaed-62cd7128dd2c</BoundTo>
+      <DependentUpon>SelectCancelChangePin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ca700885-d668-45be-8f55-071ce306f53e</id>
+    </Compile>
+    <Compile Include="DebitCardsRepository.cs">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <DependentUpon>DebitCardsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>a7d03807-672c-40b4-b6b6-e814a2709a1d</id>
+    </Compile>
+    <Compile Include="DebitCardCancelledModalValidation.cs">
+      <BoundTo>f9f842e1-b786-4714-8d23-fc372a30764b</BoundTo>
+      <DependentUpon>DebitCardCancelledModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>41de5950-1aad-4b6b-8697-aa6143ceb2ee</id>
+    </Compile>
+    <Compile Include="DebitCardCancelledModalValidation.UserCode.cs">
+      <BoundTo>f9f842e1-b786-4714-8d23-fc372a30764b</BoundTo>
+      <DependentUpon>DebitCardCancelledModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16b1c5eb-1cb3-4909-a63b-6d361f89e7b5</id>
+    </Compile>
+    <Compile Include="ActivatedDebitCardScreenValidation.cs">
+      <BoundTo>6792af92-d016-442b-865c-cab313b05c79</BoundTo>
+      <DependentUpon>ActivatedDebitCardScreenValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1f73ab1-6c64-412a-9693-28d5f66a9b4a</id>
+    </Compile>
+    <Compile Include="ActivatedDebitCardScreenValidation.UserCode.cs">
+      <BoundTo>6792af92-d016-442b-865c-cab313b05c79</BoundTo>
+      <DependentUpon>ActivatedDebitCardScreenValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f4e17a97-a297-4147-9035-b8d8444337a0</id>
+    </Compile>
+    <Compile Include="EditAtmDailyLimit.cs">
+      <BoundTo>2d48ae7c-ca76-40ea-b79e-6ab42846023f</BoundTo>
+      <DependentUpon>EditAtmDailyLimit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a56b44d8-0a2d-4db1-b48f-ad2a40081ebf</id>
+    </Compile>
+    <Compile Include="EditAtmDailyLimit.UserCode.cs">
+      <BoundTo>2d48ae7c-ca76-40ea-b79e-6ab42846023f</BoundTo>
+      <DependentUpon>EditAtmDailyLimit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0695d0c-02c0-42d4-b8d7-ea63976ec315</id>
+    </Compile>
+    <Compile Include="EditAtmDailyLimitOriginal.cs">
+      <BoundTo>229c3f8a-0cfb-4c93-aa4b-28faf2319976</BoundTo>
+      <DependentUpon>EditAtmDailyLimitOriginal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eb491cff-8523-4e3f-ac92-cf130081ff61</id>
+    </Compile>
+    <Compile Include="EditAtmDailyLimitOriginal.UserCode.cs">
+      <BoundTo>229c3f8a-0cfb-4c93-aa4b-28faf2319976</BoundTo>
+      <DependentUpon>EditAtmDailyLimitOriginal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b6e836e1-6374-43d6-ba8c-11e32f5d2449</id>
+    </Compile>
+    <Compile Include="EditAtmTotalLimit.cs">
+      <BoundTo>f6908e4c-959d-4f6b-a341-bb3b0f6e8d1f</BoundTo>
+      <DependentUpon>EditAtmTotalLimit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d7ba4c8-de8f-4bb7-af43-34da8a70ee10</id>
+    </Compile>
+    <Compile Include="EditAtmTotalLimit.UserCode.cs">
+      <BoundTo>f6908e4c-959d-4f6b-a341-bb3b0f6e8d1f</BoundTo>
+      <DependentUpon>EditAtmTotalLimit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31bba9b1-e1c2-429c-895d-4c5f9d892218</id>
+    </Compile>
+    <Compile Include="EditAtmTotalLimitOriginal.cs">
+      <BoundTo>e4cd7974-0c1d-4fd0-93fe-b7cdc89ae110</BoundTo>
+      <DependentUpon>EditAtmTotalLimitOriginal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7365b8de-fb27-47c5-b26d-f9a10c1b9297</id>
+    </Compile>
+    <Compile Include="EditAtmTotalLimitOriginal.UserCode.cs">
+      <BoundTo>e4cd7974-0c1d-4fd0-93fe-b7cdc89ae110</BoundTo>
+      <DependentUpon>EditAtmTotalLimitOriginal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69cb7154-8f8b-4ba6-bb20-3ea89747eb64</id>
+    </Compile>
+    <Compile Include="EnterChangedPinCurrentPin.cs">
+      <BoundTo>72b98836-bbba-4c74-ba74-7f1caeb103c6</BoundTo>
+      <DependentUpon>EnterChangedPinCurrentPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04edc58f-7f7c-4963-88c8-fe33da5a939d</id>
+    </Compile>
+    <Compile Include="EnterChangedPinCurrentPin.UserCode.cs">
+      <BoundTo>72b98836-bbba-4c74-ba74-7f1caeb103c6</BoundTo>
+      <DependentUpon>EnterChangedPinCurrentPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e3a3dc4b-5666-4869-bc2c-af184194321a</id>
+    </Compile>
+    <Compile Include="EnterChangedPinAndEnterConfirmChangedPin.cs">
+      <BoundTo>ed400ab2-403a-4d85-8488-4ca7ea57a58c</BoundTo>
+      <DependentUpon>EnterChangedPinAndEnterConfirmChangedPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0b7306a-d62a-450e-ad25-4bc4c07fc95c</id>
+    </Compile>
+    <Compile Include="EnterChangedPinAndEnterConfirmChangedPin.UserCode.cs">
+      <BoundTo>ed400ab2-403a-4d85-8488-4ca7ea57a58c</BoundTo>
+      <DependentUpon>EnterChangedPinAndEnterConfirmChangedPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8596db8a-5761-4e59-9dbb-d691f4339051</id>
+    </Compile>
+    <Compile Include="EnterCurrentPin.cs">
+      <BoundTo>c9165248-7021-4dde-9dc4-39c4b2849310</BoundTo>
+      <DependentUpon>EnterCurrentPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>15de0208-0565-4b45-90ae-c4b7d6b70c7a</id>
+    </Compile>
+    <Compile Include="EnterCurrentPin.UserCode.cs">
+      <BoundTo>c9165248-7021-4dde-9dc4-39c4b2849310</BoundTo>
+      <DependentUpon>EnterCurrentPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>348d26a9-c863-4008-888b-23ab47923dbf</id>
+    </Compile>
+    <Compile Include="EnterDebitCardActivationVars.cs">
+      <BoundTo>cd2cf38a-9ae4-4efe-b1e8-00a3e15fb202</BoundTo>
+      <DependentUpon>EnterDebitCardActivationVars.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6a8f3940-b7d4-4b55-a2a0-390cf242ae6d</id>
+    </Compile>
+    <Compile Include="EnterDebitCardActivationVars.UserCode.cs">
+      <BoundTo>cd2cf38a-9ae4-4efe-b1e8-00a3e15fb202</BoundTo>
+      <DependentUpon>EnterDebitCardActivationVars.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d124d270-6290-46d1-84ba-bd395a2af254</id>
+    </Compile>
+    <Compile Include="EnterOldNewPinConfirmNewPin.cs">
+      <BoundTo>cf59a24b-c14e-4e15-8b1b-05c6a17da4f0</BoundTo>
+      <DependentUpon>EnterOldNewPinConfirmNewPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20e21f07-b7d1-49c3-ad43-3f2662d05d4e</id>
+    </Compile>
+    <Compile Include="EnterOldNewPinConfirmNewPin.UserCode.cs">
+      <BoundTo>cf59a24b-c14e-4e15-8b1b-05c6a17da4f0</BoundTo>
+      <DependentUpon>EnterOldNewPinConfirmNewPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c40fe12-ddce-49da-99f8-2581abb2dd45</id>
+    </Compile>
+    <Compile Include="EnterPin.cs">
+      <BoundTo>914452ca-0038-45ed-93bd-df2e72f8eb60</BoundTo>
+      <DependentUpon>EnterPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b21a9a7a-9724-4b5e-876d-fddd1cc0a14c</id>
+    </Compile>
+    <Compile Include="EnterPin.UserCode.cs">
+      <BoundTo>914452ca-0038-45ed-93bd-df2e72f8eb60</BoundTo>
+      <DependentUpon>EnterPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7fcfd114-095a-4756-bcbd-a287d9743803</id>
+    </Compile>
+    <Compile Include="SelectEnterNew4DigitPinInputBox.cs">
+      <BoundTo>bd71eed1-e6f9-49e2-9b22-44578dd1b7f7</BoundTo>
+      <DependentUpon>SelectEnterNew4DigitPinInputBox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c49f7104-f7f7-452f-8323-4ffd95621359</id>
+    </Compile>
+    <Compile Include="SelectEnterNew4DigitPinInputBox.UserCode.cs">
+      <BoundTo>bd71eed1-e6f9-49e2-9b22-44578dd1b7f7</BoundTo>
+      <DependentUpon>SelectEnterNew4DigitPinInputBox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6da2d96-f6e6-429a-a1ac-eaec840cc35b</id>
+    </Compile>
+    <Compile Include="EnterWrongPin1.cs">
+      <BoundTo>8e5105f0-8046-43c1-8fdd-3df38a6f76e6</BoundTo>
+      <DependentUpon>EnterWrongPin1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ab1227eb-ca54-4212-870b-9d6f5098e327</id>
+    </Compile>
+    <Compile Include="EnterWrongPin1.UserCode.cs">
+      <BoundTo>8e5105f0-8046-43c1-8fdd-3df38a6f76e6</BoundTo>
+      <DependentUpon>EnterWrongPin1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>020f419d-03a7-4502-a0c2-6aa6f28588f8</id>
+    </Compile>
+    <Compile Include="EnterWrongPin2.cs">
+      <BoundTo>a44934fa-fae4-4788-bf97-1568ff1a4e47</BoundTo>
+      <DependentUpon>EnterWrongPin2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e3ba44f-9b3d-454f-bf0f-c1a2c066d6f0</id>
+    </Compile>
+    <Compile Include="EnterWrongPin2.UserCode.cs">
+      <BoundTo>a44934fa-fae4-4788-bf97-1568ff1a4e47</BoundTo>
+      <DependentUpon>EnterWrongPin2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be0b61b6-6c41-4fac-aae0-36cc68d3da08</id>
+    </Compile>
+    <Compile Include="EnterNewPinConfirmNewPin.cs">
+      <BoundTo>0f8d7bc2-3dab-4bdd-81ec-0f95175da5a5</BoundTo>
+      <DependentUpon>EnterNewPinConfirmNewPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>236c8853-f695-4495-a897-6b73b2fea833</id>
+    </Compile>
+    <Compile Include="EnterNewPinConfirmNewPin.UserCode.cs">
+      <BoundTo>0f8d7bc2-3dab-4bdd-81ec-0f95175da5a5</BoundTo>
+      <DependentUpon>EnterNewPinConfirmNewPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3d1c3ee6-c64a-43f3-8da4-9f12595ce7c2</id>
+    </Compile>
+    <Compile Include="ForgotPinModalValidation.cs">
+      <BoundTo>d80723a2-29cb-4b6b-9c95-0ed4eb9f8df7</BoundTo>
+      <DependentUpon>ForgotPinModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f3f89b2-e527-4be6-bebd-cf868563465c</id>
+    </Compile>
+    <Compile Include="ForgotPinModalValidation.UserCode.cs">
+      <BoundTo>d80723a2-29cb-4b6b-9c95-0ed4eb9f8df7</BoundTo>
+      <DependentUpon>ForgotPinModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>121a5be0-cb39-42c5-beb5-a5a6afef9359</id>
+    </Compile>
+    <Compile Include="MakeSurePinsMatchError.cs">
+      <BoundTo>cc11d7ba-c5dc-4faa-b999-14bd4cf5efd1</BoundTo>
+      <DependentUpon>MakeSurePinsMatchError.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af23ada4-fed7-423c-b1de-e33feef5aa6b</id>
+    </Compile>
+    <Compile Include="MakeSurePinsMatchError.UserCode.cs">
+      <BoundTo>cc11d7ba-c5dc-4faa-b999-14bd4cf5efd1</BoundTo>
+      <DependentUpon>MakeSurePinsMatchError.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>63c874a2-ca38-4b36-9eaa-57fc59ff027a</id>
+    </Compile>
+    <Compile Include="OrderNewCardModalValidation.cs">
+      <BoundTo>f3070a8c-87be-4f98-9b69-cecaa8b60455</BoundTo>
+      <DependentUpon>OrderNewCardModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>974d9b00-83c9-4059-99df-1b06f7a3e862</id>
+    </Compile>
+    <Compile Include="OrderNewCardModalValidation.UserCode.cs">
+      <BoundTo>f3070a8c-87be-4f98-9b69-cecaa8b60455</BoundTo>
+      <DependentUpon>OrderNewCardModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>02d36020-5777-4c06-87f1-0181f5c9fbc3</id>
+    </Compile>
+    <Compile Include="PINTRiesExceededSelect.cs">
+      <BoundTo>089d5cd5-4dc8-4eba-b86f-feaf860abf96</BoundTo>
+      <DependentUpon>PinTriesExceededSelect.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>320c8280-d709-4a78-8b52-c56a342f9504</id>
+    </Compile>
+    <Compile Include="PINTRiesExceededSelect.UserCode.cs">
+      <BoundTo>089d5cd5-4dc8-4eba-b86f-feaf860abf96</BoundTo>
+      <DependentUpon>PinTriesExceededSelect.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a741aa2f-5ca6-4b6c-8447-2cabc7380de4</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>8d59d637-5549-4954-be2c-704fbf33a92e</id>
+    </Compile>
+    <Compile Include="SelectDebitCardsTab.cs">
+      <BoundTo>5ee3caf4-6346-4a85-8e37-f244e6330adc</BoundTo>
+      <DependentUpon>SelectDebitCardsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>258848df-eeea-4213-996f-dcf6c34540c6</id>
+    </Compile>
+    <Compile Include="SelectDebitCardsTab.UserCode.cs">
+      <BoundTo>5ee3caf4-6346-4a85-8e37-f244e6330adc</BoundTo>
+      <DependentUpon>SelectDebitCardsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5478a7ce-c026-4ed9-a51b-e46d6b36af75</id>
+    </Compile>
+    <Compile Include="SelectRsaModalValidationCancelButton.cs">
+      <BoundTo>4a0a53b4-a6a5-46a6-af82-b1d1cf3dc49c</BoundTo>
+      <DependentUpon>SelectRsaModalValidationCancelButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>787b11db-39d4-4d0b-83f5-b5236344460e</id>
+    </Compile>
+    <Compile Include="SelectRsaModalValidationCancelButton.UserCode.cs">
+      <BoundTo>4a0a53b4-a6a5-46a6-af82-b1d1cf3dc49c</BoundTo>
+      <DependentUpon>SelectRsaModalValidationCancelButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a5a14483-d6c1-41ca-b3e5-455566460bf6</id>
+    </Compile>
+    <Compile Include="SelectActivatedDebitCard.cs">
+      <BoundTo>a8c7b708-1210-4a5a-8ad4-7c6be6c33124</BoundTo>
+      <DependentUpon>SelectActivatedDebitCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c44fdd0-d55e-4839-b8a0-d8c8ce7e06d1</id>
+    </Compile>
+    <Compile Include="SelectActivatedDebitCard.UserCode.cs">
+      <BoundTo>a8c7b708-1210-4a5a-8ad4-7c6be6c33124</BoundTo>
+      <DependentUpon>SelectActivatedDebitCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b7b3db8d-3627-4978-a7e7-6bc13df0c766</id>
+    </Compile>
+    <Compile Include="SelectSuspectedFraudCard.cs">
+      <BoundTo>38801f14-5838-48b3-a1a6-fb9458b46f4c</BoundTo>
+      <DependentUpon>SelectSuspectedFraudCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>267b50bd-422f-45e8-97e8-3734321dcc7a</id>
+    </Compile>
+    <Compile Include="SelectSuspectedFraudCard.UserCode.cs">
+      <BoundTo>38801f14-5838-48b3-a1a6-fb9458b46f4c</BoundTo>
+      <DependentUpon>SelectSuspectedFraudCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f104c1db-ad40-48d8-ac96-971ad2c87cb1</id>
+    </Compile>
+    <Compile Include="SelectUnactivatedDebitCard.cs">
+      <BoundTo>eaf91289-3f33-4a67-aa98-90c2c7e118e2</BoundTo>
+      <DependentUpon>SelectUnactivatedDebitCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f818f8d2-5cd4-4558-975a-74fa457fd95d</id>
+    </Compile>
+    <Compile Include="SelectUnactivatedDebitCard.UserCode.cs">
+      <BoundTo>eaf91289-3f33-4a67-aa98-90c2c7e118e2</BoundTo>
+      <DependentUpon>SelectUnactivatedDebitCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c2a4892d-813c-438b-a0eb-290826758e68</id>
+    </Compile>
+    <Compile Include="SelectUnactivatedDebitCardVar.cs">
+      <BoundTo>ca411495-529b-40b4-a5c0-3e5cfc80d142</BoundTo>
+      <DependentUpon>SelectUnactivatedDebitCardVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3756e9bc-c7a6-4678-b5ce-af6508e82767</id>
+    </Compile>
+    <Compile Include="SelectUnactivatedDebitCardVar.UserCode.cs">
+      <BoundTo>ca411495-529b-40b4-a5c0-3e5cfc80d142</BoundTo>
+      <DependentUpon>SelectUnactivatedDebitCardVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>201c1e7d-9b56-4cfc-854c-e0ed2d1923be</id>
+    </Compile>
+    <Compile Include="SelectSubmitChangedPin.cs">
+      <BoundTo>f37d49ce-cebd-46d8-8e53-1c35cc385076</BoundTo>
+      <DependentUpon>SelectSubmitChangedPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df1231a4-0d28-4f25-a5d8-e349fe8efc2f</id>
+    </Compile>
+    <Compile Include="SelectSubmitChangedPin.UserCode.cs">
+      <BoundTo>f37d49ce-cebd-46d8-8e53-1c35cc385076</BoundTo>
+      <DependentUpon>SelectSubmitChangedPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2bb5024-7dff-4b0b-ba14-e52b1eff571a</id>
+    </Compile>
+    <Compile Include="SelectSubmitForgotPin.cs">
+      <BoundTo>f7eb18de-9762-41dc-8b55-3b685c753d76</BoundTo>
+      <DependentUpon>SelectSubmitForgotPin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c83d3971-ee1a-4ce8-8edf-15cd43fa7a63</id>
+    </Compile>
+    <Compile Include="SelectSubmitForgotPin.UserCode.cs">
+      <BoundTo>f7eb18de-9762-41dc-8b55-3b685c753d76</BoundTo>
+      <DependentUpon>SelectSubmitForgotPin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>431ac7e1-537a-44b6-bc26-78e7cdfcdc14</id>
+    </Compile>
+    <Compile Include="SelectSuccessChangePinModalOkButton.cs">
+      <BoundTo>67b47707-ee2f-43a1-aac0-d9f13c738495</BoundTo>
+      <DependentUpon>SelectSuccessChangePinModalOkButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e8f6a3d-6606-49fa-889e-b2d48a5b63c2</id>
+    </Compile>
+    <Compile Include="SelectSuccessChangePinModalOkButton.UserCode.cs">
+      <BoundTo>67b47707-ee2f-43a1-aac0-d9f13c738495</BoundTo>
+      <DependentUpon>SelectSuccessChangePinModalOkButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9e8a855-af2f-4ec1-af67-a926a1138b5d</id>
+    </Compile>
+    <Compile Include="SelectSuspectedFraudDebitCard.cs">
+      <BoundTo>b6de7dae-570a-486e-b899-e880c867c81e</BoundTo>
+      <DependentUpon>SelectSuspectedFraudDebitCard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ddb6a7a0-cb36-4948-815f-be3878dd170f</id>
+    </Compile>
+    <Compile Include="SelectSuspectedFraudDebitCard.UserCode.cs">
+      <BoundTo>b6de7dae-570a-486e-b899-e880c867c81e</BoundTo>
+      <DependentUpon>SelectSuspectedFraudDebitCard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d19f8e89-b188-4dc1-bc8a-6e77d2cd23f3</id>
+    </Compile>
+    <Compile Include="UnactivatedDebitCardModalValidation.cs">
+      <BoundTo>cd0b30d4-8b0b-4d8e-abe4-2d6a062c7739</BoundTo>
+      <DependentUpon>UnactivatedDebitCardModalValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12c14acf-38ac-4813-8656-6a67a1e2ae9f</id>
+    </Compile>
+    <Compile Include="UnactivatedDebitCardModalValidation.UserCode.cs">
+      <BoundTo>cd0b30d4-8b0b-4d8e-abe4-2d6a062c7739</BoundTo>
+      <DependentUpon>UnactivatedDebitCardModalValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d332091-e7c4-469f-af62-9c567225d9a7</id>
+    </Compile>
+    <Compile Include="ValidatePinTriesExceededError.cs">
+      <BoundTo>29253054-7232-40e6-982d-e2492df4d597</BoundTo>
+      <DependentUpon>ValidatePinTriesExceededError.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>32d0dec6-2946-48f2-b8e8-8d3cc6b104ed</id>
+    </Compile>
+    <Compile Include="ValidatePinTriesExceededError.UserCode.cs">
+      <BoundTo>29253054-7232-40e6-982d-e2492df4d597</BoundTo>
+      <DependentUpon>ValidatePinTriesExceededError.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afd3816e-552a-4961-ab5a-5384dc7994f7</id>
+    </Compile>
+    <Compile Include="VerifyNewDailyLimit.cs">
+      <BoundTo>6246b862-bf83-4aef-8358-96493721cd2b</BoundTo>
+      <DependentUpon>VerifyNewDailyLimit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b8af5438-4843-407e-b1fc-4494d84d92fd</id>
+    </Compile>
+    <Compile Include="VerifyNewDailyLimit.UserCode.cs">
+      <BoundTo>6246b862-bf83-4aef-8358-96493721cd2b</BoundTo>
+      <DependentUpon>VerifyNewDailyLimit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>da0261f0-9104-4330-ad30-42557b080e5f</id>
+    </Compile>
+    <Compile Include="VerifyNewTotalLimit.cs">
+      <BoundTo>554c1a1c-2493-4ffb-8427-c6f43ce119e9</BoundTo>
+      <DependentUpon>VerifyNewTotalLimit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d36e7a8-0840-4c80-8177-9ca8eb8fa57e</id>
+    </Compile>
+    <Compile Include="VerifyNewTotalLimit.UserCode.cs">
+      <BoundTo>554c1a1c-2493-4ffb-8427-c6f43ce119e9</BoundTo>
+      <DependentUpon>VerifyNewTotalLimit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>baf39280-ba86-470c-961f-f0069c97bf65</id>
+    </Compile>
+    <Compile Include="VerifyOriginalDailyLimit.cs">
+      <BoundTo>5d696631-96ea-4fe3-9314-10e1162c4d0b</BoundTo>
+      <DependentUpon>VerifyOriginalDailyLimit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>70b5a706-379e-4028-b63e-52f3a352f8e9</id>
+    </Compile>
+    <Compile Include="VerifyOriginalDailyLimit.UserCode.cs">
+      <BoundTo>5d696631-96ea-4fe3-9314-10e1162c4d0b</BoundTo>
+      <DependentUpon>VerifyOriginalDailyLimit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>50939399-b7ad-4a8d-89bb-a16b20769288</id>
+    </Compile>
+    <Compile Include="VerifyOriginalTotalLimit.cs">
+      <BoundTo>9c2657aa-6303-4eb4-92c8-26c73c37cf3e</BoundTo>
+      <DependentUpon>VerifyOriginalTotalLimit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5118026c-2759-45d5-933a-8685099b320b</id>
+    </Compile>
+    <Compile Include="VerifyOriginalTotalLimit.UserCode.cs">
+      <BoundTo>9c2657aa-6303-4eb4-92c8-26c73c37cf3e</BoundTo>
+      <DependentUpon>VerifyOriginalTotalLimit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>361adfde-d0e7-4d94-8b59-29615f35d3fb</id>
+    </Compile>
+    <Compile Include="SelectSetDailyLimitSuccessModalDoneButton.cs">
+      <BoundTo>9332fab1-4e43-4f6a-a19f-481b98208b37</BoundTo>
+      <DependentUpon>SelectSetDailyLimitSuccessModalDoneButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b00a0e6b-c5ff-40e7-a43a-902acef0bb61</id>
+    </Compile>
+    <Compile Include="SelectSetDailyLimitSuccessModalDoneButton.UserCode.cs">
+      <BoundTo>9332fab1-4e43-4f6a-a19f-481b98208b37</BoundTo>
+      <DependentUpon>SelectSetDailyLimitSuccessModalDoneButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>357f9c9a-a356-4d29-9eef-471339276fd8</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SelectActivateCardButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>43b5a42b-1ba6-4dec-9985-dc37d0332937</id>
+      <recordtableid>50a6b321-4267-44fc-a968-5ed2d2352549</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>f192f72c-aeec-4d2b-9f54-5863b1e6dfd0</id>
+    </None>
+    <None Include="CancelLostStolenCardModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>e576526e-3ffd-4df5-8432-ac8fdb150e70</id>
+      <recordtableid>fff28284-5452-495c-b35a-509922b60849</recordtableid>
+    </None>
+    <None Include="ChangeLimitModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>65e76f2f-64a8-4f80-b3c3-b298809bb8f5</id>
+      <recordtableid>21e55f41-b328-4105-b2cb-861d73ff623e</recordtableid>
+    </None>
+    <None Include="ChangePinModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>c0d43a19-12fb-42d6-b68f-7a3b42980e7e</id>
+      <recordtableid>487eeedc-c7e1-407f-a42f-4c4253359c9e</recordtableid>
+    </None>
+    <None Include="SelectCancelActivateDebitCardButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f93f5fab-4f3e-4a0b-b7db-cd899182ae3a</id>
+      <recordtableid>f7cd4268-3049-4208-a75e-cf91db735eb4</recordtableid>
+    </None>
+    <None Include="SelectCancelChangeLimitButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>21717672-e640-4f7f-8796-86ef8f89ef37</id>
+      <recordtableid>d5e728d0-dbcc-4371-bb30-3f8ddbfb0346</recordtableid>
+    </None>
+    <None Include="SelectCancelForgotPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>60563342-b716-4612-b371-7fb061dd945f</id>
+      <recordtableid>f6857e49-9a9f-44c4-9cac-0ab22d988a5a</recordtableid>
+    </None>
+    <None Include="SelectChangeLimitButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>a68aa80e-953c-460e-86a3-ba7bc6d9196d</id>
+      <recordtableid>70c74ddf-125f-4d98-9a9b-5e64b6fdeab6</recordtableid>
+    </None>
+    <None Include="SelectChangePinButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>1faad46d-9ef2-4e57-9b46-eabeb01fb06b</id>
+      <recordtableid>22be8f99-7305-4728-91dc-c20c7d0dcd52</recordtableid>
+    </None>
+    <None Include="SelectCloseLostStolenModalButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>e105af6f-05dc-4792-97d6-a1942b8f6382</id>
+      <recordtableid>39dd449c-7d93-4ac9-9f86-b8d00220854a</recordtableid>
+    </None>
+    <None Include="SelectConfirmNew4DigitPinInputBox.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>8b4d63ee-3181-4a53-a844-50bd3a4a2e6a</id>
+      <recordtableid>3cd96ced-8e7d-4683-9cfb-f5d78ddd97df</recordtableid>
+    </None>
+    <None Include="SelectForgotPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>cfac33a5-cca2-4a27-89a1-8862bb44a4ce</id>
+      <recordtableid>ec485c48-838c-452e-b558-c4debaa83748</recordtableid>
+    </None>
+    <None Include="SelectLost.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>20c39b7d-1a63-4033-a93c-dc51b1866bb0</id>
+      <recordtableid>af456b4d-0cbf-433b-825c-ddefd506d917</recordtableid>
+    </None>
+    <None Include="ClickLostStolenDebitCard.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>d540312f-bbc4-400b-bd1e-2fdb3b7a563a</id>
+      <recordtableid>262b191a-e8eb-403f-ad8c-0c22f12cbcca</recordtableid>
+    </None>
+    <None Include="SelectSaveSetDailyLimitButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>3f26d7c1-9ee3-4107-a23a-b1f6c7365f06</id>
+      <recordtableid>23847a59-f2d9-4614-9d58-9cc08386a205</recordtableid>
+    </None>
+    <None Include="SelectStolen.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>54994a57-ad31-4f89-bda7-46d9eb81eef9</id>
+      <recordtableid>2fcb323b-55ef-4b5d-a284-a35047866086</recordtableid>
+    </None>
+    <None Include="SelectSubmitChangePinButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>3a96c858-a657-45da-a91a-043907105824</id>
+      <recordtableid>f7297aa1-9aae-45eb-9044-a9937090623f</recordtableid>
+    </None>
+    <None Include="SelectCancelChangePin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f4b113b8-2582-491b-aaed-62cd7128dd2c</id>
+      <recordtableid>93a09fb2-8c03-41b7-813e-328fb5f6dcfa</recordtableid>
+    </None>
+    <None Include="DebitCardsRepository.rximg">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <DependentUpon>DebitCardsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4523bfc8-0b90-4510-b877-7ab47064b6ea</id>
+    </None>
+    <None Include="DebitCardsRepository.rxrep">
+      <id>b8aa70b0-6573-4f3b-a2a3-903419df717f</id>
+      <repoid>9b55bd05-b068-459d-8c16-2c6d2844c24c</repoid>
+      <reporootid>193247be-98ed-44ae-8ef7-b0f5c715eb32</reporootid>
+    </None>
+    <None Include="SelectDebitCardsTab.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>5ee3caf4-6346-4a85-8e37-f244e6330adc</id>
+      <recordtableid>29b70ea1-01f8-4881-89b2-72dfe7ca2a05</recordtableid>
+    </None>
+    <None Include="DebitCardCancelledModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f9f842e1-b786-4714-8d23-fc372a30764b</id>
+      <recordtableid>81509e8b-a6c3-47f7-adbc-41a14d64a700</recordtableid>
+    </None>
+    <None Include="ActivatedDebitCardScreenValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>6792af92-d016-442b-865c-cab313b05c79</id>
+      <recordtableid>bfc4f92e-9dbc-4f94-805f-27304b13160a</recordtableid>
+    </None>
+    <None Include="EditAtmDailyLimit.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>2d48ae7c-ca76-40ea-b79e-6ab42846023f</id>
+      <recordtableid>eac2e3dc-99c8-4a47-9322-ce2fc3e84a61</recordtableid>
+    </None>
+    <None Include="EditAtmDailyLimitOriginal.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>229c3f8a-0cfb-4c93-aa4b-28faf2319976</id>
+      <recordtableid>3b2f2990-5b04-4a05-b77d-d2c30327922a</recordtableid>
+    </None>
+    <None Include="EditAtmTotalLimit.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f6908e4c-959d-4f6b-a341-bb3b0f6e8d1f</id>
+      <recordtableid>49d11ea0-8105-45a3-a3c3-33664522c6b9</recordtableid>
+    </None>
+    <None Include="EditAtmTotalLimitOriginal.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>e4cd7974-0c1d-4fd0-93fe-b7cdc89ae110</id>
+      <recordtableid>252fee3d-5c31-47d4-bb27-95f00541b628</recordtableid>
+    </None>
+    <None Include="EnterChangedPinCurrentPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>72b98836-bbba-4c74-ba74-7f1caeb103c6</id>
+      <recordtableid>d2a8a65d-c111-4ae0-a1e9-7c1a2a32e4c2</recordtableid>
+    </None>
+    <None Include="EnterChangedPinAndEnterConfirmChangedPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>ed400ab2-403a-4d85-8488-4ca7ea57a58c</id>
+      <recordtableid>aa7ce3d8-8f9b-4f4c-88a4-0f7702fe6fa6</recordtableid>
+    </None>
+    <None Include="EnterCurrentPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>c9165248-7021-4dde-9dc4-39c4b2849310</id>
+      <recordtableid>8344476a-be0d-4313-9189-f3330c5c0486</recordtableid>
+    </None>
+    <None Include="EnterDebitCardActivationVars.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>cd2cf38a-9ae4-4efe-b1e8-00a3e15fb202</id>
+      <recordtableid>dc11c761-4ff1-4d57-9d1e-079ab0517b56</recordtableid>
+    </None>
+    <None Include="EnterOldNewPinConfirmNewPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>cf59a24b-c14e-4e15-8b1b-05c6a17da4f0</id>
+      <recordtableid>51e8ed8f-c96f-4d38-a4f6-304472f892cf</recordtableid>
+    </None>
+    <None Include="EnterPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>914452ca-0038-45ed-93bd-df2e72f8eb60</id>
+      <recordtableid>8e6bd684-3d51-4f98-8b10-cd31fecc73ed</recordtableid>
+    </None>
+    <None Include="SelectEnterNew4DigitPinInputBox.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>bd71eed1-e6f9-49e2-9b22-44578dd1b7f7</id>
+      <recordtableid>51db9612-6bcf-4bbb-b2a2-07229d0a45c6</recordtableid>
+    </None>
+    <None Include="EnterWrongPin1.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>8e5105f0-8046-43c1-8fdd-3df38a6f76e6</id>
+      <recordtableid>330bcc46-1fb3-4e20-a54c-9466bf71b0da</recordtableid>
+    </None>
+    <None Include="EnterWrongPin2.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>a44934fa-fae4-4788-bf97-1568ff1a4e47</id>
+      <recordtableid>130e9266-82b7-492f-b184-bdd7804e0a07</recordtableid>
+    </None>
+    <None Include="EnterNewPinConfirmNewPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>0f8d7bc2-3dab-4bdd-81ec-0f95175da5a5</id>
+      <recordtableid>ad92557e-100f-4e25-a188-d5987fa687bb</recordtableid>
+    </None>
+    <None Include="ForgotPinModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>d80723a2-29cb-4b6b-9c95-0ed4eb9f8df7</id>
+      <recordtableid>a60423e3-2094-4a5a-9245-c54c89277cdc</recordtableid>
+    </None>
+    <None Include="MakeSurePinsMatchError.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>cc11d7ba-c5dc-4faa-b999-14bd4cf5efd1</id>
+      <recordtableid>17ca3724-6f8e-43fd-9110-e6a736d28ee3</recordtableid>
+    </None>
+    <None Include="OrderNewCardModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f3070a8c-87be-4f98-9b69-cecaa8b60455</id>
+      <recordtableid>126cf6e0-e032-4546-b48d-6aacb99fa131</recordtableid>
+    </None>
+    <None Include="PinTriesExceededSelect.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>089d5cd5-4dc8-4eba-b86f-feaf860abf96</id>
+      <recordtableid>046fcd2e-f776-4280-a512-3df4320574c0</recordtableid>
+    </None>
+    <None Include="SelectRsaModalValidationCancelButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>4a0a53b4-a6a5-46a6-af82-b1d1cf3dc49c</id>
+      <recordtableid>d937258d-a96b-49f8-aaab-4dd0743b2269</recordtableid>
+    </None>
+    <None Include="SelectActivatedDebitCard.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>a8c7b708-1210-4a5a-8ad4-7c6be6c33124</id>
+      <recordtableid>7fb6b5c4-9372-4413-a2fb-7fda83d20e35</recordtableid>
+    </None>
+    <None Include="SelectSuspectedFraudCard.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>38801f14-5838-48b3-a1a6-fb9458b46f4c</id>
+      <recordtableid>7d37280b-1eac-4919-a5b7-115d709db533</recordtableid>
+    </None>
+    <None Include="SelectUnactivatedDebitCard.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>eaf91289-3f33-4a67-aa98-90c2c7e118e2</id>
+      <recordtableid>51c61925-fa74-40c4-836f-31a9721466d2</recordtableid>
+    </None>
+    <None Include="SelectUnactivatedDebitCardVar.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>ca411495-529b-40b4-a5c0-3e5cfc80d142</id>
+      <recordtableid>7cc72bd8-443b-48e4-bd2d-82919ed98013</recordtableid>
+    </None>
+    <None Include="SelectSubmitChangedPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f37d49ce-cebd-46d8-8e53-1c35cc385076</id>
+      <recordtableid>10dd3d2f-8695-4181-b482-6adad4a9cbb3</recordtableid>
+    </None>
+    <None Include="SelectSubmitForgotPin.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>f7eb18de-9762-41dc-8b55-3b685c753d76</id>
+      <recordtableid>0b55be1e-a79f-4521-bc03-8611c502bcd4</recordtableid>
+    </None>
+    <None Include="SelectSuccessChangePinModalOkButton.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>67b47707-ee2f-43a1-aac0-d9f13c738495</id>
+      <recordtableid>dafae364-e684-43af-b8fe-9260e26a11a4</recordtableid>
+    </None>
+    <None Include="SelectSuspectedFraudDebitCard.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>b6de7dae-570a-486e-b899-e880c867c81e</id>
+      <recordtableid>d5138eb2-c6d3-4561-9fad-cec7958cc01c</recordtableid>
+    </None>
+    <None Include="UnactivatedDebitCardModalValidation.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>cd0b30d4-8b0b-4d8e-abe4-2d6a062c7739</id>
+      <recordtableid>95ae432a-77dc-4402-a605-e539e1c7bac0</recordtableid>
+    </None>
+    <None Include="ValidatePinTriesExceededError.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>29253054-7232-40e6-982d-e2492df4d597</id>
+      <recordtableid>5fc1fc68-378d-4791-8b8a-94cb19ae4502</recordtableid>
+    </None>
+    <None Include="VerifyNewDailyLimit.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>6246b862-bf83-4aef-8358-96493721cd2b</id>
+      <recordtableid>044db71b-93d5-462f-bab0-c0e3a6f23fe9</recordtableid>
+    </None>
+    <None Include="VerifyNewTotalLimit.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>554c1a1c-2493-4ffb-8427-c6f43ce119e9</id>
+      <recordtableid>80ec0080-b3ae-496a-9edb-59198a303c68</recordtableid>
+    </None>
+    <None Include="VerifyOriginalDailyLimit.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>5d696631-96ea-4fe3-9314-10e1162c4d0b</id>
+      <recordtableid>35881de2-1f77-4259-a6d0-02b24aa7272b</recordtableid>
+    </None>
+    <None Include="VerifyOriginalTotalLimit.rxrec">
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+      <id>9c2657aa-6303-4eb4-92c8-26c73c37cf3e</id>
+      <recordtableid>8f993c0b-650c-40ad-aa03-ab4516375c29</recordtableid>
+    </None>
+    <None Include="SelectSetDailyLimitSuccessModalDoneButton.rxrec">
+      <id>9332fab1-4e43-4f6a-a19f-481b98208b37</id>
+      <recordtableid>8a826006-81e4-47a8-aaca-504a089fa473</recordtableid>
+      <BoundTo>b8aa70b0-6573-4f3b-a2a3-903419df717f</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DebitCards.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d2d4a00f-287c-4197-a5ca-f0935b8453eb</id>
+    </Content>
+    <Content Include="DebitCards.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a125807b-4490-4095-b34f-4ab0bfe88c02</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

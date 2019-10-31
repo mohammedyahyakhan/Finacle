@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8f3b82ed-ce49-48f2-8995-f30a4b0f1f65"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidatePendingPayments"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.BillPayTab">
+	</codegen>
+	<variables>
+		<var
+		id="2a12e761-5cc9-4b01-a301-34901f09ee6d"
+		name="varAmount">
+			3.00
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b209bd25-8599-47e6-96c1-524ef9ba0cd8">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="varAmount">
+				</binding>
+			</bindings>
+			<info
+			id="13f01939-5731-4654-8b88-fafab954898b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'billpaySched']//div//span[@innertext='$$#@@!@#']/following-sibling::span
+				</path>
+			</info>
+			<matchname>
+				innertext
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidatePendingPayments.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

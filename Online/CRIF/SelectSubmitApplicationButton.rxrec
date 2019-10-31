@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cee2372b-be03-40be-af63-1fb4123181c5"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSubmitApplicationButton"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4f8ff9d1-82e4-4935-b0f1-ffc807e4da6d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="efde8486-e8f8-4ccb-8150-dde4f45900bc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'CAPTURE_CRIF_FOURTH_TAB_CONTINUE']
+				</path>
+			</info>
+			<arguments
+			id="96ec9446-f10f-4abe-8bf8-61b9a709f4c2">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSubmitApplicationButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

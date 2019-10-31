@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5095e953-0810-4d95-a3fe-0663f30691a0"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectPatriotActCheckbox"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ef3f3c94-d3d2-4e4f-8c7e-0be3c5bd5c96">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17ec273a-96f0-4843-aafb-a1f4ab10b372"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'disclosure-crif-disabled']
+				</path>
+			</info>
+			<arguments
+			id="20b195ae-a611-4524-b9b7-e9e97ae8bc10">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="159ebc62-666f-469a-b364-b77d73528da0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5426ad12-94ae-41c9-aa9e-8183d467f2c7"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="691,596,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						imageCheckBox
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						disclosure-crif-enabled
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						USA Patriot Act Notice Checkbox Selected
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Selected.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						selectCheckBoxCrifPat(false)
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+						vm.patriotCheckBox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+						$event.keyCode == 13 ? selectCheckBoxCrifPat(false) : null
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						float: left;&#32;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'disclosure-crif-enabled']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1a76bf14-530c-4e0f-aad7-cd4784cadde6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABgAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCC8u47
+OISSBiC235R/n0qn/btr/wA85vyH+NHiD/jxT/roP5GqDBsbmB+bue9EYuTaTMpSd7Iv/wBu2v8A
+zzm/If41asr6K93+UrjZjO4Dv/8AqrLMPlQiR2KueUXvj1q1pX/H9qH/AF0/q1KScWtQTldJmnRU
+MUrNdzxnG1AuPxzVP7ZKVTe4iQlsybMjIOAPamamlRVNrmX7IhUo0ztsQqcqff8AKp7aXz7dJDwS
+PmHoe9AEtFFFABRRRQBmeIP+PFP+ug/karQ3BiBR0DqDkK3Y1p6hZ/bYFj8zZht2cZ7H/Gqv9mXX
+/QSm/X/GkpOLelzJp810UXd5ZCzEszGr2lf8f2of9dP6tR/Zl1/0Epv1/wAadp8cFm0rNexymQgk
+lgPX396cpOTWgJO60LMkEonaWCRVLgBgy56dDTFtJIVTyJuQCGDjIbJznFJJqCKzbTGyrjJ8wZP0
+Hej+0EGQxi35GMSAqc+9BqImnLvBmYSLy23bgbj3/Sp7a3FuZAhHls2VXH3fWoTqCYAzFv3bT+9G
+3pnOfSj7fGQAGi35OQZMKMe+P6UAXKKKKACiiigAooooAKitP+POH/rmv8qlqK0/484f+ua/yoAl
+oqpbSyXEk+5zFtOwRADcn+0fc9u31p1jO80bb8PsbaJVGFk9x/nHpQBZoqKd2R4QpwGkwfcYNVY7
+64lEW21XMqb0zL2GM5446jHX8KAL9FFFABRRRQAUUUUAFRWn/HnD/wBc1/lUtRWn/HnD/wBc1/lQ
+AlzEHQssSvJwOQMkAg4z6VBDFIJoybdUCnlgFHY+n1q7RQAySMSFCSfkbcMfQj+tMitki8naW/dR
+mNc+nHX8qmooA//Z
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegex"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="bd7e9151-5425-4ce4-ae2e-61aebdf3078a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5426ad12-94ae-41c9-aa9e-8183d467f2c7"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="691,596,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						imageCheckBox
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						disclosure-crif-enabled
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						USA Patriot Act Notice Checkbox Selected
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/L001/ang/images/Checkbox-Selected.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						selectCheckBoxCrifPat(false)
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+						vm.patriotCheckBox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+						$event.keyCode == 13 ? selectCheckBoxCrifPat(false) : null
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						float: left;&#32;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//img[#'disclosure-crif-enabled']
+				</path>
+			</info>
+			<matchname>
+				Src
+			</matchname>
+			<matchvalue>
+				Checkbox-Selected.png$
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectPatriotActCheckbox.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

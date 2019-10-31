@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="af0b58b5-92d6-4d60-b638-f155742d6141"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EnterBillPayReportTitle"
+	namespace="BillPayReports">
+	</codegen>
+	<variables>
+		<var
+		id="5eaddd43-9349-4bdb-9a5e-cb66651ea2e9"
+		name="ReportTitle">
+		</var>
+	</variables>
+	<recorditems>
+		<setvaluerecorditem
+		attrname="TagValue"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cc99b19c-cbd0-4648-9876-120e8c5febd7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="ReportTitle">
+				</binding>
+			</bindings>
+			<info
+			id="4f8b41e4-6bfe-4114-9178-a39d6520ecf7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//input[#'reportTitleTab']
+				</path>
+			</info>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="f3886a30-aaf1-4c38-9b50-b1b769f44447"
+	name="BillPayReportsRepository"
+	relativepath="BillPayReportsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayReportsRepository"
+		namespace="BillPayReports">
+		</codegen>
+		<rootfolder
+		id="2b6f57e4-d99d-4c73-8ebe-cc2c7c744fcd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EnterBillPayReportTitle.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

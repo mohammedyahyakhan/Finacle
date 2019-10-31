@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="80102269-1ad1-4fce-8ebb-80dd5d08416c"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectSupportTab"
+	namespace="Header_Footer">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="08682d69-4fc9-41e7-b273-8dee4b9a2155">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d8cb135-5b2f-4d0f-bcd6-0ee0d3a0253c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//li[@id='parent_5']/a[@id='Support']
+				</path>
+			</info>
+			<arguments
+			id="7eeecedb-3825-4c3a-9ff6-48a9f307a4d3">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="41e34a56-454a-42e7-9505-2efce68857a4"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f448cee4-cb7e-4737-ba28-7d6071134282"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'app-content-ang']//div[@innertext='Call Us']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="efde11f8-5817-44ac-9db4-a01952e9c75a"
+	name="HeaderFooterRepository"
+	relativepath="HeaderFooterRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="HeaderFooterRepository"
+		namespace="Header_Footer">
+		</codegen>
+		<rootfolder
+		id="4c9d933f-f925-4f17-8604-fb159d4e647b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectSupportTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

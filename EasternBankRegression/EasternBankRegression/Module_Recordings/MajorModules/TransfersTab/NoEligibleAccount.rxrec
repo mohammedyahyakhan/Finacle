@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dace81f2-f9c0-4a8d-a6ce-2303b56d366d"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="NoEligibleAccount"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.TransfersTab">
+	</codegen>
+	<variables>
+		<var
+		id="fcac329e-dbf6-4bad-ad85-387e815c4cab"
+		name="varBrowser">
+			Chrome
+		</var>
+		<var
+		id="b93c7f6d-2e36-43ca-9227-1b51f1da82c7"
+		name="EnvURL">
+			https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=EBK&amp;LANGUAGE_ID=001&amp;ANGULAR_FLAG=Y
+		</var>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="IE"
+		clearcache="False"
+		clearcookies="False"
+		duration="100ms"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="BrowserName"
+				variable="varBrowser">
+				</binding>
+				<binding
+				target="Url"
+				variable="EnvURL">
+				</binding>
+			</bindings>
+			<url>
+				https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=EBK&amp;LANGUAGE_ID=001&amp;ANGULAR_FLAG=Y
+			</url>
+		</openwebsiterecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0b6f2e61-0cc8-4281-bd49-c589775f6aca">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7b2f46-a1f9-42d6-a14b-3807aeffb6a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+			<arguments
+			id="8d99dc37-86c9-4ae1-bb06-96992e8cd7fe">
+			</arguments>
+		</invokeactionrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="d2fa6789-1073-43e3-8a6b-146671c5ba96"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7b2f46-a1f9-42d6-a14b-3807aeffb6a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+		</touchrecorditem>
+		<keysequenceitem
+		KeySequence="NOELIGIBLE"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="bb149e85-91b8-452a-b13d-e735ad70b6c6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7b2f46-a1f9-42d6-a14b-3807aeffb6a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//input[@name='AuthenticationFG.USER_PRINCIPAL']
+				</path>
+			</info>
+		</keysequenceitem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="UpperCenter"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="d2fa6789-1073-43e3-8a6b-146671c5ba96"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd8be9c7-9d40-4913-914a-bd2998fae53e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'LoginHDisplay']/?/?/img[@alt~'^Eastern\ Bank\ Join\ Us\ For\ ']
+				</path>
+			</info>
+		</touchrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="df46f8e9-5797-4ba5-b6f8-002dafcdbe01"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f196ee53-7422-48af-b248-4f2282ff14ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='AuthenticationFG.ACCESS_CODE_1']
+				</path>
+			</info>
+		</touchrecorditem>
+		<keysequenceitem
+		KeySequence="east@1234"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="4f0c2fc1-38df-4fab-b6d5-366ae08354bc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f196ee53-7422-48af-b248-4f2282ff14ab"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//input[@title='Password']
+				</path>
+			</info>
+		</keysequenceitem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="UpperCenter"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="338f119b-4c20-4f23-bd65-0e267cd3c283"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd8be9c7-9d40-4913-914a-bd2998fae53e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'LoginHDisplay']
+				</path>
+			</info>
+		</touchrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="UpperCenter"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="338f119b-4c20-4f23-bd65-0e267cd3c283"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd8be9c7-9d40-4913-914a-bd2998fae53e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'LoginHDisplay']
+				</path>
+			</info>
+		</touchrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="23c0496a-81d4-46a6-a416-2c97f541f877">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5a52d1a9-3228-4dec-bff7-e56494cee21e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[@name='Action.VALIDATE_CREDENTIALS']
+				</path>
+			</info>
+			<arguments
+			id="8ac5b497-a87c-4998-8088-e8176b564418">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Enabled"
+		matchvalue="True"
+		optional="True"
+		searchpropertyid="4599342e-b845-4cd1-98f7-fca1db9e8e13"
+		waitaction="AttributeContains"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a4e20b28-b7c5-4385-a31d-b1c6a791ade8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//input[#'searchInput']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9fa38e8a-9c28-45f4-812f-c718d11f8b99">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0f77b9a-034f-4ff6-ab3a-bd76c1a8db90"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Transfers']
+				</path>
+			</info>
+			<arguments
+			id="7d6cfd72-a70e-426e-854c-f3474a7d0629">
+			</arguments>
+		</invokeactionrecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="c84d789f-01b4-4ff9-9f53-6689e96ff8d7"
+		waitaction="AttributeEqual"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="73be6c1e-6e19-459b-8656-e623e2f22dc8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='betweenMyEastern']/..
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="db4d7d6d-9489-450f-bb60-a6b200f79e14">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0f77b9a-034f-4ff6-ab3a-bd76c1a8db90"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="atag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Transfers']
+				</path>
+			</info>
+			<arguments
+			id="6a2b0e5d-cfc5-44a0-a0e9-ec963dc59619">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f78fe3c7-00fa-4f1f-914e-f1c47e448cb4"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="73be6c1e-6e19-459b-8656-e623e2f22dc8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='betweenMyEastern']/..
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d1657a44-db5b-4701-8db2-3c7cb1569524">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79a13454-c582-4a7f-ac56-13727080a665"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="3"
+				prefcap="buttontag"
+				rect="2607,435,240,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						eb-btn-block primary
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						makeTransferButton
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Make Transfer
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+						Please click here to open make transfer modal
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						startEasternTransfer()
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//button[#'makeTransferButton']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="e1a16103-1238-4f55-99dd-a679ba557b3d">
+				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
+LKBnqOPSmfaJnAxv+VA2V24J5657cdquKiLjaqjAwMDoKRoYmCho0O3plRxRzIOVlSd3ltp2aTYF
+XGzgg5APX8e1SmZxGx3YImCD6ZHFTPDFI254kY9MsoNBhiL7zGhb+9tGaLoVmU0kkwscYk5LtlNu
+fvH+9TxJJMrbpPL2xgnGCD169eOO1WWhiddrRoy5zgqCM0PDFJjfGjbemVBxTugsxkMaSWcKyIrj
+YvDDPaq8SCK1iMKpG7sFLBRnGavAAAAAADgAUmxcAbRgcgY6UuYfLoU5JpUkG13ZRIqHIUL2znvn
+6U5JJQqyNLkGRl2kAADJ/HtVhoImYs0SFj1JUZNO2KABtGAcjjvRdWCzuZ8jym2kWSRwWiLDhcH6
+EdvrT2eWLcsYcLEABjYFPHfOP0q2sEK7tsSDd97Cjn60rRRuwZo1Zl6EjJFPmQuVlYvMUdhJz5m1
+V4HGe2e9TWzlkYMzFlbB3AAj644p5jRlKlFKnqCODSoixrtRQq+gGBSurDs7i0UUVJQUUUUAQN/r
+Wp4pjf61qeKAGv0p8P8AqxTH6U+H/VigB9FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBA3+tanimN/rWp4oAa/Snw/6sUx+l
+Ph/1YoAfRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAQN/rWp4pjf61qeKAGv0p8P+rFMfpT4f9WKAH0UUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEDf6
+1qeKY3+tanigBr9KfD/qxTH6U+H/AFYoAfRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQN/rWp4pjf61qeKAGv0p8P8AqxTH
+6U+H/VigB9FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQBA3+tanimN/rWp4oAa/Snw/6sUx+lPh/1YoAfRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQN
+/rWp4pjf61qeKAGv0p8X+rFNYUzc6jCnA+lAFiiq3mS/3v0FJ5kv979BQBaoqr5kv979BR5kv979
+BQBaoqr5kv8Ae/QUeZL/AHv0FAFqiqvmS/3v0FHmS/3v0FAFqiqvmS/3v0FHmS/3v0FAFqiqvmS/
+3v0FHmS/3v0FAFqiqvmS/wB79BR5kv8Ae/QUAWqKq+ZL/e/QUeZL/e/QUAWqKq+ZL/e/QUeZL/e/
+QUAWqKq+ZL/e/QUeZL/e/QUAWqKq+ZL/AHv0FHmS/wB79BQBaoqr5kv979BR5kv979BQBaoqr5kv
+979BR5kv979BQBaoqr5kv979BR5kv979BQBaoqr5kv8Ae/QUeZL/AHv0FAFqiqvmS/3v0FHmS/3v
+0FAFqiqvmS/3v0FKJJf736UAPb/WmnCmDJOT1qSgAppFFFACYFGBRRQAYFGBRRQAYFGBRRQAYFGB
+RRQAYFGBRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFGBRRQAYFGBRRQA
+YFGBRRQAYFGBRRQAYFGBRRQAYFLgUUUAKBS0UUAf/9k=
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d8934d7-c041-41bb-972e-b9d1348ebd74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79a13454-c582-4a7f-ac56-13727080a665"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="buttontag"
+				rect="526,444,240,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						eb-btn-block primary
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						makeTransferButton
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Make Transfer
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//button[#'makeTransferButton']
+				</path>
+			</info>
+			<arguments
+			id="8af3cb97-0db3-4518-b99e-b88bc6826445">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="1767288d-d5e1-4d25-a7ae-c77fbb85ac55"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="19b0c755-5aca-4b03-b4ba-dd70f94ac74a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="-1"
+				prefcap="divtag"
+				rect="778,232,360,54"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						modal-header headerCancel
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						modalErrorNoAccHeader
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                You only have one account!
+           &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'modalErrorNoAcc']//div[@id='modalErrorNoAccHeader']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="09ff44e3-0e20-4e2b-9dc4-14af87c842df">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7a4894b6-82a4-47bb-aa92-34b471e5f100"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="813,311,290,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						In order to perform an internal transfer, you must have at least 2 accounts to do so.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'modalErrorNoAcc']//p[@innertext='In order to perform an internal transfer, you must have at least 2 accounts to do so.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="717b65cc-0051-461a-9119-ed7cd636b384">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1ba9328b-75a9-4505-b614-8c9f3b4f6783"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1053,387,64,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Done
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'modalErrorNoAcc']//button[@innertext='Done']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e5e2ad1e-3e60-4d14-ac62-c39b1b68359f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1ba9328b-75a9-4505-b614-8c9f3b4f6783"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1053,387,64,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Done
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'modalErrorNoAcc']//button[@innertext='Done']
+				</path>
+			</info>
+			<arguments
+			id="67015e83-e2b1-471b-88b4-7091d012b0ec">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		NoEligibleAccount.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

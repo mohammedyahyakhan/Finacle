@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4aab8878-b2cf-4af1-827f-db6dbae05bd7"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectFundingAccountsVar"
+	namespace="BillPayReports">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6a1d40d2-4fbd-4bd1-8118-7fe7332d34b5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="03579a24-39b3-493c-90cd-40d4ddaa324e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'createBillPayReport']/div[1]/table//span[@innertext=$FundingAccountsVarible]/../img
+				</path>
+			</info>
+			<arguments
+			id="aa7b5761-3688-4a65-935e-4748582cc5cb">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="f3886a30-aaf1-4c38-9b50-b1b769f44447"
+	name="BillPayReportsRepository"
+	relativepath="BillPayReportsRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="BillPayReportsRepository"
+		namespace="BillPayReports">
+		</codegen>
+		<rootfolder
+		id="2b6f57e4-d99d-4c73-8ebe-cc2c7c744fcd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectFundingAccountsVar.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

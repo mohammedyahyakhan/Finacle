@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7A969C95-21CA-4DE1-B5FE-473E5D1E0ACC}</ProjectGuid>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Transfersv2</RootNamespace>
+    <AssemblyName>Transfers</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <projectdefaultrepository>34576a71-557e-414f-8922-f561e2286617</projectdefaultrepository>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\..\..\Shared\Libraries\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>2345afc1-6d7a-4768-84a4-98c01b349586</id>
+    </Compile>
+    <Compile Include="ConfirmLoanTransferScreenValidation.cs">
+      <BoundTo>6ad2f884-ad1e-4f42-b67b-ce907078458a</BoundTo>
+      <DependentUpon>ConfirmLoanTransferScreenValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b906a8e4-a3b4-4936-89eb-6db59cd90a14</id>
+    </Compile>
+    <Compile Include="ConfirmLoanTransferScreenValidation.UserCode.cs">
+      <BoundTo>6ad2f884-ad1e-4f42-b67b-ce907078458a</BoundTo>
+      <DependentUpon>ConfirmLoanTransferScreenValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fba32263-6e16-4eb8-a04f-f975559a8fd3</id>
+    </Compile>
+    <Compile Include="ConfirmLoanPaymentType.cs">
+      <BoundTo>c14d1cb0-b04f-426c-8f07-bc8e79c21166</BoundTo>
+      <DependentUpon>ConfirmLoanPaymentType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1187ce6-9fba-435a-b914-657516dbe990</id>
+    </Compile>
+    <Compile Include="ConfirmLoanPaymentType.UserCode.cs">
+      <BoundTo>c14d1cb0-b04f-426c-8f07-bc8e79c21166</BoundTo>
+      <DependentUpon>ConfirmLoanPaymentType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f449030-64c1-4327-8d60-11aaf24be073</id>
+    </Compile>
+    <Compile Include="EndAfterNumberOfTransfersConfirmTransferValidation.cs">
+      <BoundTo>a6f02f51-3c30-470a-9dd1-93636dc35cfd</BoundTo>
+      <DependentUpon>EndAfterNumberOfTransfersConfirmTransferValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>490a9bf7-2c46-4733-9122-c2abd41e774e</id>
+    </Compile>
+    <Compile Include="EndAfterNumberOfTransfersConfirmTransferValidation.UserCode.cs">
+      <BoundTo>a6f02f51-3c30-470a-9dd1-93636dc35cfd</BoundTo>
+      <DependentUpon>EndAfterNumberOfTransfersConfirmTransferValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5daa7240-67b4-45f4-8b72-6388a1e46e7a</id>
+    </Compile>
+    <Compile Include="EndOnDateConfirmTransferValidation.cs">
+      <BoundTo>786cd89f-66ca-4493-9e0a-15ac8c67657e</BoundTo>
+      <DependentUpon>EndOnDateConfirmTransferValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fc4102af-212a-448d-8cda-307e7a45a4e5</id>
+    </Compile>
+    <Compile Include="EndOnDateConfirmTransferValidation.UserCode.cs">
+      <BoundTo>786cd89f-66ca-4493-9e0a-15ac8c67657e</BoundTo>
+      <DependentUpon>EndOnDateConfirmTransferValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16d2a63f-41ad-41e9-a454-a7616dac927e</id>
+    </Compile>
+    <Compile Include="EndTransfersNeverConfirmTransferValidation.cs">
+      <BoundTo>8e6d851e-51d0-4720-add3-08c709aa3edf</BoundTo>
+      <DependentUpon>EndTransfersNeverConfirmTransferValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e6479b1-74df-4d90-bc47-45751398277d</id>
+    </Compile>
+    <Compile Include="EndTransfersNeverConfirmTransferValidation.UserCode.cs">
+      <BoundTo>8e6d851e-51d0-4720-add3-08c709aa3edf</BoundTo>
+      <DependentUpon>EndTransfersNeverConfirmTransferValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>942ece55-ef82-4371-91bc-85d22c61298e</id>
+    </Compile>
+    <Compile Include="OneTimeScheduledSuccessfulValidation.cs">
+      <BoundTo>ec6d59c3-650b-4024-a7fa-8e1f53cebe52</BoundTo>
+      <DependentUpon>OneTimeScheduledSuccessfulValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e327cd5-2e21-454b-8095-7a3b482d919a</id>
+    </Compile>
+    <Compile Include="OneTimeScheduledSuccessfulValidation.UserCode.cs">
+      <BoundTo>ec6d59c3-650b-4024-a7fa-8e1f53cebe52</BoundTo>
+      <DependentUpon>OneTimeScheduledSuccessfulValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afc00d5e-3c05-4777-9703-586da060451c</id>
+    </Compile>
+    <Compile Include="TransferSuccessfulValidation.cs">
+      <BoundTo>087bac70-2a97-4d86-8b98-fdf5e79d0fae</BoundTo>
+      <DependentUpon>TransferSuccessfulValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d1aa635-c3e4-4998-8657-c2f325e0119d</id>
+    </Compile>
+    <Compile Include="TransferSuccessfulValidation.UserCode.cs">
+      <BoundTo>087bac70-2a97-4d86-8b98-fdf5e79d0fae</BoundTo>
+      <DependentUpon>TransferSuccessfulValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>813514c9-3297-41b4-88c4-cdec92601355</id>
+    </Compile>
+    <Compile Include="OneTimeNowConfirmTransferValidation.cs">
+      <BoundTo>f9fdd77f-02a2-401e-ac6b-8e7bf9051247</BoundTo>
+      <DependentUpon>OneTimeNowConfirmTransferValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c36d08c3-9e09-43b4-a1af-78b98d6534cf</id>
+    </Compile>
+    <Compile Include="OneTimeNowConfirmTransferValidation.UserCode.cs">
+      <BoundTo>f9fdd77f-02a2-401e-ac6b-8e7bf9051247</BoundTo>
+      <DependentUpon>OneTimeNowConfirmTransferValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1488376-e986-4c0e-8b1f-c6546b673617</id>
+    </Compile>
+    <Compile Include="DeleteOneTimeScheduledTransfer.cs">
+      <BoundTo>3d084e9a-6779-4d49-a1c0-6a7e9bf768ee</BoundTo>
+      <DependentUpon>DeleteOneTimeScheduledTransfer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61245ede-aa14-40cd-81a6-04b4344e05c5</id>
+    </Compile>
+    <Compile Include="DeleteOneTimeScheduledTransfer.UserCode.cs">
+      <BoundTo>3d084e9a-6779-4d49-a1c0-6a7e9bf768ee</BoundTo>
+      <DependentUpon>DeleteOneTimeScheduledTransfer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fbc85de-7491-4b20-90e4-c60725af637a</id>
+    </Compile>
+    <Compile Include="EditOneTimeScheduled.cs">
+      <BoundTo>f465e18f-363c-4bc0-9d44-6ab9a9bc81e1</BoundTo>
+      <DependentUpon>EditOneTimeScheduled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ac9f91e-8100-4b77-8539-caafad6bf93b</id>
+    </Compile>
+    <Compile Include="EditOneTimeScheduled.UserCode.cs">
+      <BoundTo>f465e18f-363c-4bc0-9d44-6ab9a9bc81e1</BoundTo>
+      <DependentUpon>EditOneTimeScheduled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e22bcb8d-95fc-4c39-8a73-7edb6a03a66a</id>
+    </Compile>
+    <Compile Include="EnterAmountVar.cs">
+      <BoundTo>ab4dcb1e-6ed2-40f3-95f2-eba40ac2c720</BoundTo>
+      <DependentUpon>EnterAmountVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>731891e5-308a-47ce-98b3-d3858f0916ee</id>
+    </Compile>
+    <Compile Include="EnterAmountVar.UserCode.cs">
+      <BoundTo>ab4dcb1e-6ed2-40f3-95f2-eba40ac2c720</BoundTo>
+      <DependentUpon>EnterAmountVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>63dbeeb5-740a-411a-a65b-38f3ef3fa7c1</id>
+    </Compile>
+    <Compile Include="EnterEndOnDateVar.cs">
+      <BoundTo>be83b06a-2842-4022-9c48-98ab926b495b</BoundTo>
+      <DependentUpon>EnterEndOnDateVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65e9bd61-1a4c-499a-9c99-a6f0d8a29321</id>
+    </Compile>
+    <Compile Include="EnterEndOnDateVar.UserCode.cs">
+      <BoundTo>be83b06a-2842-4022-9c48-98ab926b495b</BoundTo>
+      <DependentUpon>EnterEndOnDateVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83344e38-d9b9-4ffa-b5f4-5180b026d5c6</id>
+    </Compile>
+    <Compile Include="EnterNumberOfTransfers.cs">
+      <BoundTo>c33f8dce-2eb2-45f4-9b71-099b6e32925c</BoundTo>
+      <DependentUpon>EnterNumberOfTransfers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a1c7dabb-8b23-433a-82fc-580dda7288ac</id>
+    </Compile>
+    <Compile Include="EnterNumberOfTransfers.UserCode.cs">
+      <BoundTo>c33f8dce-2eb2-45f4-9b71-099b6e32925c</BoundTo>
+      <DependentUpon>EnterNumberOfTransfers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b06a0ff-dc93-47b4-81e0-83ffc96587df</id>
+    </Compile>
+    <Compile Include="ErrorValidation.cs">
+      <BoundTo>31ed103d-2eac-4925-86d1-2b442bf5330f</BoundTo>
+      <DependentUpon>ErrorValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4748e46b-b35c-4b66-8a12-983f613d0596</id>
+    </Compile>
+    <Compile Include="ErrorValidation.UserCode.cs">
+      <BoundTo>31ed103d-2eac-4925-86d1-2b442bf5330f</BoundTo>
+      <DependentUpon>ErrorValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bd009839-6b03-4155-9fc5-6bf74753c5e6</id>
+    </Compile>
+    <Compile Include="GetConfirmationNumber.cs">
+      <BoundTo>0cf770f7-a080-479a-bbe9-c5f2b2cb6f93</BoundTo>
+      <DependentUpon>GetConfirmationNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c45477d9-0314-4d1f-abb7-97d7c71e47bf</id>
+    </Compile>
+    <Compile Include="GetConfirmationNumber.UserCode.cs">
+      <BoundTo>0cf770f7-a080-479a-bbe9-c5f2b2cb6f93</BoundTo>
+      <DependentUpon>GetConfirmationNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a77e2836-bdda-4d0c-af22-45af942388cb</id>
+    </Compile>
+    <Compile Include="InternalTransfersErrorValidation.cs">
+      <BoundTo>235b613e-ce97-4460-bec6-00ea799cd90e</BoundTo>
+      <DependentUpon>InternalTransfersErrorValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee01a738-a9bf-420e-b642-b1a5ad8e4193</id>
+    </Compile>
+    <Compile Include="InternalTransfersErrorValidation.UserCode.cs">
+      <BoundTo>235b613e-ce97-4460-bec6-00ea799cd90e</BoundTo>
+      <DependentUpon>InternalTransfersErrorValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>449d58c7-87ec-45e3-b1ba-1b7f800db678</id>
+    </Compile>
+    <Compile Include="LoanTransferSuccessfulValidation.cs">
+      <BoundTo>7ce9ec38-438d-4e34-9e2b-11c7fef52582</BoundTo>
+      <DependentUpon>LoanTransferSuccessfulValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>01c7c0c1-c42a-4c84-9509-0e8d1feaf991</id>
+    </Compile>
+    <Compile Include="LoanTransferSuccessfulValidation.UserCode.cs">
+      <BoundTo>7ce9ec38-438d-4e34-9e2b-11c7fef52582</BoundTo>
+      <DependentUpon>LoanTransferSuccessfulValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d51f467-4a53-4a85-8789-4a9a5cd187e5</id>
+    </Compile>
+    <Compile Include="MakeExternalTransfer.cs">
+      <BoundTo>ed29ab50-567b-4873-a43b-e2807daefe82</BoundTo>
+      <DependentUpon>MakeExternalTransfer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e2878fcd-574b-4e02-a9e8-b7a880eb2821</id>
+    </Compile>
+    <Compile Include="MakeExternalTransfer.UserCode.cs">
+      <BoundTo>ed29ab50-567b-4873-a43b-e2807daefe82</BoundTo>
+      <DependentUpon>MakeExternalTransfer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8311af0e-0414-43da-b0d1-79771b7d2b13</id>
+    </Compile>
+    <Compile Include="OneTimeScheduled_Errors.cs">
+      <BoundTo>0299d7d5-73db-47f2-9d49-0fc9808c6d63</BoundTo>
+      <DependentUpon>OneTimeScheduled_Errors.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e9b233d4-94db-46a1-bbf9-9e3ef234c09a</id>
+    </Compile>
+    <Compile Include="OneTimeScheduled_Errors.UserCode.cs">
+      <BoundTo>0299d7d5-73db-47f2-9d49-0fc9808c6d63</BoundTo>
+      <DependentUpon>OneTimeScheduled_Errors.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>43424be8-cbfe-45e6-9907-d0f13056df26</id>
+    </Compile>
+    <Compile Include="PrincipalOnlySuccess.cs">
+      <BoundTo>bd7fd66e-94dc-4a45-9b40-c916c8b7af62</BoundTo>
+      <DependentUpon>PrincipalOnlySuccess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>25ae76de-2c80-421b-9cfc-c97223c8162a</id>
+    </Compile>
+    <Compile Include="PrincipalOnlySuccess.UserCode.cs">
+      <BoundTo>bd7fd66e-94dc-4a45-9b40-c916c8b7af62</BoundTo>
+      <DependentUpon>PrincipalOnlySuccess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d7e5a42f-ad8f-461e-bb37-5e5a54c5f777</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>c8b5b2f7-64d6-410e-bec2-ca5e5cc22dbe</id>
+    </Compile>
+    <Compile Include="QAExternalTransfersMessage.cs">
+      <BoundTo>47280d16-1957-480f-9c27-cdcd275537f7</BoundTo>
+      <DependentUpon>QAExternalTransfersMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>feb673ed-8d19-4e4a-a68e-abd520bd64d8</id>
+    </Compile>
+    <Compile Include="QAExternalTransfersMessage.UserCode.cs">
+      <BoundTo>47280d16-1957-480f-9c27-cdcd275537f7</BoundTo>
+      <DependentUpon>QAExternalTransfersMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b4d0697-64f0-41c9-9d45-a460619bdf59</id>
+    </Compile>
+    <Compile Include="SelectToLoanAccount.cs">
+      <BoundTo>443dd6c6-6343-4e11-a383-a9c17a9c0fb3</BoundTo>
+      <DependentUpon>SelectToLoanAccount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e77bca42-06a8-4c0e-a71b-9e500a44c473</id>
+    </Compile>
+    <Compile Include="SelectToLoanAccount.UserCode.cs">
+      <BoundTo>443dd6c6-6343-4e11-a383-a9c17a9c0fb3</BoundTo>
+      <DependentUpon>SelectToLoanAccount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2a28b124-bbe0-4ef6-ac4a-08e56196e61b</id>
+    </Compile>
+    <Compile Include="SelectConfirmButton.cs">
+      <BoundTo>9f387770-a698-4014-88f5-64606428fd6c</BoundTo>
+      <DependentUpon>SelectConfirmButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>412466d7-6c7c-4503-851e-d92f07e1534a</id>
+    </Compile>
+    <Compile Include="SelectConfirmButton.UserCode.cs">
+      <BoundTo>9f387770-a698-4014-88f5-64606428fd6c</BoundTo>
+      <DependentUpon>SelectConfirmButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f184f893-64fc-4038-8488-62f9952dcb33</id>
+    </Compile>
+    <Compile Include="SelectContinueButton.cs">
+      <BoundTo>356d0570-4dd2-4c20-b0a0-a47bc11b01b1</BoundTo>
+      <DependentUpon>SelectContinueButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>149c4dde-8f06-43f8-8e90-02a5bad454d7</id>
+    </Compile>
+    <Compile Include="SelectContinueButton.UserCode.cs">
+      <BoundTo>356d0570-4dd2-4c20-b0a0-a47bc11b01b1</BoundTo>
+      <DependentUpon>SelectContinueButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f2419f7-0268-4274-acf7-fb52faa9143f</id>
+    </Compile>
+    <Compile Include="SelectDoneButton.cs">
+      <BoundTo>2ffa7b9b-8a45-4706-b0ec-25eab3c46f55</BoundTo>
+      <DependentUpon>SelectDoneButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37897142-b38f-4e69-bf1e-a0029a145118</id>
+    </Compile>
+    <Compile Include="SelectDoneButton.UserCode.cs">
+      <BoundTo>2ffa7b9b-8a45-4706-b0ec-25eab3c46f55</BoundTo>
+      <DependentUpon>SelectDoneButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c56347b4-9170-4d9f-9a6e-7dd8318cc85f</id>
+    </Compile>
+    <Compile Include="SelectEndTransfersVar.cs">
+      <BoundTo>b728227b-f074-4b81-a034-85b241c51546</BoundTo>
+      <DependentUpon>SelectEndTransfersVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cd321430-7de7-48b3-9acf-f14a0f1e5544</id>
+    </Compile>
+    <Compile Include="SelectEndTransfersVar.UserCode.cs">
+      <BoundTo>b728227b-f074-4b81-a034-85b241c51546</BoundTo>
+      <DependentUpon>SelectEndTransfersVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a5b5b78-a9eb-4240-a691-28cdf26a7c1e</id>
+    </Compile>
+    <Compile Include="SelectFrequencyVar.cs">
+      <BoundTo>0b160d4c-45ae-4641-96b9-74de9d707f01</BoundTo>
+      <DependentUpon>SelectFrequencyVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca96b05d-d56e-4b8a-87e7-9f26a38cd863</id>
+    </Compile>
+    <Compile Include="SelectFrequencyVar.UserCode.cs">
+      <BoundTo>0b160d4c-45ae-4641-96b9-74de9d707f01</BoundTo>
+      <DependentUpon>SelectFrequencyVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d393c6db-963e-460f-9c58-f728ceb9e298</id>
+    </Compile>
+    <Compile Include="SelectFromAccountVar.cs">
+      <BoundTo>54eb265c-67b3-402c-a0f1-58b64a366fc2</BoundTo>
+      <DependentUpon>SelectFromAccountVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ce0f3593-9699-44f5-86fc-fc3291ed099a</id>
+    </Compile>
+    <Compile Include="SelectFromAccountVar.UserCode.cs">
+      <BoundTo>54eb265c-67b3-402c-a0f1-58b64a366fc2</BoundTo>
+      <DependentUpon>SelectFromAccountVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>02516873-c763-4d77-807d-fd83e72b2b9d</id>
+    </Compile>
+    <Compile Include="SelectLoanPaymentTypeVar.cs">
+      <BoundTo>75990025-8ddb-47d6-a008-2bfdc7994edc</BoundTo>
+      <DependentUpon>SelectLoanPaymentTypeVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a102eb1b-4d3a-4a15-84aa-100161071b95</id>
+    </Compile>
+    <Compile Include="SelectLoanPaymentTypeVar.UserCode.cs">
+      <BoundTo>75990025-8ddb-47d6-a008-2bfdc7994edc</BoundTo>
+      <DependentUpon>SelectLoanPaymentTypeVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2666050-1d80-48a2-866b-d5137a019ccb</id>
+    </Compile>
+    <Compile Include="SelectMakeInternalTransferButton.cs">
+      <BoundTo>953992fb-fee9-4127-b538-c3f79d860e0e</BoundTo>
+      <DependentUpon>SelectMakeInternalTransferButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>349f73d2-93b5-45bf-825d-a4dde6a892cb</id>
+    </Compile>
+    <Compile Include="SelectMakeInternalTransferButton.UserCode.cs">
+      <BoundTo>953992fb-fee9-4127-b538-c3f79d860e0e</BoundTo>
+      <DependentUpon>SelectMakeInternalTransferButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d84beba4-acec-4bb2-89a4-1dea33f23e03</id>
+    </Compile>
+    <Compile Include="Select_Start_On_Date_Var.cs">
+      <BoundTo>0bb17004-59cb-498a-89d2-33bd5b72ced0</BoundTo>
+      <DependentUpon>Select_Start_On_Date_Var.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b6db793-d06f-47cd-8442-086143672fa1</id>
+    </Compile>
+    <Compile Include="Select_Start_On_Date_Var.UserCode.cs">
+      <BoundTo>0bb17004-59cb-498a-89d2-33bd5b72ced0</BoundTo>
+      <DependentUpon>Select_Start_On_Date_Var.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05c4ff60-35a7-4c0c-b866-4e395b88b34f</id>
+    </Compile>
+    <Compile Include="SelectToAccountVar.cs">
+      <BoundTo>66257f65-5cb1-40eb-a954-d983649b29c7</BoundTo>
+      <DependentUpon>SelectToAccountVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4cfd1f9d-78e9-4736-91c7-6c13aa1def51</id>
+    </Compile>
+    <Compile Include="SelectToAccountVar.UserCode.cs">
+      <BoundTo>66257f65-5cb1-40eb-a954-d983649b29c7</BoundTo>
+      <DependentUpon>SelectToAccountVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3cf543f8-c42e-40e0-b4e0-cb7a10f8da44</id>
+    </Compile>
+    <Compile Include="SelectToLoanAccountVar.cs">
+      <BoundTo>f8b637e1-aff1-4a48-a4dc-9639e567e12b</BoundTo>
+      <DependentUpon>SelectToLoanAccountVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77fb2141-9147-4a99-8a1e-73742c50a9d8</id>
+    </Compile>
+    <Compile Include="SelectToLoanAccountVar.UserCode.cs">
+      <BoundTo>f8b637e1-aff1-4a48-a4dc-9639e567e12b</BoundTo>
+      <DependentUpon>SelectToLoanAccountVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fb191dd9-0053-4bb1-ab3a-a3856f6385f4</id>
+    </Compile>
+    <Compile Include="Select_TransferNow.cs">
+      <BoundTo>a1c61e76-2092-4c04-961d-e1900132a366</BoundTo>
+      <DependentUpon>Select_TransferNow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16c3d88b-b5d8-4c75-992a-d5e5c716b7fe</id>
+    </Compile>
+    <Compile Include="Select_TransferNow.UserCode.cs">
+      <BoundTo>a1c61e76-2092-4c04-961d-e1900132a366</BoundTo>
+      <DependentUpon>Select_TransferNow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>62e3fd9f-4d7a-4588-9cdf-e08b9631fc79</id>
+    </Compile>
+    <Compile Include="SelectTransfersTab.cs">
+      <BoundTo>59906ac0-9022-4085-b969-c369893c0720</BoundTo>
+      <DependentUpon>SelectTransfersTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80ab344d-b26e-46ff-845f-4050f24d5dce</id>
+    </Compile>
+    <Compile Include="SelectTransfersTab.UserCode.cs">
+      <BoundTo>59906ac0-9022-4085-b969-c369893c0720</BoundTo>
+      <DependentUpon>SelectTransfersTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4eb8ef87-1682-4231-a6a8-be51b2f838ad</id>
+    </Compile>
+    <Compile Include="RegularSuccessOneTimeNow.cs">
+      <BoundTo>18f9aea3-ec99-4752-bb6a-7e4406e7eae3</BoundTo>
+      <DependentUpon>RegularSuccessOneTimeNow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>22877c8b-7fa2-4e22-9c14-dac11b769a64</id>
+    </Compile>
+    <Compile Include="RegularSuccessOneTimeNow.UserCode.cs">
+      <BoundTo>18f9aea3-ec99-4752-bb6a-7e4406e7eae3</BoundTo>
+      <DependentUpon>RegularSuccessOneTimeNow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>95cd9e53-a0ac-4c6b-a144-9034003c8e73</id>
+    </Compile>
+    <Compile Include="ScheduledTransfersPage.cs">
+      <BoundTo>a060ec14-5708-4089-a63e-26f7107cd9a2</BoundTo>
+      <DependentUpon>ScheduledTransfersPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f638a780-8c5c-45a1-91bb-4f392ee210c5</id>
+    </Compile>
+    <Compile Include="ScheduledTransfersPage.UserCode.cs">
+      <BoundTo>a060ec14-5708-4089-a63e-26f7107cd9a2</BoundTo>
+      <DependentUpon>ScheduledTransfersPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6b84a3c-7782-4f97-8f3c-2221cda48880</id>
+    </Compile>
+    <Compile Include="NoEligibleAccount.cs">
+      <BoundTo>dfa67390-2693-49f2-aac4-465b9c1743fa</BoundTo>
+      <DependentUpon>NoEligibleAccount.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5367fe20-1cae-4e67-bd3e-420f6259d4fe</id>
+    </Compile>
+    <Compile Include="NoEligibleAccount.UserCode.cs">
+      <BoundTo>dfa67390-2693-49f2-aac4-465b9c1743fa</BoundTo>
+      <DependentUpon>NoEligibleAccount.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9503334-0ffd-4121-bb96-6910abdbff72</id>
+    </Compile>
+    <Compile Include="OneAccountSuccess.cs">
+      <BoundTo>084e64b6-4092-4d90-845b-1d33b6efcf28</BoundTo>
+      <DependentUpon>OneAccountSuccess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5938b8e5-39b2-453c-bd54-f7ba06303177</id>
+    </Compile>
+    <Compile Include="OneAccountSuccess.UserCode.cs">
+      <BoundTo>084e64b6-4092-4d90-845b-1d33b6efcf28</BoundTo>
+      <DependentUpon>OneAccountSuccess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee9b0bf5-d65f-4144-9191-e28e8f29db14</id>
+    </Compile>
+    <Compile Include="SelectTransferOnDateVar.cs">
+      <BoundTo>aa14058b-2006-450b-ad65-b70f292e4163</BoundTo>
+      <DependentUpon>SelectTransferOnDateVar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>46c9ca0e-d0ee-4738-a167-97ef176356e5</id>
+    </Compile>
+    <Compile Include="SelectTransferOnDateVar.UserCode.cs">
+      <BoundTo>aa14058b-2006-450b-ad65-b70f292e4163</BoundTo>
+      <DependentUpon>SelectTransferOnDateVar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f071996-5739-49db-9247-e19b0d1a7de0</id>
+    </Compile>
+    <Compile Include="StagingExternalTransfersMessage.cs">
+      <BoundTo>51aba56e-9148-4a12-9b3a-c9c62d937de1</BoundTo>
+      <DependentUpon>StagingExternalTransfersMessage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f8a5655-95d2-451f-b488-c2ce5ed40fb7</id>
+    </Compile>
+    <Compile Include="StagingExternalTransfersMessage.UserCode.cs">
+      <BoundTo>51aba56e-9148-4a12-9b3a-c9c62d937de1</BoundTo>
+      <DependentUpon>StagingExternalTransfersMessage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f619878-3756-450b-8785-756693b97538</id>
+    </Compile>
+    <Compile Include="OneTimeNowTransferSuccessfulValidation.cs">
+      <BoundTo>902d8218-9a9b-4a88-9237-bed738dc1a4a</BoundTo>
+      <DependentUpon>OneTimeNowTransferSuccessfulValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8fe97f82-0bd3-462b-b3e0-ef0e8881ba6a</id>
+    </Compile>
+    <Compile Include="OneTimeNowTransferSuccessfulValidation.UserCode.cs">
+      <BoundTo>902d8218-9a9b-4a88-9237-bed738dc1a4a</BoundTo>
+      <DependentUpon>OneTimeNowTransferSuccessfulValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>46d513dc-cb0f-4bd0-b889-98018ae378bd</id>
+    </Compile>
+    <Compile Include="ValidateConsumerTransfersPage.cs">
+      <BoundTo>852edea3-bb10-4da2-a1c2-76038725ccf4</BoundTo>
+      <DependentUpon>ValidateConsumerTransfersPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4fa97528-75e5-47de-b274-897723258a36</id>
+    </Compile>
+    <Compile Include="ValidateConsumerTransfersPage.UserCode.cs">
+      <BoundTo>852edea3-bb10-4da2-a1c2-76038725ccf4</BoundTo>
+      <DependentUpon>ValidateConsumerTransfersPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ec8e068-086b-4259-b02f-9ff727306c91</id>
+    </Compile>
+    <Compile Include="TransferNowMakeTransfer.cs">
+      <BoundTo>4cb04366-6cea-4647-be47-bc6ddb7668a7</BoundTo>
+      <DependentUpon>TransferNowMakeTransfer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7bedc6f9-5a7d-4af2-a82f-229a9d01869f</id>
+    </Compile>
+    <Compile Include="TransferNowMakeTransfer.UserCode.cs">
+      <BoundTo>4cb04366-6cea-4647-be47-bc6ddb7668a7</BoundTo>
+      <DependentUpon>TransferNowMakeTransfer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9623b97-61f0-402e-8783-41e720561707</id>
+    </Compile>
+    <Compile Include="TransfersRepository.cs">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <DependentUpon>TransfersRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>f7e8a559-262b-4934-b237-d26eb29ed05e</id>
+    </Compile>
+    <Compile Include="ValidateMakeTransferScreen.cs">
+      <BoundTo>a43936ef-0d72-4a01-aecf-ed3e61de3683</BoundTo>
+      <DependentUpon>ValidateMakeTransferScreen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aafe0f4c-3d72-45f7-8184-654242343df6</id>
+    </Compile>
+    <Compile Include="ValidateMakeTransferScreen.UserCode.cs">
+      <BoundTo>a43936ef-0d72-4a01-aecf-ed3e61de3683</BoundTo>
+      <DependentUpon>ValidateMakeTransferScreen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>762504e2-8d36-4e27-a08e-d3ddd5d605ec</id>
+    </Compile>
+    <Compile Include="ZelleMakeTransfer.cs">
+      <BoundTo>fd2f1e5d-9e40-4010-80e9-755f7253248c</BoundTo>
+      <DependentUpon>ZelleMakeTransfer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>281809be-a84b-434a-b85a-5588bc998b38</id>
+    </Compile>
+    <Compile Include="ZelleMakeTransfer.UserCode.cs">
+      <BoundTo>fd2f1e5d-9e40-4010-80e9-755f7253248c</BoundTo>
+      <DependentUpon>ZelleMakeTransfer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66740dc9-463e-41ec-8b0c-afa5ea34b0ed</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>5d95ed8d-a9bf-44fd-a227-c1dbd8e92a8c</id>
+    </None>
+    <None Include="ConfirmLoanTransferScreenValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>6ad2f884-ad1e-4f42-b67b-ce907078458a</id>
+      <recordtableid>16d04c6c-82a6-4906-8720-c78d67bf0a65</recordtableid>
+    </None>
+    <None Include="ConfirmLoanPaymentType.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>c14d1cb0-b04f-426c-8f07-bc8e79c21166</id>
+      <recordtableid>8d8d41e5-a641-487f-8907-5fdb89ac103e</recordtableid>
+    </None>
+    <None Include="EndAfterNumberOfTransfersConfirmTransferValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>a6f02f51-3c30-470a-9dd1-93636dc35cfd</id>
+      <recordtableid>28314ffb-9d26-46cb-93f9-a5a4020f1aef</recordtableid>
+    </None>
+    <None Include="EndOnDateConfirmTransferValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>786cd89f-66ca-4493-9e0a-15ac8c67657e</id>
+      <recordtableid>c57ded57-7e3b-4b72-b0bf-af10ad027055</recordtableid>
+    </None>
+    <None Include="EndTransfersNeverConfirmTransferValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>8e6d851e-51d0-4720-add3-08c709aa3edf</id>
+      <recordtableid>fdfe21a5-8663-4794-97cd-6704a821789e</recordtableid>
+    </None>
+    <None Include="OneTimeScheduledSuccessfulValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>ec6d59c3-650b-4024-a7fa-8e1f53cebe52</id>
+      <recordtableid>f95415ce-8f54-4b62-9af7-30f69e1eae91</recordtableid>
+    </None>
+    <None Include="TransferSuccessfulValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>087bac70-2a97-4d86-8b98-fdf5e79d0fae</id>
+      <recordtableid>bb107599-8c90-46af-9f03-179165fb5403</recordtableid>
+    </None>
+    <None Include="OneTimeNowConfirmTransferValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>f9fdd77f-02a2-401e-ac6b-8e7bf9051247</id>
+      <recordtableid>daba2a6a-8ce0-4962-92f0-5dbdc0f987db</recordtableid>
+    </None>
+    <None Include="DeleteOneTimeScheduledTransfer.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>3d084e9a-6779-4d49-a1c0-6a7e9bf768ee</id>
+      <recordtableid>21d2764d-18fd-4d37-b719-3f70440c863b</recordtableid>
+    </None>
+    <None Include="EditOneTimeScheduled.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>f465e18f-363c-4bc0-9d44-6ab9a9bc81e1</id>
+      <recordtableid>db28714e-c5ed-4e80-8d29-a27bfa958798</recordtableid>
+    </None>
+    <None Include="EnterAmountVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>ab4dcb1e-6ed2-40f3-95f2-eba40ac2c720</id>
+      <recordtableid>1fa19fb7-9f6c-4691-a0b5-577a93174953</recordtableid>
+    </None>
+    <None Include="EnterEndOnDateVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>be83b06a-2842-4022-9c48-98ab926b495b</id>
+      <recordtableid>78f41369-c299-47f6-86b1-47f2333ad33f</recordtableid>
+    </None>
+    <None Include="EnterNumberOfTransfers.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>c33f8dce-2eb2-45f4-9b71-099b6e32925c</id>
+      <recordtableid>1527424c-cfc3-47f0-9216-c0b7590d1e91</recordtableid>
+    </None>
+    <None Include="ErrorValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>31ed103d-2eac-4925-86d1-2b442bf5330f</id>
+      <recordtableid>d329f328-aab6-4bbf-b3b2-25826ebba573</recordtableid>
+    </None>
+    <None Include="GetConfirmationNumber.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>0cf770f7-a080-479a-bbe9-c5f2b2cb6f93</id>
+      <recordtableid>fb8ea47c-ac7e-4488-ac70-c99a7ebef796</recordtableid>
+    </None>
+    <None Include="InternalTransfersErrorValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>235b613e-ce97-4460-bec6-00ea799cd90e</id>
+      <recordtableid>7aa53fcd-2fed-4eda-a2c5-6066eba1cd39</recordtableid>
+    </None>
+    <None Include="LoanTransferSuccessfulValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>7ce9ec38-438d-4e34-9e2b-11c7fef52582</id>
+      <recordtableid>f0fbfa71-fbfe-4f07-8438-2d1ae974a624</recordtableid>
+    </None>
+    <None Include="MakeExternalTransfer.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>ed29ab50-567b-4873-a43b-e2807daefe82</id>
+      <recordtableid>a0dbd3f3-e6c9-4d6b-a9b9-e34818b85e7c</recordtableid>
+    </None>
+    <None Include="OneTimeScheduled_Errors.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>0299d7d5-73db-47f2-9d49-0fc9808c6d63</id>
+      <recordtableid>30caf41c-f5fa-4abd-906d-cf244b5cea94</recordtableid>
+    </None>
+    <None Include="PrincipalOnlySuccess.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>bd7fd66e-94dc-4a45-9b40-c916c8b7af62</id>
+      <recordtableid>89bce23b-2706-4f02-9d9a-f26bd719b25b</recordtableid>
+    </None>
+    <None Include="QAExternalTransfersMessage.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>47280d16-1957-480f-9c27-cdcd275537f7</id>
+      <recordtableid>04137990-e5ef-4f4e-bf01-1985eee65eb9</recordtableid>
+    </None>
+    <None Include="SelectToLoanAccount.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>443dd6c6-6343-4e11-a383-a9c17a9c0fb3</id>
+      <recordtableid>2cd5f2ec-91fd-40ea-b37a-5f05f1cdbce4</recordtableid>
+    </None>
+    <None Include="SelectConfirmButton.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>9f387770-a698-4014-88f5-64606428fd6c</id>
+      <recordtableid>b3d66cf7-259e-4388-b626-701df830a70b</recordtableid>
+    </None>
+    <None Include="SelectContinueButton.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>356d0570-4dd2-4c20-b0a0-a47bc11b01b1</id>
+      <recordtableid>4dfcd5b3-d45b-4b04-a85c-e1ed5f78e9e3</recordtableid>
+    </None>
+    <None Include="SelectDoneButton.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>2ffa7b9b-8a45-4706-b0ec-25eab3c46f55</id>
+      <recordtableid>0c9c5ab3-da91-47c9-b355-3520a9b8eaf1</recordtableid>
+    </None>
+    <None Include="SelectEndTransfersVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>b728227b-f074-4b81-a034-85b241c51546</id>
+      <recordtableid>e14e634d-2ad2-4752-a10e-23771d50e33f</recordtableid>
+    </None>
+    <None Include="SelectFrequencyVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>0b160d4c-45ae-4641-96b9-74de9d707f01</id>
+      <recordtableid>1f2e6417-26ac-4edb-89ce-84ae2c4fde1e</recordtableid>
+    </None>
+    <None Include="SelectFromAccountVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>54eb265c-67b3-402c-a0f1-58b64a366fc2</id>
+      <recordtableid>f3dea42a-1eb2-431d-b0e4-771ff23dbab1</recordtableid>
+    </None>
+    <None Include="SelectLoanPaymentTypeVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>75990025-8ddb-47d6-a008-2bfdc7994edc</id>
+      <recordtableid>2c18829c-d92e-469c-aaef-6ea5324e6135</recordtableid>
+    </None>
+    <None Include="SelectMakeInternalTransferButton.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>953992fb-fee9-4127-b538-c3f79d860e0e</id>
+      <recordtableid>58f17a15-d575-4302-9ad6-81a781e786d2</recordtableid>
+    </None>
+    <None Include="Select_Start_On_Date_Var.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>0bb17004-59cb-498a-89d2-33bd5b72ced0</id>
+      <recordtableid>ffc730a9-bfee-4726-b30c-2ea4f1cec810</recordtableid>
+    </None>
+    <None Include="SelectToAccountVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>66257f65-5cb1-40eb-a954-d983649b29c7</id>
+      <recordtableid>50efb842-4a89-44d1-b151-66d558884e9c</recordtableid>
+    </None>
+    <None Include="SelectToLoanAccountVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>f8b637e1-aff1-4a48-a4dc-9639e567e12b</id>
+      <recordtableid>de844fe6-52b0-49b5-8408-ab697f6fb0fb</recordtableid>
+    </None>
+    <None Include="Select_TransferNow.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>a1c61e76-2092-4c04-961d-e1900132a366</id>
+      <recordtableid>72ab93e5-5f70-4e04-b0be-9fb6913edbb5</recordtableid>
+    </None>
+    <None Include="SelectTransfersTab.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>59906ac0-9022-4085-b969-c369893c0720</id>
+      <recordtableid>ac68b296-2e23-410f-94e4-308b00e842ad</recordtableid>
+    </None>
+    <None Include="RegularSuccessOneTimeNow.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>18f9aea3-ec99-4752-bb6a-7e4406e7eae3</id>
+      <recordtableid>b21347ff-47c7-45ac-a455-64794fb42b95</recordtableid>
+    </None>
+    <None Include="ScheduledTransfersPage.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>a060ec14-5708-4089-a63e-26f7107cd9a2</id>
+      <recordtableid>5b2480a4-8b0c-45f8-ac15-88ceaa1c4132</recordtableid>
+    </None>
+    <None Include="NoEligibleAccount.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>dfa67390-2693-49f2-aac4-465b9c1743fa</id>
+      <recordtableid>e456b988-7942-4383-b19c-4146babe443e</recordtableid>
+    </None>
+    <None Include="OneAccountSuccess.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>084e64b6-4092-4d90-845b-1d33b6efcf28</id>
+      <recordtableid>e2983fdf-5d18-4549-87ef-0d01bca5d303</recordtableid>
+    </None>
+    <None Include="SelectTransferOnDateVar.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>aa14058b-2006-450b-ad65-b70f292e4163</id>
+      <recordtableid>24dd651d-ea78-4cf2-9bc5-0fb8ed2e48df</recordtableid>
+    </None>
+    <None Include="StagingExternalTransfersMessage.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>51aba56e-9148-4a12-9b3a-c9c62d937de1</id>
+      <recordtableid>d3860075-ff1e-46eb-8f61-2479f913c970</recordtableid>
+    </None>
+    <None Include="OneTimeNowTransferSuccessfulValidation.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>902d8218-9a9b-4a88-9237-bed738dc1a4a</id>
+      <recordtableid>7bcab754-c721-406a-b471-33d6de7ea65f</recordtableid>
+    </None>
+    <None Include="ValidateConsumerTransfersPage.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>852edea3-bb10-4da2-a1c2-76038725ccf4</id>
+      <recordtableid>d118b010-ec13-4c4e-8d8e-9d2051c83925</recordtableid>
+    </None>
+    <None Include="TransferNowMakeTransfer.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>4cb04366-6cea-4647-be47-bc6ddb7668a7</id>
+      <recordtableid>c8b671c8-9954-4b66-b4cd-15c2ac8f87e9</recordtableid>
+    </None>
+    <None Include="TransfersRepository.rximg">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <DependentUpon>TransfersRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>2973475e-4b0a-4786-add5-d27773b8cc58</id>
+    </None>
+    <None Include="TransfersRepository.rxrep">
+      <id>34576a71-557e-414f-8922-f561e2286617</id>
+      <repoid>7dc0dba0-52e4-4bc4-bc85-323893000aaf</repoid>
+      <reporootid>9b277dff-e3ee-462f-9f9f-8036eaf5ede0</reporootid>
+    </None>
+    <None Include="ValidateMakeTransferScreen.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>a43936ef-0d72-4a01-aecf-ed3e61de3683</id>
+      <recordtableid>76c0b9cf-bb12-4f15-9fd3-536b724ea97c</recordtableid>
+    </None>
+    <None Include="ZelleMakeTransfer.rxrec">
+      <BoundTo>34576a71-557e-414f-8922-f561e2286617</BoundTo>
+      <id>fd2f1e5d-9e40-4010-80e9-755f7253248c</id>
+      <recordtableid>417ee8fc-a83c-4b28-a036-68e4334294e4</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Transfers.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e39bf445-1f6e-4f58-8278-7579337beec5</id>
+    </Content>
+    <Content Include="Transfers.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>63dcc95b-32e9-4984-bda0-f0ec795049c4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Shared\SetupAndTeardown\SetupAndTeardown.csproj">
+      <Project>{94D7DEED-A1A4-4729-BDDD-479F0AE1EBA2}</Project>
+      <Name>SetupAndTeardown</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
+  </Import>
+  <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
+  </Import>
+</Project>

@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e7e973f1-4e99-4e8c-baf4-162124beec5c"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="LoadTransferBalanceDisplayWillBeDynamic"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.TransfersTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4acb7866-ef95-4948-b33a-7a3725447081">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9b03952d-f72e-49b4-9c92-05e36d070433"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//a[#'Transfers']
+				</path>
+			</info>
+			<arguments
+			id="1b7bdf56-77ae-41bd-85af-94811f3a3dd4">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c660592e-fed6-40f9-8e00-5d15cb2b4c56">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8f128394-9508-44cd-a7c2-e562effd9d15"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[#'makeTransferButton']
+				</path>
+			</info>
+			<arguments
+			id="1e89c743-4f18-467f-bbc1-eebd5ceb2765">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a9281507-e133-4f94-a3dc-cb7f0b6b111d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8f128394-9508-44cd-a7c2-e562effd9d15"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//buttontag[#'makeTransferButton']
+				</path>
+			</info>
+			<arguments
+			id="60bfe151-96cb-4104-9892-e3604c1e1d9f">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="False"
+		optional="False"
+		searchpropertyid="3e81f7ee-8b4d-4642-b525-24d768c8d922">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20ee91e9-604d-4620-a07c-47c73086ee2a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'firstModal']//div[#'transfersmodal1']//div[@class='modal-content']//div[#'transferFromTab']
+				</path>
+			</info>
+			<arguments
+			id="bfc67960-a2ee-4b7a-a7c3-66805314b279">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="36e3a86c-2fae-4b4b-9dc8-584dcf113c61">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0afd2fbe-98b9-4708-b930-6803e454e96c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'fromAccountAc']//span[@innertext~'Credit']
+				</path>
+			</info>
+			<arguments
+			id="2cdba5df-824f-4ccd-883c-50e053d60fd0">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="9d51d5f4-3dda-4f5a-8677-b631b2d06bfc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bbe8760c-562f-49a8-a534-e838df03ab8f"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="-235,-856,197,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						av1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Available Credit: $17,465.29
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-show"
+					readonly="False"
+					type="System.String">
+						vm.fromAccSelected
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						visibility: visible; font-size: 1.4em; padding-left: 21px; color: rgb(90, 90, 90);
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'account-selection-tabs']/div[1]//span[@innertext~'^Available\ Credit:\ \$17,465']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="f4be6ee9-6d61-43bc-b20c-f44bfb2114f5">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABpAUADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKR3CLuIYj/ZUk/pS0UARxTxzH5N/1KED8yKkqmIS6wq6
+Er5jlgR2+brUQVvtCMItp3ndiI5xz1buKANGmyOsaFnOAPbNUkg2QwlY2VmiIcoMN0/nTBCGjZBC
+GXKHIiKZ554Pt3oA0gcgH1oqg8T/AGg8DdvGwiIkgezZwB7VYtIwkbErh2ZskjnqcUAOS5jdsLvP
+OM+W2Pzxipaq2sTrFlpJBy3yEDHU+2ajSFUhg8yIsm35127juwMEjv3oAvUVQW33k+ZESuxtgYZx
+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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8e8addff-65b0-4411-bcd8-cfb3b9e3468b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20ee91e9-604d-4620-a07c-47c73086ee2a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'firstModal']//div[#'transfersmodal1']//div[@class='modal-content']//div[#'transferFromTab']
+				</path>
+			</info>
+			<arguments
+			id="ee63503e-91ef-477e-bb00-7cb3d55642a6">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3e81f7ee-8b4d-4642-b525-24d768c8d922">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20ee91e9-604d-4620-a07c-47c73086ee2a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'firstModal']//div[#'transfersmodal1']//div[@class='modal-content']//div[#'transferFromTab']
+				</path>
+			</info>
+			<arguments
+			id="bfc67960-a2ee-4b7a-a7c3-66805314b279">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ade74127-2c78-4263-b8cd-bbe151300d93">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a403842a-a9df-4036-8df2-d064b0fa0ab0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'fromAccountAc']//span[@innertext='*7927']
+				</path>
+			</info>
+			<arguments
+			id="b1086faa-d181-4b2e-ae0c-1ecd79c72483">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="630dda9f-1df1-4dcf-9005-43f56707e6e6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fa3aad33-2838-49e8-80f9-48586c60f3cf"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'firstModal']//div[#'transfersmodal1']//div[@class='modal-content']//div[#'toAccTabS']
+				</path>
+			</info>
+			<arguments
+			id="c70a6907-2023-4481-8f9c-9f507029547a">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="Focus"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c04e887a-6af2-41f3-8a0d-b82d3f43d137">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="40ddfc98-a909-4526-a7c8-3ebdc8956f2f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'toAccTxn']//span[@innertext='Revolving Credit']
+				</path>
+			</info>
+			<arguments
+			id="47a9d08e-9bd9-46a8-afee-a425cc5d9a94">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6c3ac306-f02c-4f30-bb72-c62332302891">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="40ddfc98-a909-4526-a7c8-3ebdc8956f2f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'toAccTxn']//span[@innertext='Revolving Credit']
+				</path>
+			</info>
+			<arguments
+			id="0e617405-f2ba-437f-910b-f4e694003798">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ad0b0f28-4a97-447e-afbc-1e923695ae1b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="89254b2b-0406-4951-a5bd-da2429c12cba"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="-235,-782,230,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						av2
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Outstanding Balance: $86,534.71
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-show"
+					readonly="False"
+					type="System.String">
+						vm.toAccSelected
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						font-size:1.4em; padding-left: 21px; color: #5A5A5A;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//div[#'account-selection-tabs']/div[1]//span[@innertext~'^Outstanding\ Balance:\ \$86,']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="0fcd24b8-009f-4665-a804-ff8e547c80e3">
+				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
+iiigAooooAKKKKACiiigAooooA//2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		LoadTransferBalanceDisplayWillBeDynamic.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

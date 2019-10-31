@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b2fcfbcf-ceac-435b-9c6d-46328a3c928e"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateAtm_Debit"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.SettingsTab.ManageOverdraftstab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fa6cb2ff-03d4-432c-b1bd-24e96b83c50f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="76c5d551-f909-4bd1-ab7c-881e0ccbee56"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//i[@aria-label='An overdraft occurs when you do not have enough money in your account to cover a transaction, but we pay it anyway. We do not authorize and pay for ATM transactions and everyday debit card            transactions that may overdraw your account unless you ask us to. Based on the type of account you have, you may be charged a fee each time we pay an overdraft.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateAtm_Debit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

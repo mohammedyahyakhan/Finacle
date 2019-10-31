@@ -1,0 +1,3661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="67a6d762-ac7d-4fc6-97a3-4ca6539ed504"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AccountsDashboardValidation"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.AccountsTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="78b9e293-9448-473c-bfea-acac92d7ba26">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bab650f1-d127-4418-898b-e524a1416f8a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Accounts']
+				</path>
+			</info>
+			<arguments
+			id="d22cef51-be1f-421a-aff8-e0c0f04064b5">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="1703025c-0744-4b87-bec7-d028dd908c3b"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ab90f5bb-6cae-4223-9737-f43daefdbb8d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'content']/div[2]/div[2]/?/?/div[@innertext='Welcome!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="82e6eb5e-8475-499a-8ca7-e888f3a2260f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f214187e-e07d-4a0b-81de-c8c012594cb0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Grid']
+				</path>
+			</info>
+			<arguments
+			id="0fd435fc-297c-4e52-a62b-6f9c303b7f11">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="83f27894-94ff-4ab9-b38d-11ab6f0d32e5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f40b36e6-6603-45eb-acfc-62b9709062f0"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="40,348,320,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						search-input form-control ng-pristine ng-untouched ng-valid
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search Accounts
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+						Search Accounts
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+						filterAccount()
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+						searchAccount
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onkeypress"
+					readonly="False"
+					type="System.String">
+						runScript(event)
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'accounts-landing-view']//input[@type='text']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="dafc328e-36c4-4459-8c8e-978046a70e01">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACPAcIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+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
+f9c0/m1SUAFFFFABRRRQAUUUUAf/2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7002c57a-c73b-4bce-a9ce-6740161a786e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f925235b-919f-40af-826f-866f37fd0156"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="40,866,157,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Checking &amp; Savings
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController;jsessionid=VL19Y8QuHeTWw2KbaZ4RpC0f?bwayparam=tcgCsJVyl3%2BND70bAOqjse1v0KVwBLg%2BYh8SUgQc%2FpY%3D#
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						text-decoration:none!important;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'accounts-landing-view']/div[3]/div[4]/div/ul[3]/div/div/div[1]/a[@innertext='Checking &amp; Savings']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="c336e6a9-ae98-4ff8-8291-9ba0a94b3829">
+				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
+6BRRRTMxlFFFABRRRQAjDKkUhlf/AJ5/rTqKAG+a/wDzz/8AHqPNf/nn/wCPU6igBvmv/wA8/wDx
+6jzX/wCef/j1OooAb5r/APPP/wAeo81/+ef/AI9TqKAG+a//ADz/APHqPNf/AJ5/+PU6igBvmv8A
+88//AB6jzX/55/8Aj1OooAb5r/8APP8A8eo81/8Ann/49TqKAG+a/wDzz/8AHqPNf/nn/wCPU6ig
+Bvmv/wA8/wDx6jzX/wCef/j1OooAb5r/APPP/wAeo81/+ef/AI9TqKAG+a//ADz/APHqPNf/AJ5/
++PU6igBvmv8A88//AB6jzX/55/8Aj1OooAb5r/8APP8A8eo81/8Ann/49TqKAG+a/wDzz/8AHqPN
+f/nn/wCPU6igBvmv/wA8/wDx6jzX/wCef/j1OooAb5r/APPP/wAeo81/+ef/AI9TqKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKqandPaW6yRhSS+35h7GoPO1b/n1i/P8A
++yqXKzsS5JOxpUVm+dq3/PrF+f8A9lR52rf8+sX5/wD2VHN5C5/I0qKzfO1b/n1i/P8A+yo87Vv+
+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i/P8A+yo87Vv+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i/P8A+yo8
+7Vv+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i/P8A+yo87Vv+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i/P8A
++yo87Vv+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i/P8A+yo87Vv+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i
+/P8A+yo87Vv+fWL8/wD7Kjm8g5/I0qKzfO1b/n1i/P8A+yo87Vv+fWL8/wD7Kjm8g5/I0qKyprvU
+4IjJLbxKg6nOf61o27mW3jkbGXQMce4pqVxqSehJRRRTKCiiigAooooAKKKKACiiigAooooAKKKK
+AM3Xv+PJP+ug/kafvuryaX7PMsEUTFM7AxY9+tM17/jyT/roP5Gn7Lqzml+zwrPFKxfG8KVPfrUr
+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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e216953e-0677-4a5c-918b-a7eda66c4fe0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ab90f5bb-6cae-4223-9737-f43daefdbb8d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="100,182,182,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						welcome ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Welcome!
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@innertext='Welcome!']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b948787b-9c9c-4a36-b6de-da5dc30ab456">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f214187e-e07d-4a0b-81de-c8c012594cb0"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="atag"
+				rect="1670,348,85,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-default selected
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						Grid
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController;jsessionid=19ut7fzejcsKBHa9MxPo4DIC?bwayparam=WF2vWEryl1KokUvJsx55a%2BAL22vr3hhC%2F7fV%2FmMGbkE%3D#
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="disabled"
+					readonly="False"
+					type="System.String">
+						disabled
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+						{&quot;selected&quot;: view == &quot;Grid&quot;}
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+						changeView('Grid')
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'Grid']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1f8ffa2a-4c0d-4a0b-b6bf-53227237fe61">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAB1AVwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAoopR1oAXLeg/OjLeg/OlooATLeg/OjLeg/OlooATLeg/OjLeg/OlooATLeg/OjLeg
+/OlooAZRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFKOtJSjrQA6iiigAooooAKKKKACiiigBlFFFABRRRQAUUd6dQA2inUU
+ANop1FADaKdRQA2inUUANop1NoAyvt19JcTR28MbiNyvv1OO/tTvtGrf8+kf+fxpdK/5CN9/vn+Z
+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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="182cd95a-fd1f-49c7-ab33-09524bfef0c7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a3627f46-1de3-4361-a2fb-ab51981fb965"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="1765,348,85,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						List
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://fnclmobqa.easternbank.com:8543/angular/AuthenticationController;jsessionid=19ut7fzejcsKBHa9MxPo4DIC?bwayparam=WF2vWEryl1KokUvJsx55a%2BAL22vr3hhC%2F7fV%2FmMGbkE%3D#
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+						{&quot;selected&quot;: view == &quot;List&quot;}
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+						changeView('List')
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//a[#'List']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="831f5136-b17a-47a1-af19-f6a1e3fdf0ee">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAB1AVwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAoopR1oAXLeg/OjLeg/OlooATLeg/OjLeg/OlooATLeg/OjLeg/OlooATLeg/OjLeg
+/OlooAZRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFKOtJSjrQA6iiigAooooAKKKKACiiigBlFFFABRRRQAUUd6dQA2inUU
+ANop1FADaKdRQA2inUUANop1NoAyvt19JcTR28MbiNyvv1OO/tTvtGrf8+kf+fxpdK/5CN9/vn+Z
+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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="67ea78ef-3e00-43bb-814d-cc5d509e0bd4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4da1669c-3b6f-4d73-b0c6-82b5460ff85e"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="55,592,218,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						balance-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Available Balance
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//*[@id~'GridAcc.']/div[3]/div[@innertext~'Available.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a60f0367-df73-48a9-8b8a-0f18a2de32d5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="afb83e76-19ac-410d-92ea-f65cc9f677fe"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						1977
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobdev.easternbank.com:6343/angular/L001/ang/images/Pinkaloo_img.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						1779
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onclick"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accounts-landing-view']//img[@src~'Pinkaloo_img.png$' and @visible='true']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7c3469f-ff77-4e1c-a3a3-7a148441f281">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="55ef9b3c-a714-4136-ab8a-48508114c42b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="115,338,662,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Give For Good&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accounts-landing-view']//div[@innertext='Give For Good ']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ac33dc99-eb8c-4348-a87a-e987a6f3aa67">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1d1e2cbb-1220-40c1-9ef1-5684965cac44"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="115,362,662,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Join us in supporting impactful organizations that do good in the communities they serve.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accounts-landing-view']//div[@innertext='Join us in supporting impactful organizations that do good in the communities they serve.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5c8a3dfa-9d2d-448b-aae2-9662c34cf38f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0bcc6aab-bc17-43ad-b258-9905aa463b67"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1688,343,160,49"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						learn-btn
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Learn More
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='accounts-landing-view']//button[@id='learn-btn']
+				</path>
+			</info>
+			<arguments
+			id="d671eca3-348e-4b20-b3e2-07127ba85602">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="ed05dc8a-5a34-4907-b02d-795afe3f2305"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4d8e7332-de90-48dd-9261-eecc9e711775"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="7"
+				prefcap="divtag"
+				rect="0,103,1903,1057"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						showModalDetails
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-terms1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-live"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d59c4994-a5b1-412b-a219-e4d2f7436579">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7d1c04d3-bbf3-4e1f-957c-09b709a4ff9a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="713,259,335,77"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						77
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobdev.easternbank.com:6343/angular/L001/ang/images/Pinkaloo_img1.PNG
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						335
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//img[@src~'Pinkaloo_img1.PNG$']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1f523d5d-17e2-4b93-b72d-4d361a545181">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1873242e-5398-4400-9354-355ccbfb65eb"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//img[@id='pinkaloo-close-terms1']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ca07439-5330-4b0c-b301-8cef6c7fbbb0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d922455a-bb91-4d54-bb25-f2b1dfbf6aaf"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,388,173,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Eastern Bank's Mission
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//span[@innertext='Eastern Bank''s Mission']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b37a3055-f763-40dd-951a-4d9ca6478e03">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d637c644-ccda-41e7-8c45-a7b75978332f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,417,507,37"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						When it comes to charitable giving, our goal is to support impactful organizations that do good in the communities they serve.&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//span[@innertext='When it comes to charitable giving, our goal is to support impactful organizations that do good in the communities they serve. ']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a0f0afee-77e0-4031-b5db-4a0cbc13ceff">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a1f55091-f0f3-467e-87e1-bd2408030eda"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,466,525,37"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						That's why we partnered with Pinkaloo to launch  a tool that makes it even easier for you to support charitable organizations that you care about!&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//span[@innertext='That''s why we partnered with Pinkaloo to launch  a tool that makes it even easier for you to support charitable organizations that you care about! ']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a8398018-9fdd-441d-8545-32ae28e68fb0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="52aef355-dca7-44dd-a30e-f66a5ee66c30"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//span[@innertext='How does it work?']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c6694b6e-a333-4663-a286-218619b65558">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="877d8d95-b51b-4c86-8de6-718b5a93544a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//span[@innertext='Eastern Give For Good allows you to manage all of your charitable giving in one place! Set up your Give For Good Charitable Giving Account so you can discover charitable organizations, easily make donations, and instantly access tax receipts. ']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b663b7ce-b7ff-43e4-8c8b-1513a9c86d9a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e6f8241-4fa2-458e-be08-ceb52af1f67c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="7"
+				prefcap="buttontag"
+				rect="629,643,525,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						crif-terms-btn
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-done-btn1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						See how you can make a difference today!
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms1']//button[@id='pinkaloo-done-btn1']
+				</path>
+			</info>
+			<arguments
+			id="4906525f-38b9-4136-b3da-cf655da3beda">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="6b98d7e2-d76f-40c5-9812-8b2b4c2347ba"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="77ab2cd1-3713-4681-89b5-4c308df9f39c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="7"
+				prefcap="divtag"
+				rect="0,103,1903,1057"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						showModalDetails
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-terms2
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-live"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="40d5b5a9-acea-41a8-9553-700208648f3b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6e4d05db-8a8d-459c-a883-3bf56d5bb60f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="613,234,558,128"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						modal-header
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//div[@class='modal-header']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d19686cd-8fe5-4488-a7be-099a0ab7e8b4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="926e600b-fa15-4245-a835-bdf2fe22d903"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="1135,234,36,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-close-terms1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						36
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobdev.easternbank.com:6343/angular/L001/ang/images/Close_ticker.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						36
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-src"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//img[@id='pinkaloo-close-terms1']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="545e2cc9-c489-4f32-8ed8-fac581edca18">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="106d2503-ad07-459d-a22c-c02279ec4a5c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,389,151,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Seamless Donations
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//span[@innertext='Seamless Donations']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="6d3f83ad-ddbd-42ca-8a49-c1bb4c36e3aa"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="62cd9cd7-d80f-4a3b-b1a7-993a5459b845"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,418,526,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						We want to make it easy for you to donate to charitable organizations you believe in.&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//span[@innertext='We want to make it easy for you to donate to charitable organizations you believe in. ']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="05d543bb-bf70-41aa-bab2-2a962fc63faf">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1588d192-0bbc-43eb-a96d-25dd5ce302dc"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,446,510,58"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						To make this experience seamless, we can securely sync your Eastern Bank debit card(s) so you don't have to enter that information when you decide to make a donation!
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//span[@innertext='To make this experience seamless, we can securely sync your Eastern Bank debit card(s) so you don''t have to enter that information when you decide to make a donation!']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="50f97555-ad6b-4faf-932a-eb458d61f3df">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="639ee159-152e-4f03-adae-58562a62123a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,534,375,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Would you like to securely sync your debit card(s)?
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//span[@innertext='Would you like to securely sync your debit card(s)?']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3a2ce918-9167-4104-8999-cad063ab3cf3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c47e2c70-1f9a-47bb-9f09-7b4a86a79789"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="628,576,251,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						&#32;crif-terms-btn
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-dbt-btn1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Yes, sync my debit card(s)
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//button[@id='pinkaloo-dbt-btn1']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9684e517-ef4b-4348-8e55-af7a9ca8db13">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="af448c75-ebf9-4cd0-af03-0fc47b92c0fa"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="896,576,251,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						crif-terms-btn
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-dbt-btn2
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						No, I'll do this manually
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//button[@id='pinkaloo-dbt-btn2']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="113a8a62-7408-4074-896d-439bac9014f4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="122be705-2198-44c4-8399-83a68955a5dc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//img[@id='pnkChk']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ed03058d-0e9d-4e40-a857-7332910e5621">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="af448c75-ebf9-4cd0-af03-0fc47b92c0fa"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="1"
+				prefcap="buttontag"
+				rect="896,576,251,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						crif-terms-btn
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-dbt-btn2
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						No, I'll do this manually
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//button[@id='pinkaloo-dbt-btn2']
+				</path>
+			</info>
+			<arguments
+			id="a81c05f8-739f-4de0-9763-9de60abf2c26">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="14a87007-ef9a-41ed-b671-afd5c2eb5fbd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c47e2c70-1f9a-47bb-9f09-7b4a86a79789"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="628,576,251,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						&#32;crif-terms-btn
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-dbt-btn1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Yes, sync my debit card(s)
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//button[@id='pinkaloo-dbt-btn1']
+				</path>
+			</info>
+			<arguments
+			id="478d5e80-813b-44dc-8f87-bd4009ca5192">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="041ab198-e15d-4d3c-ad34-e4db07041667"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d9da78b-5364-43a0-9783-662371a52bbb"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="628,643,377,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						loan-info-text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Great! Your debit card(s) will be added as a payment source!&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//span[@innertext='Great! Your debit card(s) will be added as a payment source! ']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f3086d2a-be33-48c9-8ba2-95b27f94302a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79cda666-a28f-42ab-8fd9-e9af769ae846"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="628,687,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pnkChk
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Information listed above true Unselected
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobdev.easternbank.com:6343/angular/L001/ang/images/Checkbox-Default.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//img[@id='pnkChk']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b5456c3e-3875-4da8-aed1-35dd534b042f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79cda666-a28f-42ab-8fd9-e9af769ae846"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="628,687,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pnkChk
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Information listed above true Unselected
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://fnclmobdev.easternbank.com:6343/angular/L001/ang/images/Checkbox-Default.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-checked"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//img[@id='pnkChk']
+				</path>
+			</info>
+			<arguments
+			id="5fbbf11c-ca33-4873-aa2d-1ddaec1f9cd0">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="6d76b6d2-2fd7-44f9-89ec-30f70c70f101"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dfad9aaf-0d2b-4088-97f2-fc4fce1a594f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//img[@id='pnkChk1']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b432c281-5624-40e1-9d76-f898d0030637">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="85e30a68-c1b2-4fb7-8d02-ddf908450a82"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="659,659,471,67"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						aco-info-text-nolineheight-bold
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						By continuing, you are agreeing to  and  This page is hosted by a third-party, and Eastern Bank is not responsible for the content or any transactions that occur on this page.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//span[@innertext='By continuing, you are agreeing to  and  This page is hosted by a third-party, and Eastern Bank is not responsible for the content or any transactions that occur on this page.']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="90202baf-3d68-492f-b94e-8bf6c95b5ce7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a1aa7e94-6caf-486e-8a0d-cedd04657017"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="875,659,193,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Pinkaloo's Terms &amp; Conditions&#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://www.pinkaloo.com/terms-of-service
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_blank
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//a[@href='https://www.pinkaloo.com/terms-of-service']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5333a131-95cc-458f-b952-a43a06dc29e3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d5fb5ec1-da38-4950-8851-1b3310c8f4e8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="atag"
+				rect="659,676,157,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Pinkaloo's Privacy Policy.
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://www.pinkaloo.com/privacy-policy
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_blank
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//a[@href='https://www.pinkaloo.com/privacy-policy']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="663daea0-7b06-45d3-a68e-66a871a898f1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="423e81fd-5fc3-4a37-9411-a9ff839ad436"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="False"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="8"
+				prefcap="buttontag"
+				rect="629,747,525,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						crif-terms-btn
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						pinkaloo-done-btn2
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Set Up My Give For Good Account
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String"
+					weight="120">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//button[@id='pinkaloo-done-btn2']
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e2f96b5b-bd4e-4f22-b4fc-08fadea6417a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="926e600b-fa15-4245-a835-bdf2fe22d903"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//div[@id='pinkaloo-terms2']//img[@id='pinkaloo-close-terms1']
+				</path>
+			</info>
+			<arguments
+			id="f0056a02-7acb-4051-9cd7-683a6f67c110">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AccountsDashboardValidation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

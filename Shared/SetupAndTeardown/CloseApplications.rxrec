@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0764a436-bd32-4190-b846-e7266653ced3"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseApplications"
+	namespace="Login">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="CloseApplications"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="closebrowsers123"
+		namespace="Login"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8a64d7dc-d25a-4824-8a11-c19989b315fa">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="CloseApplications"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="closefreecheckingdisclosure"
+		namespace="Login"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6053678a-f4b1-4a49-8606-110f5440573f">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="193e05d3-4da7-4bae-a93d-bc21bc09291f"
+	name="SetupAndTeardownRepository"
+	relativepath="SetupAndTeardownRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SetupAndTeardownRepository"
+		namespace="Login">
+		</codegen>
+		<rootfolder
+		id="5bfca4d2-e75d-48d4-811e-7ec90b3e7c33"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseApplications.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

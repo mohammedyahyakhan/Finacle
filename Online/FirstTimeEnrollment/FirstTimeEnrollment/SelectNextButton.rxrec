@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="27dc016c-a5aa-426f-a62a-ffb38811c08c"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectNextButton"
+	namespace="FirstTimeEnrollment">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0af7f310-6c33-47c7-b0d5-d41d6770aecd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5c3dbb34-f893-45aa-9bba-c230ff797e54"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//form[@name='LoginAltFlowFG']//input[@id='Button26229281']
+				</path>
+			</info>
+			<arguments
+			id="2cf2ab75-7a84-4d22-b344-dabcd6dee702">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="9cf12f67-7f5b-48fa-b807-4a8fb0c4c554"
+	name="FirstTimeEnrollmentRepository"
+	relativepath="FirstTimeEnrollmentRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="FirstTimeEnrollmentRepository"
+		namespace="FirstTimeEnrollment">
+		</codegen>
+		<rootfolder
+		id="dda86d0c-6bf4-4f03-b4b6-203d7bd49bb7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectNextButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

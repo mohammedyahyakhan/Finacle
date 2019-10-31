@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0528c773-e1b3-4297-9db9-2d83ab2540fc"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseTab"
+	namespace="Login">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="W, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="2ab2dfc1-e1c7-4f8a-930a-9a069047c186"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="193e05d3-4da7-4bae-a93d-bc21bc09291f"
+	name="SetupAndTeardownRepository"
+	relativepath="SetupAndTeardownRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="SetupAndTeardownRepository"
+		namespace="Login">
+		</codegen>
+		<rootfolder
+		id="5bfca4d2-e75d-48d4-811e-7ec90b3e7c33"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

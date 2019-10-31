@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e9382b3c-ea87-4a2a-bf1f-173da43b0ef7"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectBackButton"
+	namespace="FirstTimeEnrollment">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a2f6dc4a-07a8-46de-aa25-95364a526670">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0bb61622-ff15-4ea9-a053-78804c935dd3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//a[@innertext='Back']
+				</path>
+			</info>
+			<arguments
+			id="c55a07f4-6af2-4c53-8212-262fa95720dc">
+			</arguments>
+		</invokeactionrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="a35dcc7c-9c69-4798-b584-975eb55d0cd4"
+		waitaction="AttributeEqual"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d1ff091f-3511-481c-b6c0-17b044c1330a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmob.']//span[@innertext='Confirm Identity']/../../../..
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="9cf12f67-7f5b-48fa-b807-4a8fb0c4c554"
+	name="FirstTimeEnrollmentRepository"
+	relativepath="FirstTimeEnrollmentRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="FirstTimeEnrollmentRepository"
+		namespace="FirstTimeEnrollment">
+		</codegen>
+		<rootfolder
+		id="dda86d0c-6bf4-4f03-b4b6-203d7bd49bb7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectBackButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

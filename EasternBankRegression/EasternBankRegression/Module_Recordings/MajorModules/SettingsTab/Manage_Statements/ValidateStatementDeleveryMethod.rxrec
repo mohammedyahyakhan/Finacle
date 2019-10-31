@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="55aca220-ed54-45b6-8a16-b4f024d702ff"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateStatementDeleveryMethod"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.SettingsTab.Manage_Statements">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="NotExists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c00ded93-1c5c-43b4-ae4a-a5191304347c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c21a3489-0829-4bd9-af0b-8442ff12fd37"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="web"
+				hasfocus="True"
+				index="0"
+				prefcap="divtag"
+				rect="133,-755,48,23"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						eb-switch switch-off
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						online-16
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						eb-switch switch-off
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+						Paper Enabled. Please select for Online Mode.
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-attr-aria-label"
+					readonly="False"
+					type="System.String">
+						{{account.DELIVERY_METHOD_ARRAY!='Electronic' ? 'Paper Enabled. Please select for Online Mode.' : 'Online Enabled. Please select for Paper Mode.'}}
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+						{'switch-off': account.DELIVERY_METHOD_ARRAY!='Electronic', 'switch-on': account.DELIVERY_METHOD_ARRAY=='Electronic'}
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						updateStatementPreference(account)
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-keydown"
+					readonly="False"
+					type="System.String">
+						$event.keyCode == 13 ? updateStatementPreference(account) : null
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						checkbox
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//div[#'stmtTabSettings-settings']/div/div[1]/div[4]/?/?/table/tbody/tr[1]/td[2]/div/div/div[1]/div/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="fa15b20a-9451-4c69-81d2-e6a2795c6a82">
+				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
+KKKAP//Z
+			</helperscreenshot>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateStatementDeleveryMethod.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

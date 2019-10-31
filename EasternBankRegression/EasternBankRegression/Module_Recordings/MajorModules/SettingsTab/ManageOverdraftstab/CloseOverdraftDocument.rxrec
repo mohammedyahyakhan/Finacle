@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8bd4265e-a81c-4c9b-9f8f-d72be6f870bd"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseOverdraftDocument"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.SettingsTab.ManageOverdraftstab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8b03edd3-89e7-4c33-ab93-f25e8f59c3aa"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2593e6f1-7cb1-437c-bc75-73fbc28de9f9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Microsoft\ Word\ -\ Overdraf']//tabpage[@accessiblename~'Microsoft Word - Overdraft Practices.doc']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{LControlKey down}{F4 down}{LControlKey up}{F4 up}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="bf82ecfd-3f0b-4893-a621-ff63a681c30a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2593e6f1-7cb1-437c-bc75-73fbc28de9f9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Microsoft\ Word\ -\ Overdraf']//tabpage[@accessiblename~'Microsoft Word - Overdraft Practices.doc']
+				</path>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseOverdraftDocument.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

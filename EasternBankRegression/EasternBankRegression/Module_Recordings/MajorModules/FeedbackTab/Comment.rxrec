@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="11d4fdc8-21ee-4194-b79a-2653bf56e9cc"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Comment"
+	namespace="EasternBankRegression.Module_Recordings.MajorModules.FeedbackTab">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d2f9bb2a-f3e4-4f0e-8628-cb9817d86b0a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a9a3d2ec-a95e-474e-9513-aaea9c003f40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain~'fnclmobqa.easternbank.com:8543|fnclmobstg.easternbank.com']//iframe[#'ifrmdiv1258999844']//textarea[#'Q2']
+				</path>
+			</info>
+			<arguments
+			id="e35c6ddd-c6be-4d4b-a69d-5d7123ea1c74">
+			</arguments>
+		</invokeactionrecorditem>
+		<keysequenceitem
+		KeySequence="Eastern Bank is the future....."
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="8d68aacc-bf43-43ec-a775-25d02459ac2c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a9a3d2ec-a95e-474e-9513-aaea9c003f40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='fnclmobqa.easternbank.com:8543']//iframe[#'ifrmdiv1258999844']//textarea[#'Q2']
+				</path>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="a76a7f1d-9a1c-4fef-ad32-d7acbad84274"
+	name="EasternBankRegressionRepository"
+	relativepath="..\..\..\EasternBankRegressionRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="EasternBankRegressionRepository"
+		namespace="EasternBankRegression">
+		</codegen>
+		<rootfolder
+		id="bcfc5d58-aa90-4016-9480-07651dd886b5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Comment.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

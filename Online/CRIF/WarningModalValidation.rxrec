@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fe919afc-193a-4e72-a148-1e2369f29075"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="WarningModalValidation"
+	namespace="CRIF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="cf511c99-8b30-4cc9-8691-0d9529b66d50"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f8bbe681-d985-4a2f-bc13-8ea408be5b9c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="739,232,362,225"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						modal-content
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'crifWarningModal']//div[@class='modal-content']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5ae17a1c-ac69-4c91-beb4-5181e9aebc80">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="30e4b4fb-ad07-4e3e-ab10-69d441f0b177"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="883,409,76,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cancel
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						No, Exit
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						cancelCrifWarning($event)
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						margin-top: -4px;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'crifWarningModal']/div/div/div[3]/button[@innertext='No, Exit']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="e7571fb4-a988-4478-86d6-427c4913718f">
+				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
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="848829d3-2d41-42e4-a6c8-b9cf1f569d9e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7d7b9e6f-d244-486d-9c4e-02277f516169"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="968,409,117,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						action
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                    Yes, Continue
+               &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="emulation-interceptor"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+						openCrifTermsWarning('Grid',$event)
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						background-color: #007BC8 ; padding-right: 20px;     margin-top: -4px;
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+						0
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain~'fnclmob.']//div[#'crifWarningModal']/div/div/div[3]/button[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Yes,']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="30207926-6cba-450c-9167-a94fdadb25b9">
+				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
+QBZoqGKTzCjZ4KHP1qKe42ylRIFx2waAP//Z
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="29624f28-274c-4cbf-80b7-433d1721d275"
+	name="CRIFRepository"
+	relativepath="CRIFRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="CRIFRepository"
+		namespace="CRIF">
+		</codegen>
+		<rootfolder
+		id="e95eb803-2a04-4147-bc02-66f9a2b02f89"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		WarningModalValidation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
